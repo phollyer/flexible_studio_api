@@ -1,0 +1,61 @@
+INSTALL USING GIT
+
+Git is used for maintaining source code both locally, and in distributed, remote repositories such as GitHub (http://github.com). It is now widely used because of its simplicity and power. One of the great things about Git, is that once you have cloned the Repo, you can keep your files up to date with a single simple command which will pull in any available updates.
+
+I've been using Git with all my projects for some time now, and it makes it simple go off in different directions, then test, merge the changes if the tests pass, or delete the branch and step back and start over.
+
+Even if you don't go on to use it in your own projects, it will make keeping your API files up to date a breeze. Therefore using Git is the recommended method of downloading and updating your files.
+
+It was primarily designed for *nix systems but is also available for Windows by downloading and installing CygWin - which is a Linux-like environment for Windows.
+
+Downloading:
+
+Git Download Page: http://git-scm.com/download
+CygWin Download Page: http://www.cygwin.com
+
+Uses
+
+In my experience, Git works great with text files such as ActionScript and MXML files, so it fits well with Flex applications. However, Git has problems with Binary files like FLA's, and because I tend to work only in Flex, I haven't looked into solving this problem.
+
+That doesn't mean that if you use Flash, you can't use this API, though. You should still be able to download the files and reference the API from within your Flash application - however, I haven't tested this with Flash.
+
+Once you have Git installed, open CygWin and navigate to the folder you want to install the API. You would do this by entering something along the lines of the following at the command line:
+
+(The $ sign represents a command line entry, you do not need to enter it yourself, only enter the code that follows it then hit Enter.)
+
+(Because CygWin is Linux-like, you can use / to seperate folders not \ - although \\ is acceptable, but pointless.)
+
+$ cd c://folder/folder 
+
+Then you need to do the following:
+
+First Clone the Repo
+
+$ git clone git@github.com:phollyer/flexible_studio_api.git
+
+Next Create your own Release Branch (this is the branch that you will keep up to date by merging new releases or bug fixes into it).
+
+$ cd flexible_studio_api
+$ git checkout -b RB_1.0.0 remotes/origin/RB_1.0.0
+
+Then Create your Flex Library Project
+
+In Flex:
+File > New > Flex Library Project
+
+Enter the Project name: flexible_studio_api
+The folder path should be: [the same folder where you invoked git clone]/flexible_studio_api
+
+Click: Finish
+Your Library Project will be created. 
+
+The Final Step
+Now you need to add the SWF Studio SWC to the project so that this API can reference the SWF Studio API.
+Select your flexible_studio_api Project, right click it, and select Properties.
+Select: Flex Library Build Path
+Select the Tab: Library Path
+Click: Add SWC
+Navigate to the SWF Studio SWC as per Northcode Instructions. The default location is c:\Program Files\Northcode\Studio3\SWC\coreAS3Definitions.swc
+
+Now all you need to do to use this API is to reference the library project in your Flex Projects.
+

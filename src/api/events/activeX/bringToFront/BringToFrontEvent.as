@@ -1,4 +1,4 @@
-package api.events.activeX.bringTofront
+package api.events.activeX.bringToFront
 {
 	import flash.events.Event;
 	

@@ -13,7 +13,6 @@ package api.app.notifiers
 		{
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_SYS_COLOR_CHANGE} , {callback:actionComplete, errorSTR:"onSysColorChangeError", code:"8032"} );
-		}
-		}		
+		}	
 	}
 }

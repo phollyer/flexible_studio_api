@@ -3,6 +3,7 @@ package api.app.showDialog
 	import flash.events.IEventDispatcher;
 	
 	import api.app.App;
+	import api.events.app.showDialog.ShowDialogEvent
 
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]
@@ -21,16 +22,11 @@ package api.app.showDialog
 			switch( hwnd )
 			{
 				case null:
-					hwndMissing();
+					missingHWND();
 					break;
 				default:
 					ssCore.App.showDialog( {hwnd:hwnd} , {callback:actionComplete, errorSTR:"showDialogError", code:"8018"} );
 			}
-		}
-		private function hwndMissing():void
-		{
-			var e : ShowDialogEvent = new ShowDialogEvent( ShowDialogEvent.RESULT_HWND );
-			dispatchEvent( e );
 		}
 	}
 }

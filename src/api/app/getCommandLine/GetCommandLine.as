@@ -23,7 +23,7 @@ package api.app.getCommandLine
 		}
 		override protected function sendResult( r:Object ):void
 		{
-			commandLine = result;
+			commandLine = r.result;
 			var e : GetCommandLineEvent = new GetCommandLineEvent( GetCommandLineEvent.RESULT );
 			e.commandLine = commandLine;
 			dispatchEvent( e );

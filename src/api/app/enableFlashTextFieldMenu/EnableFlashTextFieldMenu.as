@@ -1,4 +1,4 @@
-package api.app.enableFlastTextFieldMenu
+package api.app.enableFlashTextFieldMenu
 {
 	import flash.events.IEventDispatcher;
 	

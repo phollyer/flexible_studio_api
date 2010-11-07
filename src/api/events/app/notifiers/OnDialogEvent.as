@@ -6,7 +6,7 @@ package api.events.app.notifiers
 
 	public class OnDialogEvent extends AppEvent
 	{
-		public static const STATUS:String = "status";
+		public static const RESULT:String = "result";
 		
 		public var captionDialog:String = null;
 		public var captionParent:String = null;

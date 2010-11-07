@@ -6,7 +6,7 @@ package api.events.app.notifiers
 
 	public class OnWindowEvent extends AppEvent
 	{
-		public static const STATUS:String = "status";
+		public static const RESULT:String = "result";
 		
 		public var caption:String = null;
 		public var hwnd:String = null;

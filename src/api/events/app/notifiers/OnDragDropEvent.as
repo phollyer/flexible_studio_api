@@ -6,7 +6,7 @@ package api.events.app.notifiers
 
 	public class OnDragDropEvent extends AppEvent
 	{
-		public static const STATUS:String = "status";
+		public static const RESULT:String = "result";
 		
 		public var fileList:Array = null;
 		public var folderList:Array = null;

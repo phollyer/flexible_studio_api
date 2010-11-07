@@ -469,6 +469,34 @@ package api
 		}
 		
 		/**
+		* This method is called by sub classes when an Event is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_EVENT event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingEvent():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_EVENT);
+		}
+		
+		/**
+		* This method is called by sub classes when a FileObj is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FILE_OBJ event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingFileOBJ():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FILE_OBJ);
+		}
+		
+		/**
 		* This method is called by sub classes when a HWND is
 		* not supplied as an argument or property when required.
 		*
@@ -511,6 +539,34 @@ package api
 		}
 		
 		/**
+		* This method is called by sub classes when a Path is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_PATH event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingPath():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_PATH);
+		}
+		
+		/**
+		* This method is called by sub classes when a Priority is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_PRIORITY event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingPriority():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_PRIORITY);
+		}
+		
+		/**
 		* This method is called by sub classes when a Prompt is
 		* not supplied as an argument or property when required.
 		*
@@ -536,6 +592,20 @@ package api
 		protected function missingString():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_STRING);
+		}
+		
+		/**
+		* This method is called by sub classes when Text is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_TEXT event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingText():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_TEXT);
 		}
 
 		/**

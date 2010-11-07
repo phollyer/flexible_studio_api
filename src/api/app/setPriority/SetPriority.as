@@ -3,6 +3,7 @@ package api.app.setPriority
 	import flash.events.IEventDispatcher;
 	
 	import api.app.App;
+	import api.events.app.setPriority.SetPriorityEvent
 
 	[Bindable]
 	public class SetPriority extends App
@@ -24,20 +25,12 @@ package api.app.setPriority
 			priority = compareStrings( appPriority , priority );
 			switch( priority )
 			{
-				case HIGH:
-				case IDLE:
-				case NORMAL:
-				case REAL_TIME:
-					ssCore.App.setPriority( {priority:priority} , {callback:actionComplete, errorSTR:"setPriorityError", code:"8017"} );
+				case null:
+					missingPriority();
 					break;
 				default:
-					invalidPriority();
+					ssCore.App.setPriority( {priority:priority} , {callback:actionComplete, errorSTR:"setPriorityError", code:"8017"} );
 			}
-		}
-		private function invalidPriority():void
-		{
-			var e : SetPriorityEvent = new SetPriorityEvent( SetPriorityEvent.RESULT_PRIORITY );
-			dispatchEvent( e );
 		}
 	}
 }

@@ -1,9 +1,9 @@
 package api.events.app
 {
 	import flash.events.Event;	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class AppEvent extends KernelEvent
+	public class AppEvent extends SWFStudioEvent
 	{
 		public static const LOGGING_OFF:String = "loggingOff";
 		public static const REBOOTING:String = "rebooting";

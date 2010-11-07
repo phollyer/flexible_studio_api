@@ -6,7 +6,7 @@ package api.events.app.notifiers
 
 	public class OnExitWindowsEvent extends AppEvent
 	{
-		public static const STATUS:String = "status";
+		public static const RESULT:String = "result";
 		
 		public var method:String = null;
 		

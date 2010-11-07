@@ -6,7 +6,7 @@ package api.events.app.notifiers
 
 	public class OnDeviceChangeEvent extends AppEvent
 	{
-		public static const CHANGE:String = "change";
+		public static const RESULT:String = "result";
 		
 		public var action:String = null;
 		public var device:String = null;

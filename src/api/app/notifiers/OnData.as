@@ -25,7 +25,7 @@ package api.app.notifiers
 			dataStream.push( data );
 			
 			var event : OnDataEvent = new OnDataEvent( OnDataEvent.RESULT );
-			events.data = data;
+			event.data = data;
 			dispatchEvent( event );
 		}
 	}

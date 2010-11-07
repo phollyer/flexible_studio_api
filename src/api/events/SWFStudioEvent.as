@@ -12,9 +12,12 @@ package api.events
 		public static const MISSING_OBJECT : String = "missingObject";
 		public static const MISSING_PATH :String = "missingPath";
 		public static const MISSING_PRIORITY : String = "missingPriority";
+		public static const MISSING_PROG_ID : String = "missingProgId";
 		public static const MISSING_PROMPT : String = "missingPrompt";
+		public static const MISSING_PROPERTY : String = "missingProperty";
 		public static const MISSING_STRING : String = "missingString";
 		public static const MISSING_TEXT : String = "missingText";
+		public static const MISSING_VALUE : String = "missingValue";
 		public static const RESULT : String = "result";
 		
 		public function SWFStudioEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)

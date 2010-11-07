@@ -564,6 +564,20 @@ package api
 		protected function missingPriority():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_PRIORITY);
+		}		
+		
+		/**
+		* This method is called by sub classes when a ProgID is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_PROG_ID event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingProgID():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_PROG_ID);
 		}
 		
 		/**
@@ -579,6 +593,21 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_PROMPT);
 		}
+		
+		/**
+		* This method is called by sub classes when a Property is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_PROPERTY event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingProperty():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_PROPERTY);
+		}
+		
 		
 		/**
 		* This method is called by sub classes when a String is
@@ -607,6 +636,21 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_TEXT);
 		}
+		
+		/**
+		* This method is called by sub classes when a Value is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_VALUE event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingValue():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_VALUE);
+		}
+		
 
 		/**
 		* Send an event out to any listeners of type <code>eventType</code>

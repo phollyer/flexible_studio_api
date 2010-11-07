@@ -1,19 +1,18 @@
-package api.events.activeX
+package api.vos.activeX
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class ActiveXEvent extends KernelEvent
+	[Bindable]
+	public class CreateObjectVO extends Object
 	{
-		public function ActiveXEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public var left:Number = 0;
+		public var top:Number = 0;
+		public var width:Number = 500;
+		public var height:Number = 400;
+		public var visible:Boolean = true;
+		public var licence:String = null;
+		
+		public function CreateObjectVO()
 		{
-			super(type, bubbles, cancelable);
-		}
-		override public function clone():Event
-		{
-			var e : ActiveXEvent = new ActiveXEvent( type );
-			return e;
-		}
+			super();
+		}		
 	}
 }

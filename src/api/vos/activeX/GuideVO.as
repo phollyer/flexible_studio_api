@@ -1,19 +1,21 @@
-package api.events.activeX
+package api.vos.activeX
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class ActiveXEvent extends KernelEvent
+	[Bindable]
+	public class GuideVO extends Object
 	{
-		public function ActiveXEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public var bottomGuide:String = "bottom";
+		public var leftGuide:String = "left";
+		public var rightGuide:String = "right";
+		public var topGuide:String = "top";
+		public var bottomMargin:Number = 0;
+		public var leftMargin:Number = 0;
+		public var rightMargin:Number = 0;
+		public var topMargin:Number = 0;
+		
+		public function GuideVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : ActiveXEvent = new ActiveXEvent( type );
-			return e;
-		}
+		
 	}
 }

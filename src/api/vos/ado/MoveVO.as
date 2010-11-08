@@ -2,9 +2,9 @@ package api.events.ado
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class AdoEvent extends KernelEvent
+	public class AdoEvent extends SWFStudioEvent
 	{
 		public function AdoEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

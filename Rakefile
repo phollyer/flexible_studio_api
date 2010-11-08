@@ -1,7 +1,8 @@
 desc "Find and Replace values across a project"
-task :find_and_replace, [:find, :replace] do |t,args|
-     find = args.find
-     replace = args.replace
+task :find_and_replace, [:find_val, :replace_val] do |t,args|
+     puts args.find_val
+     find = /#{args.find_val}/
+     replace = args.replace_val
      files = Dir['src/api/**/*.as']
      files.each do |file|
         f = File.open(file, "r")

@@ -469,6 +469,34 @@ package api
 		}
 		
 		/**
+		* This method is called by sub classes when some Criteria is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_CRITERIA event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingCriteria():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_CRITERIA);
+		}
+		
+		/**
+		* This method is called by sub classes when a Direction is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_DIRECTION event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingDirection():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_DIRECTION);
+		}
+		
+		/**
 		* This method is called by sub classes when an Event is
 		* not supplied as an argument or property when required.
 		*
@@ -522,6 +550,20 @@ package api
 		protected function missingMethod():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_METHOD);
+		}
+		
+		/**
+		* This method is called by sub classes when a Number is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_NUMBER event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingNumber():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_NUMBER);
 		}
 		
 		/**
@@ -608,6 +650,19 @@ package api
 			sendMessage(SWFStudioEvent.MISSING_PROPERTY);
 		}
 		
+		/**
+		* This method is called by sub classes when some SQL is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_SQL event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingSQL():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_SQL);
+		}
 		
 		/**
 		* This method is called by sub classes when a String is

@@ -1,19 +1,18 @@
-package api.events.ado
+package api.vos.ado
 {
-	import flash.events.Event;
-	
-	import api.events.SWFStudioEvent;
-
-	public class AdoEvent extends SWFStudioEvent
+	public class MoveVO extends Object
 	{
-		public function AdoEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public static const BY:String = "By";
+		public static const FIRST:String = "First";
+		public static const LAST:String = "Last";
+		public static const NEXT:String = "Next";
+		public static const PREVIOUS:String = "Previous";
+		public static const TO:String = "To";
+		
+		public function MoveVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : AdoEvent = new AdoEvent( type );
-			return e;
-		}
+		
 	}
 }

@@ -1,19 +1,18 @@
-package api.events.ado
+package api.vos.ado
 {
-	import flash.events.Event;
-	
-	import api.events.SWFStudioEvent;
-
-	public class AdoEvent extends SWFStudioEvent
+	public class SetRowFormatVO extends Object
 	{
-		public function AdoEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public static const CSV:String = "CSV";
+		public static const DLM:String = "DLM";
+		public static const URL:String = "URL";
+		public static const XML:String = "XML";
+		public static const XML_ATTRIBS:String = "XML_Attribs";
+		public static const XML_NODES:String = "XML_Nodes";
+		
+		public function SetRowFormatVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : AdoEvent = new AdoEvent( type );
-			return e;
-		}
+		
 	}
 }

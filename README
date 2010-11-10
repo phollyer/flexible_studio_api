@@ -1,61 +1,183 @@
-INSTALL USING GIT
+﻿# ABOUT
 
-Git is used for maintaining source code both locally, and in distributed, remote repositories such as GitHub (http://github.com). It is now widely used because of its simplicity and power. One of the great things about Git, is that once you have cloned the Repo, you can keep your files up to date with a single simple command which will pull in any available updates.
+flexible_studio_api is an ActionScript 3, open source API for working with SWF Studio from Northcode. SWF Studio is a powerful SWF2EXE tool used to take Flash and Flex Applications to the Desktop. If you don't already know about it, you can find out more at http://www.northcode.com.
 
-I've been using Git with all my projects for some time now, and it makes it simple go off in different directions, then test, merge the changes if the tests pass, or delete the branch and step back and start over.
+First off, I'd better state that I am in no way critical of Northcode's API - I just wanted my own that I could control myself.
 
-Even if you don't go on to use it in your own projects, it will make keeping your API files up to date a breeze. Therefore using Git is the recommended method of downloading and updating your files.
+My preference was for a more conventional Object and Event model, so I started to write this API. I also wanted the missing code hinting in Flex - so that I wouldn't have to refer to Northcode's Help Documentation in order to look up properties, methods and events of a particular Class - this API gives me all of that, and more.
+
+# BENEFITS
+
+You may be asking why bother? What real, extra, added, value does it actually provide?
+
+Well, there are a number of added benefits as follows:
+
+All Classes always return at least a SWFStudio.COMPLETE, or a SWFStudio.ERROR, event to determine if the method completed correctly or not. Where a result is returned, a SWFStudio.RESULT event will also be dispatched. This provides a simple, standard approach to responding to, and handling, errors and results across the whole API.
+
+All result properties are parsed and typed correctly. If a result returns two numbers, you get them as two numbers; that way you can work with what was logically expected without having to think about converting from a String first. Comma seperated lists are returned as Arrays. Complex results are parsed and returned as properties on Objects that are easily accessible. This enables you to concentrate on thinking about what to do with the results, rather than how to access them in the first place.
+
+Adds a layer of protection against deprecated methods. If Northcode removes or moves a method, a simple change in flexible_studio_api replaces the deprecated method with a reference to the new method. No change is required to Application level code. You will also get a trace output to the SWF Studio Output window when you test, detailing:  
+the method used
+details of the replacement method
+notes about any property changes
+
+Maintains an Application wide Error Log which catches and stores any SWF Studio thrown Errors. This error log is easily accessible, and can be used to send back error reports from users.
+
+And the killer feature for me personally (ie, what makes it simple to put together and maintain) is:
+
+It uses the same, simple conventions throughout
+set any required Properties
+call the Method
+collect any output in your Event Listeners
+
+The fact that all Classes follow the same conventions, means that it makes it simple to write tools that create and maintain the code for me. If Northcode add a dozen new Methods across, say, three Classes, they will be able to be added, uploaded and made available within about 15 minutes.
+
+# USAGE
+
+Personally, I prefer working in the Eclipse/Flex IDE to the traditional Flash IDE. I just find it a much better environment to work in. Therefore, the API has been designed for, and only tested in, Flex. That's not to say that you can't use it with Flash. All of the code is in ActionScript files, there is no mxml, so there is no reason why you can't also use it with Flash just as you would with any other external Library - it just hasn't been tested.
+
+All of the Classes and Methods map to Northcode's own Classes and Methods, so working with the API should be a relatively small learning curve - which is also helped by the code hinting.
+
+All you need to do to make use of the API, is to download it to your development environment, set it up as a Library Project in Flex, and then simply reference the Library in your projects just as you would do with any other Library. (Installation and Setup instructions follow).
+
+The core Class which all other Classes extend from is the Kernel Class. This Class holds methods, properties, and events which are required across the API, as well as a - public static var ERROR_LOG - which stores any SWF Studio errors thrown in any sub-classes of Kernel, and because it is static, it is therefore available Application wide. It is an ArrayCollection and can be accessed as follows:
+
+Kernel.ERROR_LOG.getItemAt(0); // retrieves the last Error thrown. Each new error is pushed to the front, index 0
+
+All SWF Studio methods are called asynchronously so that the Flash Player is never stopped. I may add support for synchronous calls if enough people ask for it, but I don't need it so at the moment, it's not a priority.
+
+Apart from that, it's just basic AS3 Properties, Methods and Events.
+
+For more 'how to' information, please see: EXAMPLES and INSTALLATION below, as well as the pending/current Help Docs and, of course, there is no better way to learn than to delve into the code yourself - all Classes have Comments, if they don't currently, they soon will have - time allowing :) So dig deep and take a look around.
+
+# SUPPORT
+
+If anyone has any questions or ideas/suggestions, they can be posted on the Google Group - http://groups.google.com/group/flexible_studio_api
+
+You can also post on the Northcode Forum - http://www.northcode.com/forums/forumdisplay.php?f=54
+
+ASDoc comments will be added to any classes that don't already have them, and then Help Documentation will become available gradually as I add more Classes. 
+
+# INSTALLATION
+
+There are a couple of ways to retrieve the files required to use the API. By cloning the repo with git or by downloading all the files as a zip file. Both options are described below.
+
+Once you have downloaded your source files by whichever method suits you best, follow the instructions at the end of this document that detail how to install the files into Flex as a Library Project that you can re-use over and over and over.
+
+# INSTALL USING GIT
+
+git is used for maintaining source code both locally, and in distributed, remote repositories such as GitHub ( http://github.com) . It is now widely used because of its simplicity and power. One of the great things about git, is that once you have cloned the repo, you can keep your files up to date with a single simple command which will pull in any available updates.
+
+I've been using git with all my projects for some time now, and it makes it simple to go off in different directions, then test, merge the changes if the tests pass, or delete the branch and step back and start over.
+
+Even if you don't go on to use it in your own projects, it will make keeping your API files up to date a breeze. Therefore using git is the recommended method of downloading and updating your files.
 
 It was primarily designed for *nix systems but is also available for Windows by downloading and installing CygWin - which is a Linux-like environment for Windows.
 
-Downloading:
+* Downloading:
 
 Git Download Page: http://git-scm.com/download
 CygWin Download Page: http://www.cygwin.com
 
-Uses
+* Uses
 
-In my experience, Git works great with text files such as ActionScript and MXML files, so it fits well with Flex applications. However, Git has problems with Binary files like FLA's, and because I tend to work only in Flex, I haven't looked into solving this problem.
+In my experience, git works great with text files such as ActionScript and MXML files, so it fits well with Flex applications. However, git has problems with Binary files like FLA's, and because I tend to work only in Flex, I haven't looked into solving this problem, or if it is even possible to fix it in the first place.
 
 That doesn't mean that if you use Flash, you can't use this API, though. You should still be able to download the files and reference the API from within your Flash application - however, I haven't tested this with Flash.
 
-Once you have Git installed, open CygWin and navigate to the folder you want to install the API. You would do this by entering something along the lines of the following at the command line:
+Once you have git installed, open CigWin and enter the following to set up git's global variables:
 
-(The $ sign represents a command line entry, you do not need to enter it yourself, only enter the code that follows it then hit Enter.)
+$ git config –globals user.name “Your Name”
+$ git config –globals user.email “Your Email”
 
-(Because CygWin is Linux-like, you can use / to seperate folders not \ - although \\ is acceptable, but pointless.)
+When you clone the repo,  git will create a flexible_studio_api folder to hold all the source files. The path to my files on Windows is:
 
-$ cd c://folder/folder 
+c://flex\flexible_studio_api\src
+
+Now you need to navigate to the folder in your development environment where you want to install the API. On my system, I would move to:
+
+c://flex
+
+You would do this by entering something along the lines of the following at the command prompt:
+
+$ cd c://path/to/folder
+
+(The $ sign represents a command prompt, you do not need to enter it yourself, only enter the code that follows it then hit Enter.)
+
+(Because CygWin is Linux-like, you use / to seperate folders not \ - although \\ is acceptable, but pointless.)
 
 Then you need to do the following:
 
-First Clone the Repo
+* First, Clone the Repo as follows
 
 $ git clone git@github.com:phollyer/flexible_studio_api.git
 
-Next Create your own Release Branch (this is the branch that you will keep up to date by merging new releases or bug fixes into it).
+* Next, create your own Release Branch (this is the branch that you will keep up to date by merging new releases or bug fixes into it).
 
 $ cd flexible_studio_api
-$ git checkout -b RB_1.0.0 remotes/origin/RB_1.0.0
+$ git checkout -b RB_3.7 remotes/origin/RB_3.7
 
-Then Create your Flex Library Project
+Now, whenever you want to get the latest release, you can just open git, navigate to your flexible_studio_api folder, and enter:
+
+$ git pull origin RB_3.7
+
+I will be keeping the Release Branch version numbers up to date with SWF Studio's own version numbers. I have not yet updated the API to include the changes since Northcode release 3.8, therefore the current Release Branch is RB_3.7.
+
+That's all there is to the basics. However, git is a topic all on it's own. If you want to move on with git, I would recommend spending times with the help files, or checking out a good book.
+
+Now, if you need to, follow the instructions about how to set up your Library Project in Flex.
+
+# DOWNLOAD ZIP FILE
+
+You can also download all the files as a zip file. This is simpler to begin with, and if you are not too bothered about keeping the files updated, is probably the best quickie solution. However, be warned, if you choose this option, you will need to keep going to the following URL in order to download the latest files:
+
+https://github.com/phollyer/flexible_studio_api
+
+If the current branch (displayed as [Branch: name] towards the top right of the page) is not the RB_*.* version you want, click on:
+
+Switch Branches (*) 
+
+in order to select the branch you want.
+
+Now, click on:
+
+Downloads
+
+You will be offered a few different downloads, select the zip file, and download it.
+
+Once download, unzip the files to the location you want.
+
+Now, if you need to, follow the instructions about how to set up your Library Project in Flex.
+
+# INSTALLING THE LIBRARY INTO FLEX
 
 In Flex:
+
 File > New > Flex Library Project
 
 Enter the Project name: flexible_studio_api
-The folder path should be: [the same folder where you invoked git clone]/flexible_studio_api
+
+The folder path should be: [the same folder where you invoked git clone]/flexible_studio_api // this should already have been created by git
 
 Click: Finish
+
 Your Library Project will be created. 
 
-The Final Step
+* The Final Step
+
 Now you need to add the SWF Studio SWC to the project so that this API can reference the SWF Studio API.
+
 Select your flexible_studio_api Project, right click it, and select Properties.
 Select: Flex Library Build Path
+
 Select the Tab: Library Path
 Click: Add SWC
+
 Navigate to the SWF Studio SWC as per Northcode Instructions. The default location is c:\Program Files\Northcode\Studio3\SWC\coreAS3Definitions.swc
 
 Now all you need to do to use this API is to reference the library project in your Flex Projects.
+
+# EXAMPLES
+
+	*  Coming soon *
 

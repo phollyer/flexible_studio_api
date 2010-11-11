@@ -14,21 +14,21 @@ You may be asking why bother? What real, extra, added, value does it actually pr
 
 Well, there are a number of added benefits as follows:
 
-All Classes always return at least a SWFStudio.COMPLETE, or a SWFStudio.ERROR, event to determine if the method completed correctly or not. Where a result is returned, a SWFStudio.RESULT event will also be dispatched. This provides a simple, standard approach to responding to, and handling, errors and results across the whole API.
+    All Classes always return at least a SWFStudio.COMPLETE, or a SWFStudio.ERROR, event to determine if the method completed correctly or not. Where a result is returned, a SWFStudio.RESULT event will also be dispatched. This provides a simple, standard approach to responding to, and handling, errors and results across the whole API.
 
-All result properties are parsed and typed correctly. If a result returns two numbers, you get them as two numbers; that way you can work with what was logically expected without having to think about converting from a String first. Comma seperated lists are returned as Arrays. Complex results are parsed and returned as properties on Objects that are easily accessible. This enables you to concentrate on thinking about what to do with the results, rather than how to access them in the first place.
+    All result properties are parsed and typed correctly. If a result returns two numbers, you get them as two numbers; that way you can work with what was logically expected without having to think about converting from a String first. Comma seperated lists are returned as Arrays. Complex results are parsed and returned as properties on Objects that are easily accessible. This enables you to concentrate on thinking about what to do with the results, rather than how to access them in the first place.
 
-Adds a layer of protection against deprecated methods. If Northcode removes or moves a method, a simple change in flexible_studio_api replaces the deprecated method with a reference to the new method. No change is required to Application level code. You will also get a trace output to the SWF Studio Output window when you test, detailing: 
+    Adds a layer of protection against deprecated methods. If Northcode removes or moves a method, a simple change in flexible_studio_api replaces the deprecated method with a reference to the new method. No change is required to Application level code. You will also get a trace output to the SWF Studio Output window when you test, detailing:
  
 		the method used
 		details of the replacement method
 		notes about any property changes
 
-Maintains an Application wide Error Log which catches and stores any SWF Studio thrown Errors. This error log is easily accessible, and can be used to send back error reports from users.
+    Maintains an Application wide Error Log which catches and stores any SWF Studio thrown Errors. This error log is easily accessible, and can be used to send back error reports from users.
 
 And the killer benefit for me personally (ie, what makes it simple to put together and maintain) is:
 
-It uses the same, simple conventions throughout:
+    It uses the same, simple conventions throughout:
 
 		set any required Properties
 		call the Method
@@ -94,8 +94,8 @@ Once you have git installed, open it and enter the following to set up git's glo
 
 (The $ sign represents a command prompt, you do not need to enter it yourself, only enter the code that follows it then hit Enter.)
 
-$ git config –globals user.name “Your Name”
-$ git config –globals user.email “Your Email”
+$ git config --globals user.name "Your Name"
+$ git config --globals user.email "Your Email"
 
 When you clone the repo, git will create a flexible_studio_api folder to hold all the source files. The path to my files on Windows is:
 

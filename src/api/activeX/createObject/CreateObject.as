@@ -5,40 +5,28 @@ package api.activeX.createObject
 	import api.activeX.ActiveX;
 	import api.vos.activeX.CreateObjectVO;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.createObject()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.createObject.CreateObjectEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied. 
 	 * 
 	 * @eventType api.events.activeX.createObject.CreateObjectEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Property <code>progID</code> has not been supplied. 
 	 * 
 	 * @eventType api.events.activeX.createObject.CreateObjectEvent.RESULT_PROG_ID
 	 */
+	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.CREATE_OBJECT_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Creat a new ActiveX Object for embedding into your Application.
 	 * 
+	 * <p>Remember to set the <code>objectProperties</code> for the ActiveX Object you are embedding.</p>
+	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class CreateObject extends ActiveX
 	{		
 		/**
@@ -92,17 +80,25 @@ package api.activeX.createObject
 							missingProgID();
 							break;
 						default:
-							createAXObject();
+							ssCore.ActiveX.createObject( createAXObject()
+													    ,{callback:actionComplete, errorSTR:"createObjectError", code:"15004"} );
 					}
 			}
 		}
-		private function createAXObject():void
+		
+		/**
+		 * Create on object with the properties required  to fulfill the command.
+		 * 
+		 * @ private
+		 */
+		private function createAXObject():Object
 		{
 			var __o : Object = new Object();
 			__o = objectProperties;
 			__o.object = object;
 			__o.progID = progID;
-			ssCore.ActiveX.createObject( __o , {callback:actionComplete, errorSTR:"createObjectError", code:"15004"} );
+			
+			return o;
 		}
 
 	}

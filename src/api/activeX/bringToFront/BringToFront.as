@@ -4,34 +4,21 @@ package api.activeX.bringToFront
 	
 	import api.activeX.ActiveX;
 	
-	import api.events.activeX.bringTofront.BringToFrontEvent;
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.bringToFront()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.bringTofront.BringToFrontEvent.RESULT
-	 */
+	import api.events.activeX.bringToFront.BringToFrontEvent;
 	
 	/**
 	 * Dispatched if the Property <code>object</code> has not bee supplied.
 	 * 
-	 * @eventType api.events.activeX.bringTofront.BringToFrontEvent.RESULT_OBJECT
+	 * @eventType api.events.activeX.bringToFront.BringToFrontEvent.MISSING_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.BRING_TO_FRONT_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Bring the ActiveX Object to the front in the 'Z' order.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_bringToFront.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class BringToFront extends ActiveX
 	{
 		

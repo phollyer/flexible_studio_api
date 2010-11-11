@@ -6,48 +6,34 @@ package api.activeX.getProperty
 	
 	import api.events.activeX.getProperty.GetPropertyEvent;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.getProperty()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Property <code>progID</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT_PROG_ID
 	 */
+	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 * 
 	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
 	 */
+	[Event(name="result", type="api.events.activeX.getProperty.GetPropertyEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.GET_PROPERTY_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Get a value for a Property of an ActiveX Object that you have embedded 
 	 * into your Application.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
-	[Event(name="result", type="api.events.activeX.getProperty.GetPropertyEvent")]
-	[Bindable]
 	public class GetProperty extends ActiveX
 	{
 		/**
@@ -66,7 +52,7 @@ package api.activeX.getProperty
 		public var property:String = null;
 		
 		/**
-		 * RESULT. The Value of the Property retrieved.
+		 * The Value of the Property retrieved.
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
@@ -103,16 +89,19 @@ package api.activeX.getProperty
 							missingProperty();
 							break;
 						default:
-							getProp();
+							ssCore.ActiveX.getProperty( {object:object , property:property}
+													   ,{callback:actionComplete, errorSTR:"getPropertyError", code:"15006"} );
 					}
 			}
 		}
-		private function getProp():void
-		{
-			ssCore.ActiveX.getProperty( {object:object , property:property}
-									   ,{callback:actionComplete, errorSTR:"getPropertyError", code:"15006"} );
-		}
 
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			value = r.result;

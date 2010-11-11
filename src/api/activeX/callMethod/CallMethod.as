@@ -1,51 +1,37 @@
 package api.activeX.callMethod
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.activeX.ActiveX;
+	import api.events.activeX.callMethod.CallMethodEvent;
 	
-	import api.events.activeX.callMethod.CallMethodEvent;	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.callMethod()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
-	 */
+	import flash.events.IEventDispatcher;	
 	
 	/**
 	 * Dispatched if the Property <code>method</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT_METHOD
 	 */
+	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched if the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 * 
 	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
 	 */
+	[Event(name="result", type="api.events.activeX.callMethod.CallMethodEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.CALL_METHOD_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Calls a Method on an ActiveX Object.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
 	 */
-	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Event(name="result", type="api.events.activeX.callMethod.CallMethodEvent")]
-	[Bindable]
 	public class CallMethod extends ActiveX
 	{
 		/**
@@ -62,6 +48,13 @@ package api.activeX.callMethod
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
+		
+		/**
+		 * The data returned from the method called.
+		 * 
+		 * @defaultValue <code>null</code>
+		 */
+		public var returnData:Object = null;
 		
 		public function CallMethod(target:IEventDispatcher=null)
 		{
@@ -93,21 +86,25 @@ package api.activeX.callMethod
 							missingObject();
 							break;
 						default:
-							setMethod();
+							ssCore.ActiveX.callMethod( {method:method , object:object}
+													  ,{callback:actionComplete, errorSTR:"callMethodError", code:"15002"} );
 					}
 			}
 		}
 
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
+			returnData = r.result;
 			var e : CallMethodEvent = new CallMethodEvent( CallMethodEvent.RESULT );
-			e.returnData = r.result;
+			e.returnData = returnData;
 			dispatchEvent( e );
-		}
-		private function setMethod():void
-		{
-			ssCore.ActiveX.callMethod( {method:method , object:object}
-									  ,{callback:actionComplete, errorSTR:"callMethodError", code:"15002"} );
 		}
 	}
 }

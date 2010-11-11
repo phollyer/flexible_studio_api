@@ -4,33 +4,19 @@ package api.activeX.setSize
 	
 	import api.activeX.ActiveX;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.setSize()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.setSize.SetSizeEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setSize.SetSizeEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.SET_SIZE_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Set the <code>height</code> and <code>width</code> of the ActiveX Object.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setSize.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class SetSize extends ActiveX
 	{
 		/**

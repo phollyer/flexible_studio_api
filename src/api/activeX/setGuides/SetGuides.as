@@ -5,34 +5,20 @@ package api.activeX.setGuides
 	import api.activeX.ActiveX;
 	import api.vos.activeX.GuideVO;	
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.setGuides()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.setGuides.SetGuidesEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setGuides.SetGuidesEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.SET_GUIDES_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Set up Guides that will be used to resize the ActiveX Object when you Application
 	 * Window is re-sized.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class SetGuides extends ActiveX
 	{
 		/**

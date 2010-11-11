@@ -4,47 +4,33 @@ package api.activeX.setProperty
 	
 	import api.activeX.ActiveX;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.setProperty()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.setProperty.SetPropertyEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setProperty.SetPropertyEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Property <code>property</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setProperty.SetPropertyEvent.RESULT_PROPERTY
 	 */
+	[Event(name="missingPorperty" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Property <code>value</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setProperty.SetPropertyEvent.RESULT_VALUE
 	 */
+	[Event(name="missingValue" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.SET_PROPERTY_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Set a Property of the ActiveX Object.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Event(name="missingPorperty" , type="api.events.SWFStudioEvent")]
-	[Event(name="missingValue" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class SetProperty extends ActiveX
 	{
 		/**
@@ -111,17 +97,11 @@ package api.activeX.setProperty
 									missingValue();
 									break;
 								default:
-									setProp();
+									ssCore.ActiveX.setProperty( {object:object , property:property , value:value}
+															   ,{callback:actionComplete, errorSTR:"setPropertyError", code:"15012"} );
 							}
 					}
 			}
 		}
-		private function setProp():void
-		{
-			ssCore.ActiveX.setProperty( {object:object , property:property , value:value}
-									   ,{callback:actionComplete, errorSTR:"setPropertyError", code:"15012"} );
-		}
-
-
 	}
 }

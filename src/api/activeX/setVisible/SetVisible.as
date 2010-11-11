@@ -4,33 +4,19 @@ package api.activeX.setVisible
 	
 	import api.activeX.ActiveX;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.setVisible()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.setVisible.SetVisibleEvent.RESULT
-	 */
-	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setVisible.SetVisibleEvent.RESULT_OBJECT
 	 */
+	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.SET_VISIBLE_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Toggle between making the ActiveX Object visible and not visible.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setVisible.html Northcode Help Documentation
 	 */
-	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
-	[Bindable]
 	public class SetVisible extends ActiveX
 	{
 		/**

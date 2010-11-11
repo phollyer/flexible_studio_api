@@ -6,41 +6,27 @@ package api.activeX.isRegistered
 	
 	import api.events.activeX.isRegistered.IsRegisteredEvent;
 	
-	
-	/**
-	 * Dispatched when the call to the SWF Studio Method
-	 * <code>ActiveX.isRegistered()</code> has completed successfully.
-	 * 
-	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT
-	 */	
-	
 	/**
 	 * Dispatched when the Property <code>progID</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT_PROG_ID
 	 */
+	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 * 
 	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT
 	 */
+	[Event(name="result", type="api.events.activeX.isRegistered.IsRegisteredEvent")]
 	
-	/**
-	 * Dispatched when an Error has occured when trying to complete the SWF Studio Method.
-	 * 
-	 * @eventTYpe api.errors.ActiveXError.IS_REGISTERED_ERROR
-	 */
-	
+	[Bindable]
 	/**
 	 * Check to see if the specified <code>progID</code> (Class Name) for the
 	 * ActiveX Object matches an ActiveX Object installed on the local machine.
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
 	 */
-	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
-	[Event(name="result", type="api.events.activeX.isRegistered.IsRegisteredEvent")]
-	[Bindable]
 	public class IsRegistered extends ActiveX
 	{		
 		/**
@@ -51,7 +37,7 @@ package api.activeX.isRegistered
 		public var progID:String = null;
 		
 		/**
-		 * RESULT. Flag to determine if the ActiveX Object is installed on the local machine.
+		 * Flag to determine if the ActiveX Object is installed on the local machine.
 		 * 
 		 * @defaultValue false
 		 */
@@ -83,6 +69,14 @@ package api.activeX.isRegistered
 												,{callback:actionComplete, errorSTR:"isRegisteredError", code:"15007"} );
 			}
 		}
+
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			registered = checkBoolean( r.result );

@@ -113,9 +113,7 @@ Then you need to do the following:
 
 * First, Clone the Repo as follows
 
-$ git clone git@github.com:phollyer/flexible_studio_api.git
-
-(IF you should have a problem cloning the repo try the following instead: git clone http://github.com/phollyer/flexible_studio_api.git)
+$ git clone http://github.com/phollyer/flexible_studio_api.git
 
 * Next, create your own Release Branch (this is the branch that you will keep up to date by merging new releases or bug fixes into it).
 

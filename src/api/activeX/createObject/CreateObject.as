@@ -98,7 +98,7 @@ package api.activeX.createObject
 			__o.object = object;
 			__o.progID = progID;
 			
-			return o;
+			return __o;
 		}
 
 	}

@@ -113,7 +113,7 @@ end
 def write_file
   file = File.new @file_path,"w"
   puts "Writing:\t#{@file_path}"
-  #file.write(@file)
+  file.write(@file)
 end
 
 # => ===============================

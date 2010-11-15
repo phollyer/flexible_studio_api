@@ -8,17 +8,45 @@ package api.app.showFileSave
 	import api.vos.app.showFileSave.ShowFileSaveVO;
 
 	[Event(name="missingFileOBJ" , type="api.events.SWFStudioEvent")]
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.ShowFileSave.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.app.showFileSave.ShowFileSaveEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
+	 */
 	public class ShowFileSave extends App
 	{
 		// Required
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var fileSaveOBJ:ShowFileSaveVO = null;
 		
+		/**
+		 * Constructor for App.ShowFileSave()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
+		 */
 		public function ShowFileSave(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param showFileSaveVO
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
+		 */
 		public function showFileSave( showFileSaveVO:ShowFileSaveVO ):void
 		{
 			fileSaveOBJ = compare( showFileSaveVO , fileSaveOBJ );
@@ -31,6 +59,13 @@ package api.app.showFileSave
 					ssCore.App.showFileSave( fileSaveOBJ , {callback:actionComplete, errorSTR:"showFileSaveError", code:"8019"} );
 			}
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			var e : ShowFileSaveEvent = new ShowFileSaveEvent( ShowFileSaveEvent.RESULT );

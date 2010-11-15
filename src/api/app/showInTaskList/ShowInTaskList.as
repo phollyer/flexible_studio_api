@@ -5,10 +5,25 @@ package api.app.showInTaskList
 	import api.app.App;
 	
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskList.html Northcode Help Documentation
+	 */
 	public class ShowInTaskList extends App
 	{
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var flag:Boolean = true;
 		
+		/**
+		 * Constructor for App.ShowInTaskList()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskList.html Northcode Help Documentation
+		 */
 		public function ShowInTaskList(target:IEventDispatcher=null)
 		{
 			super(target);

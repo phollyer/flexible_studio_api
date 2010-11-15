@@ -6,11 +6,26 @@ package api.app.enableFlashTextFieldMenu
 	import api.app.App;
 
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_enableFlashTextFieldMenu.html Northcode Help Documentation
+	 */
 	public class EnableFlashTextFieldMenu extends App
 	{
 		// Optional
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var flag:Boolean = true;
 		
+		/**
+		 * Constructor for App.EnableFlashTextFieldMenu()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_enableFlashTextFieldMenu.html Northcode Help Documentation
+		 */
 		public function EnableFlashTextFieldMenu(target:IEventDispatcher=null)
 		{
 			super(target);

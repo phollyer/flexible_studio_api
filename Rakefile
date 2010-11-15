@@ -283,10 +283,15 @@ def convert_prop_to_event(prop)
 end
 
 def extract_parameters
-  method = @file.match(/public function #{@method_dir}\(\s*.+/)
-  params = method[0].scan(/\w+:\w+/)
   @params = []
-  params.each {|param| @params << param.split(":")[0]}
+  
+  m = swap_initial(@method_name)
+  method = @file.match(/public function #{m}\(\s*.+/)
+  
+  if method
+    params = method[0].scan(/\w+:\w+/)
+    params.each {|param| @params << param.split(":")[0]}
+  end
 end
 
 def extract_properties

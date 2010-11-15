@@ -5,15 +5,36 @@ package api.ado.setOrderBy
 	import api.ado.Ado;
 
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+	 */
 	public class SetOrderBy extends Ado
 	{
 		// Optional
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var order:Array = null;
 		
+		/**
+		 * Constructor for Ado.SetOrderBy()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+		 */
 		public function SetOrderBy(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+		 */
 		public function setOrderBy():void
 		{
 			switch( order.length > 0 )

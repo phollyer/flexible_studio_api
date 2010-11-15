@@ -113,6 +113,7 @@ end
 def write_file
   file = File.new @file_path,"w"
   puts "Writing:\t#{@file_path}"
+  #puts @file
   file.write(@file)
 end
 
@@ -139,6 +140,7 @@ def comment_class_method class_name,method_name
   init class_name, method_name
 
   if read_file
+    extract_parameters
     extract_properties
 
     add_result_to_class_method if class_method_dispatches_a_result?
@@ -226,17 +228,19 @@ def add_result_to_class_method
 end
 
 def add_result_event_metadata
-  template_path = File.join "src","templates","actionscript","result_event_metadata.erb"
-  template = ERB.new File.new(template_path,"r").read
-  metadata = template.result(binding)
+  unless @file.match(/\[Event\(name=\"result/)
+    template_path = File.join "src","templates","actionscript","result_event_metadata.erb"
+    template = ERB.new File.new(template_path,"r").read
+    metadata = template.result(binding)
 
-  reg_exp = /\t\[Bindable/
+    reg_exp = /\t\[Bindable/
 
-  @file.gsub!(reg_exp, "#{metadata}\r\n\t[Bindable")
+    @file.gsub!(reg_exp, "#{metadata}\r\n\t[Bindable")
+  end    
 end
 
 def add_class_result_method
-  if !@file.match(/override protected function sendResult/)
+  unless @file.match(/override protected function sendResult/)
     template_path = File.join "src","templates","actionscript","class_result_method.erb"
     template = ERB.new File.new(template_path,"r").read
     method = template.result(binding)
@@ -249,13 +253,15 @@ def add_class_result_method
 end
 
 def add_result_method
-  template_path = File.join "src","templates","actionscript","result_method.erb"
-  template = ERB.new File.new(template_path,"r").read
-  method = template.result(binding)
+  unless @file.match(/override protected function sendResult/)
+    template_path = File.join "src","templates","actionscript","result_method.erb"
+    template = ERB.new File.new(template_path,"r").read
+    method = template.result(binding)
 
-  reg_exp = /\t\}\r\n\}/
+    reg_exp = /\t\}\r\n\}/
 
-  @file.gsub!(reg_exp,"#{method}\r\n\t}\r\n}")
+    @file.gsub!(reg_exp,"#{method}\r\n\t}\r\n}")
+  end
 end
 
 def class_method_dispatches_a_result?
@@ -274,6 +280,13 @@ def convert_prop_to_event(prop)
   end
   
   event
+end
+
+def extract_parameters
+  method = @file.match(/public function #{@method_dir}\(\s*.+/)
+  params = method[0].scan(/\w+:\w+/)
+  @params = []
+  params.each {|param| @params << param.split(":")[0]}
 end
 
 def extract_properties

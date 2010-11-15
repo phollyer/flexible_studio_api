@@ -6,22 +6,70 @@ package api.ado.moveTo
 	
 	import api.events.ado.moveTo.MoveToEvent;
 
+	/**
+	 * Dispatched if the Property <code>number</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_NUMBER
+	 */
 	[Event(name="missingNumber" , type="api.events.SWFStudioEvent")]
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.MoveTo.Event.RESULT
+	 */
+	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.MoveTo.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+	 */
 	public class MoveTo extends Ado
 	{
 		// Required
 		public var number:Number = -1
 		
 		// Results
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var adoError:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var row:String = null;
 		
+		/**
+		 * Constructor for Ado.MoveTo()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+		 */
 		public function MoveTo(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param number
+                 *
+		 * @param adoError
+                 *
+		 * @param row
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+		 */
 		public function moveTo( recordNumber:Number = -1 ):void
 		{
 			number = compareNumbers( recordNumber , number );
@@ -34,6 +82,13 @@ package api.ado.moveTo
 					ssCore.Ado.moveTo( {number:number} , {callback:actionComplete, errorSTR:"moveToError", code:"16015"} );
 			}
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			adoError = r.adoError;
@@ -42,6 +97,18 @@ package api.ado.moveTo
 			var e : MoveToEvent = new MoveToEvent( MoveToEvent.RESULT );
 			e.adoError = adoError;
 			e.row = row;
+			dispatchEvent( e );
+		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
+		override protected function sendResult( r:Object ):void
+		{
+			var e : MoveToEvent = new MoveToEvent( MoveToEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

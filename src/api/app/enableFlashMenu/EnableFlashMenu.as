@@ -6,11 +6,26 @@ package api.app.enableFlashMenu
 	import api.app.App;
 
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_enableFlashMenu.html Northcode Help Documentation
+	 */
 	public class EnableFlashMenu extends App
 	{
 		// Optional
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var flag:Boolean = true;
 		
+		/**
+		 * Constructor for App.EnableFlashMenu()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_enableFlashMenu.html Northcode Help Documentation
+		 */
 		public function EnableFlashMenu(target:IEventDispatcher=null)
 		{
 			super(target);

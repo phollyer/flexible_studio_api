@@ -6,15 +6,38 @@ package api.app.cancelDialog
 
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+	 */
 	public class CancelDialog extends App
 	{
 		// Required
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var hwnd:String = null;
 		
+		/**
+		 * Constructor for App.CancelDialog()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+		 */
 		public function CancelDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param hwnd
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+		 */
 		public function cancelDialog( dialogHWND:String = null ):void
 		{
 			hwnd = compareStrings( dialogHWND , hwnd );

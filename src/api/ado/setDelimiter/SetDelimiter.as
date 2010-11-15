@@ -5,15 +5,33 @@ package api.ado.setDelimiter
 	import api.ado.Ado;
 	
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation
+	 */
 	public class SetDelimiter extends Ado
 	{
 		// Optional
 		public var delimiter:String = "|";
 		
+		/**
+		 * Constructor for Ado.SetDelimiter()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation
+		 */
 		public function SetDelimiter(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param delimiter
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation
+		 */
 		public function setDelimiter():void
 		{
 			ssCore.Ado.setDelimiter( {delimiter:delimiter}

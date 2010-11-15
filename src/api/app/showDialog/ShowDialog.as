@@ -7,15 +7,38 @@ package api.app.showDialog
 
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
+	 */
 	public class ShowDialog extends App
 	{
 		// Required
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var hwnd:String = null;
 		
+		/**
+		 * Constructor for App.ShowDialog()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
+		 */
 		public function ShowDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param hwnd
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
+		 */
 		public function showDialog( dialogHWND:String ):void
 		{
 			hwnd = compareStrings( dialogHWND , hwnd );

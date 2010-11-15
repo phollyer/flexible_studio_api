@@ -34,8 +34,6 @@ package api.ado.setRowFormat
 		 *
 		 *
                  *
-		 * @param format
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
 		 */
 		public function setRowFormat():void

@@ -18,12 +18,6 @@ package api.ado.moveTo
 	 * @eventType api.events.ado.MoveTo.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.MoveTo.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
 	[Bindable]
 	/**
 	 *
@@ -62,11 +56,7 @@ package api.ado.moveTo
 		 *
 		 *
                  *
-		 * @param number
-                 *
-		 * @param adoError
-                 *
-		 * @param row
+		 * @param recordNumber
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
 		 */
@@ -97,18 +87,6 @@ package api.ado.moveTo
 			var e : MoveToEvent = new MoveToEvent( MoveToEvent.RESULT );
 			e.adoError = adoError;
 			e.row = row;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : MoveToEvent = new MoveToEvent( MoveToEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

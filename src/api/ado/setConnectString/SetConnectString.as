@@ -34,7 +34,7 @@ package api.ado.setConnectString
 		 *
 		 *
                  *
-		 * @param connectString
+		 * @param adoConnectString
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
 		 */

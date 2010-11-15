@@ -12,12 +12,6 @@ package api.ado.getRecordCount
 	 * @eventType api.events.ado.GetRecordCount.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.getRecordCount.GetRecordCountEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.GetRecordCount.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.getRecordCount.GetRecordCountEvent")]
 	[Bindable]
 	/**
 	 *
@@ -47,8 +41,6 @@ package api.ado.getRecordCount
 		 *
 		 *
                  *
-		 * @param recordCount
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRecordCount.html Northcode Help Documentation
 		 */
 		public function getRecordCount():void
@@ -68,18 +60,6 @@ package api.ado.getRecordCount
 			
 			var e : GetRecordCountEvent = new GetRecordCountEvent( GetRecordCountEvent.RESULT );
 			e.recordCount = recordCount;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : GetRecordCountEvent = new GetRecordCountEvent( GetRecordCountEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

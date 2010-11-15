@@ -33,8 +33,6 @@ package api.ado.setFieldList
 		 *
 		 *
                  *
-		 * @param fieldList
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
 		 */
 		public function setFieldList():void

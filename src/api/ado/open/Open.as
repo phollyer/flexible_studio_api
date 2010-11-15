@@ -39,8 +39,6 @@ package api.ado.open
 		 *
 		 *
                  *
-		 * @param adoError
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_open.html Northcode Help Documentation
 		 */
 		public function open():void

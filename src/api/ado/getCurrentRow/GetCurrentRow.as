@@ -12,12 +12,6 @@ package api.ado.getCurrentRow
 	 * @eventType api.events.ado.GetCurrentRow.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.getCurrentRow.GetCurrentRowEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.GetCurrentRow.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.getCurrentRow.GetCurrentRowEvent")]
 	[Bindable]
 	/**
 	 *
@@ -47,8 +41,6 @@ package api.ado.getCurrentRow
 		 *
 		 *
                  *
-		 * @param row
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getCurrentRow.html Northcode Help Documentation
 		 */
 		public function getCurrentRow():void
@@ -68,18 +60,6 @@ package api.ado.getCurrentRow
 			
 			var e : GetCurrentRowEvent = new GetCurrentRowEvent( GetCurrentRowEvent.RESULT );
 			e.row = row;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : GetCurrentRowEvent = new GetCurrentRowEvent( GetCurrentRowEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

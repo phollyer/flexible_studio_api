@@ -28,8 +28,6 @@ package api.ado.setSeparator
 		 *
 		 *
                  *
-		 * @param separator
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSeparator.html Northcode Help Documentation
 		 */
 		public function setSeparator():void

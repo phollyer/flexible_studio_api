@@ -33,7 +33,7 @@ package api.ado.setTable
 		 *
 		 *
                  *
-		 * @param name
+		 * @param tableName
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
 		 */

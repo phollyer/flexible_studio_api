@@ -28,8 +28,6 @@ package api.ado.setDelimiter
 		 *
 		 *
                  *
-		 * @param delimiter
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation
 		 */
 		public function setDelimiter():void

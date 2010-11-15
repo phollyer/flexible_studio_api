@@ -12,12 +12,6 @@ package api.ado.getVersion
 	 * @eventType api.events.ado.GetVersion.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.getVersion.GetVersionEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.GetVersion.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.getVersion.GetVersionEvent")]
 	[Bindable]
 	/**
 	 *
@@ -47,8 +41,6 @@ package api.ado.getVersion
 		 *
 		 *
                  *
-		 * @param version
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getVersion.html Northcode Help Documentation
 		 */
 		public function getVersion():void
@@ -68,18 +60,6 @@ package api.ado.getVersion
 			
 			var e : GetVersionEvent = new GetVersionEvent( GetVersionEvent.RESULT );
 			e.version = version;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : GetVersionEvent = new GetVersionEvent( GetVersionEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

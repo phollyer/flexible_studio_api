@@ -12,12 +12,6 @@ package api.ado.getRows
 	 * @eventType api.events.ado.GetRows.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.getRows.GetRowsEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.GetRows.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.getRows.GetRowsEvent")]
 	[Bindable]
 	/**
 	 *
@@ -50,10 +44,6 @@ package api.ado.getRows
 		 *
 		 *
                  *
-		 * @param rowCount
-                 *
-		 * @param rows
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
 		 */
 		public function getRows():void
@@ -73,18 +63,6 @@ package api.ado.getRows
 			
 			var e : GetRowsEvent = new GetRowsEvent( GetRowsEvent.RESULT );
 			e.rows = rows;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : GetRowsEvent = new GetRowsEvent( GetRowsEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

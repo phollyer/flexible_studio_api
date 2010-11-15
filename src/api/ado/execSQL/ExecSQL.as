@@ -53,9 +53,7 @@ package api.ado.execSQL
 		 *
 		 *
                  *
-		 * @param sql
-                 *
-		 * @param adoError
+		 * @param sqlQuery
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
 		 */

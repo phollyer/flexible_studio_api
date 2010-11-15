@@ -12,12 +12,6 @@ package api.ado.movePrevious
 	 * @eventType api.events.ado.MovePrevious.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.movePrevious.MovePreviousEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.MovePrevious.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.movePrevious.MovePreviousEvent")]
 	[Bindable]
 	/**
 	 *
@@ -53,10 +47,6 @@ package api.ado.movePrevious
 		 *
 		 *
                  *
-		 * @param adoError
-                 *
-		 * @param row
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_movePrevious.html Northcode Help Documentation
 		 */
 		public function movePrevious():void
@@ -78,18 +68,6 @@ package api.ado.movePrevious
 			var e : MovePreviousEvent = new MovePreviousEvent( MovePreviousEvent.RESULT );
 			e.adoError = adoError;
 			e.row = row;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : MovePreviousEvent = new MovePreviousEvent( MovePreviousEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

@@ -33,8 +33,6 @@ package api.ado.setOrderBy
 		 *
 		 *
                  *
-		 * @param order
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
 		 */
 		public function setOrderBy():void

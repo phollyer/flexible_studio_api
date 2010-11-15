@@ -12,12 +12,6 @@ package api.ado.getFieldList
 	 * @eventType api.events.ado.GetFieldList.Event.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.getFieldList.GetFieldListEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.GetFieldList.Event.RESULT
-	 */
-	[Event(name="result", type="api.events.ado.getFieldList.GetFieldListEvent")]
 	[Bindable]
 	/**
 	 *
@@ -47,8 +41,6 @@ package api.ado.getFieldList
 		 *
 		 *
                  *
-		 * @param fieldList
-                 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getFieldList.html Northcode Help Documentation
 		 */
 		public function getFieldList():void
@@ -68,18 +60,6 @@ package api.ado.getFieldList
 			
 			var e : GetFieldListEvent = new GetFieldListEvent( GetFieldListEvent.RESULT );
 			e.fieldList = fieldList;
-			dispatchEvent( e );
-		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
-		override protected function sendResult( r:Object ):void
-		{
-			var e : GetFieldListEvent = new GetFieldListEvent( GetFieldListEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

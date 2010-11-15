@@ -111,10 +111,10 @@ def read_file
 end
 
 def write_file
-  file = File.new @file_path,"w"
+  #file = File.new @file_path,"w"
   puts "Writing:\t#{@file_path}"
-  #puts @file
-  file.write(@file)
+  puts @file
+  #file.write(@file)
 end
 
 # => ===============================
@@ -171,13 +171,16 @@ def comment_class_methods class_name
   @method_list.each {|method| comment_class_method @class_name,method}
 end
 
+def comment_found? comment
+  @file.scan(comment).size > 0
+end
+
 def add_comments(match_type,match_data)
   match = match_data.match(@file)
   
   if match
-    comments = get_template(match_type) + "\r\n" + match[0]
-
-    @file.gsub!(match_data, comments)
+    comments = get_template(match_type)
+    @file.gsub!(match_data, comments + "\r\n" + match[0]) unless comment_found? comments
   end
 end
 
@@ -194,7 +197,7 @@ def add_missing_event_metadata_comments
 
       test = match[0].scan(swap_initial(@property))
 
-      @file.sub!(reg_exp,comments) if test.size > 0
+      @file.sub!(reg_exp,comments) if test.size > 0 unless comment_found? comments
     end
   end
 end
@@ -209,7 +212,7 @@ def add_property_comments
       @property_default_value.gsub!(/\"/, "")
 
       comments = get_template("property") + "\r\n" + match[0]
-      @file.sub!(reg_exp,comments)
+      @file.sub!(reg_exp,comments) unless comment_found? comments
     end
   end
 end

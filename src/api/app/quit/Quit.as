@@ -11,8 +11,18 @@ package api.app.quit
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation
+	 */
 	public class Quit extends App
 	{
+		/**
+		 * Constructor for App.Quit()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.Quit()
 		 *
@@ -22,6 +32,12 @@ package api.app.quit
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

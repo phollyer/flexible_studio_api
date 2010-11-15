@@ -11,8 +11,18 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnDeviceChange.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.OnDeviceChange.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.app.onDeviceChange.OnDeviceChangeEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -26,13 +36,28 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var action:String = null;
 		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var device:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		/**
 		 * 
 		 *
@@ -45,11 +70,23 @@ package api.app.notifiers
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.OnDeviceChange()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		public function OnDeviceChange(target:IEventDispatcher=null)
 		{
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_DEVICE_CHANGE} , {callback:actionComplete, errorSTR:"onDeviceChangeError", code:"8027"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

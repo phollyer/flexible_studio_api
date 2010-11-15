@@ -11,9 +11,19 @@ package api.app.cancelDialog
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+	 */
 	public class CancelDialog extends App
 	{
 		// Required
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		/**
 		 * 
 		 *
@@ -26,10 +36,23 @@ package api.app.cancelDialog
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.CancelDialog()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+		 */
 		public function CancelDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param dialogHWND
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_cancelDialog.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

@@ -9,8 +9,18 @@ package api.app.forceExitWindows
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_METHOD
 	 */
+	/**
+	 * Dispatched if the Property <code>method</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_METHOD
+	 */
 	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -31,8 +41,18 @@ package api.app.forceExitWindows
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var method:String = null;
 		
+		/**
+		 * Constructor for App.ForceExitWindows()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ForceExitWindows()
 		 *
@@ -42,6 +62,14 @@ package api.app.forceExitWindows
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param exitMethod
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

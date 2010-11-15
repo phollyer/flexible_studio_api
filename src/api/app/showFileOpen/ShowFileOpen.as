@@ -13,8 +13,18 @@ package api.app.showFileOpen
 	 *
 	 * @eventType api.events.app.ShowFileOpen.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.ShowFileOpen.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.app.showFileOpen.ShowFileOpenEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileOpen.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -28,8 +38,18 @@ package api.app.showFileOpen
 		 *
 		 * @defaultValue <code>new</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>new</code>
+		 */
 		public var fileOpenOBJ:ShowFileOpenVO = new ShowFileOpenVO();
 		
+		/**
+		 * Constructor for App.ShowFileOpen()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileOpen.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ShowFileOpen()
 		 *
@@ -39,6 +59,14 @@ package api.app.showFileOpen
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param showFileOpenVO
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileOpen.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *
@@ -63,6 +91,13 @@ package api.app.showFileOpen
 											 ,style:fileOpenOBJ.style} , {callback:actionComplete, errorSTR:"showFileOpenError", code:"8001"} );
 			}
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

@@ -10,8 +10,18 @@ package api.app.updateTransparency
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation
+	 */
 	public class UpdateTransparency extends App
 	{
+		/**
+		 * Constructor for App.UpdateTransparency()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.UpdateTransparency()
 		 *
@@ -21,6 +31,12 @@ package api.app.updateTransparency
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

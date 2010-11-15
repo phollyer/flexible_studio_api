@@ -11,8 +11,18 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_EVENT
 	 */
+	/**
+	 * Dispatched if the Property <code>event</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_EVENT
+	 */
 	[Event(name="missingEvent" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -26,8 +36,18 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var event:String = null;
 		
+		/**
+		 * Constructor for App.ClearNotify()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ClearNotify()
 		 *
@@ -37,6 +57,14 @@ package api.app.notifiers
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param notificationEvent
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

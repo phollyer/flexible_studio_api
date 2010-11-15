@@ -10,6 +10,11 @@ package api.app.trace
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
+	 */
 	public class Trace extends App
 	{
 		/**
@@ -17,7 +22,17 @@ package api.app.trace
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var text:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>0</code>
+		 */
 		/**
 		 * 
 		 *
@@ -30,10 +45,23 @@ package api.app.trace
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.Trace()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
+		 */
 		public function Trace(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param val
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

@@ -11,8 +11,18 @@ package api.app.forceQuit
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation
+	 */
 	public class ForceQuit extends App
 	{
+		/**
+		 * Constructor for App.ForceQuit()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ForceQuit()
 		 *
@@ -22,6 +32,12 @@ package api.app.forceQuit
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

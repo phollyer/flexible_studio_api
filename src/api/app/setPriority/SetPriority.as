@@ -11,6 +11,11 @@ package api.app.setPriority
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+	 */
 	public class SetPriority extends App
 	{
 		public static const HIGH:String = "high";
@@ -24,8 +29,18 @@ package api.app.setPriority
 		 *
 		 * @defaultValue <code>NORMAL</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>NORMAL</code>
+		 */
 		public var priority:String = NORMAL;
 		
+		/**
+		 * Constructor for App.SetPriority()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.SetPriority()
 		 *
@@ -35,6 +50,14 @@ package api.app.setPriority
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param appPriority
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

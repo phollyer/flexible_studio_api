@@ -10,6 +10,11 @@ package api.app.showInTaskBar
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskBar.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskBar.html Northcode Help Documentation
+	 */
 	public class ShowInTaskBar extends App
 	{
 		/**
@@ -17,8 +22,18 @@ package api.app.showInTaskBar
 		 *
 		 * @defaultValue <code>true</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var flag:Boolean = true;
 		
+		/**
+		 * Constructor for App.ShowInTaskBar()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskBar.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ShowInTaskBar()
 		 *

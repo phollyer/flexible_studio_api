@@ -11,9 +11,19 @@ package api.app.sendData
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
+	 */
 	public class SendData extends App
 	{
 		// Optional (?? not sure as at 30.6.09)
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>false</code>
+		 */
 		/**
 		 * 
 		 *
@@ -25,7 +35,17 @@ package api.app.sendData
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var data:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		/**
 		 * 
 		 *
@@ -38,10 +58,21 @@ package api.app.sendData
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.SendData()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
+		 */
 		public function SendData(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

@@ -11,8 +11,18 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnOtherInstance.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.OnOtherInstance.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.app.onOtherInstance.OnOtherInstanceEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -26,8 +36,18 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var commandLine:String = null;
 		
+		/**
+		 * Constructor for App.OnOtherInstance()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.OnOtherInstance()
 		 *
@@ -38,6 +58,13 @@ package api.app.notifiers
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_OTHER_INSTANCE} , {callback:actionComplete, errorSTR:"onOtherInstanceError", code:"8031"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

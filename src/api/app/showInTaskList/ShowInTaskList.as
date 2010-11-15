@@ -10,6 +10,11 @@ package api.app.showInTaskList
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskList.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskList.html Northcode Help Documentation
+	 */
 	public class ShowInTaskList extends App
 	{
 		/**
@@ -17,8 +22,18 @@ package api.app.showInTaskList
 		 *
 		 * @defaultValue <code>true</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var flag:Boolean = true;
 		
+		/**
+		 * Constructor for App.ShowInTaskList()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInTaskList.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.ShowInTaskList()
 		 *

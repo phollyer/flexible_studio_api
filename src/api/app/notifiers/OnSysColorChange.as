@@ -12,8 +12,18 @@ package api.app.notifiers
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
 	public class OnSysColorChange extends App
 	{
+		/**
+		 * Constructor for App.OnSysColorChange()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for App.OnSysColorChange()
 		 *

@@ -11,8 +11,18 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnDialog.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.OnDialog.Event.RESULT
+	 */
 	[Event(name="result", type="api.events.app.onDialog.OnDialogEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -26,7 +36,17 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var captionDialog:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		/**
 		 * 
 		 *
@@ -38,7 +58,17 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var hwndDialog:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		/**
 		 * 
 		 *
@@ -51,11 +81,23 @@ package api.app.notifiers
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.OnDialog()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
 		public function OnDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_DIALOG} , {callback:actionComplete, errorSTR:"onDialogError", code:"8028"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

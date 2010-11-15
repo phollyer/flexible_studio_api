@@ -11,18 +11,8 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnWindow.Event.RESULT
 	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.OnWindow.Event.RESULT
-	 */
 	[Event(name="result", type="api.events.app.onWindow.OnWindowEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -36,17 +26,7 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var caption:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -58,17 +38,7 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var windowClassName:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -81,23 +51,11 @@ package api.app.notifiers
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for App.OnWindow()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		public function OnWindow(target:IEventDispatcher=null)
 		{
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_WINDOW} , {callback:actionComplete, errorSTR:"onWindowError", code:"8033"} );
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

@@ -11,18 +11,8 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnDragDrop.Event.RESULT
 	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.OnDragDrop.Event.RESULT
-	 */
 	[Event(name="result", type="api.events.app.onDragDrop.OnDragDropEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -36,17 +26,7 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>new</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>new</code>
-		 */
 		public var fileList:Array = new Array();
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>new</code>
-		 */
 		/**
 		 * 
 		 *
@@ -58,17 +38,7 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>0</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
 		public var x:Number = 0;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
 		/**
 		 * 
 		 *
@@ -81,23 +51,11 @@ package api.app.notifiers
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for App.OnDragDrop()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		public function OnDragDrop(target:IEventDispatcher=null)
 		{
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_DRAG_DROP} , {callback:actionComplete, errorSTR:"onDragDropError", code:"8029"} );
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

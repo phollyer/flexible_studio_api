@@ -11,11 +11,6 @@ package api.app.setKioskMode
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setKioskMode.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setKioskMode.html Northcode Help Documentation
-	 */
 	public class SetKioskMode extends App
 	{
 		/**
@@ -23,18 +18,8 @@ package api.app.setKioskMode
 		 *
 		 * @defaultValue <code>false</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>false</code>
-		 */
 		public var flag:Boolean = false;
 		
-		/**
-		 * Constructor for App.SetKioskMode()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setKioskMode.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.SetKioskMode()
 		 *

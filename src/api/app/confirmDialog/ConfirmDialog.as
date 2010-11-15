@@ -10,19 +10,9 @@ package api.app.confirmDialog
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_confirmDialog.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_confirmDialog.html Northcode Help Documentation
-	 */
 	public class ConfirmDialog extends App
 	{
 		// Required
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -35,23 +25,10 @@ package api.app.confirmDialog
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_confirmDialog.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for App.ConfirmDialog()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_confirmDialog.html Northcode Help Documentation
-		 */
 		public function ConfirmDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param dialogHWND
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_confirmDialog.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

@@ -13,18 +13,8 @@ package api.app.showFileSave
 	 *
 	 * @eventType api.events.app.ShowFileSave.Event.RESULT
 	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.ShowFileSave.Event.RESULT
-	 */
 	[Event(name="result", type="api.events.app.showFileSave.ShowFileSaveEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -38,18 +28,8 @@ package api.app.showFileSave
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var fileSaveOBJ:ShowFileSaveVO = null;
 		
-		/**
-		 * Constructor for App.ShowFileSave()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.ShowFileSave()
 		 *
@@ -59,14 +39,6 @@ package api.app.showFileSave
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param showFileSaveVO
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -87,13 +59,6 @@ package api.app.showFileSave
 					ssCore.App.showFileSave( fileSaveOBJ , {callback:actionComplete, errorSTR:"showFileSaveError", code:"8019"} );
 			}
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

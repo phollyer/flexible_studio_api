@@ -11,18 +11,8 @@ package api.app.notifiers
 	 *
 	 * @eventType api.events.app.OnExitWindows.Event.RESULT
 	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.OnExitWindows.Event.RESULT
-	 */
 	[Event(name="result", type="api.events.app.onExitWindows.OnExitWindowsEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -36,18 +26,8 @@ package api.app.notifiers
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var method:String = null;
 		
-		/**
-		 * Constructor for App.OnExitWindows()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.OnExitWindows()
 		 *
@@ -58,13 +38,6 @@ package api.app.notifiers
 			super(target);
 			ssCore.App.setNotify( {event:App.ON_EXIT_WINDOWS} , {callback:actionComplete, errorSTR:"onExitWindowsError", code:"8030"} );
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

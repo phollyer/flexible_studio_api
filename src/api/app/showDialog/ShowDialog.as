@@ -12,19 +12,9 @@ package api.app.showDialog
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
-	 */
 	public class ShowDialog extends App
 	{
 		// Required
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -37,23 +27,10 @@ package api.app.showDialog
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for App.ShowDialog()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
-		 */
 		public function ShowDialog(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param dialogHWND
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

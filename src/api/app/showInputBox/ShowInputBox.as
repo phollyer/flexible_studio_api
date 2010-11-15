@@ -11,17 +11,7 @@ package api.app.showInputBox
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_PROMPT
 	 */
-	/**
-	 * Dispatched if the Property <code>prompt</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_PROMPT
-	 */
 	[Event(name="missingPrompt" , type="api.events.SWFStudioEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.ShowInputBox.Event.RESULT
-	 */
 	/**
 	 * Dispatched when the Results are ready.
 	 *
@@ -29,11 +19,6 @@ package api.app.showInputBox
 	 */
 	[Event(name="result", type="api.events.app.showInputBox.ShowInputBoxEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInputBox.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -47,11 +32,6 @@ package api.app.showInputBox
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var prompt:String = null;
 		
 		// Optional
@@ -60,17 +40,7 @@ package api.app.showInputBox
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var text:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -83,23 +53,10 @@ package api.app.showInputBox
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInputBox.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for App.ShowInputBox()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInputBox.html Northcode Help Documentation
-		 */
 		public function ShowInputBox(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param boxPrompt
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInputBox.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -121,13 +78,6 @@ package api.app.showInputBox
 					ssCore.App.showFolderBrowser( __o , {callback:actionComplete, errorSTR:"showInputBoxError", code:"8020"} );
 			}
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

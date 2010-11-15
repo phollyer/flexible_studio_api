@@ -10,11 +10,6 @@ package api.app
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App.html Northcode Help Documentation
-	 */
 	public class App extends Kernel
 	{
 		public static const ON_DATA : String = "onData";
@@ -28,11 +23,6 @@ package api.app
 		public static const ON_SYS_COLOR_CHANGE : String = "onSysColorChange";
 		public static const ON_WINDOW : String = "onWindow";
 		
-		/**
-		 * Constructor for App()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App()
 		 *

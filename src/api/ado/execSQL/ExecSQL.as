@@ -1,8 +1,9 @@
 package api.ado.execSQL
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
+	import api.events.ado.execSQL.ExecSQLEvent;
+	
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>sql</code> has not been supplied.

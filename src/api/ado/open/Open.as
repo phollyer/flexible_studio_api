@@ -1,8 +1,9 @@
 package api.ado.open
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
+	import api.events.ado.open.OpenEvent;
+	
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

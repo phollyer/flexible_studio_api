@@ -31,7 +31,7 @@ module Builder
 
     def add_result_event_metadata file_content
       unless file_content.match(result_event_metadata_reg_exp)
-        metadata = read_template(result_event_metadata_template_path)
+        metadata = read_template(comment_template_path("result_event_metadata"))
 
         file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
       end
@@ -60,7 +60,7 @@ module Builder
       unless file_content.match(send_result_reg_exp)
         method = read_template action_script_template("result_method")
 
-        file_content.gsub!(reg_exp,"#{start_of_send_result_reg_exp}\r\n\t}\r\n}")
+        file_content.gsub!(send_result_reg_exp,"#{start_of_send_result_reg_exp}\r\n\t}\r\n}")
       end
 
       file_content

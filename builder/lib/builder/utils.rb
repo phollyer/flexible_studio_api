@@ -38,9 +38,8 @@ module Builder
 
     def extract_parameters file_content, method_name
       param_list = []
-
-      m = swap_initial(method_name)
-      method = file_content.match(public_function_reg_exp method_name)
+ 
+      method = file_content.match(public_function_reg_exp swap_initial method_name)
 
       if method
         params = method[0].scan(public_function_name_type_separator_reg_exp)

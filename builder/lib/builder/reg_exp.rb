@@ -45,7 +45,7 @@ module Builder
     end
 
     def public_var_with_value_reg_exp prop_name
-      /public var #{prop_name}:\w+ = \"*\w+/
+      /\t\tpublic var #{prop_name}:\w+ = \"*\w+/
     end
 
     def public_var_reg_exp

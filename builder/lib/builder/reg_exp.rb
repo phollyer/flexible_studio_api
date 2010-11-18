@@ -1,5 +1,9 @@
 module Builder
   module RegExp
+
+    def all_imports_reg_exp
+      /\s+import\s+[\w+\.]+;/
+    end
     
     def bindable_reg_exp
       /\t\[Bindable/
@@ -13,10 +17,6 @@ module Builder
 
     def class_dispatches_a_result_reg_exp?
       /(\/\/ Result)|(\[Event\(name=\"result)|(function sendResult)/
-    end
-
-    def start_of_send_result_reg_exp
-      /\t\}\r\n\}/
     end
 
     def method_comments_reg_exp
@@ -36,6 +36,10 @@ module Builder
       /\t\[Event\(name=\"missing\w+\"/
     end
 
+    def package_definition_reg_exp
+      /package\s[\w+\.]+/
+    end
+
     def public_function_reg_exp method_name
       /public function #{method_name}\(\s*.+/
     end
@@ -52,12 +56,24 @@ module Builder
       /public var \w+/
     end
 
+    def result_event_import_reg_exp
+      /import api.#{@class_dir}.#{@method_dir}.#{@method_name}Event;/
+    end
+
     def result_event_metadata_reg_exp
       /\[Event\(name=\"result/
     end
 
     def send_result_reg_exp
       /override protected function sendResult/
+    end
+
+    def start_of_package_reg_exp
+      /\{/
+    end
+
+    def start_of_send_result_reg_exp
+      /\t\}\r\n\}/
     end
   end
 end

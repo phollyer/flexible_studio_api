@@ -2,9 +2,9 @@ package api.events.binaryFile
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class BinaryFileEvent extends KernelEvent
+	public class BinaryFileEvent extends SWFStudioEvent
 	{
 		public function BinaryFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,4 +1,4 @@
-package api.events.binaryFile.read
+package api.events.binaryFile.readBytes
 {
 	import flash.events.Event;
 	

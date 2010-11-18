@@ -1,19 +1,16 @@
-package api.events.binaryFile
+package api.vos.binaryFile
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class BinaryFileEvent extends KernelEvent
+	[Bindable]
+	public class ShareModeVO extends Object
 	{
-		public function BinaryFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public static const NONE:String = "none";
+		public static const READ:String = "read";
+		public static const WRITE:String = "write";
+		
+		public function ShareModeVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : BinaryFileEvent = new BinaryFileEvent( type );
-			return e;
-		}
+		
 	}
 }

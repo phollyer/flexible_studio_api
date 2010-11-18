@@ -33,7 +33,7 @@ class Build
       set_up_nc_alts @class_name
     end
   end
-
+  
   def comment_class_file
     if read_file class_file_path
       @file_content = file_content
@@ -56,14 +56,14 @@ class Build
         @parameters = extract_parameters @file_content,@method_name
         @properties = extract_properties @file_content
 
-        if class_method_dispatches_a_result? file_content
+        if class_method_dispatches_a_result? @file_content
           @file_content = add_result_to_class_method(@file_content)
         end
         
         method_comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
 
         @file_content = add_missing_event_metadata_comments @properties, @file_content
-        @file_content = add_property_comments @properties, @method_name, @file_content
+        @file_content = add_property_comments @properties, @file_content
 
         write_file method_file_path,@file_content
       else

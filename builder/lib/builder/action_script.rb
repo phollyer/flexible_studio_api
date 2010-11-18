@@ -12,17 +12,17 @@ module Builder
 
     def add_missing_event_metadata_comments properties, file_content
       properties.each do |prop|
-        property = prop
-        @event = convert_prop_to_event(property) # This needs looking at. Why? What?
+        @property = prop
+        @event = convert_prop_to_event(@property)
 
-        match = missing_event_metadata_reg_exp.match(file_content)
+        match = missing_event_metadata_reg_exp(swap_initial(prop)).match(file_content)
 
         if match
           comments = read_template(comment_template_path("missing_event_metadata")) + "\r\n" + match[0]
 
-          test = match[0].scan(swap_initial(property))
+          test = match[0].scan(swap_initial(@property))
 
-          file_content.sub!(missing_event_metadata_reg_exp,comments) if test.size > 0 unless comment_found? file_content, comments
+          file_content.sub!(missing_event_metadata_reg_exp(swap_initial(prop)),comments) if test.size > 0 unless comment_found? file_content, comments
         end
       end
 
@@ -31,8 +31,7 @@ module Builder
 
     def add_result_event_metadata file_content
       unless file_content.match(result_event_metadata_reg_exp)
-        metadata = read_template(comment_template_path("result_event_metadata"))
-
+        metadata = read_template(action_script_template("result_event_metadata"))
         file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
       end
 
@@ -44,7 +43,7 @@ module Builder
   module Methods
 
     def add_result_to_class_method file_content
-      file_content = add_result_method add_result_event_metadata file_content
+      file_content = add_result_method(add_result_event_metadata(file_content))
 
       file_content
     end
@@ -60,7 +59,7 @@ module Builder
       unless file_content.match(send_result_reg_exp)
         method = read_template action_script_template("result_method")
 
-        file_content.gsub!(send_result_reg_exp,"#{start_of_send_result_reg_exp}\r\n\t}\r\n}")
+        file_content.gsub!(end_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
       end
 
       file_content

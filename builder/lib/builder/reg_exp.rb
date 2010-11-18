@@ -23,6 +23,10 @@ module Builder
       /[ +\t+]\r\n/
     end
 
+    def every_defined_class_reg_exp
+      /new \w+|api.[\w+.]+\w+/
+    end
+
     def method_comments_reg_exp
       {:method_class            => /\tpublic class #{@method_name} extends #{@class_name}/,
        :method_constructor      => /\t\tpublic function #{@method_name}/,
@@ -36,8 +40,20 @@ module Builder
       /(ClearNotify)|(On[A-Z])/
     end
 
-    def missing_event_metadata_reg_exp
-      /\t\[Event\(name=\"missing\w+\"/
+    def missing_event_metadata_reg_exp prop=nil
+      if prop
+        /\t\[Event\(name=\"missing#{prop}\"/
+      else
+        /\t\[Event\(name=\"missing\w+\"/
+      end
+    end
+
+    def new_class_reg_exp
+      /new [A-Z]+\w+/
+    end
+
+    def package_seperator_reg_exp
+      /\./
     end
 
     def package_definition_reg_exp
@@ -61,7 +77,7 @@ module Builder
     end
 
     def result_event_import_reg_exp
-      /import api.#{@class_dir}.#{@method_dir}.#{@method_name}Event;/
+      /import api.events.#{@class_dir}.#{@method_dir}.#{@method_name}Event;/
     end
 
     def result_event_metadata_reg_exp

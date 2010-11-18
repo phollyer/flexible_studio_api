@@ -4,8 +4,18 @@ package api.binaryFile
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile.html Northcode Help Documentation
+	 */
 	public class BinaryFile extends Kernel
 	{
+		/**
+		 * Constructor for BinaryFile()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile.html Northcode Help Documentation
+		 */
 		public function BinaryFile(target:IEventDispatcher=null)
 		{
 			super(target);

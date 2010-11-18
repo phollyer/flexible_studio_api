@@ -4,19 +4,48 @@ package api.binaryFile.setSize
 	
 	import api.binaryFile.BinaryFile;
 	
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.setSize.SetSizeEvent.RESULT
+	 */
+	[Event(name="result", type="api.events.binaryFile.setSize.SetSizeEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+	 */
 	public class SetSize extends BinaryFile
 	{
 		// Required
 		public var bytes:Number = -1;
 		
 		// Results
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
+		/**
+		 * Constructor for BinaryFile.SetSize()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+		 */
 		public function SetSize(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param bytesSize
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+		 */
 		public function setSize( bytesSize:Number = -1 ):void
 		{
 			bytes = compareNumbers( bytesSize , bytes );
@@ -36,6 +65,18 @@ package api.binaryFile.setSize
 		private function invalidSize():void
 		{
 			var e : SetSizeEvent = new SetSizeEvent( SetSizeEvent.RESULT_SIZE );
+			dispatchEvent( e );
+		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
+		override protected function sendResult( r:Object ):void
+		{
+			var e : SetSizeEvent = new SetSizeEvent( SetSizeEvent.RESULT );
 			dispatchEvent( e );
 		}
 	}

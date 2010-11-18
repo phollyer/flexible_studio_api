@@ -19,6 +19,10 @@ module Builder
       /(\/\/ Result)|(\[Event\(name=\"result)|(function sendResult)/
     end
 
+    def empty_line_reg_exp
+      /[ +\t+]\r\n/
+    end
+
     def method_comments_reg_exp
       {:method_class            => /\tpublic class #{@method_name} extends #{@class_name}/,
        :method_constructor      => /\t\tpublic function #{@method_name}/,

@@ -24,12 +24,12 @@ module Builder
       imports << result_event_import_reg_exp.source if match      
       imports.sort!
 
-      import_block = "\r\n"
+      import_block = ""
       imports.each do |import|
-        import_block << "\t#{import}\r\n\r\n"
+        import_block << "\r\n\t#{import}\r\n"
       end
 
-      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,import_block)
+      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,import_block.rstrip!)
 
       file_content
     end

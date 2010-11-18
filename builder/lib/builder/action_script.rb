@@ -40,15 +40,15 @@ module Builder
 
     def add_missing_event_metadata_comments properties, file_content
       properties.each do |prop|
-        property = prop
-        @event = convert_prop_to_event(property) # This needs looking at. Why? What?
-
+        @property = prop
+        @event = convert_prop_to_event(@property) # @event => Used in missing_event_metadata template
+        puts @event
         match = missing_event_metadata_reg_exp.match(file_content)
 
         if match
           comments = read_template(comment_template_path("missing_event_metadata")) + "\r\n" + match[0]
 
-          test = match[0].scan(swap_initial(property))
+          test = match[0].scan(swap_initial(@property))
 
           file_content.sub!(missing_event_metadata_reg_exp,comments) if test.size > 0 unless comment_found? file_content, comments
         end

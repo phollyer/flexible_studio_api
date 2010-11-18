@@ -10,18 +10,22 @@ module Builder
 
   module Imports
 
+    def add_result_event_import_statement file_content
+      file_content.insert!((file_content =~ start_of_package_reg_exp ) + 1,"\r\n\t#{result_event_import_reg_exp.source}")
+    end
+
     def configure_import_statements file_content
       imports = file_content.scan(all_imports_reg_exp)
-
-      match = false
+      required_imports = set_required_imports file_content
       
       imports.each do|import|
         file_content.sub!(import,"")
         import.strip!
-        match = true if import.match(result_event_import_reg_exp)
       end
 
-      imports << result_event_import_reg_exp.source if match      
+      imports << result_event_import_reg_exp.source unless file_content.match(result_event_import_reg_exp)
+      
+      imports.uniq!
       imports.sort!
 
       import_block = ""
@@ -34,27 +38,48 @@ module Builder
       file_content
     end
 
+    def result_event_import_statement_exists? file_content
+      file_content.match(result_event_import_reg_exp)
+    end
+    private
+
+    def set_required_imports file_content
+      imports = file_content.scan(every_defined_class_reg_exp)
+
+      required_imports = {:packages => [],
+                          :classes  => [],
+                          :unknowns => []
+                         }
+
+      #file_content.sub!(missing_event_metadata_reg_exp(swap_initial(prop)),comments) if test.size > 0 unless comment_found? file_content, comments
+
+      imports.each do |import|
+        if import.match(package_seperator_reg_exp)
+          required_imports[:packages] << "import #{import};"
+        elsif import.match(new_class_reg_exp)
+          required_imports[:classes] << import.split(" ")[1]
+        else
+          required_imports[:unknowns] << {:import => import,
+                                          :class  => @class_name,
+                                          :method => @method_name
+                                         }
+        end
+      end
+
+      required_imports.each { |key,value| value.uniq! }
+
+      required_imports
+    end
+
   end
   
   module Metadata
 
-    def add_missing_event_metadata_comments properties, file_content
-      properties.each do |prop|
-        @property = prop
-
-        @event = convert_prop_to_event(@property) # @event => Used in missing_event_metadata template
-        puts @event
-        
-        match = missing_event_metadata_reg_exp.match(file_content)
-        # match = missing_event_metadata_reg_exp(swap_initial(prop)).match(file_content)
-
-        if match
-          comments = read_template(comment_template_path("missing_event_metadata")) + "\r\n" + match[0]
-
-          test = match[0].scan(swap_initial(@property))
-
-          file_content.sub!(missing_event_metadata_reg_exp(swap_initial(prop)),comments) if test.size > 0 unless comment_found? file_content, comments
-        end
+    def add_missing_event_metadata prop, file_content
+      unless file_content.match(missing_event_metadata_reg_exp(prop))
+        @property_up_case = swap_initial(prop)
+        metadata = read_template(action_script_template("missing_event_metadata"))
+        file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
       end
 
       file_content
@@ -63,6 +88,7 @@ module Builder
     def add_result_event_metadata file_content
       unless file_content.match(result_event_metadata_reg_exp)
         metadata = read_template(action_script_template("result_event_metadata"))
+
         file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
       end
 

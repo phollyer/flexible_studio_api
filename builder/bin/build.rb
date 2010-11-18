@@ -56,18 +56,16 @@ class Build
         @parameters = extract_parameters @file_content,@method_name
         @properties = extract_properties @file_content
 
-        if class_method_dispatches_a_result? @file_content
-          @file_content = add_result_to_class_method(@file_content)
-        end
-
-        configure_import_statements @file_content
+        @file_content = add_result_to_class_method(@file_content) if class_method_dispatches_a_result? @file_content
+        @file_content = add_result_event_import_statement(@file_content) unless result_event_import_statement_exists? @file_content
+        @file_content = configure_import_statements @file_content
         
         method_comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
 
         @file_content = add_missing_event_metadata_comments @properties, @file_content
         @file_content = add_property_comments @properties, @file_content
 
-        write_file method_file_path,@file_content
+        write_file(method_file_path,@file_content)
       else
         puts "Failed:\t@file_path"
       end

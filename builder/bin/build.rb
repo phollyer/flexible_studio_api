@@ -59,6 +59,8 @@ class Build
         if class_method_dispatches_a_result? @file_content
           @file_content = add_result_to_class_method(@file_content)
         end
+
+        configure_import_statements @file_content
         
         method_comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
 

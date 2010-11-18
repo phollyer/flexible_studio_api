@@ -7,6 +7,34 @@ include Builder::RegExp
 include Builder::Utils
 
 module Builder
+
+  module Imports
+
+    def configure_import_statements file_content
+      imports = file_content.scan(all_imports_reg_exp)
+
+      match = false
+      
+      imports.each do|import|
+        file_content.sub!(import,"")
+        import.strip!
+        match = true if import.match(result_event_import_reg_exp)
+      end
+
+      imports << result_event_import_reg_exp.source if match      
+      imports.sort!
+
+      import_block = "\r\n"
+      imports.each do |import|
+        import_block << "\t#{import}\r\n\r\n"
+      end
+
+      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,import_block)
+
+      file_content
+    end
+
+  end
   
   module Metadata
 
@@ -68,6 +96,7 @@ module Builder
   end
   
   module ActionScript
+    include Imports
     include Metadata
     include Methods
 

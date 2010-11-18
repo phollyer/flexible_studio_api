@@ -18,11 +18,11 @@ module Builder
         comments = read_template(comment_template_path(match_type))
         file_content.gsub!(match_data, comments + "\r\n" + match[0]) unless comment_found? file_content,comments
       end
-
+      
       file_content
     end
 
-    def add_property_comments properties,method_name,file_content
+    def add_property_comments properties,file_content
       properties.each do |prop|
         match = public_var_with_value_reg_exp(prop).match(file_content)
 

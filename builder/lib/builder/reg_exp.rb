@@ -15,7 +15,7 @@ module Builder
       /(\/\/ Result)|(\[Event\(name=\"result)|(function sendResult)/
     end
 
-    def start_of_send_result_reg_exp
+    def end_of_send_result_reg_exp
       /\t\}\r\n\}/
     end
 
@@ -32,8 +32,8 @@ module Builder
       /(ClearNotify)|(On[A-Z])/
     end
 
-    def missing_event_metadata_reg_exp
-      /\t\[Event\(name=\"missing\w+\"/
+    def missing_event_metadata_reg_exp event="\w+"
+      /\t\[Event\(name=\"missing#{event}\"/
     end
 
     def public_function_reg_exp method_name

@@ -1,15 +1,20 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.OnOtherInstanceEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.OnOtherInstance.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnOtherInstanceEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onOtherInstance.OnOtherInstanceEvent")]
 	[Bindable]
@@ -17,6 +22,11 @@ package api.app.notifiers
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onOtherInstance.html Northcode Help Documentation
 	 */
 	public class OnOtherInstance extends App
 	{
@@ -32,6 +42,11 @@ package api.app.notifiers
 		 * Constructor for App.OnOtherInstance()
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 * Constructor for App.OnOtherInstance()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onOtherInstance.html Northcode Help Documentation
 		 */
 		public function OnOtherInstance(target:IEventDispatcher=null)
 		{

@@ -1,8 +1,8 @@
 package api.app.forceExitWindows
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
 	/**
 	 * Dispatched if the Property <code>method</code> has not been supplied.

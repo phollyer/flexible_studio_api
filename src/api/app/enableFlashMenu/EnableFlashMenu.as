@@ -1,9 +1,8 @@
 package api.app.enableFlashMenu
 {
-	import flash.events.IEventDispatcher;
-	
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
 	[Bindable]
 	/**

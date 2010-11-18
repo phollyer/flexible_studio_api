@@ -1,15 +1,20 @@
 package api.app.showFolderBrowser
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.showFolderBrowser.ShowFolderBrowserEvent;
+
+	import flash.events.IEventDispatcher;
 
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.ShowFolderBrowser.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.showFolderBrowser.ShowFolderBrowserEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFolderBrowser.ShowFolderBrowserEvent")]
 	[Bindable]

@@ -1,10 +1,10 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.OnDesktopChangeEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
 	/**
@@ -12,12 +12,22 @@ package api.app.notifiers
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDesktopChange.html Northcode Help Documentation
+	 */
 	public class OnDesktopChange extends App
 	{
 		/**
 		 * Constructor for App.OnDesktopChange()
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 * Constructor for App.OnDesktopChange()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDesktopChange.html Northcode Help Documentation
 		 */
 		public function OnDesktopChange(target:IEventDispatcher=null)
 		{

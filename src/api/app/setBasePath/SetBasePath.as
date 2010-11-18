@@ -1,8 +1,8 @@
 package api.app.setBasePath
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
 	/**
 	 * Dispatched if the Property <code>path</code> has not been supplied.

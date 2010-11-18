@@ -1,8 +1,8 @@
 package api.app.cancelDialog
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]

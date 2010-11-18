@@ -1,10 +1,10 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.ClearNotifyEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>event</code> has not been supplied.
@@ -17,6 +17,11 @@ package api.app.notifiers
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_clearNotify.html Northcode Help Documentation
 	 */
 	public class ClearNotify extends App
 	{
@@ -33,6 +38,11 @@ package api.app.notifiers
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for App.ClearNotify()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_clearNotify.html Northcode Help Documentation
+		 */
 		public function ClearNotify(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -44,6 +54,14 @@ package api.app.notifiers
 		 * @param notificationEvent
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 *
+		 *
+                 *
+		 * @param notificationEvent
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_clearNotify.html Northcode Help Documentation
 		 */
 		public function clearNotify( notificationEvent:String = null ):void
 		{

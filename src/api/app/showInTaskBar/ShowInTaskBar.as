@@ -1,8 +1,8 @@
 package api.app.showInTaskBar
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
 	[Bindable]
 	/**

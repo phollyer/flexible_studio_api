@@ -1,15 +1,20 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.OnExitWindowsEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.OnExitWindows.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnExitWindowsEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onExitWindows.OnExitWindowsEvent")]
 	[Bindable]
@@ -17,6 +22,11 @@ package api.app.notifiers
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onExitWindows.html Northcode Help Documentation
 	 */
 	public class OnExitWindows extends App
 	{
@@ -32,6 +42,11 @@ package api.app.notifiers
 		 * Constructor for App.OnExitWindows()
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 * Constructor for App.OnExitWindows()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onExitWindows.html Northcode Help Documentation
 		 */
 		public function OnExitWindows(target:IEventDispatcher=null)
 		{

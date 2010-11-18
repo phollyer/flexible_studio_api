@@ -1,15 +1,20 @@
 package api.app.getCommandLine
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.getCommandLine.GetCommandLineEvent;
+
+	import flash.events.IEventDispatcher;
 
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.GetCommandLine.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.getCommandLine.GetCommandLineEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.getCommandLine.GetCommandLineEvent")]
 	[Bindable]

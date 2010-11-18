@@ -1,8 +1,8 @@
 package api.app.confirmDialog
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 
         [Bindable]
 	/**

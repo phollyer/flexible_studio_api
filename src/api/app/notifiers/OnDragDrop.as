@@ -1,15 +1,20 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.OnDragDropEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.OnDragDrop.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnDragDropEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onDragDrop.OnDragDropEvent")]
 	[Bindable]
@@ -17,6 +22,11 @@ package api.app.notifiers
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
 	 */
 	public class OnDragDrop extends App
 	{
@@ -50,6 +60,11 @@ package api.app.notifiers
 		 * Constructor for App.OnDragDrop()
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 * Constructor for App.OnDragDrop()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
 		 */
 		public function OnDragDrop(target:IEventDispatcher=null)
 		{

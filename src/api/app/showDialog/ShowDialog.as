@@ -1,8 +1,8 @@
 package api.app.showDialog
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 	import api.events.app.showDialog.ShowDialogEvent
 
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]

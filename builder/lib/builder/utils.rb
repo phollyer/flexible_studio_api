@@ -21,12 +21,17 @@ module Builder
     # Example: myProperty => MY_PROPERTY
     def convert_prop_to_event(prop)
       event = ""
+      prev_char = ""
       prop.each_char do |char|
-        if char.upcase!
+        if prev_char.match(/[A-Z]/)
+          event << char.upcase
+        elsif char.upcase!
           event << char
         else
           event << "_" + char
         end
+
+        prev_char = char
       end
 
       event

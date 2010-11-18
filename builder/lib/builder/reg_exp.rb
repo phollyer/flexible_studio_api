@@ -19,8 +19,8 @@ module Builder
       /(\/\/ Result)|(\[Event\(name=\"result)|(function sendResult)/
     end
 
-    def end_of_send_result_reg_exp
-      /\t\}\r\n\}/
+    def empty_line_reg_exp
+      /[ +\t+]\r\n/
     end
 
     def method_comments_reg_exp

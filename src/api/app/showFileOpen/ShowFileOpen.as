@@ -1,17 +1,23 @@
 package api.app.showFileOpen
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.showFileOpen.ShowFileOpenEvent;
+
 	import api.vos.app.showFileOpen.ShowFileOpenVO;
+
+	import flash.events.IEventDispatcher;
 	
 	[Event(name="missingFileOBJ" , type="api.events.SWFStudioEvent")]
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.ShowFileOpen.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.showFileOpen.ShowFileOpenEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFileOpen.ShowFileOpenEvent")]
 	[Bindable]

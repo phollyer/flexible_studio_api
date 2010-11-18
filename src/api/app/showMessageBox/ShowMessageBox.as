@@ -1,17 +1,23 @@
 package api.app.showMessageBox
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.showMessageBox.ShowMessageBoxEvent;
+
 	import api.vos.app.showMessageBox.ShowMessageBoxVO;
+
+	import flash.events.IEventDispatcher;
 
 	[Event(name="missingPrompt" , type="api.events.SWFStudioEvent")]
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.ShowMessageBox.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.showMessageBox.ShowMessageBoxEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showMessageBox.ShowMessageBoxEvent")]
 	[Bindable]

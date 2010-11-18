@@ -1,10 +1,10 @@
 package api.app.showInputBox
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.showInputBox.ShowInputBoxEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>prompt</code> has not been supplied.
@@ -16,6 +16,11 @@ package api.app.showInputBox
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.ShowInputBox.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.showInputBox.ShowInputBoxEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showInputBox.ShowInputBoxEvent")]
 	[Bindable]

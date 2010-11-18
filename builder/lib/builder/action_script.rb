@@ -24,12 +24,12 @@ module Builder
       imports << result_event_import_reg_exp.source if match      
       imports.sort!
 
-      import_block = "\r\n"
+      import_block = ""
       imports.each do |import|
-        import_block << "\t#{import}\r\n\r\n"
+        import_block << "\r\n\t#{import}\r\n"
       end
 
-      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,import_block)
+      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,import_block.rstrip!)
 
       file_content
     end
@@ -41,9 +41,12 @@ module Builder
     def add_missing_event_metadata_comments properties, file_content
       properties.each do |prop|
         @property = prop
-        @event = convert_prop_to_event(@property)
 
-        match = missing_event_metadata_reg_exp(swap_initial(prop)).match(file_content)
+        @event = convert_prop_to_event(@property) # @event => Used in missing_event_metadata template
+        puts @event
+        
+        match = missing_event_metadata_reg_exp.match(file_content)
+        # match = missing_event_metadata_reg_exp(swap_initial(prop)).match(file_content)
 
         if match
           comments = read_template(comment_template_path("missing_event_metadata")) + "\r\n" + match[0]

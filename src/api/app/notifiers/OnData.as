@@ -1,15 +1,20 @@
 package api.app.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.notifiers.OnDataEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.OnData.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnDataEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onData.OnDataEvent")]
 	[Bindable]
@@ -17,6 +22,11 @@ package api.app.notifiers
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onData.html Northcode Help Documentation
 	 */
 	public class OnData extends App
 	{
@@ -38,6 +48,11 @@ package api.app.notifiers
 		 * Constructor for App.OnData()
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
+		 */
+		/**
+		 * Constructor for App.OnData()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onData.html Northcode Help Documentation
 		 */
 		public function OnData(target:IEventDispatcher=null)
 		{

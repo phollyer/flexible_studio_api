@@ -1,8 +1,8 @@
 package api.app.setPriority
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
+
+	import flash.events.IEventDispatcher;
 	import api.events.app.setPriority.SetPriorityEvent
 
 	[Bindable]

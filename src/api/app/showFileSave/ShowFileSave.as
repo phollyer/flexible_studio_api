@@ -1,17 +1,23 @@
 package api.app.showFileSave
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
-	
+
 	import api.events.app.showFileSave.ShowFileSaveEvent;
+
 	import api.vos.app.showFileSave.ShowFileSaveVO;
+
+	import flash.events.IEventDispatcher;
 
 	[Event(name="missingFileOBJ" , type="api.events.SWFStudioEvent")]
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.app.ShowFileSave.Event.RESULT
+	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.showFileSave.ShowFileSaveEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFileSave.ShowFileSaveEvent")]
 	[Bindable]

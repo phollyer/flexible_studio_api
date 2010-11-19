@@ -40,7 +40,7 @@ class Build
       comments_reg_exp = class_comments_reg_exp
 
       unless @file_content.match(send_result_reg_exp)
-        add_class_result_method
+        add_class_result_method @file_content
         comments_reg_exp[:class_result_method] = send_result_reg_exp
       end
 
@@ -56,18 +56,24 @@ class Build
         @parameters = extract_parameters @file_content,@method_name
         @properties = extract_properties @file_content
 
-        @file_content = add_result_to_class_method(@file_content) if class_method_dispatches_a_result? @file_content
-        @file_content = add_result_event_import_statement(@file_content) unless result_event_import_statement_exists? @file_content
+        if class_method_dispatches_a_result? @file_content
+          @file_content = add_result_event_import_statement(@file_content) unless result_event_import_statement_exists? @file_content
+          @file_content = add_result_to_class_method(@file_content) unless result_method_exists? @file_content
+          @file_content = add_result_event_metadata(@file_content) unless result_metadata_exists? @file_content
+        end
+
         @file_content = configure_import_statements @file_content
         
         method_comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
 
-        @file_content = add_missing_event_metadata_comments @properties, @file_content
+        @file_content = add_missing_event_metadata(@file_content)
+        @file_content = add_missing_event_metadata_comments(@file_content)
         @file_content = add_property_comments @properties, @file_content
 
         write_file(method_file_path,@file_content)
       else
         puts "Failed:\t@file_path"
+        exit
       end
 
   end

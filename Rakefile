@@ -57,5 +57,24 @@ namespace "rr" do
       end
     end
   end
-end
 
+  desc "Find files with out a // Required comment"
+  task :find_without_required do |t|
+    Dir['src/api/**/*.as'].each do |file|
+      f = File.open(file,"r")
+      s = f.read
+      
+      unless s.match(/\/\/\s+[Rr]equired/)
+        filename = File.split(file)[1]
+        
+        initial = filename.match(/./)[0]
+        
+        filename = filename.sub(initial,initial.downcase)
+        method = filename.split(".")[0]
+        if s.match(/public function #{method}\([\s*\w+]/)
+          puts file
+        end
+      end
+    end
+  end
+end

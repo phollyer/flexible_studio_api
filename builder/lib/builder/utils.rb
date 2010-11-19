@@ -27,6 +27,8 @@ module Builder
           event << char.upcase
         elsif char.upcase!
           event << char
+        elsif prev_char == ""
+          event << char
         else
           event << "_" + char
         end

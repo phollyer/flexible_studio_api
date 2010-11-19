@@ -11,7 +11,7 @@ module Builder
   module Imports
 
     def add_result_event_import_statement file_content
-      file_content.insert!((file_content =~ start_of_package_reg_exp ) + 1,"\r\n\t#{result_event_import_reg_exp.source}")
+      file_content.insert((file_content =~ start_of_package_reg_exp ) + 1,"\r\n\t#{result_event_import_reg_exp.source}")
     end
 
     def configure_import_statements file_content
@@ -75,24 +75,37 @@ module Builder
   
   module Metadata
 
-    def add_missing_event_metadata prop, file_content
-      unless file_content.match(missing_event_metadata_reg_exp(prop))
-        @property_up_case = swap_initial(prop)
-        metadata = read_template(action_script_template("missing_event_metadata"))
-        file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
+    def add_missing_event_metadata file_content
+      missing_methods = file_content.scan(missing_method_reg_exp)
+
+      missing_methods.each do |method|     
+        prop = method.match(/[A-Z]\w+/)
+        prop = swap_initial(prop[0])
+        unless file_content.match(missing_event_metadata_reg_exp(method))
+          @property_up_case = swap_initial(prop)
+          metadata = read_template(action_script_template("missing_event_metadata"))
+          file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable") unless metadata_exists? metadata,file_content
+        end
+        
       end
 
       file_content
     end
 
     def add_result_event_metadata file_content
-      unless file_content.match(result_event_metadata_reg_exp)
-        metadata = read_template(action_script_template("result_event_metadata"))
+      metadata = read_template(action_script_template("result_event_metadata"))
 
-        file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
-      end
-
+      file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable")
+      
       file_content
+    end
+
+    def metadata_exists? metadata,file_content
+      file_content.scan(metadata).size > 0
+    end
+
+    def result_metadata_exists? file_content
+      file_content.match(result_event_metadata_reg_exp)
     end
     
   end
@@ -100,13 +113,13 @@ module Builder
   module Methods
 
     def add_result_to_class_method file_content
-      file_content = add_result_method(add_result_event_metadata(file_content))
+      file_content = add_result_method(file_content)
 
       file_content
     end
 
     def add_class_result_method file_content
-      method = read_template actionscript_template("class_result_method")
+      method = read_template action_script_template("class_result_method")
       file_content.gsub!(start_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
       
       file_content
@@ -116,12 +129,20 @@ module Builder
       unless file_content.match(send_result_reg_exp)
         method = read_template action_script_template("result_method")
 
-        file_content.gsub!(end_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
+        file_content.gsub!(start_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
       end
 
       file_content
     end
 
+    def result_method_exists? file_content
+      file_content.match(send_result_reg_exp)
+    end
+
+  end
+
+  module Properties
+    
   end
   
   module ActionScript

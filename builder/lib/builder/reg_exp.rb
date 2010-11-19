@@ -40,12 +40,16 @@ module Builder
       /(ClearNotify)|(On[A-Z])/
     end
 
-    def missing_event_metadata_reg_exp prop=nil
-      if prop
-        /\t\[Event\(name=\"missing#{prop}\"/
+    def missing_event_metadata_reg_exp method=nil
+      if method
+        /\t\[Event\(name=\"#{method}\"/
       else
         /\t\[Event\(name=\"missing\w+\"/
       end
+    end
+
+    def missing_method_reg_exp
+      /\s+missing\w+\(\)/
     end
 
     def new_class_reg_exp
@@ -85,7 +89,7 @@ module Builder
     end
 
     def send_result_reg_exp
-      /override protected function sendResult/
+      /\t\toverride protected function sendResult/
     end
 
     def start_of_package_reg_exp

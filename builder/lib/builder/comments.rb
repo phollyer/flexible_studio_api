@@ -24,23 +24,27 @@ module Builder
       file_content
     end
 
-    def add_missing_event_metadata_comments properties, file_content
-      properties.each do |prop|
-        @property = prop
+    def add_missing_event_metadata_comments file_content
+      metadata = file_content.scan(missing_event_metadata_reg_exp)
+      metadata.each do |m_data|
+        prop = m_data.match(/missing\w+/)
+        @property = swap_initial(prop[0].match(/[A-Z]\w+/)[0])
+        puts @property
         @event = convert_prop_to_event(@property) # @event => Used in missing_event_metadata template
         puts @event
         match = missing_event_metadata_reg_exp.match(file_content)
 
+        puts match
         if match
           comments = read_template(comment_template_path("missing_event_metadata")) + "\r\n" + match[0]
+          puts comments
 
           test = match[0].scan(swap_initial(@property))
 
           file_content.sub!(missing_event_metadata_reg_exp,comments) if test.size > 0 unless comment_found? file_content, comments
         else
-          file_content = file_content.add_missing_event_metadata(prop,file_content)
-          #puts "Error:\tProperty and Event are incompatible\r\n\tClass:\t#{@class_name}\r\n\tMethod:\t#{@method_name}\r\n\tProperty:\t#{prop}\r\n\tMeta:\t#{missing_event_metadata_reg_exp.source}"
-          #exit
+          puts "Error:\tProperty and Event are incompatible\r\n\tClass:\t#{@class_name}\r\n\tMethod:\t#{@method_name}\r\n\tProperty:\t#{prop}\r\n\tMeta:\t#{missing_event_metadata_reg_exp.source}"
+          exit
         end
       end
 

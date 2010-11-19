@@ -37,7 +37,7 @@ module Builder
     end
 
     def method_notifier_reg_exp
-      /(ClearNotify)|(On[A-Z])/
+      /(\w+Notify)|(On[A-Z])/
     end
 
     def missing_event_metadata_reg_exp method=nil

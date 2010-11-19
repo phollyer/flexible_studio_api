@@ -84,7 +84,7 @@ module Builder
         unless file_content.match(missing_event_metadata_reg_exp(method))
           @property_up_case = swap_initial(prop)
           metadata = read_template(action_script_template("missing_event_metadata"))
-          file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable") unless metadata_exists? metadata,file_content
+          file_content.gsub!(bindable_reg_exp, "#{metadata}\r\n\t[Bindable") unless metadata_exists? "missing#{@property_up_case}",file_content
         end
         
       end
@@ -100,8 +100,8 @@ module Builder
       file_content
     end
 
-    def metadata_exists? metadata,file_content
-      file_content.scan(metadata).size > 0
+    def metadata_exists? method,file_content
+      file_content.match(missing_event_metadata_reg_exp(method))
     end
 
     def result_metadata_exists? file_content

@@ -1,18 +1,28 @@
 package api.ado.getRows
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
-	
+
 	import api.events.ado.getRows.GetRowsEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.ado.GetRows.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.getRows.GetRowsEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.getRows.GetRowsEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -29,8 +39,18 @@ package api.ado.getRows
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var rows:String = null;
 		
+		/**
+		 * Constructor for Ado.GetRows()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.GetRows()
 		 *
@@ -46,10 +66,23 @@ package api.ado.getRows
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
 		 */
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
+		 */
 		public function getRows():void
 		{
 			ssCore.Ado.getRows( {rows:rowCount} , {callback:actionComplete, errorSTR:"getRowsError", code:"16007"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

@@ -1,10 +1,17 @@
 package api.ado.setFieldList
 {
+	import api.ado.Ado;
+
+	import api.events.ado.setFieldList.SetFieldListEvent;
+
 	import flash.events.IEventDispatcher;
 	
-	import api.ado.Ado;
-	
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -18,8 +25,18 @@ package api.ado.setFieldList
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var fieldList:Array = null;
 		
+		/**
+		 * Constructor for Ado.SetFieldList()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.SetFieldList()
 		 *
@@ -29,6 +46,12 @@ package api.ado.setFieldList
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

@@ -2,6 +2,8 @@ package api.app.quit
 {
 	import api.app.App;
 
+	import api.events.app.quit.QuitEvent;
+
 	import flash.events.IEventDispatcher;
 
 	[Bindable]

@@ -1,10 +1,17 @@
 package api.ado.setTable
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
 
+	import api.events.ado.setTable.SetTableEvent;
+
+	import flash.events.IEventDispatcher;
+
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -18,8 +25,18 @@ package api.ado.setTable
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var name:String = null;
 		
+		/**
+		 * Constructor for Ado.SetTable()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.SetTable()
 		 *
@@ -29,6 +46,14 @@ package api.ado.setTable
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param tableName
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

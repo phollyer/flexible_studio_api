@@ -1,10 +1,10 @@
 package api.binaryFile.getSize
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
-	
+
 	import api.events.binaryFile.getSize.GetSizeEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

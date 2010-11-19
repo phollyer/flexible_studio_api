@@ -1,11 +1,19 @@
 package api.ado.setRowFormat
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
+
+	import api.events.ado.setRowFormat.SetRowFormatEvent;
+
 	import api.vos.ado.SetRowFormatVO;
 
+	import flash.events.IEventDispatcher;
+
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -19,8 +27,18 @@ package api.ado.setRowFormat
 		 *
 		 * @defaultValue <code>SetRowFormatVO</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>SetRowFormatVO.XML</code>
+		 */
 		public var format:String = SetRowFormatVO.XML;
 		
+		/**
+		 * Constructor for Ado.SetRowFormat()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.SetRowFormat()
 		 *
@@ -30,6 +48,12 @@ package api.ado.setRowFormat
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

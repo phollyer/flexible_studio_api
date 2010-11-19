@@ -2,6 +2,8 @@ package api.app.updateGlobals
 {
 	import api.app.App;
 
+	import api.events.app.updateGlobals.UpdateGlobalsEvent;
+
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]

@@ -1,13 +1,20 @@
 package api.activeX.setProperty
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.activeX.ActiveX;
+
+	import api.events.activeX.setProperty.SetPropertyEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setProperty.SetPropertyEvent.RESULT_OBJECT
+	 */
+	/**
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
 	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
@@ -25,10 +32,16 @@ package api.activeX.setProperty
 	 */
 	[Event(name="missingValue" , type="api.events.SWFStudioEvent")]
 	
+	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
 	 * Set a Property of the ActiveX Object.
 	 * 
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+	 */
+	/**
+	 *
+	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
 	 */
 	public class SetProperty extends ActiveX
@@ -39,11 +52,21 @@ package api.activeX.setProperty
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
 		 * The Property of the ActiveX Object that you want to set.
 		 * 
+		 * @defaultValue <code>null</code>
+		 */
+		/**
+		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var property:String = null;
@@ -53,8 +76,18 @@ package api.activeX.setProperty
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var value:String = null;
 		
+		/**
+		 * Constructor for ActiveX.SetProperty()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+		 */
 		public function SetProperty(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -69,6 +102,18 @@ package api.activeX.setProperty
 		 * @param val The Value of the Property being set.
 		 * 
 		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+		 */
+		/**
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param prop
+                 *
+		 * @param val
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
 		 */
 		public function setProperty( activeXObject:String = null , prop:String = null , val:String = null ):void
 		{

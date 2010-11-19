@@ -1,8 +1,10 @@
 package api.binaryFile.close
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
+
+	import api.events.binaryFile.close.CloseEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

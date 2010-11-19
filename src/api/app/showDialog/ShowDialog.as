@@ -2,9 +2,16 @@ package api.app.showDialog
 {
 	import api.app.App;
 
+	import api.events.app.showDialog.ShowDialogEvent;
+
 	import flash.events.IEventDispatcher;
 	import api.events.app.showDialog.ShowDialogEvent
 
+	/**
+	 * Dispatched if the Property <code>hWND</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_HWND
+	 */
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**

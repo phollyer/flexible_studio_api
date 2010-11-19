@@ -1,18 +1,28 @@
 package api.ado.getVersion
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
-	
+
 	import api.events.ado.getVersion.GetVersionEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.ado.GetVersion.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.getVersion.GetVersionEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.getVersion.GetVersionEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getVersion.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -26,8 +36,18 @@ package api.ado.getVersion
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var version:String = null;
 		
+		/**
+		 * Constructor for Ado.GetVersion()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getVersion.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.GetVersion()
 		 *
@@ -43,10 +63,23 @@ package api.ado.getVersion
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getVersion.html Northcode Help Documentation
 		 */
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getVersion.html Northcode Help Documentation
+		 */
 		public function getVersion():void
 		{
 			ssCore.Ado.getVersion( {} , {callback:actionComplete, errorSTR:"getVersionError", code:"16008"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

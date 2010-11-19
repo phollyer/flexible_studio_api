@@ -2,6 +2,8 @@ package api.app.showInTaskList
 {
 	import api.app.App;
 
+	import api.events.app.showInTaskList.ShowInTaskListEvent;
+
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]

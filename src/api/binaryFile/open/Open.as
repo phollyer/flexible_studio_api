@@ -1,10 +1,14 @@
 package api.binaryFile.open
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
+
+	import api.events.binaryFile.open.OpenEvent;
+
 	import api.vos.binaryFile.AccessModeVO;
+
 	import api.vos.binaryFile.ShareModeVO;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>path</code> has not been supplied.
@@ -40,11 +44,21 @@ package api.binaryFile.open
 		 *
 		 * @defaultValue <code>AccessModeVO</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>AccessModeVO.READ</code>
+		 */
 		public var accessMode:String = AccessModeVO.READ;
 		/**
 		 * 
 		 *
 		 * @defaultValue <code>ShareModeVO</code>
+		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>ShareModeVO.NONE</code>
 		 */
 		public var shareMode:String = ShareModeVO.NONE;
 		

@@ -1,8 +1,10 @@
 package api.ado.close
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
+
+	import api.events.ado.close.CloseEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
 	/**

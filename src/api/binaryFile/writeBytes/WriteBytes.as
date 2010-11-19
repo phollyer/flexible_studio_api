@@ -1,11 +1,12 @@
 package api.binaryFile.writeBytes
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
-	
+
 	import api.events.binaryFile.writeBytes.WriteBytesEvent;
+
 	import api.vos.binaryFile.FormatVO;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>data</code> has not been supplied.

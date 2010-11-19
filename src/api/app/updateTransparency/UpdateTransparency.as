@@ -2,6 +2,8 @@ package api.app.updateTransparency
 {
 	import api.app.App;
 
+	import api.events.app.updateTransparency.UpdateTransparencyEvent;
+
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]

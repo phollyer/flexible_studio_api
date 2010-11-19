@@ -2,6 +2,8 @@ package api.app.sendData
 {
 	import api.app.App;
 
+	import api.events.app.sendData.SendDataEvent;
+
 	import flash.events.IEventDispatcher;
 
 	[Bindable]

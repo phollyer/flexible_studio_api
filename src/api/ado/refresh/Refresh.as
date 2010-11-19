@@ -1,8 +1,10 @@
 package api.ado.refresh
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
+
+	import api.events.ado.refresh.RefreshEvent;
+
+	import flash.events.IEventDispatcher;
 
 	[Bindable]
 	/**

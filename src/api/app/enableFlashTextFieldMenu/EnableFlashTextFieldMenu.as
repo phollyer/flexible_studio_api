@@ -2,6 +2,8 @@ package api.app.enableFlashTextFieldMenu
 {
 	import api.app.App;
 
+	import api.events.app.enableFlashTextFieldMenu.EnableFlashTextFieldMenuEvent;
+
 	import flash.events.IEventDispatcher;
 
 	[Bindable]

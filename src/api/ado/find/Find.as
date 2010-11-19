@@ -1,11 +1,16 @@
 package api.ado.find
 {
+	import api.ado.Ado;
+
+	import api.events.ado.find.FindEvent;
+
 	import flash.events.IEventDispatcher;
 	
-	import api.ado.Ado;
-	
-	import api.events.ado.find.FindEvent;
-	
+	/**
+	 * Dispatched if the Property <code>criteria</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_CRITERIA
+	 */
 	/**
 	 * Dispatched if the Property <code>criteria</code> has not been supplied.
 	 *
@@ -17,8 +22,18 @@ package api.ado.find
 	 *
 	 * @eventType api.events.ado.Find.Event.RESULT
 	 */
+	/**
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.find.FindEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.find.FindEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_find.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -35,9 +50,19 @@ package api.ado.find
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var criteria:String = null;
 		
 		// Optional
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>FIND_FIRST</code>
+		 */
 		/**
 		 * 
 		 *
@@ -51,7 +76,17 @@ package api.ado.find
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var adoError:String = null;
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		/**
 		 * 
 		 *
@@ -64,10 +99,23 @@ package api.ado.find
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_find.html Northcode Help Documentation
 		 */
+		/**
+		 * Constructor for Ado.Find()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_find.html Northcode Help Documentation
+		 */
 		public function Find(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param findCriteria
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_find.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *
@@ -89,6 +137,13 @@ package api.ado.find
 									,{callback:actionComplete, errorSTR:"findError", code:"16002"} );
 			}
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		/**
 		* A result has been received so dispatch it.
 		*

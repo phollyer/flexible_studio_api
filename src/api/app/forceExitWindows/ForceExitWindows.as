@@ -2,6 +2,8 @@ package api.app.forceExitWindows
 {
 	import api.app.App;
 
+	import api.events.app.forceExitWindows.ForceExitWindowsEvent;
+
 	import flash.events.IEventDispatcher;
 
 	/**

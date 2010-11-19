@@ -1,14 +1,22 @@
 package api.activeX.createObject
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.activeX.ActiveX;
+
+	import api.events.activeX.createObject.CreateObjectEvent;
+
 	import api.vos.activeX.CreateObjectVO;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied. 
 	 * 
 	 * @eventType api.events.activeX.createObject.CreateObjectEvent.RESULT_OBJECT
+	 */
+	/**
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
 	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
@@ -27,6 +35,11 @@ package api.activeX.createObject
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+	 */
 	public class CreateObject extends ActiveX
 	{		
 		/**
@@ -34,11 +47,21 @@ package api.activeX.createObject
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
 		 * Programmatic ID for the ActiveX Object.
 		 * 
+		 * @defaultValue <code>null</code>
+		 */
+		/**
+		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var progID:String = null;
@@ -49,8 +72,18 @@ package api.activeX.createObject
 		 * 
 		 * @defaultValue new CreateObjectVO()
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>new</code>
+		 */
 		public var objectProperties:CreateObjectVO = new CreateObjectVO();
 		
+		/**
+		 * Constructor for ActiveX.CreateObject()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+		 */
 		public function CreateObject(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -63,6 +96,16 @@ package api.activeX.createObject
 		 * @param progIDString Programmatic ID for the ActiveX Object.
 		 * 
 		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+		 */
+		/**
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param progIDString
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
 		 */
 		public function createObject( activeXObject:String = null , progIDString:String = null ):void
 		{

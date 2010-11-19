@@ -2,6 +2,8 @@ package api.app.setKioskMode
 {
 	import api.app.App;
 
+	import api.events.app.setKioskMode.SetKioskModeEvent;
+
 	import flash.events.IEventDispatcher;
 
 	[Bindable]

@@ -1,15 +1,20 @@
 package api.activeX.notifiers
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.activeX.ActiveX;
-	
+
 	import api.events.activeX.notifiers.SetNotifyEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Property <code>event</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.notifiers.SetNotifyEvent.RESULT_EVENT
+	 */
+	/**
+	 * Dispatched if the Property <code>event</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_EVENT
 	 */
 	[Event(name="missingEvent" , type="api.events.SWFStudioEvent")]
 	
@@ -27,6 +32,11 @@ package api.activeX.notifiers
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
+	 */
 	public class SetNotify extends ActiveX
 	{
 		/**
@@ -35,11 +45,21 @@ package api.activeX.notifiers
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
 		 * The Event on the ActiveX Object that you want to listen for.
 		 * 
+		 * @defaultValue <code>null</code>
+		 */
+		/**
+		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var event:String = null;
@@ -51,8 +71,18 @@ package api.activeX.notifiers
 		 * 
 		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var result:Array = null;
 		
+		/**
+		 * Constructor for ActiveX.SetNotify()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
+		 */
 		public function SetNotify(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -68,6 +98,16 @@ package api.activeX.notifiers
 		 * 
 		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
 		 */		
+		/**
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param activeXEvent
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setNotify.html Northcode Help Documentation
+		 */
 		public function setNotify( activeXObject:String = null , activeXEvent:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

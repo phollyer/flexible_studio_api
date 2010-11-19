@@ -1,14 +1,22 @@
 package api.activeX.setGuides
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.activeX.ActiveX;
-	import api.vos.activeX.GuideVO;	
+
+	import api.events.activeX.setGuides.SetGuidesEvent;
+
+	import api.vos.activeX.GuideVO;
+
+	import flash.events.IEventDispatcher;	
 	
 	/**
 	 * Dispatched when the Property <code>object</code> has not been supplied.
 	 * 
 	 * @eventType api.events.activeX.setGuides.SetGuidesEvent.RESULT_OBJECT
+	 */
+	/**
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
 	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
@@ -19,12 +27,22 @@ package api.activeX.setGuides
 	 * 
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
 	 */
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+	 */
 	public class SetGuides extends ActiveX
 	{
 		/**
 		 * Value Object containing all the required Properties to set up the Guides.
 		 * 
 		 * @defaultValue new GuideVO()
+		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>new</code>
 		 */
 		public var guides:GuideVO = new GuideVO();
 		
@@ -34,8 +52,18 @@ package api.activeX.setGuides
 		 * 
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
+		/**
+		 * Constructor for ActiveX.SetGuides()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+		 */
 		public function SetGuides(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -48,6 +76,14 @@ package api.activeX.setGuides
 		 * the ActiveX Object.
 		 * 
 		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+		 */
+		/**
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
 		 */
 		public function setGuides( activeXObject:String = null ):void
 		{

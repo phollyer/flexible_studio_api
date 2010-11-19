@@ -2,6 +2,8 @@ package api.app.setBasePath
 {
 	import api.app.App;
 
+	import api.events.app.setBasePath.SetBasePathEvent;
+
 	import flash.events.IEventDispatcher;
 
 	/**

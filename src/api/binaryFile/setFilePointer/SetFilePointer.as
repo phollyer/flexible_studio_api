@@ -1,8 +1,10 @@
 package api.binaryFile.setFilePointer
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
+
+	import api.events.binaryFile.setFilePointer.SetFilePointerEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

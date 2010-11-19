@@ -2,6 +2,8 @@ package api.app.forceQuit
 {
 	import api.app.App;
 
+	import api.events.app.forceQuit.ForceQuitEvent;
+
 	import flash.events.IEventDispatcher;
 
 	[Bindable]

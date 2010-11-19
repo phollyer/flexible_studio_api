@@ -8,6 +8,11 @@ package api.app.showMessageBox
 
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * Dispatched if the Property <code>prompt</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_PROMPT
+	 */
 	[Event(name="missingPrompt" , type="api.events.SWFStudioEvent")]
 	/**
 	 * Dispatched when the Results are ready.

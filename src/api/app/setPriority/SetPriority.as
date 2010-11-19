@@ -2,9 +2,17 @@ package api.app.setPriority
 {
 	import api.app.App;
 
+	import api.events.app.setPriority.SetPriorityEvent;
+
 	import flash.events.IEventDispatcher;
 	import api.events.app.setPriority.SetPriorityEvent
 
+	/**
+	 * Dispatched if the Property <code>priority</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_PRIORITY
+	 */
+	[Event(name="missingPriority", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
 	 *

@@ -8,6 +8,11 @@ package api.app.showFileSave
 
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * Dispatched if the Property <code>fileOBJ</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_FILE_OBJ
+	 */
 	[Event(name="missingFileOBJ" , type="api.events.SWFStudioEvent")]
 	/**
 	 * Dispatched when the Results are ready.

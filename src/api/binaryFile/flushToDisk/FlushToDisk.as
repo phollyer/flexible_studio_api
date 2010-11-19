@@ -1,8 +1,10 @@
 package api.binaryFile.flushToDisk
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
+
+	import api.events.binaryFile.flushToDisk.FlushToDiskEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

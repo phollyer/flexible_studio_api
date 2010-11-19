@@ -1,8 +1,10 @@
 package api.binaryFile.unlock
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
+
+	import api.events.binaryFile.unlock.UnlockEvent;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched when the Results are ready.

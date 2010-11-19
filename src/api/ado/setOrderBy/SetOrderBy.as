@@ -1,10 +1,17 @@
 package api.ado.setOrderBy
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.ado.Ado;
 
+	import api.events.ado.setOrderBy.SetOrderByEvent;
+
+	import flash.events.IEventDispatcher;
+
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+	 */
 	/**
 	 *
 	 *
@@ -18,8 +25,18 @@ package api.ado.setOrderBy
 		 *
 		 * @defaultValue <code>null</code>
 		 */
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var order:Array = null;
 		
+		/**
+		 * Constructor for Ado.SetOrderBy()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+		 */
 		/**
 		 * Constructor for Ado.SetOrderBy()
 		 *
@@ -29,6 +46,12 @@ package api.ado.setOrderBy
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setOrderBy.html Northcode Help Documentation
+		 */
 		/**
 		 *
 		 *

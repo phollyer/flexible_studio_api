@@ -2,8 +2,16 @@ package api.app.trace
 {
 	import api.app.App;
 
+	import api.events.app.trace.TraceEvent;
+
 	import flash.events.IEventDispatcher;
 	
+	/**
+	 * Dispatched if the Property <code>text</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_TEXT
+	 */
+	[Event(name="missingText", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
 	 *

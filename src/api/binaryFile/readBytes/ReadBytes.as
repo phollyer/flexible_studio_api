@@ -1,11 +1,14 @@
 package api.binaryFile.readBytes
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.binaryFile.BinaryFile;
-	
+
 	import api.events.binaryFile.read.ReadBytesEvent;
+
+	import api.events.binaryFile.readBytes.ReadBytesEvent;
+
 	import api.vos.binaryFile.FormatVO;
+
+	import flash.events.IEventDispatcher;
 	
 	/**
 	 * Dispatched if the Property <code>format</code> has not been supplied.

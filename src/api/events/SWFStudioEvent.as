@@ -6,9 +6,11 @@ package api.events
 	{
 		public static const ACTION_COMPLETE : String = "actionComplete";
 		public static const MISSING_CRITERIA : String = "missingCriteria";
+		public static const MISSING_DATA :String = "missingData";
 		public static const MISSING_DIRECTION :String = "missingDirection";
 		public static const MISSING_EVENT : String = "missingEvent";
 		public static const MISSING_FILE_OBJ : String = "missingFileObj";
+		public static const MISSING_FORMAT : String = "missingFormat";
 		public static const MISSING_HWND : String = "missingHwnd";
 		public static const MISSING_METHOD : String = "missingMethod";
 		public static const MISSING_NUMBER : String = "missingNumber";

@@ -131,7 +131,7 @@ package api.binaryFile.writeBytes
 		}
 		private function invalidFormat():void
 		{
-			var e : WriteBytesEvent = new WriteBytesEvent( WriteBytesEvent.RESULT_FORMAT );
+			var e : WriteBytesEvent = new WriteBytesEvent( WriteBytesEvent.INVALID_FORMAT );
 			dispatchEvent( e );
 		}
 

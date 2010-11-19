@@ -486,6 +486,20 @@ package api
 		* This method is called by sub classes when a Direction is
 		* not supplied as an argument or property when required.
 		*
+		* <p>The MISSING_DATA event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingData():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_DATA);
+		}
+		
+		/**
+		* This method is called by sub classes when a Direction is
+		* not supplied as an argument or property when required.
+		*
 		* <p>The MISSING_DIRECTION event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		* 
@@ -522,6 +536,20 @@ package api
 		protected function missingFileOBJ():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_FILE_OBJ);
+		}
+		
+		/**
+		* This method is called by sub classes when a Direction is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FORMAT event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		* 
+		* @private
+		*/
+		protected function missingFormat():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FORMAT);
 		}
 		
 		/**

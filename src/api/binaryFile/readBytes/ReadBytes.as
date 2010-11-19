@@ -2,8 +2,6 @@ package api.binaryFile.readBytes
 {
 	import api.binaryFile.BinaryFile;
 
-	import api.events.binaryFile.read.ReadBytesEvent;
-
 	import api.events.binaryFile.readBytes.ReadBytesEvent;
 
 	import api.vos.binaryFile.FormatVO;
@@ -130,12 +128,12 @@ package api.binaryFile.readBytes
 		}
 		private function invalidFormat():void
 		{
-			var e : ReadBytesEvent = new ReadBytesEvent( ReadBytesEvent.RESULT_FORMAT );
+			var e : ReadBytesEvent = new ReadBytesEvent( ReadBytesEvent.INVALID_FORMAT );
 			dispatchEvent( e );
 		}
 		private function invalidSize():void
 		{
-			var e : ReadBytesEvent = new ReadBytesEvent( ReadBytesEvent.RESULT_SIZE );
+			var e : ReadBytesEvent = new ReadBytesEvent( ReadBytesEvent.INVALID_SIZE );
 			dispatchEvent( e );
 		}
 	}

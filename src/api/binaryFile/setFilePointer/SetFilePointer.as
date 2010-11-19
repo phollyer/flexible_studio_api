@@ -66,7 +66,7 @@ package api.binaryFile.setFilePointer
 		}
 		private function invalidPointer():void
 		{
-			var e : SetFilePointerEvent = new SetFilePointerEvent( SetFilePointerEvent.RESULT_POINTER );
+			var e : SetFilePointerEvent = new SetFilePointerEvent( SetFilePointerEvent.INVALID_POINTER );
 			dispatchEvent( e );
 		}
 		/**

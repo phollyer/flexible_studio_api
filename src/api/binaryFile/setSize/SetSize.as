@@ -66,7 +66,7 @@ package api.binaryFile.setSize
 		}
 		private function invalidSize():void
 		{
-			var e : SetSizeEvent = new SetSizeEvent( SetSizeEvent.RESULT_SIZE );
+			var e : SetSizeEvent = new SetSizeEvent( SetSizeEvent.INVALID_SIZE );
 			dispatchEvent( e );
 		}
 		/**

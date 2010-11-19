@@ -50,10 +50,7 @@ module Builder
 
       file_content
     end
-
-    def add_property_comments properties,method_name,file_content
-
-    end
+    
     def add_property_comments properties,file_content
       properties.each do |prop|
         match = public_var_with_value_reg_exp(prop).match(file_content)

@@ -26,7 +26,6 @@ module Builder
 
     def add_event_const_comments file_content
       consts = file_content.scan(every_event_const_reg_exp)
-
       consts.each do |const|
         @event_const = const.match(event_const_reg_exp)
         @event_string = const.match(event_string_reg_exp)

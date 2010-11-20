@@ -9,12 +9,18 @@ namespace "bd" do
   require 'builder/bin/build'
   
   desc "Add ASDoc comments to a Class and it's associated method Clases"
-  task :comment_class, [:class_name] => [:comment_class_file, :comment_class_methods]
+  task :comment_class, [:class_name] => [:comment_class_file, :comment_class_event, :comment_class_methods]
 
   desc "Add ASDoc comments to a Class definition"
   task :comment_class_file, [:class_name] do |t,args|
     b = Build.new args.class_name
     b.comment_class_file
+  end
+
+  desc "Add ASDoc comments to a Class Event definition"
+  task :comment_class_event, [:class_name] do |t,args|
+    b = Build.new args.class_name
+    b.comment_class_event
   end
 
   desc "Add ASDoc comments to a Class Method definition"

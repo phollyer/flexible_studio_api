@@ -16,6 +16,7 @@ module Builder
 
     def configure_static_consts file_content
       consts = file_content.scan(every_event_const_reg_exp)
+
       consts.uniq!
       consts.sort!
       

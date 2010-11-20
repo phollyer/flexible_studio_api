@@ -48,7 +48,7 @@ module Builder
     end
 
     def every_event_const_reg_exp
-      /\s+public static const \w+[_]*\s*:\s*\w+\s*=\s*\"*\w+\"*;/
+      /\s+public static const \w+_*\w*\s*:\s*\w+\s*=\s*\"*\w+\"*;/
     end
 
     def every_event_const_with_comments_reg_exp

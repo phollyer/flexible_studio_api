@@ -13,6 +13,10 @@ module Builder
       File.join "src","templates","asdoc_comments","#{temp_type}_definition.erb"
     end
 
+    def get_event_class_file_path event_class_name
+      File.join get_file_path, "events",@class_dir, "#{event_class_name}.as"
+    end
+
     def get_event_file_path event_name
       File.join get_file_path,"events",@class_dir,@method_dir,"#{event_name}.as"
     end

@@ -23,6 +23,7 @@ class Build
     @properties = []
 
     init_class @class_name
+    init_event_class @class_name
     init_method @method_name if @method_name
     init_event @method_name if @method_name
     
@@ -34,16 +35,27 @@ class Build
       set_up_nc_alts @class_name
     end
   end
+
+  def comment_class_event
+    if read_event_class_file event_class_file_path
+      @event_class_file = event_class_file_content
+      
+      @event_class_file.gsub!("KernelEvent","SWFStudioEvent")
+
+      @event_class_file = configure_static_consts @event_class_file
+      @event_class_file = add_event_const_comments @event_class_file if event_has_consts? @event_class_file
+
+      write_file event_class_file_path, @event_class_file
+    end
+  end
   
   def comment_class_file
     if read_class_file class_file_path
       @class_file = class_file_content
       comments_reg_exp = class_comments_reg_exp
 
-      unless @class_file.match(send_result_reg_exp)
-        add_class_result_method @class_file
-        comments_reg_exp[:class_result_method] = send_result_reg_exp
-      end
+      add_class_result_method @class_file unless result_method_exists? @class_file
+      comments_reg_exp[:class_result_method] = send_result_reg_exp
 
       comments_reg_exp.each { |key,value| @class_file = add_comments(key,value,@class_file)  }
       

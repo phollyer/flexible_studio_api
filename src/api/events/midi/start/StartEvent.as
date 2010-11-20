@@ -6,7 +6,6 @@ package api.events.midi.start
 
 	public class StartEvent extends MidiEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StartEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

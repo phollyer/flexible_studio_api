@@ -3,8 +3,18 @@ package api.midi
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI.html Northcode Help Documentation
+	*/
 	public class Midi extends Kernel
 	{
+		/**
+		* Constructor for Midi()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI.html Northcode Help Documentation
+		*/
 		public function Midi(target:IEventDispatcher=null)
 		{
 			super(target);

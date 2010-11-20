@@ -6,7 +6,6 @@ package api.events.midi.stop
 
 	public class StopEvent extends MidiEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

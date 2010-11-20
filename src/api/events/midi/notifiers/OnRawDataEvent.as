@@ -6,15 +6,36 @@ package api.events.midi.notifiers
 
 	public class OnRawDataEvent extends MidiEvent
 	{
-		public static const CHANGE:String = "change";
-		public static const COMPLETE:String = "complete";
 		
-		public var cmd:String = null;
-		public var id:String = null;
-		public var msec:Number = -1;
-		public var RAW_DATA:Object = null;
-		public var value1:Object = null;
-		public var value2:Object = null;
+	/**
+	* The OnRawDataEvent.CHANGE constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>change</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType change
+	*/
+		public static const CHANGE:String = "change";
+		
+	/**
+	* The OnRawDataEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
+		public static const RESULT:String = "result";
 		
 		public function OnRawDataEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

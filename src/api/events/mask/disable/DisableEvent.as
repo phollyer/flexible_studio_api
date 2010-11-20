@@ -6,7 +6,6 @@ package api.events.mask.disable
 
 	public class DisableEvent extends MaskEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function DisableEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

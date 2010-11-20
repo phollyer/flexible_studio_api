@@ -3,8 +3,18 @@ package api.mask
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask.html Northcode Help Documentation
+	*/
 	public class Mask extends Kernel
 	{
+		/**
+		* Constructor for Mask()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask.html Northcode Help Documentation
+		*/
 		public function Mask(target:IEventDispatcher=null)
 		{
 			super(target);

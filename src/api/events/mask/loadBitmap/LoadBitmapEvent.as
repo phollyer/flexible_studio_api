@@ -6,10 +6,6 @@ package api.events.mask.loadBitmap
 
 	public class LoadBitmapEvent extends MaskEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_MASK_COLOR:String = "missingMaskColor";
-		public static const MISSING_MASK_NAME:String = "missingMaskName";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LoadBitmapEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

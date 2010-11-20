@@ -6,8 +6,6 @@ package api.events.mask.enable
 
 	public class EnableEvent extends MaskEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_MASK_NAME:String = "missingMaskName";
 		
 		public function EnableEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

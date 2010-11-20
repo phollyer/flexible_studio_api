@@ -3,8 +3,18 @@ package api.sentry
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry.html Northcode Help Documentation
+	*/
 	public class Sentry extends Kernel
 	{
+		/**
+		* Constructor for Sentry()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry.html Northcode Help Documentation
+		*/
 		public function Sentry(target:IEventDispatcher=null)
 		{
 			super(target);

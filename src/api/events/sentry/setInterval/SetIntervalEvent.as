@@ -6,7 +6,6 @@ package api.events.sentry.setInterval
 
 	public class SetIntervalEvent extends SentryEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetIntervalEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

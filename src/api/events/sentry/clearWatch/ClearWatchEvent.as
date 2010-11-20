@@ -6,7 +6,6 @@ package api.events.sentry.clearWatch
 
 	public class ClearWatchEvent extends SentryEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearWatchEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,15 +1,34 @@
 package api.sentry.disable
 {
-	import flash.events.IEventDispatcher;
+	import api.events.sentry.disable.DisableEvent;
+
 	import api.sentry.Sentry;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_disable.html Northcode Help Documentation
+	*/
 	public class Disable extends Sentry
 	{		
+		/**
+		* Constructor for Sentry.Disable()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_disable.html Northcode Help Documentation
+		*/
 		public function Disable(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_disable.html Northcode Help Documentation
+		*/
 		public function disable():void
 		{
 			ssCore.Sentry.disable( {}

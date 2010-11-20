@@ -6,8 +6,6 @@ package api.events.http.proxyUser
 
 	public class ProxyUserEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_USER_ID:String = "missingUserID";
 		
 		public function ProxyUserEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

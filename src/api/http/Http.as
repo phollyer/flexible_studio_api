@@ -4,11 +4,21 @@ package api.http
 	
 	import api.Kernel;
 	
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP.html Northcode Help Documentation
+	*/
 	public class Http extends Kernel
 	{				
 		public static var HOST:String = null;
 		public static var RESOURCE:String = null;
 		
+		/**
+		* Constructor for Http()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP.html Northcode Help Documentation
+		*/
 		public function Http(target:IEventDispatcher=null)
 		{
 			super(target);

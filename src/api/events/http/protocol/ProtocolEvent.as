@@ -6,7 +6,6 @@ package api.events.http.protocol
 
 	public class ProtocolEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ProtocolEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

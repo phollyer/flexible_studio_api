@@ -6,7 +6,6 @@ package api.events.http.stop
 
 	public class StopEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

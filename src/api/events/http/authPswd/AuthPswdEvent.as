@@ -7,7 +7,6 @@ package api.events.http.authPswd
 
 	public class AuthPswdEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AuthPswdEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.http.authUser
 
 	public class AuthUserEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AuthUserEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.http.bufferSize
 
 	public class BufferSizeEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function BufferSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

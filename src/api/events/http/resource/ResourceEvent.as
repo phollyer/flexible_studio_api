@@ -6,8 +6,6 @@ package api.events.http.resource
 
 	public class ResourceEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_RESOURCE:String = "missingResource";
 		
 		public function ResourceEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

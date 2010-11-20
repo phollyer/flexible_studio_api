@@ -6,8 +6,6 @@ package api.events.http.proxyPort
 
 	public class ProxyPortEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PORT:String = "missingPort";
 		
 		public function ProxyPortEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

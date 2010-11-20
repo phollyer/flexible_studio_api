@@ -2,9 +2,9 @@ package api.events.http
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class HttpEvent extends KernelEvent
+	public class HttpEvent extends SWFStudioEvent
 	{
 		public function HttpEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

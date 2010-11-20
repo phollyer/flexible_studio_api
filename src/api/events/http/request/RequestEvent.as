@@ -6,8 +6,6 @@ package api.events.http.request
 
 	public class RequestEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function RequestEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

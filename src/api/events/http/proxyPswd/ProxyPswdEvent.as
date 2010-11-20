@@ -6,8 +6,6 @@ package api.events.http.proxyPswd
 
 	public class ProxyPswdEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PSWD:String = "missingPswd";
 		
 		public function ProxyPswdEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.http.autoEncodeResource
 
 	public class AutoEncodeResourceEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AutoEncodeResourceEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

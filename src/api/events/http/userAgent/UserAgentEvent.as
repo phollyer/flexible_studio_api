@@ -6,8 +6,6 @@ package api.events.http.userAgent
 
 	public class UserAgentEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_USER_AGENT:String = "missingUserAgent";
 		
 		public function UserAgentEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

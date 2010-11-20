@@ -6,7 +6,6 @@ package api.events.http.start
 
 	public class StartEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StartEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

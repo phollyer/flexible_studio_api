@@ -6,8 +6,6 @@ package api.events.http.headers
 
 	public class HeadersEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_HEADERS:String = "missingHeaders";
 		
 		public function HeadersEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

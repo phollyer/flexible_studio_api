@@ -6,8 +6,6 @@ package api.events.http.method
 
 	public class MethodEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_METHOD:String = "missingMethod";
 		
 		public function MethodEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

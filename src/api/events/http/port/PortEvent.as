@@ -6,7 +6,6 @@ package api.events.http.port
 
 	public class PortEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function PortEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

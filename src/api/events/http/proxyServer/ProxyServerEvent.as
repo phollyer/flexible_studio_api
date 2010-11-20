@@ -6,8 +6,6 @@ package api.events.http.proxyServer
 
 	public class ProxyServerEvent extends HttpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_SERVER:String = "missingServer";
 		
 		public function ProxyServerEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

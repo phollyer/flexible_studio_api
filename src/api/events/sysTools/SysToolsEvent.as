@@ -2,9 +2,9 @@ package api.events.sysTools
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class SysToolsEvent extends KernelEvent
+	public class SysToolsEvent extends SWFStudioEvent
 	{
 		public function SysToolsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.sysTools.lockWorkStation
 
 	public class LockWorkStationEvent extends SysToolsEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockWorkStationEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

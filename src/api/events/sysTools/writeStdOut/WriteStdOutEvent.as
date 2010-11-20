@@ -6,8 +6,6 @@ package api.events.sysTools.writeStdOut
 
 	public class WriteStdOutEvent extends SysToolsEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function WriteStdOutEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,6 @@ package api.events.sysTools.killProcess
 
 	public class KillProcessEvent extends SysToolsEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PROCESS_ID:String = "missingProcessID";
 		
 		public function KillProcessEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

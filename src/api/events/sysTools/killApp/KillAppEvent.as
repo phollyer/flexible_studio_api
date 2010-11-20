@@ -6,8 +6,6 @@ package api.events.sysTools.killApp
 
 	public class KillAppEvent extends SysToolsEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_APPLICAION:String = "missingApplication";
 		
 		public function KillAppEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

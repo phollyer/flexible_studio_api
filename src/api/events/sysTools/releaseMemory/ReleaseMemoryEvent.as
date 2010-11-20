@@ -6,7 +6,6 @@ package api.events.sysTools.releaseMemory
 
 	public class ReleaseMemoryEvent extends SysToolsEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ReleaseMemoryEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

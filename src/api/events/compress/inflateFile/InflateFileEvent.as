@@ -6,9 +6,6 @@ package api.events.compress.inflateFile
 
 	public class InflateFileEvent extends CompressEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DESTINATION:String = "missingDestination";
-		public static const MISSING_SOURCE:String = "missingSource";
 		
 		public function InflateFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -4,8 +4,18 @@ package api.compress
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Compress.html Northcode Help Documentation
+	*/
 	public class Compress extends Kernel
 	{
+		/**
+		* Constructor for Compress()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Compress.html Northcode Help Documentation
+		*/
 		public function Compress(target:IEventDispatcher=null)
 		{
 			super(target);

@@ -6,9 +6,6 @@ package api.events.popup.setMenu
 
 	public class SetMenuEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_NAME:String = "missingName";
-		public static const MISSING_RESOURCE:String = "missingResource";
 		
 		public function SetMenuEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

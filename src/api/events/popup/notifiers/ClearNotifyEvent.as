@@ -6,7 +6,6 @@ package api.events.popup.notifiers
 
 	public class ClearNotifyEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
 		public static const MISSING_EVENT:String = " missingEvent";
 		
 		public function ClearNotifyEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)

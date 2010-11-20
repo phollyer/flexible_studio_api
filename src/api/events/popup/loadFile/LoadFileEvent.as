@@ -6,9 +6,6 @@ package api.events.popup.loadFile
 
 	public class LoadFileEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_NAME:String = "missingName";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LoadFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

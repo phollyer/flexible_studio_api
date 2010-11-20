@@ -2,9 +2,9 @@ package api.events.popup
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class PopupEvent extends KernelEvent
+	public class PopupEvent extends SWFStudioEvent
 	{
 		public function PopupEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

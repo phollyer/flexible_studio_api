@@ -6,8 +6,6 @@ package api.events.popup.addItem
 
 	public class AddItemEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ITEM:String = "missingItem";
 		
 		public function AddItemEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

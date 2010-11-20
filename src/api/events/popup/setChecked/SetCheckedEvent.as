@@ -6,11 +6,21 @@ package api.events.popup.setChecked
 
 	public class SetCheckedEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
+		
+	/**
+	* The SetCheckedEvent.INVALID_FLAG constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>invalidFlag</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType invalidFlag
+	*/
 		public static const INVALID_FLAG:String = "invalidFlag";
-		public static const MISSING_FLAG:String = "missingFlag";
-		public static const MISSING_ID:String = "missingID";
-		public static const MISSING_NAME:String = "missingName";
 		
 		public function SetCheckedEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

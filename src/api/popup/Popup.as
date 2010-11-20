@@ -3,8 +3,18 @@ package api.popup
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup.html Northcode Help Documentation
+	*/
 	public class Popup extends Kernel
 	{
+		/**
+		* Constructor for Popup()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup.html Northcode Help Documentation
+		*/
 		public function Popup(target:IEventDispatcher=null)
 		{
 			super(target);

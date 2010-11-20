@@ -1,20 +1,52 @@
 package api.popup.addItem
 {
-	import flash.events.IEventDispatcher;
+	import api.events.popup.addItem.AddItemEvent;
+
 	import api.popup.Popup;
+
 	import api.vos.popup.ItemVO;
+
+	import flash.events.IEventDispatcher;
 	
+	/**
+	* Dispatched if the Property <code>item</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_ITEM
+	*/
 	[Event(name="missingItem" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_addItem.html Northcode Help Documentation
+	*/
 	public class AddItem extends Popup
 	{
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var item:ItemVO = null;
 		
+		/**
+		* Constructor for Popup.AddItem()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_addItem.html Northcode Help Documentation
+		*/
 		public function AddItem(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param itemVO
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_addItem.html Northcode Help Documentation
+		*/
 		public function addItem( itemVO:ItemVO = null ):void
 		{
 			item = compareVOs( itemVO , item );

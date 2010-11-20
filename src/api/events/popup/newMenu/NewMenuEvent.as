@@ -6,8 +6,6 @@ package api.events.popup.newMenu
 
 	public class NewMenuEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_NAME:String = "missingName";
 		
 		public function NewMenuEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

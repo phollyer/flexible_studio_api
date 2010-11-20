@@ -6,10 +6,6 @@ package api.events.popup.setText
 
 	public class SetTextEvent extends PopupEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ID:String = "missingID";
-		public static const MISSING_NAME:String = "missingName";
-		public static const MISSING_TEXT:String = "missingText";
 		
 		public function SetTextEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.shell.stopWait
 
 	public class StopWaitEvent extends ShellEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StopWaitEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

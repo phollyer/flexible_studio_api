@@ -2,9 +2,9 @@ package api.events.shell
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class ShellEvent extends KernelEvent
+	public class ShellEvent extends SWFStudioEvent
 	{		
 		public function ShellEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

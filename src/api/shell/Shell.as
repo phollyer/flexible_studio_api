@@ -3,8 +3,18 @@ package api.shell
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell.html Northcode Help Documentation
+	*/
 	public class Shell extends Kernel
 	{
+		/**
+		* Constructor for Shell()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell.html Northcode Help Documentation
+		*/
 		public function Shell(target:IEventDispatcher=null)
 		{
 			super(target);

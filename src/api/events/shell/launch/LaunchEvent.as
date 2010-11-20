@@ -6,7 +6,6 @@ package api.events.shell.launch
 
 	public class LaunchEvent extends ShellEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LaunchEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

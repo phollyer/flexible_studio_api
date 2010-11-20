@@ -39,10 +39,6 @@ module Builder
       event
     end
 
-    def comment_found? content, comment
-      content.scan(comment).size > 0
-    end
-
     def extract_parameters file_content, method_name
       param_list = []
  

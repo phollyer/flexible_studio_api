@@ -2,8 +2,9 @@ module Builder
   module RegExp
 
     def all_comments_reg_exp
-      /\s*\/\*\*(\s*\*.*)*\s*\*\/\r\n/
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\r*\n*/
     end
+
     def all_imports_reg_exp
       /\s+import\s+[\w+\.]+;/
     end
@@ -135,12 +136,20 @@ module Builder
       /\t\{/
     end
 
+    def start_of_comments_reg_exp
+      /\/\*\*/
+    end
+
     def start_of_package_reg_exp
       /\{/
     end
 
     def start_of_send_result_reg_exp
       /\t\}\r\n\}/
+    end
+
+    def unwanted_comments_reg_exp
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s*\/\*\*/s
     end
 
     def unwanted_consts_reg_exp

@@ -1,4 +1,5 @@
 require 'builder/lib/builder/action_script'
+require 'builder/lib/builder/clean_up'
 require 'builder/lib/builder/comments'
 require 'builder/lib/builder/init'
 require 'builder/lib/builder/northcode_alts'
@@ -7,6 +8,7 @@ require 'builder/lib/builder/reg_exp'
 require 'builder/lib/builder/write'
 
 include Builder::ActionScript
+include Builder::CleanUp
 include Builder::Comments
 include Builder::Init
 include Builder::NorthcodeAlts
@@ -45,6 +47,8 @@ class Build
       @event_class_file = configure_static_consts @event_class_file
       @event_class_file = add_event_class_comments @event_class_file if event_has_consts? @event_class_file
 
+      @event_class_file = clean_up_event_class_file @event_class_file
+
       write_file event_class_file_path, @event_class_file
     end
   end
@@ -54,11 +58,13 @@ class Build
       @class_file = class_file_content
       comments_reg_exp = class_comments_reg_exp
 
-      add_class_result_method @class_file unless result_method_exists? @class_file
-      comments_reg_exp[:class_result_method] = send_result_reg_exp
+      @class_file = add_class_result_method @class_file unless result_method_exists? @class_file
 
+      comments_reg_exp[:class_result_method] = send_result_reg_exp
       comments_reg_exp.each { |key,value| @class_file = add_comments(key,value,@class_file)  }
-      
+
+      @class_file = clean_up_class_file @class_file
+
       write_file class_file_path, @class_file
     end
   end
@@ -76,13 +82,15 @@ class Build
         end
 
         @method_file = configure_import_statements @method_file
+        @method_file = add_missing_event_metadata(@method_file)
         
         method_comments_reg_exp.each { |key,value| @method_file = add_comments(key,value,@method_file)  }
 
-        @method_file = add_missing_event_metadata(@method_file)
         @method_file = add_missing_event_metadata_comments(@method_file)
         @method_file = add_property_comments(@properties,@method_file)
-
+        
+        @method_file = clean_up_method_file @method_file
+        
         write_file(method_file_path,@method_file)
       else
         puts "Failed:\t@file_path"
@@ -106,6 +114,8 @@ class Build
       @event_file = configure_static_consts @event_file
       @event_file = add_event_const_comments @event_file if event_has_consts? @event_file
 
+      @event_file = clean_up_event_file @event_file
+      
       write_file(event_file_path,@event_file)
     end
   end

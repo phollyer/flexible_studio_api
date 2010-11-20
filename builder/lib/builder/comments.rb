@@ -123,6 +123,10 @@ module Builder
       file_content
     end
 
+    def comment_found? content, comment
+      content.scan(comment).size > 0
+    end
+
     def has_comments? text
       text.match(all_comments_reg_exp)
     end

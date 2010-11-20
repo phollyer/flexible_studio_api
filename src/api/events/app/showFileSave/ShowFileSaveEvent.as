@@ -6,9 +6,70 @@ package api.events.app.showFileSave
 
 	public class ShowFileSaveEvent extends AppEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FILE_OBJ:String = "missingFileOBJ";
+		
+    /**
+    * The ShowFileSaveEvent.RESULT constant defines the value of the
+    * <code>type</code> property of the event object
+    * for a <code>result</code> event.
+    *
+    * <p>The properties of the event object have the following values:</p>
+    * <table class=innertable>
+    * <tr><th>Property</th><th>Value</th></tr>
+    * 
+    * <tr><td>file</td><td>null</td></tr>
+    * 
+    * <tr><td>filterMask</td><td>null</td></tr>
+    * 
+    * <tr><td>filterName</td><td>null</td></tr>
+    * 
+    * </table>
+    *
+    * @eventType result
+    */
+		public static const RESULT : String = "result";
 		public static const RESULT:String = "result";
+		
+    /**
+    * The ShowFileSaveEvent.COMPLETE constant defines the value of the
+    * <code>type</code> property of the event object
+    * for a <code>complete</code> event.
+    *
+    * <p>The properties of the event object have the following values:</p>
+    * <table class=innertable>
+    * <tr><th>Property</th><th>Value</th></tr>
+    * 
+    * <tr><td>file</td><td>null</td></tr>
+    * 
+    * <tr><td>filterMask</td><td>null</td></tr>
+    * 
+    * <tr><td>filterName</td><td>null</td></tr>
+    * 
+    * </table>
+    *
+    * @eventType complete
+    */
+		public static const COMPLETE:String = "complete";
+		
+    /**
+    * The ShowFileSaveEvent.MISSING_FILE constant defines the value of the
+    * <code>type</code> property of the event object
+    * for a <code>missingFileOBJ</code> event.
+    *
+    * <p>The properties of the event object have the following values:</p>
+    * <table class=innertable>
+    * <tr><th>Property</th><th>Value</th></tr>
+    * 
+    * <tr><td>file</td><td>null</td></tr>
+    * 
+    * <tr><td>filterMask</td><td>null</td></tr>
+    * 
+    * <tr><td>filterName</td><td>null</td></tr>
+    * 
+    * </table>
+    *
+    * @eventType missingFileOBJ
+    */
+		public static const MISSING_FILE_OBJ:String = "missingFileOBJ";
 		
 		public var file:String = null;
 		public var filterIndex:Number = -1;

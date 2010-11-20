@@ -7,11 +7,6 @@ package api.activeX.getProperty
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT_OBJECT
-	 */
-	/**
 	 * Dispatched if the Property <code>object</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
@@ -27,11 +22,6 @@ package api.activeX.getProperty
 	
 	/**
 	 * Dispatched when the Results are ready.
-	 * 
-	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
 	 */
@@ -40,24 +30,12 @@ package api.activeX.getProperty
 	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 * Get a value for a Property of an ActiveX Object that you have embedded 
-	 * into your Application.
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-	 */
-	/**
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
 	 */
 	public class GetProperty extends ActiveX
 	{
-		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -66,22 +44,12 @@ package api.activeX.getProperty
 		public var object:String = null;
 		
 		/**
-		 * The Property on the ActiveX Object that you are retrieving.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var property:String = null;
 		
-		/**
-		 * The Value of the Property retrieved.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -99,16 +67,6 @@ package api.activeX.getProperty
 			super(target);
 		}
 		
-		/**
-		 * Get a value for a Property of an ActiveX Object that you have embedded 
-	 	 * into your Application.
-	 	 * 
-	 	 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * @param prop The Property on the ActiveX Object that you are retrieving.
-	 	 * 
-	 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-	 	 */
 		/**
 		 *
 		 *
@@ -141,13 +99,6 @@ package api.activeX.getProperty
 			}
 		}
 
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

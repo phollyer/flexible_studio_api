@@ -12,19 +12,9 @@ package api.ado.setFieldList
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
-	 */
 	public class SetFieldList extends Ado
 	{
 		// Optional
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -37,21 +27,10 @@ package api.ado.setFieldList
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.SetFieldList()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
-		 */
 		public function SetFieldList(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

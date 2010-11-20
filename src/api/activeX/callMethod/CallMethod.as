@@ -8,11 +8,6 @@ package api.activeX.callMethod
 	
 	/**
 	 * Dispatched if the Property <code>method</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT_METHOD
-	 */
-	/**
-	 * Dispatched if the Property <code>method</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_METHOD
 	 */
@@ -27,22 +22,12 @@ package api.activeX.callMethod
 	
 	/**
 	 * Dispatched when the Results are ready.
-	 * 
-	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
 	 *
 	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.activeX.callMethod.CallMethodEvent")]
 	
 	[Bindable]
-	/**
-	 * Calls a Method on an ActiveX Object.
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -51,11 +36,6 @@ package api.activeX.callMethod
 	public class CallMethod extends ActiveX
 	{
 		/**
-		 * The Method on the ActiveX Object to call.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
@@ -63,23 +43,12 @@ package api.activeX.callMethod
 		public var method:String = null;
 		
 		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
-		/**
-		 * The data returned from the method called.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -97,15 +66,6 @@ package api.activeX.callMethod
 			super(target);
 		}
 		
-		/**
-		 * Call the Method on the ActiveX Object.
-		 * 
-		 * @param methodName The Method on the ActiveX Object to call. Corresponds to <code>method</code>.
-		 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object. Corresponds to <code>object</code>
-		 * 
-		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -138,13 +98,6 @@ package api.activeX.callMethod
 			}
 		}
 
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

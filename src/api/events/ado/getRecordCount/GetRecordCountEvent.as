@@ -6,8 +6,7 @@ package api.events.ado.getRecordCount
 
 	public class GetRecordCountEvent extends AdoEvent
 	{
-		
-    /**
+		/**
     * The GetRecordCountEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

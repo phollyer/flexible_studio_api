@@ -9,20 +9,10 @@ package api.app.notifiers
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.OnDragDrop.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.notifiers.OnDragDropEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onDragDrop.OnDragDropEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -56,11 +46,6 @@ package api.app.notifiers
 		 */
 		public var y:Number = 0;
 		
-		/**
-		 * Constructor for App.OnDragDrop()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.OnDragDrop()
 		 *

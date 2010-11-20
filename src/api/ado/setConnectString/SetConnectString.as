@@ -18,19 +18,9 @@ package api.ado.setConnectString
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
-	 */
 	public class SetConnectString extends Ado
 	{
 		// Required
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -43,23 +33,10 @@ package api.ado.setConnectString
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.SetConnectString()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
-		 */
 		public function SetConnectString(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param adoConnectString
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

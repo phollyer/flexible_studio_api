@@ -6,8 +6,26 @@ package api.events.binaryFile.readBytes
 
 	public class ReadBytesEvent extends BinaryFileEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FORMAT:String = "missingFormat";
+		
+    /**
+    * The ReadBytesEvent.RESULT constant defines the value of the
+    * <code>type</code> property of the event object
+    * for a <code>result</code> event.
+    *
+    * <p>The properties of the event object have the following values:</p>
+    * <table class=innertable>
+    * <tr><th>Property</th><th>Value</th></tr>
+    * 
+    * <tr><td>bytesRead</td><td>0</td></tr>
+    * 
+    * <tr><td>systemError</td><td>null</td></tr>
+    * 
+    * <tr><td>text</td><td>null</td></tr>
+    * 
+    * </table>
+    *
+    * @eventType result
+    */
 		public static const RESULT:String = "result";
 		
 		public var bytesRead:Number = 0;

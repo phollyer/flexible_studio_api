@@ -7,22 +7,12 @@ package api.activeX.isRegistered
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Property <code>progID</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT_PROG_ID
-	 */
-	/**
 	 * Dispatched if the Property <code>progID</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_PROG_ID
 	 */
 	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
-	/**
-	 * Dispatched when the Results are ready.
-	 * 
-	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT
-	 */
 	/**
 	 * Dispatched when the Results are ready.
 	 *
@@ -32,12 +22,6 @@ package api.activeX.isRegistered
 	
 	[Bindable]
 	/**
-	 * Check to see if the specified <code>progID</code> (Class Name) for the
-	 * ActiveX Object matches an ActiveX Object installed on the local machine.
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
-	 */
-	/**
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
@@ -45,22 +29,12 @@ package api.activeX.isRegistered
 	public class IsRegistered extends ActiveX
 	{		
 		/**
-		 * Programmatic ID for the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var progID:String = null;
 		
-		/**
-		 * Flag to determine if the ActiveX Object is installed on the local machine.
-		 * 
-		 * @defaultValue false
-		 */
 		/**
 		 * 
 		 *
@@ -78,14 +52,6 @@ package api.activeX.isRegistered
 			super(target);
 		}
 		
-		/**
-		 * Check to see if the specified <code>progID</code> (Class Name) for the
-	 	 * ActiveX Object matches an ActiveX Object installed on the local machine.
-	 	 * 
-	 	 * @param prodIDString Programmatic ID for the ActiveX Object.
-		 * 
-	 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
-	 	 */	
 		/**
 		 *
 		 *
@@ -108,13 +74,6 @@ package api.activeX.isRegistered
 			}
 		}
 
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

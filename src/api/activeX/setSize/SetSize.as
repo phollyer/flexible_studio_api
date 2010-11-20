@@ -7,11 +7,6 @@ package api.activeX.setSize
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.setSize.SetSizeEvent.RESULT_OBJECT
-	 */
-	/**
 	 * Dispatched if the Property <code>object</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
@@ -20,11 +15,6 @@ package api.activeX.setSize
 	
 	[Bindable]
 	/**
-	 * Set the <code>height</code> and <code>width</code> of the ActiveX Object.
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setSize.html Northcode Help Documentation
-	 */
-	/**
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setSize.html Northcode Help Documentation
@@ -32,22 +22,11 @@ package api.activeX.setSize
 	public class SetSize extends ActiveX
 	{
 		/**
-		 * The Height of the ActiveX Object
-		 * 
-		 * @defaultValue 200
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>200</code>
 		 */
 		public var height:Number = 200;
-		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -55,11 +34,6 @@ package api.activeX.setSize
 		 */
 		public var object:String = null;
 		
-		/**
-		 * The Width of the ActiveXObject
-		 * 
-		 * @defaultValue 200
-		 */
 		/**
 		 * 
 		 *
@@ -76,14 +50,6 @@ package api.activeX.setSize
 		{
 			super(target);
 		}
-		/**
-		 * Set the <code>height</code> and <code>width</code> of the ActiveX Object.
-		 * 
-		 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setSize.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

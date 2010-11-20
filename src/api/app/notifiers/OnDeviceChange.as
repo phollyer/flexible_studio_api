@@ -9,20 +9,10 @@ package api.app.notifiers
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.OnDeviceChange.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.notifiers.OnDeviceChangeEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onDeviceChange.OnDeviceChangeEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -50,11 +40,6 @@ package api.app.notifiers
 		 */
 		public var drive:String = null;
 		
-		/**
-		 * Constructor for App.OnDeviceChange()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.OnDeviceChange()
 		 *

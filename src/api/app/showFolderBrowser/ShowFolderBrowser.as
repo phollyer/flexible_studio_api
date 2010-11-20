@@ -9,11 +9,6 @@ package api.app.showFolderBrowser
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.ShowFolderBrowser.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.showFolderBrowser.ShowFolderBrowserEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFolderBrowser.ShowFolderBrowserEvent")]

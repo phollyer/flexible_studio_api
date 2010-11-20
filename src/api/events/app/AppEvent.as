@@ -5,8 +5,7 @@ package api.events.app
 
 	public class AppEvent extends SWFStudioEvent
 	{
-		
-    /**
+		/**
     * The AppEvent.LOGGING_OFF constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>loggingOff</code> event.
@@ -20,8 +19,7 @@ package api.events.app
     * @eventType loggingOff
     */
 		public static const LOGGING_OFF:String = "loggingOff";
-		
-    /**
+		/**
     * The AppEvent.REBOOTING constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>rebooting</code> event.
@@ -35,8 +33,7 @@ package api.events.app
     * @eventType rebooting
     */
 		public static const REBOOTING:String = "rebooting";
-		
-    /**
+		/**
     * The AppEvent.SHUTTING_DOWN constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>shuttingDown</code> event.

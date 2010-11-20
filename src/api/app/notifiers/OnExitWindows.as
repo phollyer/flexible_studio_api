@@ -9,20 +9,10 @@ package api.app.notifiers
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.OnExitWindows.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.notifiers.OnExitWindowsEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onExitWindows.OnExitWindowsEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -38,11 +28,6 @@ package api.app.notifiers
 		 */
 		public var method:String = null;
 		
-		/**
-		 * Constructor for App.OnExitWindows()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.OnExitWindows()
 		 *

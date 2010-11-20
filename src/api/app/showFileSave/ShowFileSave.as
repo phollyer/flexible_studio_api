@@ -17,11 +17,6 @@ package api.app.showFileSave
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.ShowFileSave.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.showFileSave.ShowFileSaveEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFileSave.ShowFileSaveEvent")]

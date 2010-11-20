@@ -11,17 +11,7 @@ package api.ado.moveBy
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_NUMBER
 	 */
-	/**
-	 * Dispatched if the Property <code>number</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_NUMBER
-	 */
 	[Event(name="missingNumber" , type="api.events.SWFStudioEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.MoveBy.Event.RESULT
-	 */
 	/**
 	 * Dispatched when the Results are ready.
 	 *
@@ -29,11 +19,6 @@ package api.ado.moveBy
 	 */
 	[Event(name="result", type="api.events.ado.moveBy.MoveByEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -50,17 +35,7 @@ package api.ado.moveBy
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var adoError:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -73,23 +48,10 @@ package api.ado.moveBy
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.MoveBy()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-		 */
 		public function MoveBy(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param rowCount
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -110,13 +72,6 @@ package api.ado.moveBy
 					ssCore.Ado.moveBy( {number:number} , {callback:actionComplete, errorSTR:"moveByError", code:"16010"} );
 			}
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

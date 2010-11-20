@@ -12,19 +12,9 @@ package api.ado.setTable
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
-	 */
 	public class SetTable extends Ado
 	{
 		// Optional
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -37,23 +27,10 @@ package api.ado.setTable
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.SetTable()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
-		 */
 		public function SetTable(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param tableName
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

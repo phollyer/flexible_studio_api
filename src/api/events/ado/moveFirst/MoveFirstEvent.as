@@ -6,8 +6,7 @@ package api.events.ado.moveFirst
 
 	public class MoveFirstEvent extends AdoEvent
 	{
-		
-    /**
+		/**
     * The MoveFirstEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

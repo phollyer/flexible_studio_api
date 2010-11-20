@@ -9,20 +9,10 @@ package api.ado.moveLast
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.ado.MoveLast.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.ado.moveLast.MoveLastEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.ado.moveLast.MoveLastEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -36,17 +26,7 @@ package api.ado.moveLast
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var adoError:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -54,11 +34,6 @@ package api.ado.moveLast
 		 */
 		public var row:String = null;
 		
-		/**
-		 * Constructor for Ado.MoveLast()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for Ado.MoveLast()
 		 *
@@ -74,23 +49,10 @@ package api.ado.moveLast
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation
 		 */
-		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation
-		 */
 		public function moveLast():void
 		{
 			ssCore.Ado.moveLast( {} , {callback:actionComplete, errorSTR:"moveLastError", code:"16012"} );
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

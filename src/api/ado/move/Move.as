@@ -11,17 +11,7 @@ package api.ado.move
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_DIRECTION
 	 */
-	/**
-	 * Dispatched if the Property <code>direction</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_DIRECTION
-	 */
 	[Event(name="missingDirection" , type="api.events.SWFStudioEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.Move.Event.RESULT
-	 */
 	/**
 	 * Dispatched when the Results are ready.
 	 *
@@ -29,11 +19,6 @@ package api.ado.move
 	 */
 	[Event(name="result", type="api.events.ado.move.MoveEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_move.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -47,19 +32,9 @@ package api.ado.move
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var direction:String = null;
 		
 		// Optional
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
 		/**
 		 * 
 		 *
@@ -73,17 +48,7 @@ package api.ado.move
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var adoError:String = null;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -96,23 +61,10 @@ package api.ado.move
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_move.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.Move()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_move.html Northcode Help Documentation
-		 */
 		public function Move(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param moveDirection
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_move.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -134,13 +86,6 @@ package api.ado.move
 									,{callback:actionComplete, errorSTR:"moveError", code:"16009"} );
 			}
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

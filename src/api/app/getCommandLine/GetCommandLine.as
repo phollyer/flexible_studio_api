@@ -9,11 +9,6 @@ package api.app.getCommandLine
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.GetCommandLine.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.getCommandLine.GetCommandLineEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.getCommandLine.GetCommandLineEvent")]

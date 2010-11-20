@@ -9,11 +9,6 @@ package api.activeX.setGuides
 	import flash.events.IEventDispatcher;	
 	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.setGuides.SetGuidesEvent.RESULT_OBJECT
-	 */
-	/**
 	 * Dispatched if the Property <code>object</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
@@ -22,12 +17,6 @@ package api.activeX.setGuides
 	
 	[Bindable]
 	/**
-	 * Set up Guides that will be used to resize the ActiveX Object when you Application
-	 * Window is re-sized.
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
-	 */
-	/**
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
@@ -35,23 +24,12 @@ package api.activeX.setGuides
 	public class SetGuides extends ActiveX
 	{
 		/**
-		 * Value Object containing all the required Properties to set up the Guides.
-		 * 
-		 * @defaultValue new GuideVO()
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>new</code>
 		 */
 		public var guides:GuideVO = new GuideVO();
 		
-		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -68,15 +46,6 @@ package api.activeX.setGuides
 		{
 			super(target);
 		}
-		/**
-		 * Set up Guides that will be used to resize the ActiveX Object when you Application
-		 * Window is re-sized.
-		 * 
-		 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

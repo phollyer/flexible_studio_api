@@ -42,19 +42,9 @@ package api.binaryFile.open
 		/**
 		 * 
 		 *
-		 * @defaultValue <code>AccessModeVO</code>
-		 */
-		/**
-		 * 
-		 *
 		 * @defaultValue <code>AccessModeVO.READ</code>
 		 */
 		public var accessMode:String = AccessModeVO.READ;
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>ShareModeVO</code>
-		 */
 		/**
 		 * 
 		 *

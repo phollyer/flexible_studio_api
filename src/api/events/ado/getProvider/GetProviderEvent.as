@@ -6,8 +6,7 @@ package api.events.ado.getProvider
 
 	public class GetProviderEvent extends AdoEvent
 	{
-		
-    /**
+		/**
     * The GetProviderEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

@@ -9,20 +9,10 @@ package api.app.notifiers
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.OnData.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.notifiers.OnDataEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.onData.OnDataEvent")]
 	[Bindable]
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
 	/**
 	 *
 	 *
@@ -44,11 +34,6 @@ package api.app.notifiers
 		 */
 		public var dataStream:Array = new Array();
 		
-		/**
-		 * Constructor for App.OnData()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for App.OnData()
 		 *

@@ -16,11 +16,6 @@ package api.app.notifiers
 	/**
 	 *
 	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-	 */
-	/**
-	 *
-	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_clearNotify.html Northcode Help Documentation
 	 */
 	public class ClearNotify extends App
@@ -36,25 +31,12 @@ package api.app.notifiers
 		/**
 		 * Constructor for App.ClearNotify()
 		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
-		/**
-		 * Constructor for App.ClearNotify()
-		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_clearNotify.html Northcode Help Documentation
 		 */
 		public function ClearNotify(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param notificationEvent
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_notifiers.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

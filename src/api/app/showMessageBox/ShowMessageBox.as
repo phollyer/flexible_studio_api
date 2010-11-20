@@ -17,11 +17,6 @@ package api.app.showMessageBox
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.ShowMessageBox.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.showMessageBox.ShowMessageBoxEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showMessageBox.ShowMessageBoxEvent")]

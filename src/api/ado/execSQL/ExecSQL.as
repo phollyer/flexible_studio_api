@@ -11,17 +11,7 @@ package api.ado.execSQL
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_SQL
 	 */
-	/**
-	 * Dispatched if the Property <code>sql</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_SQL
-	 */
 	[Event(name="missingSql" , type="api.events.SWFStudioEvent")]
-	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.ExecSQL.Event.RESULT
-	 */
 	/**
 	 * Dispatched when the Results are ready.
 	 *
@@ -35,19 +25,9 @@ package api.ado.execSQL
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
-	 */
 	public class ExecSQL extends Ado
 	{
 		// Required
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -61,18 +41,8 @@ package api.ado.execSQL
 		 *
 		 * @defaultValue <code>null</code>
 		 */
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
 		public var adoError:String = null;
 		
-		/**
-		 * Constructor for Ado.ExecSQL()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
-		 */
 		/**
 		 * Constructor for Ado.ExecSQL()
 		 *
@@ -82,14 +52,6 @@ package api.ado.execSQL
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-		 * @param sqlQuery
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *
@@ -110,13 +72,6 @@ package api.ado.execSQL
 					ssCore.Ado.execSQL( {sql:sql} , {callback:actionComplete, errorSTR:"execSQLError", code:"16001"} );
 			}
 		}
-		/**
-		* A result has been received so dispatch it.
-		*
-		* @param r The result Object returned by SWF Studio.
-		*
-		* @private
-		*/
 		/**
 		* A result has been received so dispatch it.
 		*

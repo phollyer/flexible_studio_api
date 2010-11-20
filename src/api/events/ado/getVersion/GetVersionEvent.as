@@ -6,8 +6,7 @@ package api.events.ado.getVersion
 
 	public class GetVersionEvent extends AdoEvent
 	{
-		
-    /**
+		/**
     * The GetVersionEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

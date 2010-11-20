@@ -17,11 +17,6 @@ package api.app.showFileOpen
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.ShowFileOpen.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.showFileOpen.ShowFileOpenEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showFileOpen.ShowFileOpenEvent")]

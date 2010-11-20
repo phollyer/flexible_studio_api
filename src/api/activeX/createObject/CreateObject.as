@@ -9,11 +9,6 @@ package api.activeX.createObject
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied. 
-	 * 
-	 * @eventType api.events.activeX.createObject.CreateObjectEvent.RESULT_OBJECT
-	 */
-	/**
 	 * Dispatched if the Property <code>object</code> has not been supplied.
 	 *
 	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
@@ -29,24 +24,12 @@ package api.activeX.createObject
 	
 	[Bindable]
 	/**
-	 * Creat a new ActiveX Object for embedding into your Application.
-	 * 
-	 * <p>Remember to set the <code>objectProperties</code> for the ActiveX Object you are embedding.</p>
-	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
-	 */
-	/**
 	 *
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
 	 */
 	public class CreateObject extends ActiveX
 	{		
-		/**
-		 * The Object Identifier used to identify the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
 		/**
 		 * 
 		 *
@@ -55,23 +38,12 @@ package api.activeX.createObject
 		public var object:String = null;
 		
 		/**
-		 * Programmatic ID for the ActiveX Object.
-		 * 
-		 * @defaultValue <code>null</code>
-		 */
-		/**
 		 * 
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var progID:String = null;
 		
-		/**
-		 * Value Object with all the required Properties necessary
-		 * to create the ActiveX Object.
-		 * 
-		 * @defaultValue new CreateObjectVO()
-		 */
 		/**
 		 * 
 		 *
@@ -89,14 +61,6 @@ package api.activeX.createObject
 			super(target);
 		}
 		
-		/**
-		 * Creat a new ActiveX Object for embedding into your Application.
-		 * 
-		 * @param activeXObject The Object Identifier used to identify the ActiveX Object.
-		 * @param progIDString Programmatic ID for the ActiveX Object.
-		 * 
-		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

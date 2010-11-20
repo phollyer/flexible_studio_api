@@ -12,11 +12,6 @@ package api.ado.setSQL
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSQL.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSQL.html Northcode Help Documentation
-	 */
 	public class SetSQL extends Ado
 	{
 		// Optional
@@ -27,21 +22,10 @@ package api.ado.setSQL
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSQL.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.SetSQL()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSQL.html Northcode Help Documentation
-		 */
 		public function SetSQL(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSQL.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

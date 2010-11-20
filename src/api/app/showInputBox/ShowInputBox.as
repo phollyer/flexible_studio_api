@@ -15,11 +15,6 @@ package api.app.showInputBox
 	/**
 	 * Dispatched when the Results are ready.
 	 *
-	 * @eventType api.events.app.ShowInputBox.Event.RESULT
-	 */
-	/**
-	 * Dispatched when the Results are ready.
-	 *
 	 * @eventType api.events.app.showInputBox.ShowInputBoxEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.app.showInputBox.ShowInputBoxEvent")]

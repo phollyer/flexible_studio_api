@@ -14,19 +14,9 @@ package api.ado.setRowFormat
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
 	 */
-	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
-	 */
 	public class SetRowFormat extends Ado
 	{
 		// Optional
-		/**
-		 * 
-		 *
-		 * @defaultValue <code>SetRowFormatVO</code>
-		 */
 		/**
 		 * 
 		 *
@@ -39,21 +29,10 @@ package api.ado.setRowFormat
 		 *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
 		 */
-		/**
-		 * Constructor for Ado.SetRowFormat()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
-		 */
 		public function SetRowFormat(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
-		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
-		 */
 		/**
 		 *
 		 *

@@ -6,7 +6,6 @@ package api.events.transparent.enable
 
 	public class EnableEvent extends TransparentEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function EnableEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.transparent.freeze
 
 	public class FreezeEvent extends TransparentEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function FreezeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

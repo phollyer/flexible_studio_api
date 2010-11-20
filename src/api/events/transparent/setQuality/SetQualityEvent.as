@@ -6,8 +6,6 @@ package api.events.transparent.setQuality
 
 	public class SetQualityEvent extends TransparentEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_QUALITY:String = "missingQuality";
 		
 		public function SetQualityEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -2,9 +2,9 @@ package api.events.layout
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class LayoutEvent extends KernelEvent
+	public class LayoutEvent extends SWFStudioEvent
 	{
 		public function LayoutEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

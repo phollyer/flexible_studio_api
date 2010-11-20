@@ -3,8 +3,18 @@ package api.layout
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout.html Northcode Help Documentation
+	*/
 	public class Layout extends Kernel
 	{
+		/**
+		* Constructor for Layout()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout.html Northcode Help Documentation
+		*/
 		public function Layout(target:IEventDispatcher=null)
 		{
 			super(target);

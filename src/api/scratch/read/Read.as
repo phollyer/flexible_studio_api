@@ -7,56 +7,56 @@ package api.scratch.read
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.scratch.read.ReadEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.scratch.read.ReadEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.scratch.read.ReadEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
+	*/
 	public class Read extends Scratch
 	{
 		// Optional
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>false</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var binary:Boolean = false;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>false</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var secure:Boolean = false;
 		
 		// Result
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var data:String = null;
 		
 		/**
-		 * Constructor for Scratch.Read()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
-		 */
+		* Constructor for Scratch.Read()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
+		*/
 		public function Read(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
+		*/
 		public function read():void
 		{
 			ssCore.Scratch.read( {binary:binary , secure:secure}

@@ -7,58 +7,58 @@ package api.scratch.write
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched if the Property <code>data</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_DATA
-	 */
+	* Dispatched if the Property <code>data</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_DATA
+	*/
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
+	*/
 	public class Write extends Scratch
 	{
 		// Optional
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>false</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var binary:Boolean = false;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>false</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var secure:Boolean = false;
 		
 		// Required
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var data:String = null;
 		
 		/**
-		 * Constructor for Scratch.Write()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
-		 */
+		* Constructor for Scratch.Write()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
+		*/
 		public function Write(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param dataSTR
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param dataSTR
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
+		*/
 		public function write( dataSTR:String = null ):void
 		{
 			data = compareStrings( dataSTR , data );

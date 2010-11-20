@@ -6,8 +6,6 @@ package api.events.tray.showBalloon
 
 	public class ShowBalloonEvent extends TrayEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_TEXT:String = "missingText";
 		
 		public function ShowBalloonEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.tray.hideBalloon
 
 	public class HideBalloonEvent extends TrayEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function HideBalloonEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

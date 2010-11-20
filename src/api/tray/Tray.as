@@ -3,8 +3,18 @@ package api.tray
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray.html Northcode Help Documentation
+	*/
 	public class Tray extends Kernel
 	{
+		/**
+		* Constructor for Tray()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray.html Northcode Help Documentation
+		*/
 		public function Tray(target:IEventDispatcher=null)
 		{
 			super(target);

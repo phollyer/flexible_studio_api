@@ -2,9 +2,9 @@ package api.events.tray
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class TrayEvent extends KernelEvent
+	public class TrayEvent extends SWFStudioEvent
 	{		
 		public function TrayEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

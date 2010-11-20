@@ -6,7 +6,6 @@ package api.events.tray.removeIcon
 
 	public class RemoveIconEvent extends TrayEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RemoveIconEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

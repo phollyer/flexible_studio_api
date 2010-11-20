@@ -1,10 +1,23 @@
 package api.tray.showBalloon
 {
-	import flash.events.IEventDispatcher;
+	import api.events.tray.showBalloon.ShowBalloonEvent;
+
 	import api.tray.Tray;
+
+	import flash.events.IEventDispatcher;
 	
+	/**
+	* Dispatched if the Property <code>text</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_TEXT
+	*/
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_showBalloon.html Northcode Help Documentation
+	*/
 	public class ShowBalloon extends Tray
 	{
 		public static const ERROR_ICON:String = "error";
@@ -12,17 +25,50 @@ package api.tray.showBalloon
 		public static const WARNING_ICON:String = "warning";
 		
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var title:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>10000</code>
+		*/
 		public var timeout:Number = 10000;
+		/**
+		* 
+		*
+		* @defaultValue <code>INFO_ICON</code>
+		*/
 		public var icon:String = INFO_ICON;
 		
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var text:String = null;
 		
+		/**
+		* Constructor for Tray.ShowBalloon()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_showBalloon.html Northcode Help Documentation
+		*/
 		public function ShowBalloon(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param balloonText
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_showBalloon.html Northcode Help Documentation
+		*/
 		public function showBalloon( balloonText:String = null ):void
 		{
 			text = compareStrings( balloonText , text );

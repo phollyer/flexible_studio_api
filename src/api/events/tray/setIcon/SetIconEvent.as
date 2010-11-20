@@ -6,8 +6,6 @@ package api.events.tray.setIcon
 
 	public class SetIconEvent extends TrayEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_RESOURCE:String = "missingResource";
 		
 		public function SetIconEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

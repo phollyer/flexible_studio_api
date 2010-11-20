@@ -6,7 +6,6 @@ package api.events.tray.addIcon
 
 	public class AddIconEvent extends TrayEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AddIconEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

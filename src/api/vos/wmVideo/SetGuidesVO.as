@@ -1,4 +1,4 @@
-package swfStudio.vos.wmVideo
+package api.vos.wmVideo
 {
 	public class SetGuidesVO extends Object
 	{

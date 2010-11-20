@@ -1,4 +1,4 @@
-package swfStudio.vos.ftp.chmod.members
+package api.vos.ftp.chmod.members
 {
 	[Bindable]
 	public class UserVO extends Object

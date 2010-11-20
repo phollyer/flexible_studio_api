@@ -1,4 +1,4 @@
-package swfStudio.vos.win
+package api.vos.win
 {
 	public class SaveImageVO extends Object
 	{

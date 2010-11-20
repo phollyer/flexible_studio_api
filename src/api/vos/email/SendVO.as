@@ -1,4 +1,4 @@
-package swfStudio.vos.email
+package api.vos.email
 {
 	[Bindable]
 	public class SendVO extends Object

@@ -1,4 +1,4 @@
-package swfStudio.vos.registry
+package api.vos.registry
 {
 	[Bindable]
 	public class ValueVO extends Object

@@ -1,4 +1,4 @@
-package swfStudio.vos.binaryFile
+package api.vos.binaryFile
 {
 	public class FormatVO extends Object
 	{

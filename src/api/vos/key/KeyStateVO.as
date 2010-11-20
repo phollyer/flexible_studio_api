@@ -1,4 +1,4 @@
-package swfStudio.vos.key
+package api.vos.key
 {
 	public class KeyStateVO
 	{

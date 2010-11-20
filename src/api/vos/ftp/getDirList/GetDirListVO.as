@@ -1,4 +1,4 @@
-package swfStudio.vos.ftp.getDirList
+package api.vos.ftp.getDirList
 {
 	[Bindable]
 	public class GetDirListVO extends Object

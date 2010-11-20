@@ -1,4 +1,4 @@
-package swfStudio.vos.fileSys.specialFolder
+package api.vos.fileSys.specialFolder
 {
 	public class FolderIDVO extends Object
 	{

@@ -1,4 +1,4 @@
-package swfStudio.vos.app.showMessageBox
+package api.vos.app.showMessageBox
 {
 	[Bindable]
 	public class ShowMessageBoxIconVO extends Object

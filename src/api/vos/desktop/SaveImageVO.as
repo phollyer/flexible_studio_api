@@ -1,4 +1,4 @@
-package swfStudio.vos.desktop
+package api.vos.desktop
 {
 	[Bindable]
 	public class SaveImageVO extends Object

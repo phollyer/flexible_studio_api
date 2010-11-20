@@ -1,4 +1,4 @@
-package swfStudio.vos.activeX
+package api.vos.activeX
 {
 	[Bindable]
 	public class CreateObjectVO extends Object

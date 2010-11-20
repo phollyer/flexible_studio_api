@@ -1,8 +1,8 @@
-package swfStudio.vos.ftp.chmod
+package api.vos.ftp.chmod
 {
-	import swfStudio.vos.ftp.chmod.members.GroupVO;
-	import swfStudio.vos.ftp.chmod.members.OtherVO;
-	import swfStudio.vos.ftp.chmod.members.UserVO;
+	import api.vos.ftp.chmod.members.GroupVO;
+	import api.vos.ftp.chmod.members.OtherVO;
+	import api.vos.ftp.chmod.members.UserVO;
 	
 	[Bindable]
 	public class CHMODVO extends Object

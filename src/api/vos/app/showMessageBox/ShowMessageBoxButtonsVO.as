@@ -1,4 +1,4 @@
-package swfStudio.vos.app.showMessageBox
+package api.vos.app.showMessageBox
 {
 	public class ShowMessageBoxButtonsVO extends Object
 	{

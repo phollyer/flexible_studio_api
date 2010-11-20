@@ -1,4 +1,4 @@
-package swfStudio.vos.console
+package api.vos.console
 {
 	[Bindable]
 	public class OpenVO extends Object

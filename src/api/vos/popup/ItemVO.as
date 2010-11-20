@@ -1,4 +1,4 @@
-package swfStudio.vos.popup
+package api.vos.popup
 {
 	[Bindable]
 	public class ItemVO

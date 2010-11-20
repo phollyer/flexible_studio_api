@@ -1,4 +1,4 @@
-package swfStudio.vos.binaryFile
+package api.vos.binaryFile
 {
 	[Bindable]
 	public class AccessModeVO extends Object

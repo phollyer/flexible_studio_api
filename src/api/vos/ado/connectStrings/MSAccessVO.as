@@ -1,4 +1,4 @@
-package swfStudio.vos.ado.connectStrings
+package api.vos.ado.connectStrings
 {
 	[Bindable]
 	public class MSAccessVO extends ConnectStringsVO

@@ -1,4 +1,4 @@
-package swfStudio.vos.guides
+package api.vos.guides
 {
 	[Bindable]
 	public class CreateVO extends Object

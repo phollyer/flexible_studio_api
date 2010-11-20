@@ -1,4 +1,4 @@
-package swfStudio.vos.tooltip
+package api.vos.tooltip
 {
 	public class ShowVO extends Object
 	{

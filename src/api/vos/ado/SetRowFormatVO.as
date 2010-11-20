@@ -1,4 +1,4 @@
-package swfStudio.vos.ado
+package api.vos.ado
 {
 	public class SetRowFormatVO extends Object
 	{

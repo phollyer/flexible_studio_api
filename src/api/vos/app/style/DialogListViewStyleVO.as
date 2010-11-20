@@ -1,4 +1,4 @@
-package swfStudio.vos.app.style
+package api.vos.app.style
 {
 	[Bindable]
 	public class DialogListViewStyleVO extends Object

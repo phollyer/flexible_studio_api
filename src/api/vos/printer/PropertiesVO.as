@@ -1,4 +1,4 @@
-package swfStudio.vos.printer
+package api.vos.printer
 {
 	[Bindable]
 	public class PropertiesVO extends Object

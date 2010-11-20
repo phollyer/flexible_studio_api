@@ -1,4 +1,4 @@
-package swfStudio.vos.globals
+package api.vos.globals
 {
 	[Bindable]
 	public class Globals extends Object

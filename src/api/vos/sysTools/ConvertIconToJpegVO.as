@@ -1,4 +1,4 @@
-package swfStudio.vos.sysTools
+package api.vos.sysTools
 {
 	public class ConvertIconToJpegVO extends Object
 	{

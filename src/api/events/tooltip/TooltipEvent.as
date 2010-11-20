@@ -2,9 +2,9 @@ package api.events.tooltip
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class TooltipEvent extends KernelEvent
+	public class TooltipEvent extends SWFStudioEvent
 	{
 		public function TooltipEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

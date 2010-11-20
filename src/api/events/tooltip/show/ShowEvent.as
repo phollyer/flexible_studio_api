@@ -6,8 +6,6 @@ package api.events.tooltip.show
 
 	public class ShowEvent extends TooltipEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_TEXT:String = "missingText";
 		
 		public function ShowEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

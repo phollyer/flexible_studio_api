@@ -3,8 +3,18 @@ package api.tooltip
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tooltip.html Northcode Help Documentation
+	*/
 	public class Tooltip extends Kernel
 	{
+		/**
+		* Constructor for Tooltip()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tooltip.html Northcode Help Documentation
+		*/
 		public function Tooltip(target:IEventDispatcher=null)
 		{
 			super(target);

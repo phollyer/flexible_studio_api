@@ -6,7 +6,6 @@ package api.events.tooltip.hide
 
 	public class HideEvent extends TooltipEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function HideEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

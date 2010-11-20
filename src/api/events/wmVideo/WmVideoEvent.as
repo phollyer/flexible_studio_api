@@ -2,9 +2,9 @@ package api.events.wmVideo
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class WmVideoEvent extends KernelEvent
+	public class WmVideoEvent extends SWFStudioEvent
 	{
 		public function WmVideoEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

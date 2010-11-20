@@ -6,7 +6,6 @@ package api.events.wmVideo.resume
 
 	public class ResumeEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ResumeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

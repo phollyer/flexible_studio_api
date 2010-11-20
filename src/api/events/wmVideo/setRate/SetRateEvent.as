@@ -6,7 +6,6 @@ package api.events.wmVideo.setRate
 
 	public class SetRateEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetRateEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

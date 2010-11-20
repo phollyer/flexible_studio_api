@@ -6,7 +6,6 @@ package api.events.wmVideo.setMute
 
 	public class SetMuteEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetMuteEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

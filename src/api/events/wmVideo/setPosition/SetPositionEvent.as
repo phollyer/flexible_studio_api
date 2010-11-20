@@ -6,8 +6,6 @@ package api.events.wmVideo.setPosition
 
 	public class SetPositionEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_POINT:String = "missingPoint";
 		
 		public function SetPositionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

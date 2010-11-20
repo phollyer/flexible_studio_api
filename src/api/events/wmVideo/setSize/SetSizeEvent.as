@@ -6,7 +6,6 @@ package api.events.wmVideo.setSize
 
 	public class SetSizeEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

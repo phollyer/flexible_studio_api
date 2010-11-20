@@ -3,8 +3,18 @@ package api.wmVideo
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo.html Northcode Help Documentation
+	*/
 	public class WmVideo extends Kernel
 	{
+		/**
+		* Constructor for WmVideo()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo.html Northcode Help Documentation
+		*/
 		public function WmVideo(target:IEventDispatcher=null)
 		{
 			super(target);

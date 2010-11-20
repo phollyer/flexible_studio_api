@@ -6,7 +6,6 @@ package api.events.wmVideo.clearGuides
 
 	public class ClearGuidesEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearGuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

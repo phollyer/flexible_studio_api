@@ -1,15 +1,34 @@
 package api.wmVideo.resume
 {
-	import flash.events.IEventDispatcher;
+	import api.events.wmVideo.resume.ResumeEvent;
+
 	import api.wmVideo.WmVideo;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_resume.html Northcode Help Documentation
+	*/
 	public class Resume extends WmVideo
 	{
+		/**
+		* Constructor for WmVideo.Resume()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_resume.html Northcode Help Documentation
+		*/
 		public function Resume(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_resume.html Northcode Help Documentation
+		*/
 		public function resume():void
 		{
 			ssCore.WmVideo.resume( {}

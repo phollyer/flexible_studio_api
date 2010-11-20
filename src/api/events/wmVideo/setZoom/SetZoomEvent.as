@@ -6,7 +6,6 @@ package api.events.wmVideo.setZoom
 
 	public class SetZoomEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetZoomEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

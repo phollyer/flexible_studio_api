@@ -6,7 +6,6 @@ package api.events.wmVideo.setFlags
 
 	public class SetFlagsEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetFlagsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

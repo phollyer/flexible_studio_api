@@ -6,7 +6,6 @@ package api.events.wmVideo.setGuides
 
 	public class SetGuidesEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetGuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

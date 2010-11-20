@@ -6,7 +6,6 @@ package api.events.wmVideo.play
 
 	public class PlayEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function PlayEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

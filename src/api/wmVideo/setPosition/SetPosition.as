@@ -1,19 +1,48 @@
 package api.wmVideo.setPosition
 {
-	import flash.events.IEventDispatcher;
+	import api.events.wmVideo.setPosition.SetPositionEvent;
+
 	import api.wmVideo.WmVideo;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPosition.html Northcode Help Documentation
+	*/
 	public class SetPosition extends WmVideo
 	{
 		// Optional 
+		/**
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var x:Number = 0;
+		/**
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var y:Number = 0;
 		
+		/**
+		* Constructor for WmVideo.SetPosition()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPosition.html Northcode Help Documentation
+		*/
 		public function SetPosition(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPosition.html Northcode Help Documentation
+		*/
 		public function setPosition():void
 		{
 			ssCore.WmVideo.setPosition( {x:x , y:y}

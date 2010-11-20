@@ -6,8 +6,6 @@ package api.events.wmVideo.setIndex
 
 	public class SetIndexEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_INDEX:String = "missingIndex";
 		
 		public function SetIndexEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

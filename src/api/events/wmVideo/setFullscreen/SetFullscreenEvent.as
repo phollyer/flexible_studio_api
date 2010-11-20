@@ -6,7 +6,6 @@ package api.events.wmVideo.setFullscreen
 
 	public class SetFullscreenEvent extends WmVideoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetFullscreenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

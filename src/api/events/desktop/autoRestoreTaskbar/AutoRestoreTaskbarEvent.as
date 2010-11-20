@@ -6,7 +6,6 @@ package api.events.desktop.autoRestoreTaskbar
 
 	public class AutoRestoreTaskbarEvent extends DesktopEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AutoRestoreTaskbarEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

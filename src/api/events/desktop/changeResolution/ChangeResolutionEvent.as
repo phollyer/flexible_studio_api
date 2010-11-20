@@ -6,7 +6,6 @@ package api.events.desktop.changeResolution
 
 	public class ChangeResolutionEvent extends DesktopEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ChangeResolutionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.desktop.showTaskbar
 
 	public class ShowTaskbarEvent extends DesktopEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowTaskbarEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

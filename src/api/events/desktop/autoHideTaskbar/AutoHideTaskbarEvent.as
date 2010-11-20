@@ -6,7 +6,6 @@ package api.events.desktop.autoHideTaskbar
 
 	public class AutoHideTaskbarEvent extends DesktopEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AutoHideTaskbarEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

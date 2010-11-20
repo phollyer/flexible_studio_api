@@ -2,9 +2,9 @@ package api.events.desktop
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class DesktopEvent extends KernelEvent
+	public class DesktopEvent extends SWFStudioEvent
 	{
 		public function DesktopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

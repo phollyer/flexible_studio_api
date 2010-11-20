@@ -11,7 +11,7 @@ module Builder
   module Events
 
     def add_result_to_event file_content
-      file_content.insert((file_content =~ start_of_class_reg_exp ) + 2,"\r\n\t\t#{result_event_const_reg_exp.source}")
+      file_content.insert((file_content =~ start_of_class_reg_exp ) + 2,"\r\n\t\tpublic static const RESULT:String = \"result\";")
     end
 
     def configure_static_consts file_content
@@ -21,9 +21,12 @@ module Builder
       consts.sort!
       
       consts_with_comments = []
-      
       consts.each do |const|
-        unless const_is_unwanted? const
+        if const_is_unwanted? const
+          file_content.sub!(const,"")
+          puts "const:\t#{const}\tNot wanted"
+        else
+          puts "const:\t#{const}\tWanted"
           const.strip!
           match = file_content.match(event_const_with_comments_reg_exp(const))
           

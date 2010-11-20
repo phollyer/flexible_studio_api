@@ -95,7 +95,12 @@ class Build
       @event_file = event_file_content
       
       if class_method_dispatches_a_result? @method_file
-        @event_file = add_result_to_event(@event_file) unless result_event_exists? @event_file
+        if result_event_exists? @event_file
+          puts "Result Event Exists:\t#{event_file_path}"
+        else
+          puts "Event Requires Result:\t#{event_file_path}"
+          @event_file = add_result_to_event(@event_file)
+        end
       end
 
       @event_file = configure_static_consts @event_file

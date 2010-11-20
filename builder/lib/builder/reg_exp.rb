@@ -2,7 +2,6 @@ module Builder
   module RegExp
 
     def all_comments_reg_exp
-      #/\s*\/\*\*\s*(\s*|\*|.*)+\s*\*\/\r\n/
       /\s*\/\*\*(\s*\*.*)*\s*\*\/\r\n/
     end
     def all_imports_reg_exp
@@ -32,7 +31,7 @@ module Builder
     end
 
     def event_const_with_comments_reg_exp const
-      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s+#{const}/
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s*#{const}/
     end
 
     def event_const_without_comments_reg_exp const
@@ -117,7 +116,7 @@ module Builder
     end
 
     def result_event_const_reg_exp
-      /public static const RESULT : String = "result";/
+      /public static const RESULT\s*:\s*String\s*=\s*\"result\";/
     end
 
     def result_event_import_reg_exp

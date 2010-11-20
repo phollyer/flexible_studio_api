@@ -6,9 +6,6 @@ package api.events.ftp.renameFile
 
 	public class RenameFileEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_EXISTING_FILE:String = "missingExistingFile";
-		public static const MISSING_NEW_FILE:String = "missingNewFile";
 		
 		public function RenameFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

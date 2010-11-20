@@ -6,7 +6,6 @@ package api.events.ftp.transfer
 
 	public class TransferEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function TransferEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

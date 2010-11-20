@@ -2,9 +2,9 @@ package api.events.ftp
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class FtpEvent extends KernelEvent
+	public class FtpEvent extends SWFStudioEvent
 	{		
 		public function FtpEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

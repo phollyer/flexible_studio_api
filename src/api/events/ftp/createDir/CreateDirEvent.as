@@ -6,8 +6,6 @@ package api.events.ftp.createDir
 
 	public class CreateDirEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function CreateDirEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

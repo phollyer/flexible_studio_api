@@ -6,8 +6,6 @@ package api.events.ftp.authUser
 
 	public class AuthUserEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_USER_ID:String = "missingUserID";
 		
 		public function AuthUserEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

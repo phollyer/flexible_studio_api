@@ -6,8 +6,6 @@ package api.events.ftp.removeFile
 
 	public class RemoveFileEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FILE:String = "missingFile";
 		
 		public function RemoveFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

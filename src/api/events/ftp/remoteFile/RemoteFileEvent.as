@@ -6,8 +6,6 @@ package api.events.ftp.remoteFile
 
 	public class RemoteFileEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FILE:String = "missingFile";
 		
 		public function RemoteFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

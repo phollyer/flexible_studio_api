@@ -1,31 +1,65 @@
 package api.ftp.getDirList
 {
-	import flash.events.IEventDispatcher;
-	
-	
 	import api.events.ftp.getDirList.GetDirListEvent;
+
 	import api.ftp.Ftp;
+
 	import api.vos.ftp.getDirList.GetDirListVO;
 
+	import flash.events.IEventDispatcher;
+
+	/**
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.ftp.getDirList.GetDirListEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.ftp.getDirList.GetDirListEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getDirList.html Northcode Help Documentation
+	*/
 	public class GetDirList extends Ftp
 	{
 		// Optional
 		public var pattern:String = "*";
 		
 		// Result
+		/**
+		* 
+		*
+		* @defaultValue <code>new</code>
+		*/
 		public var dirList:Array = new Array();
 		
+		/**
+		* Constructor for Ftp.GetDirList()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getDirList.html Northcode Help Documentation
+		*/
 		public function GetDirList(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getDirList.html Northcode Help Documentation
+		*/
 		public function getDirList():void
 		{
 			ssCore.Ftp.getDirList( {pattern:pattern}
 								  ,{callback:actionComplete, errorSTR:"getDirListError", code:"7014"} );
 		}
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			dirList = new Array();

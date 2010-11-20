@@ -1,17 +1,35 @@
 package api.ftp.transferMode
 {
-	import flash.events.IEventDispatcher;
+	import api.events.ftp.transferMode.TransferModeEvent;
+
 	import api.ftp.Ftp;
 
+	import flash.events.IEventDispatcher;
+
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_transferMode.html Northcode Help Documentation
+	*/
 	public class TransferMode extends Ftp
 	{
 		public static const BINARY:String = "binary";
 		public static const ASCII:String = "ascii";
 		
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>BINARY</code>
+		*/
 		public var transferMode:String = BINARY;
 		
+		/**
+		* Constructor for Ftp.TransferMode()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_transferMode.html Northcode Help Documentation
+		*/
 		public function TransferMode(target:IEventDispatcher=null)
 		{
 			super(target);

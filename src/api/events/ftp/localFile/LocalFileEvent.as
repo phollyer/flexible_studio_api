@@ -6,8 +6,6 @@ package api.events.ftp.localFile
 
 	public class LocalFileEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LocalFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

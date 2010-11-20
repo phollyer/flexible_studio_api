@@ -5,8 +5,18 @@ package api.ftp
 	import api.Kernel;
 	
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP.html Northcode Help Documentation
+	*/
 	public class Ftp extends Kernel
 	{		
+		/**
+		* Constructor for Ftp()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP.html Northcode Help Documentation
+		*/
 		public function Ftp(target:IEventDispatcher=null)
 		{
 			super(target);

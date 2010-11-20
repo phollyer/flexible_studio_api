@@ -6,7 +6,6 @@ package api.events.ftp.disconnect
 
 	public class DisconnectEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function DisconnectEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

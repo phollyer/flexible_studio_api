@@ -6,8 +6,6 @@ package api.events.ftp.authPswd
 
 	public class AuthPswdEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PSWD:String = "missingPswd";
 		
 		public function AuthPswdEvent( type:String , bubbles:Boolean = false , cancelable:Boolean = false )
 		{

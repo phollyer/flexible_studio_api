@@ -6,7 +6,6 @@ package api.events.ftp.close
 
 	public class CloseEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function CloseEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

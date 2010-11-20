@@ -6,7 +6,6 @@ package api.events.ftp.passiveMode
 
 	public class PassiveModeEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function PassiveModeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

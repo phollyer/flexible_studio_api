@@ -6,8 +6,22 @@ package api.events.ftp.chmod
 
 	public class ChmodEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_REMOTE_PATH:String = "missingRemotePath";
+		
+	/**
+	* The ChmodEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>errorDetails</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";
 		
 		public var errorDetails:String = null;

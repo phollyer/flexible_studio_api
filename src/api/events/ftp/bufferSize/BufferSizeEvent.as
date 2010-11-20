@@ -6,7 +6,6 @@ package api.events.ftp.bufferSize
 
 	public class BufferSizeEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function BufferSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

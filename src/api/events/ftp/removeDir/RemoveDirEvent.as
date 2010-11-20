@@ -6,8 +6,6 @@ package api.events.ftp.removeDir
 
 	public class RemoveDirEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DIR_PATH:String = "missingDirPath";
 		
 		public function RemoveDirEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

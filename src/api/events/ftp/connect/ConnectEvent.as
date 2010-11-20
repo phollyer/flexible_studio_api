@@ -6,7 +6,6 @@ package api.events.ftp.connect
 
 	public class ConnectEvent extends FtpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ConnectEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

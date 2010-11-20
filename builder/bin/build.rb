@@ -24,6 +24,7 @@ class Build
 
     init_class @class_name
     init_method @method_name if @method_name
+    init_event @method_name if @method_name
     
     load_nc_alts
     
@@ -35,47 +36,61 @@ class Build
   end
   
   def comment_class_file
-    if read_file class_file_path
-      @file_content = file_content
+    if read_class_file class_file_path
+      @class_file = class_file_content
       comments_reg_exp = class_comments_reg_exp
 
-      unless @file_content.match(send_result_reg_exp)
-        add_class_result_method @file_content
+      unless @class_file.match(send_result_reg_exp)
+        add_class_result_method @class_file
         comments_reg_exp[:class_result_method] = send_result_reg_exp
       end
 
-      comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
-
-      write_file class_file_path, @file_content
+      comments_reg_exp.each { |key,value| @class_file = add_comments(key,value,@class_file)  }
+      
+      write_file class_file_path, @class_file
     end
   end
 
   def comment_class_method
-      if read_file method_file_path
-        @file_content = file_content
-        @parameters = extract_parameters @file_content,@method_name
-        @properties = extract_properties @file_content
-
-        if class_method_dispatches_a_result? @file_content
-          @file_content = add_result_event_import_statement(@file_content) unless result_event_import_statement_exists? @file_content
-          @file_content = add_result_to_class_method(@file_content) unless result_method_exists? @file_content
-          @file_content = add_result_event_metadata(@file_content) unless result_metadata_exists? @file_content
+      if read_method_file method_file_path
+        @method_file = method_file_content
+        @parameters = extract_parameters @method_file,@method_name
+        @properties = extract_properties @method_file
+        
+        if class_method_dispatches_a_result? @method_file
+          @method_file = add_result_event_import_statement(@method_file) unless result_event_import_statement_exists? @method_file
+          @method_file = add_result_to_class_method(@method_file) unless result_method_exists? @method_file
+          @method_file = add_result_event_metadata(@method_file) unless result_metadata_exists? @method_file
         end
 
-        @file_content = configure_import_statements @file_content
+        @method_file = configure_import_statements @method_file
         
-        method_comments_reg_exp.each { |key,value| @file_content = add_comments(key,value,@file_content)  }
+        method_comments_reg_exp.each { |key,value| @method_file = add_comments(key,value,@method_file)  }
 
-        @file_content = add_missing_event_metadata(@file_content)
-        @file_content = add_missing_event_metadata_comments(@file_content)
-        @file_content = add_property_comments @properties, @file_content
+        @method_file = add_missing_event_metadata(@method_file)
+        @method_file = add_missing_event_metadata_comments(@method_file)
+        @method_file = add_property_comments(@properties,@method_file)
 
-        write_file(method_file_path,@file_content)
+        write_file(method_file_path,@method_file)
       else
         puts "Failed:\t@file_path"
         exit
       end
+  end
+  
+  def comment_class_method_event
+    if read_event_file event_file_path
+      @event_file = event_file_content
+      
+      if class_method_dispatches_a_result? @method_file
+        @event_file = add_result_to_event(@event_file) unless result_event_exists? @event_file
+      end
 
+      @event_file = configure_static_consts @event_file
+      @event_file = add_event_const_comments @event_file if event_has_consts? @event_file
+
+      write_file(event_file_path,@event_file)
+    end
   end
 
   def comment_all_class_methods
@@ -92,6 +107,7 @@ class Build
     @method_list.each do |method|
       initialize @class_name,method
       comment_class_method
+      comment_class_method_event
     end
   end
   

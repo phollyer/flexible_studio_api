@@ -1,6 +1,10 @@
 module Builder
   module RegExp
 
+    def all_comments_reg_exp
+      #/\s*\/\*\*\s*(\s*|\*|.*)+\s*\*\/\r\n/
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\r\n/
+    end
     def all_imports_reg_exp
       /\s+import\s+[\w+\.]+;/
     end
@@ -23,8 +27,36 @@ module Builder
       /[ +\t+]\r\n/
     end
 
+    def event_const_reg_exp
+      /[A-Z]+_*[A-Z]*/
+    end
+
+    def event_const_with_comments_reg_exp const
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s+#{const}/
+    end
+
+    def event_const_without_comments_reg_exp const
+      /\s*#{const}/
+    end
+
+    def event_string_reg_exp
+      /\"\w+\"/
+    end
+
     def every_defined_class_reg_exp
       /new \w+|api.[\w+.]+\w+/
+    end
+
+    def every_event_const_reg_exp
+      /\s+public static const \w+[_]*\s*:\s*\w+\s*=\s*\"*\w+\"*;/
+    end
+
+    def every_event_const_with_comments_reg_exp
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s+public static const \w+[_]*\s*:\s*\w+\s*=\s*\"*\w+\"*;/
+    end
+
+    def every_public_var_with_value_reg_exp
+      /\t\tpublic var \w+\s*:\s*\w+\s*=\s*\"*\w+[\.\w+]*/
     end
 
     def method_comments_reg_exp
@@ -64,6 +96,10 @@ module Builder
       /package\s[\w+\.]+/
     end
 
+    def property_value_reg_exp
+      /=\s*\"*\w+\"*/
+    end
+
     def public_function_reg_exp method_name
       /public function #{method_name}\(\s*.+/
     end
@@ -80,6 +116,10 @@ module Builder
       /public var \w+/
     end
 
+    def result_event_const_reg_exp
+      /public static const RESULT : String = "result";/
+    end
+
     def result_event_import_reg_exp
       /import api.events.#{@class_dir}.#{@method_dir}.#{@method_name}Event;/
     end
@@ -92,12 +132,20 @@ module Builder
       /\t\toverride protected function sendResult/
     end
 
+    def start_of_class_reg_exp
+      /\t\{/
+    end
+
     def start_of_package_reg_exp
       /\{/
     end
 
     def start_of_send_result_reg_exp
       /\t\}\r\n\}/
+    end
+
+    def unwanted_consts_reg_exp
+      /COMPLETE|MISSING/
     end
   end
 end

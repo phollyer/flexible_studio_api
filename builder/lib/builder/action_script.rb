@@ -8,6 +8,60 @@ include Builder::Utils
 
 module Builder
 
+  module Events
+
+    def add_result_to_event file_content
+      file_content.insert((file_content =~ start_of_class_reg_exp ) + 2,"\r\n\t\t#{result_event_const_reg_exp.source}")
+    end
+
+    def configure_static_consts file_content
+      consts = file_content.scan(every_event_const_reg_exp)
+      consts.uniq!
+      consts.sort!
+      
+      consts_with_comments = []
+      
+      consts.each do |const|
+        unless const_is_unwanted? const
+          const.strip!
+          match = file_content.match(event_const_with_comments_reg_exp(const))
+          
+          if match
+            consts_with_comments << match[0]
+          else
+            consts_with_comments << file_content.match(event_const_without_comments_reg_exp(const))[0]
+          end
+        end
+      end
+
+      consts_with_comments.each do |const|
+        file_content.sub!(const,"")
+        const.strip!
+      end
+
+      const_block = ""
+      consts_with_comments.each do |const|
+        const_block << "\r\n\t\t#{const}"
+      end
+
+      file_content.insert((file_content =~ start_of_class_reg_exp ) + 2,const_block)
+      file_content
+    end
+
+    def const_is_unwanted? const
+      const.match(unwanted_consts_reg_exp)
+    end
+
+    def event_has_consts? file_content
+      file_content.scan(every_event_const_reg_exp).size > 0
+    end
+
+    def result_event_exists? file_content
+      file_content.match(result_event_const_reg_exp)
+    end
+
+  end
+
   module Imports
 
     def add_result_event_import_statement file_content
@@ -43,6 +97,14 @@ module Builder
     end
     private
 
+    # => =======================================
+    #
+    # => Create a list of all Classes
+    # => Store it in a hash
+    # => Use it to ensure all defined Classes are imported into the Class file
+    # => Stop the program if any unknown Classes are found
+    #
+    # => =======================================
     def set_required_imports file_content
       imports = file_content.scan(every_defined_class_reg_exp)
 
@@ -50,8 +112,6 @@ module Builder
                           :classes  => [],
                           :unknowns => []
                          }
-
-      #file_content.sub!(missing_event_metadata_reg_exp(swap_initial(prop)),comments) if test.size > 0 unless comment_found? file_content, comments
 
       imports.each do |import|
         if import.match(package_seperator_reg_exp)
@@ -64,6 +124,12 @@ module Builder
                                           :method => @method_name
                                          }
         end
+      end
+
+      if required_imports[:unknowns].size > 0
+        puts "Unknown Classes found\r\n"
+        puts required_imports[:unknowns].inspect
+        exit
       end
 
       required_imports.each { |key,value| value.uniq! }
@@ -126,13 +192,15 @@ module Builder
     end
 
     def add_result_method file_content
-      unless file_content.match(send_result_reg_exp)
-        method = read_template action_script_template("result_method")
+      method = read_template action_script_template("result_method")
 
-        file_content.gsub!(start_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
-      end
+      file_content.gsub!(start_of_send_result_reg_exp,"#{method}\r\n\t}\r\n}")
 
       file_content
+    end
+
+    def class_method_dispatches_a_result? file_content
+      file_content.match(class_dispatches_a_result_reg_exp?)
     end
 
     def result_method_exists? file_content
@@ -146,14 +214,11 @@ module Builder
   end
   
   module ActionScript
+    include Events
     include Imports
     include Metadata
     include Methods
-
-    def class_method_dispatches_a_result? file_content
-      match = file_content.scan(class_dispatches_a_result_reg_exp?)
-      match.size > 0
-    end
+    include Properties
   end
 
 end

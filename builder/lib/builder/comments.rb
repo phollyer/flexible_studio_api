@@ -24,6 +24,30 @@ module Builder
       file_content
     end
 
+    def add_event_const_comments file_content
+      consts = file_content.scan(every_event_const_reg_exp)
+
+      consts.each do |const|
+        @event_const = const.match(event_const_reg_exp)
+        @event_string = const.match(event_string_reg_exp)
+        @event_string = @event_string[0].match(/\w+/)
+        @event_properties = []
+        event_props = file_content.scan(every_public_var_with_value_reg_exp)
+        event_props.each do |prop|
+          h = {:property => prop.scan(/\w+/)[2],
+               :value    => prop.match(property_value_reg_exp)[0].match(/\w+/)[0]
+              }
+          @event_properties << h
+        end
+        
+        comments = read_template(comment_template_path("event_constant"))
+        
+        file_content.sub!(const.strip!, "\r\n#{comments}\t\t#{const}") unless comment_found? file_content,comments
+      end
+      
+      file_content
+    end
+
     def add_missing_event_metadata_comments file_content
       metadata = file_content.scan(missing_event_metadata_reg_exp)
       metadata.each do |m_data|
@@ -57,6 +81,7 @@ module Builder
           @property_default_value.gsub!(/\"/, "")
 
           comments = read_template(comment_template_path("property")) + "\r\n" + match[0]
+          
           file_content.sub!(public_var_with_value_reg_exp(prop),comments) unless comment_found? file_content,comments
         end
       end

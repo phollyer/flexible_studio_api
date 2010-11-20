@@ -6,9 +6,6 @@ package api.events.plugin.load
 
 	public class LoadEvent extends PluginEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ALIAS:String = "missingAlias";
-		public static const MISSING_PLUGIN:String = "missingPlugin";
 		
 		public function LoadEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

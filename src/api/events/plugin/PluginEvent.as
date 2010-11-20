@@ -2,9 +2,9 @@ package api.events.plugin
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class PluginEvent extends KernelEvent
+	public class PluginEvent extends SWFStudioEvent
 	{
 		public function PluginEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

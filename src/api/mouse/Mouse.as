@@ -3,8 +3,18 @@ package api.mouse
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse.html Northcode Help Documentation
+	*/
 	public class Mouse extends Kernel
 	{
+		/**
+		* Constructor for Mouse()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse.html Northcode Help Documentation
+		*/
 		public function Mouse(target:IEventDispatcher=null)
 		{
 			super(target);

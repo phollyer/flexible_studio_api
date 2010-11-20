@@ -6,8 +6,6 @@ package api.events.plugin.unload
 
 	public class UnloadEvent extends PluginEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ALIAS:String = "missingAlias";
 		
 		public function UnloadEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

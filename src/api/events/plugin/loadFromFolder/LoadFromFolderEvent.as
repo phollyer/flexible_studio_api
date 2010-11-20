@@ -6,10 +6,6 @@ package api.events.plugin.loadFromFolder
 
 	public class LoadFromFolderEvent extends PluginEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ALIAS:String = "missingAlias";
-		public static const MISSING_PLUGIN:String = "missingPlugin";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LoadFromFolderEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

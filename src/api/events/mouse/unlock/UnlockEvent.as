@@ -7,7 +7,6 @@ package api.events.mouse.unlock
 
 	public class UnlockEvent extends MouseEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function UnlockEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

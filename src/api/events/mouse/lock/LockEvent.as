@@ -6,7 +6,6 @@ package api.events.mouse.lock
 
 	public class LockEvent extends MouseEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,22 @@ package api.events.plugin.isPluginLoaded
 
 	public class IsPluginLoadedEvent extends PluginEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PLUGIN_NAME_OR_ALIAS:String = "missingPluginNameOrAlias";
+		
+	/**
+	* The IsPluginLoadedEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>isLoaded</td><td>false</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";
 		
 		public var isLoaded:Boolean = false;

@@ -1,13 +1,23 @@
 package api.mouse.notifiers
 {
+	import api.events.mouse.notifiers.OnMouseButtonEvent;
+
+	import api.mouse.Mouse;
+
 	import flash.events.IEventDispatcher;
 	
-	
-	import api.events.mouse.notifiers.OnMouseButtonEvent;
-	import api.mouse.Mouse;
-	
+	/**
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.mouse.notifiers.OnMouseButtonEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.mouse.onMouseButton.OnMouseButtonEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_onMouseButton.html Northcode Help Documentation
+	*/
 	public class OnMouseButton extends Mouse
 	{
 		public static const LEFT:String = "LEFT";
@@ -19,11 +29,36 @@ package api.mouse.notifiers
 		public static const DOUBLE_CLICK:String = "DBLCLK";
 		
 		// Results
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var button:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var state:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var x:Number = 0;
+		/**
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var y:Number = 0;
 		
+		/**
+		* Constructor for Mouse.OnMouseButton()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_onMouseButton.html Northcode Help Documentation
+		*/
 		public function OnMouseButton(target:IEventDispatcher=null)
 		{
 			super(target);
@@ -31,6 +66,13 @@ package api.mouse.notifiers
 								   ,{callback:actionComplete, errorSTR:"onMouseButtonError", code:"29012"} );
 		}
 		}		
+		/**
+		* A result has been received so dispatch it.
+		*
+		* @param r The result Object returned by SWF Studio.
+		*
+		* @private
+		*/
 		override protected function sendResult( r:Object ):void
 		{
 			var __r:Array = r.result.split( COMMA );

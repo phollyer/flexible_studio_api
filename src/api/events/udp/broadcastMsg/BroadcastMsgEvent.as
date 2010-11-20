@@ -6,8 +6,6 @@ package api.events.udp.broadcastMsg
 
 	public class BroadcastMsgEvent extends UdpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function BroadcastMsgEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

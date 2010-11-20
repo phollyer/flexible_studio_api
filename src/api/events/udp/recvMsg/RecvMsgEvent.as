@@ -6,7 +6,6 @@ package api.events.udp.recvMsg
 
 	public class RecvMsgEvent extends UdpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RecvMsgEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

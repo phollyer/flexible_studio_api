@@ -6,8 +6,6 @@ package api.events.udp.open
 
 	public class OpenEvent extends UdpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PORT:String = "missingPort";
 		
 		public function OpenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

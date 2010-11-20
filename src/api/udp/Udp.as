@@ -3,8 +3,18 @@ package api.udp
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_UDP.html Northcode Help Documentation
+	*/
 	public class Udp extends Kernel
 	{
+		/**
+		* Constructor for Udp()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_UDP.html Northcode Help Documentation
+		*/
 		public function Udp(target:IEventDispatcher=null)
 		{
 			super(target);

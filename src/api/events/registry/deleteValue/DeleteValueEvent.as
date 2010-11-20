@@ -6,10 +6,6 @@ package api.events.registry.deleteValue
 
 	public class DeleteValueEvent extends RegistryEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ROOT_KEY:String = "missingRootKey";
-		public static const MISSING_SUB_KEY:String = "missingSubKey";
-		public static const MISSING_VALUE_NAME:String = "missingValueName";
 		
 		public function DeleteValueEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

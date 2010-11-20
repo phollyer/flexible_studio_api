@@ -2,9 +2,9 @@ package api.events.registry
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class RegistryEvent extends KernelEvent
+	public class RegistryEvent extends SWFStudioEvent
 	{
 		public function RegistryEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

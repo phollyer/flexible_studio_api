@@ -6,9 +6,22 @@ package api.events.registry.enumKeys
 
 	public class EnumKeysEvent extends RegistryEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_ROOT_KEY:String = "missingRootKey";
-		public static const MISSING_SUB_KEY:String = "missingSubKey";
+		
+	/**
+	* The EnumKeysEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>subKeys</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";
 		
 		public var subKeys:Array = null;

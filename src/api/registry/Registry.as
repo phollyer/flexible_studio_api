@@ -4,6 +4,11 @@ package api.registry
 	
 	import api.Kernel;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry.html Northcode Help Documentation
+	*/
 	public class Registry extends Kernel
 	{
 		// Root Keys
@@ -15,6 +20,11 @@ package api.registry
 		public static const HKEY_CURRENT_CONFIG:String = "HKEY_CURRENT_CONFIG";
 		public static const HKEY_DYN_DATA:String = "HKEY_DYN_DATA";
 		
+		/**
+		* Constructor for Registry()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry.html Northcode Help Documentation
+		*/
 		public function Registry(target:IEventDispatcher=null)
 		{
 			super(target);

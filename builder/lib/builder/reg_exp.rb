@@ -149,7 +149,7 @@ module Builder
     end
 
     def unwanted_comments_reg_exp
-      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s*\/\*\*/s
+      /\s*\/\*\*(\s*\*.*)*\s*\*\/\s*\/\*\*/
     end
 
     def unwanted_consts_reg_exp

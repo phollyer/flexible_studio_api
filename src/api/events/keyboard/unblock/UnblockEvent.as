@@ -5,8 +5,6 @@ package api.events.keyboard.unblock
 
 	public class UnblockEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_KEY:String = "missingKey";
 		
 		public function UnblockEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
 		{

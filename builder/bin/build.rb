@@ -113,9 +113,9 @@ class Build
 
       @event_file = configure_static_consts @event_file
       @event_file = add_event_const_comments @event_file if event_has_consts? @event_file
-
+      puts "Start clean_up file"
       @event_file = clean_up_event_file @event_file
-      
+      puts "End clean_up file"
       write_file(event_file_path,@event_file)
     end
   end

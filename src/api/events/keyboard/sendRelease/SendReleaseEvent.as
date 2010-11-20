@@ -5,9 +5,6 @@ package api.events.keyboard.sendRelease
 
 	public class SendReleaseEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_HWND:String = "missingHwnd";
-		public static const MISSING_KEY:String = "missingKey";
 		
 		public function SendReleaseEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
 		{

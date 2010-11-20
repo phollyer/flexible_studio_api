@@ -31,10 +31,17 @@ module Builder
         if file_content.match(event_const_with_comments_reg_exp const)
           puts "\tHas Comments Already"
         else
-          puts "\tRequires Comments"
+          puts "\tRequires Comment"
+          puts "Checking @event_const"
           @event_const = const.match(event_const_reg_exp)
+          puts "#{@event_const}"
+          puts "Checking @event_string"
           @event_string = const.match(event_string_reg_exp)
+          puts "#{@event_string}"
+          puts "Checking @event_string"
           @event_string = @event_string[0].match(/\w+/)
+          puts "#{@event_string}"
+          puts "Checking @event_properties"
           @event_properties = []
           event_props = file_content.scan(every_public_var_with_value_reg_exp)
           event_props.each do |prop|

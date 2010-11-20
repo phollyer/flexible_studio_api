@@ -6,9 +6,6 @@ package api.events.keyboard.sendKey
 
 	public class SendKeyEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_HWND:String = "missingHwnd";
-		public static const MISSING_KEY:String = "missingKey";
 		
 		public function SendKeyEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
 		{

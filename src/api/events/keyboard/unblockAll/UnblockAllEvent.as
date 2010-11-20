@@ -5,7 +5,6 @@ package api.events.keyboard.unblockAll
 
 	public class UnblockAllEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function UnblockAllEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
 		{

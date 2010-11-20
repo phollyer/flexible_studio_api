@@ -6,8 +6,6 @@ package api.events.keyboard.sendChar
 
 	public class SendCharEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_CHAR:String = "missingChar";
 		public static const MISSING_HWND:String = "missingHwnd"
 		
 		public function SendCharEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)

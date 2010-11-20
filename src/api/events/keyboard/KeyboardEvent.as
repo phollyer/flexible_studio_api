@@ -2,9 +2,9 @@ package api.events.keyboard
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class KeyboardEvent extends KernelEvent
+	public class KeyboardEvent extends SWFStudioEvent
 	{
 		public function KeyboardEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

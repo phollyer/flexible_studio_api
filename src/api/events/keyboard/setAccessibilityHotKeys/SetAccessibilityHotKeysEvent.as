@@ -5,7 +5,6 @@ package api.events.keyboard.setAccessibilityHotKeys
 
 	public class SetAccessibilityHotKeysEvent extends KeyboardEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetAccessibilityHotKeysEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=false)
 		{

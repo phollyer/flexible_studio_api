@@ -6,8 +6,6 @@ package api.events.fileSys.createDir
 
 	public class CreateDirEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DIR_PATH:String = "missingDirPath";
 		
 		public function CreateDirEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

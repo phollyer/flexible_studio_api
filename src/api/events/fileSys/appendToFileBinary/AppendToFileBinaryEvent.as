@@ -6,9 +6,6 @@ package api.events.fileSys.appendToFileBinary
 
 	public class AppendToFileBinaryEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function AppendToFileBinaryEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,9 +1,17 @@
 package api.fileSys.copyFolder
 {
-	import flash.events.IEventDispatcher;
-	import api.fileSys.FileSys;	
+	import api.events.fileSys.copyFolder.CopyFolderEvent;
+
+	import api.fileSys.FileSys;
+
+	import flash.events.IEventDispatcher;	
 	
     [Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFolder.html Northcode Help Documentation
+	*/
 	public class CopyFolder extends FileSys
 	{
 		// Required		
@@ -11,13 +19,33 @@ package api.fileSys.copyFolder
 		public var toPath:String = "";
 		
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var failIfExists:Boolean = false;
 		
+		/**
+		* Constructor for FileSys.CopyFolder()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFolder.html Northcode Help Documentation
+		*/
 		public function CopyFolder(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 				
+		/**
+		*
+		*
+		*
+		* @param fromSTR
+		*
+		* @param toSTR
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFolder.html Northcode Help Documentation
+		*/
 		public function copyFolder( fromSTR:String = null , toSTR:String = null ):void
 		{
 			fromPath = compareStrings( fromSTR , fromPath );

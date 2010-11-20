@@ -6,10 +6,21 @@ package api.events.fileSys.clearAttrs
 
 	public class ClearAttrsEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
+		
+	/**
+	* The ClearAttrsEvent.INVALID_ATTRS constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>invalidAttrs</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType invalidAttrs
+	*/
 		public static const INVALID_ATTRS:String = "invalidAttrs";
-		public static const MISSING_ATTRS:String = "missingAttrs";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function ClearAttrsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

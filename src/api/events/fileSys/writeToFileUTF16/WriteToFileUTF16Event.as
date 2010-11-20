@@ -6,9 +6,6 @@ package api.events.fileSys.writeToFileUTF16
 
 	public class WriteToFileUTF16Event extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function WriteToFileUTF16Event(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

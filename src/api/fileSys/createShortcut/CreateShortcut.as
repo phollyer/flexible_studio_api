@@ -1,13 +1,21 @@
 package api.fileSys.createShortcut
 {
-	import flash.events.IEventDispatcher;
+	import api.events.fileSys.createShortcut.CreateShortcutEvent;
+
 	import api.fileSys.FileSys;
+
+	import flash.events.IEventDispatcher;
 
     [Event(name="complete", type="CreateShortcutEvent")]
     [Event(name="missingShotcutPath", type="CreateShortcutEvent")]
     [Event(name="missingSourcePath", type="CreateShortcutEvent")]
     [Event(name="createShortcutError", type="FileSysError")]
     [Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_createShortcut.html Northcode Help Documentation
+	*/
 	public class CreateShortcut extends FileSys
 	{
 		// show
@@ -16,21 +24,76 @@ package api.fileSys.createShortcut
 		public static const MINIMIZED:String = "Minimized";
 		
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var arguments:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var description:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var iconFile:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var iconIndex:int = 0;
+		/**
+		* 
+		*
+		* @defaultValue <code>NORMAL</code>
+		*/
 		public var show:String = NORMAL;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var workDir:String = null;
 		
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var shortcutFile:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var source:String = null;
 		
+		/**
+		* Constructor for FileSys.CreateShortcut()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_createShortcut.html Northcode Help Documentation
+		*/
 		public function CreateShortcut(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param shortcutFilePath
+		*
+		* @param sourceSTR
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_createShortcut.html Northcode Help Documentation
+		*/
 		public function createShortcut( shortcutFilePath:String = null , sourceSTR:String = null ):void
 		{
 			shortcutFile = compareStrings( shortcutFilePath , shortcutFile );

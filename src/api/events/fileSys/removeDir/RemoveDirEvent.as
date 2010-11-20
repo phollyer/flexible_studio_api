@@ -6,8 +6,6 @@ package api.events.fileSys.removeDir
 
 	public class RemoveDirEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function RemoveDirEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,21 +1,47 @@
 package api.fileSys.explore
 {
-	import flash.events.IEventDispatcher;
+	import api.events.fileSys.explore.ExploreEvent;
+
 	import api.fileSys.FileSys;
+
+	import flash.events.IEventDispatcher;
 
     [Event(name="complete", type="ExploreEvent")]
     [Event(name="missingPath", type="ExploreEvent")]
     [Event(name="exploreError", type="FileSys")]
     [Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_explore.html Northcode Help Documentation
+	*/
 	public class Explore extends FileSys
 	{
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var path:String = null;
 		
+		/**
+		* Constructor for FileSys.Explore()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_explore.html Northcode Help Documentation
+		*/
 		public function Explore(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param folderPath
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_explore.html Northcode Help Documentation
+		*/
 		public function explore( folderPath:String = null ):void
 		{
 			path = compareStrings( folderPath , path );

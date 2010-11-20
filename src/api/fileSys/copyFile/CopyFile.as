@@ -1,24 +1,67 @@
 package api.fileSys.copyFile
 {
-	import flash.events.IEventDispatcher;
+	import api.events.fileSys.copyFile.CopyFileEvent;
+
 	import api.fileSys.FileSys;
+
+	import flash.events.IEventDispatcher;
 	
+	/**
+	* Dispatched if the Property <code>fromPath</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_FROM_PATH
+	*/
 	[Event(name="missingFromPath" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingToPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFile.html Northcode Help Documentation
+	*/
 	public class CopyFile extends FileSys
 	{
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>false</code>
+		*/
 		public var failIfExists:Boolean = false;
 		
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var fromPath:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var toPath:String = null;
 		
+		/**
+		* Constructor for FileSys.CopyFile()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFile.html Northcode Help Documentation
+		*/
 		public function CopyFile(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param fromSTR
+		*
+		* @param toSTR
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFile.html Northcode Help Documentation
+		*/
 		public function copyFile( fromSTR:String = null , toSTR:String = null ):void
 		{
 			fromPath = compareStrings( fromSTR , fromPath );

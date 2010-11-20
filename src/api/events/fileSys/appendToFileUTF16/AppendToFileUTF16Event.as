@@ -6,9 +6,6 @@ package api.events.fileSys.appendToFileUTF16
 
 	public class AppendToFileUTF16Event extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function AppendToFileUTF16Event(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

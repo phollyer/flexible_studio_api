@@ -6,8 +6,6 @@ package api.events.fileSys.deleteFile
 
 	public class DeleteFileEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function DeleteFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,6 @@ package api.events.fileSys.explore
 
 	public class ExploreEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function ExploreEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

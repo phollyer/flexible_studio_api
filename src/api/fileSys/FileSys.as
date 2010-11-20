@@ -5,8 +5,18 @@ package api.fileSys
 	import api.Kernel;
 	
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys.html Northcode Help Documentation
+	*/
 	public class FileSys extends Kernel
 	{
+		/**
+		* Constructor for FileSys()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys.html Northcode Help Documentation
+		*/
 		public function FileSys(target:IEventDispatcher=null)
 		{
 			super(target);

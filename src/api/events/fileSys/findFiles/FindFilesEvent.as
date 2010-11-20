@@ -5,9 +5,23 @@ package api.events.fileSys.findFiles
 	import api.events.fileSys.FileSysEvent;
 
 	public class FindFilesEvent extends FileSysEvent
-	{		
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
+	{
+		
+	/**
+	* The FindFilesEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>fileList</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";		
 		
 		public var fileList:Array = null;

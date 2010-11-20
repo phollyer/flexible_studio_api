@@ -6,9 +6,6 @@ package api.events.fileSys.createShortcut
 
 	public class CreateShortcutEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_SHORTCUT_PATH:String = "missingShortcutPath";
-		public static const MISSING_SOURCE_PATH:String = "missingSourcePath";
 		
 		public function CreateShortcutEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

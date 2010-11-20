@@ -6,9 +6,6 @@ package api.events.fileSys.copyFile
 
 	public class CopyFileEvent extends FileSysEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FROM_PATH:String = "missingFromPath";
-		public static const MISSING_TO_PATH:String = "missingToPath";
 		
 		public function CopyFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

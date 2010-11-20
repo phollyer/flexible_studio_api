@@ -1,21 +1,59 @@
 package api.fileSys.renameFile
 {
-	import flash.events.IEventDispatcher;
+	import api.events.fileSys.renameFile.RenameFileEvent;
+
 	import api.fileSys.FileSys;
 
+	import flash.events.IEventDispatcher;
+
+	/**
+	* Dispatched if the Property <code>newName</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_NEWNAME
+	*/
 	[Event(name="missingNewName" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_renameFile.html Northcode Help Documentation
+	*/
 	public class RenameFile extends FileSys
 	{
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var newName:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var path:String = null;
 		
+		/**
+		* Constructor for FileSys.RenameFile()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_renameFile.html Northcode Help Documentation
+		*/
 		public function RenameFile(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param dirPath
+		*
+		* @param newFileName
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_renameFile.html Northcode Help Documentation
+		*/
 		public function renameFile( dirPath:String = null , newFileName:String = null ):void
 		{
 			path = compareStrings( dirPath , path );

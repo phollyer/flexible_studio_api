@@ -1,24 +1,67 @@
 package api.fileSys.appendToFileUTF8
 {
-	import flash.events.IEventDispatcher;
+	import api.events.fileSys.appendToFileUTF8.AppendToFileUTF8Event;
+
 	import api.fileSys.FileSys;
 
+	import flash.events.IEventDispatcher;
+
+	/**
+	* Dispatched if the Property <code>data</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_DATA
+	*/
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_appendToFileUTF8.html Northcode Help Documentation
+	*/
 	public class AppendToFileUTF8 extends FileSys
 	{
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>true</code>
+		*/
 		public var writeBOM:Boolean = true;
 		
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var data:String = null;
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var path:String = null;
 		
+		/**
+		* Constructor for FileSys.AppendToFileUTF8()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_appendToFileUTF8.html Northcode Help Documentation
+		*/
 		public function AppendToFileUTF8(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param filePath
+		*
+		* @param fileData
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_appendToFileUTF8.html Northcode Help Documentation
+		*/
 		public function appendToFileUTF8( filePath:String = null , fileData:String = null ):void
 		{
 			path = compareStrings( filePath , path );

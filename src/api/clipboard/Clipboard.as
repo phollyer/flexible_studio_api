@@ -4,8 +4,18 @@ package api.clipboard
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard.html Northcode Help Documentation
+	*/
 	public class Clipboard extends Kernel
 	{
+		/**
+		* Constructor for Clipboard()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard.html Northcode Help Documentation
+		*/
 		public function Clipboard(target:IEventDispatcher=null)
 		{
 			super(target);

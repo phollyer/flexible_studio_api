@@ -7,7 +7,6 @@ package api.events.clipboard.setData
 	public class SetDataEvent extends ClipboardEvent
 	{
 		public static const COMPLETE:String = "complete"
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function SetDataEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

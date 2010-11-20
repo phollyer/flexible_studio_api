@@ -6,7 +6,6 @@ package api.events.clipboard.clear
 
 	public class ClearEvent extends ClipboardEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

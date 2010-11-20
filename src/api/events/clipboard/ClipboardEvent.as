@@ -2,9 +2,9 @@ package api.events.clipboard
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class ClipboardEvent extends KernelEvent
+	public class ClipboardEvent extends SWFStudioEvent
 	{
 		public function ClipboardEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,15 +6,34 @@
 
 package api.splash.screen
 {
-	import flash.events.IEventDispatcher;
-	import flash.external.ExternalInterface;
+	import api.events.splash.screen.ScreenEvent;
+
 	import api.splash.Splash;
+
+	import flash.events.IEventDispatcher;
+
+	import flash.external.ExternalInterface;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_screen.html Northcode Help Documentation
+	*/
 	public class Screen extends Splash
 	{
+		/**
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var data:String = null;
 		
+		/**
+		* Constructor for Splash.Screen()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_screen.html Northcode Help Documentation
+		*/
 		public function Screen(target:IEventDispatcher=null)
 		{
 			super(target);

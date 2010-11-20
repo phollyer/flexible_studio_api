@@ -6,8 +6,6 @@ package api.events.splash.show
 
 	public class ShowEvent extends SplashEvent
 	{
-		public static const COMPLETE						:String 				= "complete";
-		public static const MISSING_PATH					:String					= "missingPath";
 		
 		public function ShowEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

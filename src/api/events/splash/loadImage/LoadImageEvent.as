@@ -6,8 +6,6 @@ package api.events.splash.loadImage
 
 	public class LoadImageEvent extends SplashEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LoadImageEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

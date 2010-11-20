@@ -6,8 +6,6 @@ package api.events.splash.sendData
 
 	public class SendDataEvent extends SplashEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function SendDataEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

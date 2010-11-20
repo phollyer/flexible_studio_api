@@ -6,7 +6,6 @@ package api.events.wmAudio.resume
 
 	public class ResumeEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ResumeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

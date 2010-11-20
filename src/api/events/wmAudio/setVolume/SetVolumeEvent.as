@@ -6,7 +6,6 @@ package api.events.wmAudio.setVolume
 
 	public class SetVolumeEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetVolumeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

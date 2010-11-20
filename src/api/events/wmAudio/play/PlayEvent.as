@@ -6,7 +6,6 @@ package api.events.wmAudio.play
 
 	public class PlayEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function PlayEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

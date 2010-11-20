@@ -2,9 +2,9 @@ package api.events.wmAudio
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class WmAudioEvent extends KernelEvent
+	public class WmAudioEvent extends SWFStudioEvent
 	{
 		public function WmAudioEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

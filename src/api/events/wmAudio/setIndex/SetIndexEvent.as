@@ -6,8 +6,6 @@ package api.events.wmAudio.setIndex
 
 	public class SetIndexEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_INDEX:String = "missingIndex";
 		
 		public function SetIndexEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

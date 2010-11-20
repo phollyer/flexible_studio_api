@@ -6,8 +6,6 @@ package api.events.wmAudio.setResource
 
 	public class SetResourceEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_RESOURCE:String = "missingResource";
 		
 		public function SetResourceEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

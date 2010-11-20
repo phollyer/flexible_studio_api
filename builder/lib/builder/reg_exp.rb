@@ -40,7 +40,7 @@ module Builder
     end
 
     def event_string_reg_exp
-      /\"?\w+\"?/
+      /\"\w+\"/
     end
 
     def every_defined_class_reg_exp

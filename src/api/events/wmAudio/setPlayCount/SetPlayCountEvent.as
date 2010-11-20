@@ -6,8 +6,6 @@ package api.events.wmAudio.setPlayCount
 
 	public class SetPlayCountEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_COUNT:String = "missingCount";
 		
 		public function SetPlayCountEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

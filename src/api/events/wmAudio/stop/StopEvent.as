@@ -6,7 +6,6 @@ package api.events.wmAudio.stop
 
 	public class StopEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

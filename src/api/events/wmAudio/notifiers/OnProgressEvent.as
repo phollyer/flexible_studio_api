@@ -6,7 +6,39 @@ package api.events.wmAudio.notifiers
 
 	public class OnProgressEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
+		
+	/**
+	* The OnProgressEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>data</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
+		public static const RESULT:String = "result";
+		
+	/**
+	* The OnProgressEvent.STATUS constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>status</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>data</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType status
+	*/
 		public static const STATUS:String = "status";
 		
 		public var data:String = null;

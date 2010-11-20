@@ -6,7 +6,6 @@ package api.events.wmAudio.setMute
 
 	public class SetMuteEvent extends WmAudioEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetMuteEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.joystick.start
 
 	public class StartEvent extends JoystickEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StartEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

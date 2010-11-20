@@ -6,7 +6,6 @@ package api.events.joystick.stop
 
 	public class StopEvent extends JoystickEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -2,9 +2,9 @@ package api.events.joystick
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class JoystickEvent extends KernelEvent
+	public class JoystickEvent extends SWFStudioEvent
 	{
 		public function JoystickEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

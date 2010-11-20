@@ -6,7 +6,6 @@ package api.events.joystick.setThreshold
 
 	public class SetThresholdEvent extends JoystickEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetThresholdEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

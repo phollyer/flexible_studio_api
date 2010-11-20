@@ -6,7 +6,6 @@ package api.events.joystick.setPeriod
 
 	public class SetPeriodEvent extends JoystickEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetPeriodEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

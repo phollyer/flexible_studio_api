@@ -3,8 +3,18 @@ package api.joystick
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Joystick.html Northcode Help Documentation
+	*/
 	public class Joystick extends Kernel
 	{
+		/**
+		* Constructor for Joystick()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Joystick.html Northcode Help Documentation
+		*/
 		public function Joystick(target:IEventDispatcher=null)
 		{
 			super(target);

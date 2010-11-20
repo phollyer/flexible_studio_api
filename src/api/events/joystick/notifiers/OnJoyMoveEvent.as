@@ -6,8 +6,40 @@ package api.events.joystick.notifiers
 
 	public class OnJoyMoveEvent extends JoystickEvent
 	{
-		public static const COMPLETE:String = "complete";
+		
+	/**
+	* The OnJoyMoveEvent.CHANGE constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>change</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>id</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType change
+	*/
 		public static const CHANGE:String = "change";
+		
+	/**
+	* The OnJoyMoveEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>id</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
+		public static const RESULT:String = "result";
 		
 		public var id:String = null;
 		public var pov:Number = -1;

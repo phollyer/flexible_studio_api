@@ -4,8 +4,18 @@ package api.email
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Email.html Northcode Help Documentation
+	*/
 	public class Email extends Kernel
 	{
+		/**
+		* Constructor for Email()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Email.html Northcode Help Documentation
+		*/
 		public function Email(target:IEventDispatcher=null)
 		{
 			super(target);

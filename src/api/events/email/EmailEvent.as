@@ -2,9 +2,9 @@ package api.events.email
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class EmailEvent extends KernelEvent
+	public class EmailEvent extends SWFStudioEvent
 	{
 		public function EmailEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

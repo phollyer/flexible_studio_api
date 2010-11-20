@@ -6,10 +6,6 @@ package api.events.crypto.decryptFile
 
 	public class DecryptFileEvent extends CryptoEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DESTINATION:String = "missingDestination";
-		public static const MISSING_KEY:String = "missingKey";
-		public static const MISSING_SOURCE:String = "missingSource";
 		
 		public function DecryptFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

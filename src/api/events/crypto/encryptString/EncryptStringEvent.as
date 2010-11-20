@@ -6,9 +6,22 @@ package api.events.crypto.encryptString
 
 	public class EncryptStringEvent extends CryptoEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
-		public static const MISSING_KEY:String = "missingKey";
+		
+	/**
+	* The EncryptStringEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>data</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";
 		
 		public var data:String = null;

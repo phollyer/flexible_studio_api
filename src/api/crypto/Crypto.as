@@ -4,8 +4,18 @@ package api.crypto
 	import flash.events.IEventDispatcher;
 
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto.html Northcode Help Documentation
+	*/
 	public class Crypto extends Kernel
 	{
+		/**
+		* Constructor for Crypto()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto.html Northcode Help Documentation
+		*/
 		public function Crypto(target:IEventDispatcher=null)
 		{
 			super(target);

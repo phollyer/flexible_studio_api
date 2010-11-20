@@ -2,9 +2,9 @@ package api.events.script
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class ScriptEvent extends KernelEvent
+	public class ScriptEvent extends SWFStudioEvent
 	{
 		public function ScriptEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -21,20 +21,6 @@ package api.ftp
 		{
 			super(target);
 		}
-		
-		/**
-		 * An Error has occured so package Error
-		 * Data and send out the data
-		 */
-		override public function dispatchError( errorSTR:String , e:Object ):void
-		{
-			var error:FtpError = new FtpError( errorSTR );
-			errors.code = e.id + "-" + e.code;
-			errors.summary = e.description;
-			errors.command = e.command;
-			errors.description = null;
-			dispatchEvent( error );
-		}
 		/**
 		* This method should be called when a SWF Studio action
 		* has completed successfully.

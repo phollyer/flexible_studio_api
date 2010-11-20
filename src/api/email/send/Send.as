@@ -1,8 +1,8 @@
 package api.email.send
 {
-	import api.email.EMail;
+	import api.email.Email;
 
-	import api.errors.EMailError;
+	import api.errors.EmailError;
 
 	import api.events.email.send.SendEvent;
 
@@ -23,7 +23,7 @@ package api.email.send
 	*/
 	[Event(name="result", type="api.events.email.send.SendEvent")]
 	[Bindable]
-	public class Send extends EMail
+	public class Send extends Email
 	{
 		// Required
 		/**
@@ -70,43 +70,6 @@ package api.email.send
 					var __o : Object = sendSettings.createEmail();
 					ssCore.EMail.send( __o , {callback:actionComplete, errorSTR:"sendError", code:"20000"} );
 			}
-		}
-		/**
-		*
-		*
-		*
-		* @param sendToAddress
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Email_send.html Northcode Help Documentation
-		*/
-		public function sendComplete( r:Object , c:Object , e:Object ):void
-		{
-			switch( r.success )
-			{
-				case true:
-					var event : SendEvent = new SendEvent( SendEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "20000";
-					dispatchError( EMailError.SEND_ERROR , e );
-			}
-		}
-		/**
-		*
-		*
-		*
-		* @param sendToAddress
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Email_send.html Northcode Help Documentation
-		*/
-		public function sendResult( r:Object ):void
-		{
-			serverResponse = r.result;
-			
-			var e : SendEvent = new SendEvent( SendEvent.RESULT );
-			e.serverResponse = serverResponse;
-			dispatchEvent( e );
 		}
 		/**
 		* A result has been received so dispatch it.

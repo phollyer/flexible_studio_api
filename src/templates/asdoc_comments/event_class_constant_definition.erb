@@ -1,15 +1,15 @@
-	/**
-	* The <%= @event_class_name %>.<%= @event_const %> constant defines the value of the
-	* <code>type</code> property of the event object
-	* for a <code><%= @event_string %></code> event.
-	*
-	* <p>The properties of the event object have the following values:</p>
-	* <table class=innertable>
-	* <tr><th>Property</th><th>Value</th></tr>
-	* <% @event_properties.each do |prop| %>
-	* <tr><td><%= prop[:property] %></td><td><%= prop[:value] %></td></tr>
-	* <% end %>
-	* </table>
-	*
-	* @eventType <%= @event_string %>
-	*/
+		/**
+		* The <%= @event_class_name %>.<%= @event_const %> constant defines the value of the
+		* <code>type</code> property of the event object
+		* for a <code><%= @event_string %></code> event.
+		*
+		* <p>The properties of the event object have the following values:</p>
+		* <table class=innertable>
+		* <tr><th>Property</th><th>Value</th></tr>
+		* <% @event_properties.each do |prop| %>
+		* <tr><td><%= prop[:property] %></td><td><%= prop[:value] %></td></tr>
+		* <% end %>
+		* </table>
+		*
+		* @eventType <%= @event_string %>
+		*/

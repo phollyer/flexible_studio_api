@@ -6,9 +6,6 @@ package api.fileSys.explore
 
 	import flash.events.IEventDispatcher;
 
-    [Event(name="complete", type="ExploreEvent")]
-    [Event(name="missingPath", type="ExploreEvent")]
-    [Event(name="exploreError", type="FileSys")]
     [Bindable]
 	/**
 	*
@@ -53,19 +50,6 @@ package api.fileSys.explore
 				default:
 					ssCore.FileSys.explore( {path:path}
 										   ,{callback:actionComplete, errorSTR:"exploreError", code:"9021"} );
-			}
-		}
-		private function exploreComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : ExploreEvent = new ExploreEvent( ExploreEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "9021";
-					dispatchError( FileSysError.EXPLORE_ERROR , e );
 			}
 		}
 	}

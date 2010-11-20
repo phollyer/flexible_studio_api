@@ -4,7 +4,7 @@ package api.ftp.chmod
 
 	import api.ftp.Ftp;
 
-	import api.vos.ftp.chmod.ChmodVO;
+	import api.vos.ftp.chmod.CHMODVO;
 
 	import flash.events.IEventDispatcher;
 
@@ -34,7 +34,7 @@ package api.ftp.chmod
 		*
 		* @defaultValue <code>new</code>
 		*/
-		public var mode:ChmodVO = new ChmodVO();
+		public var mode:CHMODVO = new CHMODVO();
 		
 		// Required
 		/**

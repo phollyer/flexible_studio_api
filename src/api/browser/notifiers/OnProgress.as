@@ -37,6 +37,5 @@ package api.browser.notifiers
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_PROGRESS} , {callback:actionComplete, errorSTR:"onProgressError", code:"10033"} );
 		}
-		}		
 	}
 }

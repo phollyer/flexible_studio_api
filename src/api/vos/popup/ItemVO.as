@@ -1,19 +1,18 @@
-package api.events.popup
+package swfStudio.vos.popup
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class PopupEvent extends KernelEvent
-	{
-		public function PopupEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+	[Bindable]
+	public class ItemVO
+	{		
+		public var id:String = null;
+		public var flags:String = null;
+		public var name:String = null;
+		public var parent:String = null;
+		public var text:String = null;
+		public var type:String = null;
+		
+		public function ItemVO()
 		{
-			super(type, bubbles, cancelable);
 		}
-		override public function clone():Event
-		{
-			var e : PopupEvent = new PopupEvent( type );
-			return e;
-		}
+		
 	}
 }

@@ -1,7 +1,7 @@
-package api.vos.app.showFileOpen
+package swfStudio.vos.app.showFileOpen
 {
-	import api.vos.app.style.DialogListViewStyleVO;
-	import api.vos.globals.Globals;
+	import swfStudio.vos.app.style.DialogListViewStyleVO;
+	import swfStudio.vos.globals.Globals;
 	[Bindable]
 	public class ShowFileOpenVO
 	{		

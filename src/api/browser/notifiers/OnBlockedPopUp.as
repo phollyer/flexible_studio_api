@@ -31,6 +31,5 @@ package api.browser.notifiers
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_BLOCKED_POP_UP} , {callback:actionComplete, errorSTR:"onBlockedPopUpError", code:"10028"} );
 		}
-		}		
 	}
 }

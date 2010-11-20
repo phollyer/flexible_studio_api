@@ -39,7 +39,6 @@ package api.popup.notifiers
 			ssCore.Popup.setNotify( {event:"onContextMenu"}
 								   ,{callback:actionComplete, errorSTR:"onContextMenuError", code:"31012"} );
 		}
-		}	
 		/**
 		* A result has been received so dispatch it.
 		*

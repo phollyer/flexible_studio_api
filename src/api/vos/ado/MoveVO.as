@@ -1,4 +1,4 @@
-package api.vos.ado
+package swfStudio.vos.ado
 {
 	public class MoveVO extends Object
 	{

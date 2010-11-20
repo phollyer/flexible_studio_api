@@ -1,19 +1,16 @@
-package api.events.sysTools
+package swfStudio.vos.sysTools
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class SysToolsEvent extends KernelEvent
+	public class ConvertIconToJpegVO extends Object
 	{
-		public function SysToolsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		// Required
+		public var height:Number = -1;
+		public var jpeg:String = null;
+		public var path:String = null;
+		public var width:Number = -1;
+		
+		public function ConvertIconToJpegVO()
 		{
-			super(type, bubbles, cancelable);
-		}
-		override public function clone():Event
-		{
-			var e : SysToolsEvent = new SysToolsEvent( type );
-			return e;
-		}
+			super();
+		}		
 	}
 }

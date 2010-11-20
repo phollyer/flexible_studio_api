@@ -1,7 +1,5 @@
-package api.keyboard.ublockAll
+package api.keyboard.unblockAll
 {
-	import api.events.keyboard.unblockAll.UnblockAllEvent;
-
 	import api.keyboard.Keyboard;
 
 	import flash.events.IEventDispatcher;

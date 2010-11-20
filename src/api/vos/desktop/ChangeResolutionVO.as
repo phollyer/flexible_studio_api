@@ -1,19 +1,22 @@
-package api.events.desktop
+package swfStudio.vos.desktop
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class DesktopEvent extends KernelEvent
+	[Bindable]
+	public class ChangeResolutionVO extends Object
 	{
-		public function DesktopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		// Required
+		public var colorDepth:Number = 32;
+		public var height:Number = 1024;
+		public var width:Number = 768;
+		
+		// Optional
+		public var permanent:Boolean = false;
+		public var refreshRate:Number = -1;
+		public var useDirectDraw:Boolean = false;
+		
+		public function ChangeResolutionVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : DesktopEvent = new DesktopEvent( type );
-			return e;
-		}
+		
 	}
 }

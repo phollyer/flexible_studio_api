@@ -56,8 +56,7 @@ package api.mouse.notifiers
 			super(target);
 			ssCore.Mouse.setNotify( {event:"onMouseMove"}
 								   ,{callback:actionComplete, errorSTR:"onMouseMoveError", code:"29010"} );
-		}
-		}		
+		}	
 		/**
 		* A result has been received so dispatch it.
 		*

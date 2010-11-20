@@ -30,7 +30,6 @@ package api.browser.notifiers
 		{
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_PREVIEW} , {callback:actionComplete, errorSTR:"onPreviewError", code:"10032"} );
-		}
-		}		
+		}	
 	}
 }

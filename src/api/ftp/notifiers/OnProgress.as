@@ -39,7 +39,6 @@ package api.ftp.notifiers
 			ssCore.Ftp.setNotify( {event:"onProgress"}
 								 ,{callback:actionComplete, errorSTR:"onProgressError", code:"7028"} );
 		}
-		}	
 		/**
 		* A result has been received so dispatch it.
 		*

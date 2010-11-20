@@ -30,7 +30,6 @@ package api.browser.notifiers
 		{
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_DOCUMENT_COMPLETE} , {callback:actionComplete, errorSTR:"onDocumentCompleteError", code:"10030"} );
-		}
-		}		
+		}	
 	}
 }

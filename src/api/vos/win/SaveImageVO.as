@@ -1,24 +1,47 @@
-package api.events.win
+package swfStudio.vos.win
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class WinEvent extends KernelEvent
-	{				
-		public static const STATE_CHANGED:String = null;
+	public class SaveImageVO extends Object
+	{
+		public static const JPEG:String = "jpeg";
+		public static const BITMAP:String = "bitmap";
+		// Required
+		public var path:String = null;
 		
-		public var state:String = null;
+		// Optional
+		public var clientOnly:Boolean = false;
+		public var format:String = JPEG;
+		public var height:Number = -1;
+		public var left:Number = 0;
+		public var quality:Number = 90;	
+		public var top:Number = 0;
+		public var width:Number = -1;	
 		
-		public function WinEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public function SaveImageVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
+		public function createObject():Object
 		{
-			var e : WinEvent = new WinEvent(type);
-			e.state = state;
-			return e;
+			var __o:Object = new Object();
+			__o.path = path;
+			__o.clientOnly = clientOnly;
+			__o.format = format;
+			__o.left = left;
+			__o.quality = quality;
+			__o.top = top;
+			
+			switch( height > -1 )
+			{
+				case true:
+					__o.height = height;
+			}
+			switch( width > -1 )
+			{
+				case true:
+					__o.width = width;
+			}
+			
+			return __o
 		}
 	}
 }

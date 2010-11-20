@@ -39,7 +39,6 @@ package api.popup.notifiers
 			ssCore.Popup.setNotify( {event:"onTrayMenu"}
 								   ,{callback:actionComplete, errorSTR:"onTrayMenuError", code:"31013"} );
 		}
-		}	
 		/**
 		* A result has been received so dispatch it.
 		*

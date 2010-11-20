@@ -1,4 +1,4 @@
-package api.vos.activeX
+package swfStudio.vos.activeX
 {
 	[Bindable]
 	public class GuideVO extends Object

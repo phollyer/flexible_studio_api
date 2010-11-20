@@ -1,19 +1,18 @@
-package api.events.sysTools
+package swfStudio.vos.sysTools
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class SysToolsEvent extends KernelEvent
+	[Bindable]
+	public class ResizeImageVO extends Object
 	{
-		public function SysToolsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public var destination:String = null;
+		public var height:Number = -1;
+		public var quality:Number = -1;
+		public var source:String = null;
+		public var width:Number = -1;
+		
+		public function ResizeImageVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : SysToolsEvent = new SysToolsEvent( type );
-			return e;
-		}
+		
 	}
 }

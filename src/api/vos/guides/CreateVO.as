@@ -1,19 +1,29 @@
-package api.events.guides
+package swfStudio.vos.guides
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class GuidesEvent extends KernelEvent
+	[Bindable]
+	public class CreateVO extends Object
 	{
-		public function GuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public static const HORIZONTAL:String = "HORIZONTAL";
+		public static const VERTICAL:String = "VERTICAL";
+		
+		public static const BOTTOM:String = "bottom";
+		public static const LEFT:String = "left";
+		public static const RIGHT:String = "right";
+		public static const TOP:String = "top";
+		
+		// Optional
+		public var lower:String = LEFT;
+		public var upper:String = RIGHT;
+		
+		// Required
+		public var name:String = null;
+		public var offset:Object = null;
+		public var orientation:String = VERTICAL;
+		
+		public function CreateVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
-		{
-			var e : GuidesEvent = new GuidesEvent( type );
-			return e;
-		}
+		
 	}
 }

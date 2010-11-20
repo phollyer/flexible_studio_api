@@ -1,19 +1,42 @@
-package api.events.console
+package swfStudio.vos.console
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class ConsoleEvent extends KernelEvent
+	[Bindable]
+	public class OpenVO extends Object
 	{
-		public function ConsoleEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public var height:Number = -1;
+		public var title:String = null;
+		public var topmost:Boolean = true;
+		public var width:Number = -1;
+		public var x:Number = 0;
+		public var y:Number = 0;
+		
+		public function OpenVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
+		public function createObject():Object
 		{
-			var e : ConsoleEvent = new ConsoleEvent( type );
-			return e;
+			var __o : Object = new Object();
+			switch( height > 0 )
+			{
+				case true:
+					__o.height = height;
+			}
+			switch( title != null )
+			{
+				case true:
+					__o.title = title;
+			}
+			switch( width > 0 )
+			{
+				case true:
+					__o.width = width;
+			}
+			__o.topmost = topmost;
+			__o.x = x;
+			__o.y = y;
+			
+			return __o;
 		}
 	}
 }

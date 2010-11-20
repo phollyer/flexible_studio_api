@@ -64,8 +64,7 @@ package api.mouse.notifiers
 			super(target);
 			ssCore.Mouse.setNotify( {event:"onMouseButton"}
 								   ,{callback:actionComplete, errorSTR:"onMouseButtonError", code:"29012"} );
-		}
-		}		
+		}	
 		/**
 		* A result has been received so dispatch it.
 		*

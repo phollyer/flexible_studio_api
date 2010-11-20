@@ -1,19 +1,22 @@
-package api.events.wmVideo
+package swfStudio.vos.wmVideo
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class WmVideoEvent extends KernelEvent
+	public class SetGuidesVO extends Object
 	{
-		public function WmVideoEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		// Required
+		public var bottomGuide:String = "bottom";
+		public var leftGuide:String = "left";
+		public var rightGuide:String = "right";
+		public var topGuide:String = "top";
+		
+		// Optional
+		public var bottomMargin:Number = 0;
+		public var leftMargin:Number = 0;
+		public var rightMargin:Number = 0;
+		public var topMargin:Number = 0;
+		
+		public function SetGuidesVO()
 		{
-			super(type, bubbles, cancelable);
-		}
-		override public function clone():Event
-		{
-			var e : WmVideoEvent = new WmVideoEvent( type );
-			return e;
+			super();
 		}
 	}
 }

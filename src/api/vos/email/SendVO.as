@@ -1,19 +1,82 @@
-package api.events.email
+package swfStudio.vos.email
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class EmailEvent extends KernelEvent
+	[Bindable]
+	public class SendVO extends Object
 	{
-		public function EmailEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		// Body Format
+		public static const HTML:String = "HTML";
+		public static const SIMPLE:String = "Simple";
+		public static const TEXT:String = "Text";
+		
+		// Importance
+		public static const HIGH:String = "High";
+		public static const NORMAL:String = "Normal";
+		
+		// Required
+		public var toAddress:String = null;
+		
+		// Optional
+		public var attachments:Array = null;
+		public var body:String = null;
+		public var bodyFormat:String = TEXT;
+		public var charset:String = "iso-8859-1";
+		public var fromAddress:String = null;
+		public var headers:Array = null;
+		public var importance:String = NORMAL;
+		public var readReceiptTo:String = null;
+		public var server:String = null;
+		public var subject:String = null;
+		public var timeOut:Number = 60;
+		
+		public function SendVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
+		public function createEmail():Object
 		{
-			var e : EmailEvent = new EmailEvent( type );
-			return e;
+			var __o : Object = new Object();
+			__o.toAddress = toAddress;
+			__o.bodyFormat = bodyFormat;
+			__o.charset = charset;
+			__o.importance = importance;
+			__o.timeOut = timeOut;
+			
+			switch( attachments.length > 0 )
+			{
+				case true:
+					__o.attachments = attachments.join( "\n" );
+			}
+			switch( body != null )
+			{
+				case true:
+					__o.body = body;
+			}
+			switch( fromAddress != null )
+			{
+				case true:
+					__o.fromAddress = fromAddress;
+			}
+			switch( headers.length > 0 )
+			{
+				case true:
+					__o.headers = headers.join( "\n" );
+			}
+			switch( readReceiptTo != null )
+			{
+				case true:
+					__o.readReceiptTo = readReceiptTo;
+			}
+			switch( server != null )
+			{
+				case true:
+					__o.server = server;
+			}
+			switch( subject != null )
+			{
+				case true:
+					__o.subject = subject;
+			}
+			return __o;
 		}
 	}
 }

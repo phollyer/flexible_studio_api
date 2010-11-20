@@ -30,7 +30,6 @@ package api.browser.notifiers
 		{
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_TITLE} , {callback:actionComplete, errorSTR:"onTitleError", code:"10035"} );
-		}
 		}		
 	}
 }

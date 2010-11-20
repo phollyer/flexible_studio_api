@@ -1,7 +1,7 @@
-package api.vos.app.showFileSave
+package swfStudio.vos.app.showFileSave
 {
-	import api.vos.app.style.DialogListViewStyleVO;
-	import api.vos.globals.Globals;
+	import swfStudio.vos.app.style.DialogListViewStyleVO;
+	import swfStudio.vos.globals.Globals;
 	[Bindable]
 	public class ShowFileSaveVO extends Object
 	{		

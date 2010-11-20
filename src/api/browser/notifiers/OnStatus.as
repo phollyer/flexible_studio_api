@@ -30,7 +30,6 @@ package api.browser.notifiers
 		{
 			super(target);
 			ssCore.Browser.setNotify( {event:Browser.ON_STATUS} , {callback:actionComplete, errorSTR:"onStatusError", code:"10034"} );
-		}
 		}		
 	}
 }

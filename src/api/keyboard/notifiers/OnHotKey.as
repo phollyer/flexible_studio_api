@@ -102,8 +102,7 @@ package api.keyboard.notifiers
 			}
 			ssCore.Keyboard.setNotify( __o
 									 ,{callback:actionComplete, errorSTR:"onHotKeyError", code:"25011"} );
-		}
-		}		
+		}	
 		/**
 		* A result has been received so dispatch it.
 		*

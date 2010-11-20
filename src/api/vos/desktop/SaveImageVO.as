@@ -1,19 +1,46 @@
-package api.events.desktop
+package swfStudio.vos.desktop
 {
-	import flash.events.Event;
-	
-	import api.events.KernelEvent;
-
-	public class DesktopEvent extends KernelEvent
+	[Bindable]
+	public class SaveImageVO extends Object
 	{
-		public function DesktopEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public static const BITMAP:String = "bitmap";
+		public static const JPEG:String = "jpeg";
+		
+		// Optional
+		public var format:String = JPEG;
+		public var height:Number = -1;
+		public var left:Number = 0;
+		public var quality:Number = 90;
+		public var top:Number = 0;
+		public var width:Number = -1;
+		
+		// Required
+		public var path:String = null;
+		
+		public function SaveImageVO()
 		{
-			super(type, bubbles, cancelable);
+			super();
 		}
-		override public function clone():Event
+		public function getObject():Object
 		{
-			var e : DesktopEvent = new DesktopEvent( type );
-			return e;
+			var __o:Object = new Object();
+			__o.format = format;
+			__o.left = left;
+			__o.quality = quality;
+			__o.top = top;
+			
+			switch( height > 0 )
+			{
+				case true:
+					__o.height = height;
+			}			
+			switch( width > 0 )
+			{
+				case true:
+					__o.width = width;
+			}
+			
+			return __o;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package api.vos.binaryFile
+package swfStudio.vos.binaryFile
 {
 	[Bindable]
 	public class ShareModeVO extends Object

@@ -6,7 +6,6 @@ package api.events.sysInfo.setStickyKeys
 
 	public class SetStickyKeysEvent extends SysInfoEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetStickyKeysEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

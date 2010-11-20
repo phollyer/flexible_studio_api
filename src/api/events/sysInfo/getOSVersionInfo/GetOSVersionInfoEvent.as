@@ -6,9 +6,22 @@ package api.events.sysInfo.getOSVersionInfo
 
 	public class GetOSVersionInfoEvent extends SysInfoEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const RESULT:String = "result";
 		
+	/**
+	* The GetOSVersionInfoEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
+		public static const RESULT:String = "result";
+
 		public var is64Bit:Boolean = false;
 		public var longInfo:String = null;
 		public var platform:String = null;

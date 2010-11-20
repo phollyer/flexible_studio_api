@@ -3,8 +3,18 @@ package api.sysInfo
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo.html Northcode Help Documentation
+	*/
 	public class SysInfo extends Kernel
 	{
+		/**
+		* Constructor for SysInfo()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo.html Northcode Help Documentation
+		*/
 		public function SysInfo(target:IEventDispatcher=null)
 		{
 			super(target);

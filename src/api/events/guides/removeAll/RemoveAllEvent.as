@@ -6,7 +6,6 @@ package api.events.guides.removeAll
 
 	public class RemoveAllEvent extends GuidesEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RemoveAllEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

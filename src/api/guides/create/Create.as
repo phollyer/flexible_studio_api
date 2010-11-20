@@ -1,22 +1,59 @@
 package api.guides.create
 {
-	import flash.events.IEventDispatcher;
+	import api.events.guides.create.CreateEvent;
+
 	import api.guides.Guides;
+
 	import api.vos.guides.CreateVO;
+
+	import flash.events.IEventDispatcher;
 	
+	/**
+	* Dispatched if the Property <code>name</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_NAME
+	*/
 	[Event(name="missingGuideName" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingOffset" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingOrientation" , type="api.events.SWFStudioEvent")]
+	[Event(name="missingName", type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_create.html Northcode Help Documentation
+	*/
 	public class Create extends Guides
 	{
 		// Required
+		/**
+		* 
+		*
+		* @defaultValue <code>new</code>
+		*/
 		public var createSettings:CreateVO = new CreateVO();
 		
+		/**
+		* Constructor for Guides.Create()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_create.html Northcode Help Documentation
+		*/
 		public function Create(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @param name
+		*
+		* @param orientation
+		*
+		* @param offset
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_create.html Northcode Help Documentation
+		*/
 		public function create( name:String = null , orientation:String = null , offset:Object = null ):void
 		{
 			createSettings.name = compareStrings( name , createSettings.name );

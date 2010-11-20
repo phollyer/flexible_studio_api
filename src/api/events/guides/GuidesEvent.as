@@ -2,9 +2,9 @@ package api.events.guides
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class GuidesEvent extends KernelEvent
+	public class GuidesEvent extends SWFStudioEvent
 	{
 		public function GuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,11 +6,21 @@ package api.events.guides.create
 
 	public class CreateEvent extends GuidesEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_GUIDE_NAME:String = "missingGuideName";
+		
+	/**
+	* The CreateEvent.INVALID_ORIENTATION constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>invalidOrientation</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType invalidOrientation
+	*/
 		public static const INVALID_ORIENTATION:String = "invalidOrientation";
-		public static const MISSING_OFFSET:String = "missingOffset";
-		public static const MISSING_ORIENTATION:String = "missingOrientation";
 		
 		public function CreateEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.browser.forward
 
 	public class ForwardEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ForwardEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

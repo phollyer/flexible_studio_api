@@ -6,7 +6,6 @@ package api.events.browser.notifiers
 
 	public class OnDocumentCompleteEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public var url:String = null;
 		

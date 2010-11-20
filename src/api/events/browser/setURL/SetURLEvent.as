@@ -6,8 +6,6 @@ package api.events.browser.setURL
 
 	public class SetURLEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_URL:String = "missingURL";
 		
 		public function SetURLEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

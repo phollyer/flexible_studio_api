@@ -6,7 +6,6 @@ package api.events.browser.redirectPopups
 
 	public class RedirectPopupsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RedirectPopupsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

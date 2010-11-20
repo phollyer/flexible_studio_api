@@ -6,7 +6,6 @@ package api.events.browser.showBorder
 
 	public class ShowBorderEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowBorderEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

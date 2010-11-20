@@ -6,6 +6,24 @@ package api.events.browser.notifiers
 
 	public class OnProgressEvent extends BrowserEvent
 	{
+		
+	/**
+	* The OnProgressEvent.STATUS constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>status</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>bytesLoaded</td><td>0</td></tr>
+	* 
+	* <tr><td>bytesTotal</td><td>0</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType status
+	*/
 		public static const STATUS:String = "status";
 		
 		public var bytesLoaded:Number = 0;

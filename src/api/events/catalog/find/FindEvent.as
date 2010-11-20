@@ -6,7 +6,6 @@ package api.events.catalog.find
 
 	public class FindEvent extends CatalogEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function FindEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

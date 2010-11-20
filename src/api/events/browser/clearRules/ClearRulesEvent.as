@@ -6,7 +6,6 @@ package api.events.browser.clearRules
 
 	public class ClearRulesEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearRulesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

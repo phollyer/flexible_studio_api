@@ -6,7 +6,6 @@ package api.events.browser.setPosition
 
 	public class SetPositionEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "COMPLETE";
 			
 		public function SetPositionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

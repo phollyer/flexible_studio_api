@@ -6,7 +6,6 @@ package api.events.browser.allowPopups
 
 	public class AllowPopupsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public var status:Boolean;
 		

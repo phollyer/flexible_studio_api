@@ -6,7 +6,6 @@ package api.events.browser.home
 
 	public class HomeEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function HomeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

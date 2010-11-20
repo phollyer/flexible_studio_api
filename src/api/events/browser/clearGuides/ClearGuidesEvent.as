@@ -6,7 +6,6 @@ package api.events.browser.clearGuides
 
 	public class ClearGuidesEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearGuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

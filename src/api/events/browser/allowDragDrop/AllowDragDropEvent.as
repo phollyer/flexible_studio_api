@@ -6,7 +6,6 @@ package api.events.browser.allowDragDrop
 
 	public class AllowDragDropEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AllowDragDropEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

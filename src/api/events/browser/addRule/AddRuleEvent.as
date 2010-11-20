@@ -6,10 +6,21 @@ package api.events.browser.addRule
 
 	public class AddRuleEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
+		
+	/**
+	* The AddRuleEvent.INVALID_TYPE constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>invalidType</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* </table>
+	*
+	* @eventType invalidType
+	*/
 		public static const INVALID_TYPE:String = "invalidType";
-		public static const MISSING_PATTERN:String = "missingPattern";
-		public static const MISSING_TYPE:String = "missingType";
 		
 		public function AddRuleEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

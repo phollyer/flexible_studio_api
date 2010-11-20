@@ -2,9 +2,9 @@ package api.events.browser
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class BrowserEvent extends KernelEvent
+	public class BrowserEvent extends SWFStudioEvent
 	{		
 		public function BrowserEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -4,8 +4,18 @@ package api.catalog
 	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog.html Northcode Help Documentation
+	*/
 	public class Catalog extends Kernel
 	{
+		/**
+		* Constructor for Catalog()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog.html Northcode Help Documentation
+		*/
 		public function Catalog(target:IEventDispatcher=null)
 		{
 			super(target);

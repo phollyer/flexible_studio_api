@@ -6,7 +6,6 @@ package api.events.browser.printNoPrompt
 
 	public class PrintNoPromptEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function PrintNoPromptEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

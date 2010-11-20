@@ -6,7 +6,6 @@ package api.events.browser.setSilent
 
 	public class SetSilentEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetSilentEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

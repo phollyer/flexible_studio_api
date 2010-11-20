@@ -6,7 +6,6 @@ package api.events.browser.clearAnchors
 
 	public class ClearAnchorsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ClearAnchorsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.browser.setBrowser
 
 	public class SetBrowserEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetBrowserEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.catalog.unload
 
 	public class UnloadEvent extends CatalogEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function UnloadEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

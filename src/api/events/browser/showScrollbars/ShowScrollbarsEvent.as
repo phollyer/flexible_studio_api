@@ -6,7 +6,6 @@ package api.events.browser.showScrollbars
 
 	public class ShowScrollbarsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowScrollbarsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,6 @@ package api.events.catalog.load
 
 	public class LoadEvent extends CatalogEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PATH:String = "missingPath";
 		
 		public function LoadEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.browser.search
 
 	public class SearchEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SearchEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

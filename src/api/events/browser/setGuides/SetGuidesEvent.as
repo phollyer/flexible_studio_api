@@ -6,7 +6,6 @@ package api.events.browser.setGuides
 
 	public class SetGuidesEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetGuidesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

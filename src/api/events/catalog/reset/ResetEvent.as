@@ -6,7 +6,6 @@ package api.events.catalog.reset
 
 	public class ResetEvent extends CatalogEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ResetEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

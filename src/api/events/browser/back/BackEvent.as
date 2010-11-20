@@ -6,7 +6,6 @@ package api.events.browser.back
 
 	public class BackEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function BackEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

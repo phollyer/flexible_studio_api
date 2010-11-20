@@ -6,7 +6,6 @@ package api.events.browser.open
 
 	public class OpenEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function OpenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

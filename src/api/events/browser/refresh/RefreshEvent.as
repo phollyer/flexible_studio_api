@@ -6,7 +6,6 @@ package api.events.browser.refresh
 
 	public class RefreshEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RefreshEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

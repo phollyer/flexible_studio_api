@@ -6,6 +6,24 @@ package api.events.browser.notifiers
 
 	public class OnActiveElementChangeEvent extends BrowserEvent
 	{
+		
+	/**
+	* The OnActiveElementChangeEvent.CHANGE constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>change</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>href</td><td>null</td></tr>
+	* 
+	* <tr><td>html</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType change
+	*/
 		public static const CHANGE:String = "change";
 		
 		public var href:String = null;

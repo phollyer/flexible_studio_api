@@ -6,6 +6,11 @@ package api.browser
 	
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser.html Northcode Help Documentation
+	*/
 	public class Browser extends Kernel
 	{
 		public static const IE:String = "IE";
@@ -20,6 +25,11 @@ package api.browser
 		public static const ON_STATUS:String = "onStatus";
 		public static const ON_TITLE:String = "onTitle";
 		
+		/**
+		* Constructor for Browser()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser.html Northcode Help Documentation
+		*/
 		public function Browser(target:IEventDispatcher=null)
 		{
 			super(target);

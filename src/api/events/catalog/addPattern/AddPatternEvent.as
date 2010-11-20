@@ -6,9 +6,6 @@ package api.events.catalog.addPattern
 
 	public class AddPatternEvent extends CatalogEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FIELD_NAME:String = "missingFieldName";
-		public static const MISSING_PATTERN:String = "missingPattern";
 		
 		public function AddPatternEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

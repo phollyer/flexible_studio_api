@@ -6,7 +6,6 @@ package api.events.browser.setVisible
 
 	public class SetVisibleEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetVisibleEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

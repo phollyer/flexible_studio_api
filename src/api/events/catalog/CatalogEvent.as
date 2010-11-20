@@ -2,9 +2,9 @@ package api.events.catalog
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class CatalogEvent extends KernelEvent
+	public class CatalogEvent extends SWFStudioEvent
 	{
 		public function CatalogEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

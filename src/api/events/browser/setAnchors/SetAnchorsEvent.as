@@ -6,7 +6,6 @@ package api.events.browser.setAnchors
 
 	public class SetAnchorsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetAnchorsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

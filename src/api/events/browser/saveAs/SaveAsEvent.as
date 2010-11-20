@@ -6,7 +6,6 @@ package api.events.browser.saveAs
 
 	public class SaveAsEvent extends BrowserEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SaveAsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

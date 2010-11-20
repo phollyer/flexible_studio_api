@@ -6,10 +6,6 @@ package api.events.iniFile.deleteKey
 
 	public class DeleteKeyEvent extends IniFileEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_KEY:String = "missingKey";
-		public static const MISSING_PATH:String = "missingPath";
-		public static const MISSING_SECTION:String = "missingSection";
 		
 		public function DeleteKeyEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

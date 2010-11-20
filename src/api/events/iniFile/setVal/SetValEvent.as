@@ -6,11 +6,6 @@ package api.events.iniFile.setVal
 
 	public class SetValEvent extends IniFileEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_KEY:String = "missingKey";
-		public static const MISSING_PATH:String = "missingPath";
-		public static const MISSING_SECTION:String = "missingSection";
-		public static const MISSING_VALUE:String = "missingValue";
 		
 		public function SetValEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

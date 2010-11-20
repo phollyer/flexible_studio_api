@@ -6,10 +6,22 @@ package api.events.iniFile.getVal
 
 	public class GetValEvent extends IniFileEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_KEY:String = "missingKey";
-		public static const MISSING_PATH:String = "missingPath";
-		public static const MISSING_SECTION:String = "missingSection";
+		
+	/**
+	* The GetValEvent.RESULT constant defines the value of the
+	* <code>type</code> property of the event object
+	* for a <code>result</code> event.
+	*
+	* <p>The properties of the event object have the following values:</p>
+	* <table class=innertable>
+	* <tr><th>Property</th><th>Value</th></tr>
+	* 
+	* <tr><td>keyValue</td><td>null</td></tr>
+	* 
+	* </table>
+	*
+	* @eventType result
+	*/
 		public static const RESULT:String = "result";
 		
 		public var keyValue:String = null;

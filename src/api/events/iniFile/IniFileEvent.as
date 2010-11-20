@@ -2,9 +2,9 @@ package api.events.iniFile
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class IniFileEvent extends KernelEvent
+	public class IniFileEvent extends SWFStudioEvent
 	{
 		public function IniFileEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

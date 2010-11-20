@@ -3,8 +3,18 @@ package api.iniFile
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_INIFile.html Northcode Help Documentation
+	*/
 	public class IniFile extends Kernel
 	{
+		/**
+		* Constructor for IniFile()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_INIFile.html Northcode Help Documentation
+		*/
 		public function IniFile(target:IEventDispatcher=null)
 		{
 			super(target);

@@ -5,8 +5,7 @@ package api.events.printer.printWindow
 	import api.events.printer.PrinterEvent;
 
 	public class PrintWindowEvent extends PrinterEvent
-	{	
-		public static const COMPLETE:String = "complete";
+	{
 		
 		public function PrintWindowEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -2,9 +2,9 @@ package api.events.printer
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class PrinterEvent extends KernelEvent
+	public class PrinterEvent extends SWFStudioEvent
 	{
 		public function PrinterEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

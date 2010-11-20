@@ -5,8 +5,7 @@ package api.events.printer.setProperties
 	import api.events.printer.PrinterEvent;
 
 	public class SetPropertiesEvent extends PrinterEvent
-	{	
-		public static const COMPLETE:String = "complete";
+	{
 		
 		public function SetPropertiesEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

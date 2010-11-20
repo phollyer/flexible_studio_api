@@ -3,8 +3,18 @@ package api.printer
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer.html Northcode Help Documentation
+	*/
 	public class Printer extends Kernel
 	{
+		/**
+		* Constructor for Printer()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer.html Northcode Help Documentation
+		*/
 		public function Printer(target:IEventDispatcher=null)
 		{
 			super(target);

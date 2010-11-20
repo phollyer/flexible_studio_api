@@ -5,8 +5,7 @@ package api.events.printer.setDefaultPrinter
 	import api.events.printer.PrinterEvent;
 
 	public class SetDefaultPrinterEvent extends PrinterEvent
-	{	
-		public static const COMPLETE:String = "complete";
+	{
 		
 		public function SetDefaultPrinterEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

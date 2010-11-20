@@ -5,9 +5,7 @@ package api.events.printer.printText
 	import api.events.printer.PrinterEvent;
 
 	public class PrintTextEvent extends PrinterEvent
-	{	
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_TEXT:String = "missingText";
+	{
 		
 		public function PrintTextEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,6 @@ package api.events.security.setExpiredFlag
 
 	public class SetExpiredFlagEvent extends SecurityEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FLAG:String = "missingFlag";
 		
 		public function SetExpiredFlagEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

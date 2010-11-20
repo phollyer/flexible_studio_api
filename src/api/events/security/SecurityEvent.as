@@ -2,9 +2,9 @@ package api.events.security
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class SecurityEvent extends KernelEvent
+	public class SecurityEvent extends SWFStudioEvent
 	{
 		public function SecurityEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

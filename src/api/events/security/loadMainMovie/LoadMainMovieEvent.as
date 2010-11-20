@@ -6,7 +6,6 @@ package api.events.security.loadMainMovie
 
 	public class LoadMainMovieEvent extends SecurityEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LoadMainMovieEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

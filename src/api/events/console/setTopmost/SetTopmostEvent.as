@@ -6,7 +6,6 @@ package api.events.console.setTopmost
 
 	public class SetTopmostEvent extends ConsoleEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetTopmostEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

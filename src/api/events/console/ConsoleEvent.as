@@ -2,9 +2,9 @@ package api.events.console
 {
 	import flash.events.Event;
 	
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class ConsoleEvent extends KernelEvent
+	public class ConsoleEvent extends SWFStudioEvent
 	{
 		public function ConsoleEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

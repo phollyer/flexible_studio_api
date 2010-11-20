@@ -6,7 +6,6 @@ package api.events.console.open
 
 	public class OpenEvent extends ConsoleEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function OpenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

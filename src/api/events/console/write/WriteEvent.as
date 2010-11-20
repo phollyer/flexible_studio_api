@@ -6,8 +6,6 @@ package api.events.console.write
 
 	public class WriteEvent extends ConsoleEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_TEXT:String = "missingText";
 		
 		public function WriteEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

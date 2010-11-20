@@ -4,8 +4,18 @@ package api.console
 	import flash.events.IEventDispatcher;
 
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console.html Northcode Help Documentation
+	*/
 	public class Console extends Kernel
 	{
+		/**
+		* Constructor for Console()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console.html Northcode Help Documentation
+		*/
 		public function Console(target:IEventDispatcher=null)
 		{
 			super(target);

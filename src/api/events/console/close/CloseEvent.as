@@ -6,7 +6,6 @@ package api.events.console.close
 
 	public class CloseEvent extends ConsoleEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function CloseEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

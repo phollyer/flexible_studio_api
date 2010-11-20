@@ -7,7 +7,6 @@ package api.events.binaryFile.setFilePointer
 	public class SetFilePointerEvent extends BinaryFileEvent
 	{
 		public static const COMPLETE:String = "complete";
-		public static const INVALID_POINTER:String = "invalidPointer";
 		
 		public var systemError:String = null;
 		

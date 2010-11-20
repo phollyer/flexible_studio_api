@@ -7,7 +7,6 @@ package api.events.binaryFile.setSize
 	public class SetSizeEvent extends BinaryFileEvent
 	{
 		public static const COMPLETE:String = "complete";
-		public static const INVALID_SIZE:String = "invalidSize";
 		
 		public var systemError:String = null;
 		

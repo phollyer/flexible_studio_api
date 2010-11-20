@@ -8,7 +8,6 @@ package api.events.binaryFile.writeBytes
 	{
 		public static const COMPLETE:String = "complete";
 		public static const MISSING_DATA:String = "missingData";
-		public static const INVALID_FORMAT:String = "invalidFormat";
 		public static const RESULT:String = "result";
 		
 		public var bytesWritten:Number = 0;

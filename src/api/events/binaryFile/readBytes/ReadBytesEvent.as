@@ -7,8 +7,6 @@ package api.events.binaryFile.readBytes
 	public class ReadBytesEvent extends BinaryFileEvent
 	{
 		public static const COMPLETE:String = "complete";
-		public static const INVALID_FORMAT:String = "invalidFormat";
-		public static const INVALID_SIZE:String = "invalidSize";
 		public static const MISSING_FORMAT:String = "missingFormat";
 		public static const RESULT:String = "result";
 		

@@ -3,8 +3,18 @@ package api.flash
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash.html Northcode Help Documentation
+	*/
 	public class Flash extends Kernel
 	{
+		/**
+		* Constructor for Flash()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash.html Northcode Help Documentation
+		*/
 		public function Flash(target:IEventDispatcher=null)
 		{
 			super(target);

@@ -6,7 +6,6 @@ package api.events.flash.allowFullScreen
 
 	public class AllowFullScreenEvent extends FlashEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AllowFullScreenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

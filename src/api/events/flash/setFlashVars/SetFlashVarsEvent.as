@@ -6,8 +6,6 @@ package api.events.flash.setFlashVars
 
 	public class SetFlashVarsEvent extends FlashEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_FLASH_VARS:String = "missingFlashVars";
 		
 		public function SetFlashVarsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

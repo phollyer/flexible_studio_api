@@ -1,8 +1,8 @@
 package api.events.flash
 {
-	import api.events.KernelEvent;
+	import api.events.SWFStudioEvent;
 
-	public class FlashEvent extends KernelEvent
+	public class FlashEvent extends SWFStudioEvent
 	{
 		public function FlashEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

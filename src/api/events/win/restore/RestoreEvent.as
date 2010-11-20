@@ -6,7 +6,6 @@ package api.events.win.restore
 
 	public class RestoreEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function RestoreEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

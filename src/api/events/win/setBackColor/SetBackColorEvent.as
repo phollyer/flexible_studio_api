@@ -6,8 +6,6 @@ package api.events.win.setBackColor
 
 	public class SetBackColorEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_COLOR:String = "missingColor";
 		
 		public function SetBackColorEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

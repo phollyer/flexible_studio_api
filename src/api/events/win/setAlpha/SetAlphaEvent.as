@@ -6,8 +6,6 @@ package api.events.win.setAlpha
 
 	public class SetAlphaEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PERCENT:String = "missingPercent";
 		
 		public function SetAlphaEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

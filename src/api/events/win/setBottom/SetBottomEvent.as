@@ -6,7 +6,6 @@ package api.events.win.setBottom
 
 	public class SetBottomEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetBottomEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

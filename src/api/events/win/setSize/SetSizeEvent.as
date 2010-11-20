@@ -6,9 +6,6 @@ package api.events.win.setSize
 
 	public class SetSizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_HEIGHT:String = "missingHeight";
-		public static const MISSING_WIDTH:String = "missingWidth";
 		
 		public function SetSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

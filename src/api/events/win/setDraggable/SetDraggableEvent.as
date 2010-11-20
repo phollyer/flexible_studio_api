@@ -6,7 +6,6 @@ package api.events.win.setDraggable
 
 	public class SetDraggableEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetDraggableEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

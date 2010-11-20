@@ -1,9 +1,17 @@
 package api.win.setStageAlign
 {
-	import flash.events.IEventDispatcher;
+	import api.events.win.setStageAlign.SetStageAlignEvent;
+
 	import api.win.Win;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setStageAlign.html Northcode Help Documentation
+	*/
 	public class SetStageAlign extends Win
 	{
 		public static const ALIGN_BOTTOM:String = "B";
@@ -16,12 +24,28 @@ package api.win.setStageAlign
 		public static const ALIGN_TOP_RIGHT:String = "R";
 		
 		// Optional
+		/**
+		* 
+		*
+		* @defaultValue <code>ALIGN_TOP_LEFT</code>
+		*/
 		public var align:String = ALIGN_TOP_LEFT;
 		
+		/**
+		* Constructor for Win.SetStageAlign()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setStageAlign.html Northcode Help Documentation
+		*/
 		public function SetStageAlign(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setStageAlign.html Northcode Help Documentation
+		*/
 		public function setStageAlign():void
 		{
 			ssCore.Win.setStageAlign( {align:align}

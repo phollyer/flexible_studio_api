@@ -6,7 +6,6 @@ package api.events.win.showBorder
 
 	public class ShowBorderEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowBorderEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

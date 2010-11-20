@@ -6,7 +6,6 @@ package api.events.win.center
 
 	public class CenterEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function CenterEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

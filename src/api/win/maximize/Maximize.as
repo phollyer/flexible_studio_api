@@ -1,15 +1,34 @@
 package api.win.maximize
 {
-	import flash.events.IEventDispatcher;
+	import api.events.win.maximize.MaximizeEvent;
+
 	import api.win.Win;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_maximize.html Northcode Help Documentation
+	*/
 	public class Maximize extends Win
 	{
+		/**
+		* Constructor for Win.Maximize()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_maximize.html Northcode Help Documentation
+		*/
 		public function Maximize(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_maximize.html Northcode Help Documentation
+		*/
 		public function maximize():void
 		{
 			ssCore.Win.maximize( {}

@@ -6,7 +6,6 @@ package api.events.win.setTopmost
 
 	public class SetTopmostEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetTopmostEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

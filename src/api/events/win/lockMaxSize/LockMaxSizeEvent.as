@@ -6,7 +6,6 @@ package api.events.win.lockMaxSize
 
 	public class LockMaxSizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockMaxSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

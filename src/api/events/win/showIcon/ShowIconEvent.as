@@ -6,7 +6,6 @@ package api.events.win.showIcon
 
 	public class ShowIconEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowIconEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

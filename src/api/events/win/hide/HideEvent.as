@@ -6,7 +6,6 @@ package api.events.win.hide
 
 	public class HideEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function HideEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.win.setPosition
 
 	public class SetPositionEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetPositionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

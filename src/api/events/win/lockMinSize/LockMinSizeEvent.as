@@ -6,7 +6,6 @@ package api.events.win.lockMinSize
 
 	public class LockMinSizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockMinSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

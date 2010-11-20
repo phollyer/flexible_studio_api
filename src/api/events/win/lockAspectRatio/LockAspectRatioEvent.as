@@ -6,7 +6,6 @@ package api.events.win.lockAspectRatio
 
 	public class LockAspectRatioEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockAspectRatioEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

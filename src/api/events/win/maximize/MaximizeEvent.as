@@ -6,7 +6,6 @@ package api.events.win.maximize
 
 	public class MaximizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function MaximizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

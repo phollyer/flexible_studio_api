@@ -4,8 +4,18 @@ package api.win
 	
 	import api.Kernel;
 
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win.html Northcode Help Documentation
+	*/
 	public class Win extends Kernel
 	{
+		/**
+		* Constructor for Win()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win.html Northcode Help Documentation
+		*/
 		public function Win(target:IEventDispatcher=null)
 		{
 			super(target);

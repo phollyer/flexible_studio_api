@@ -4,8 +4,6 @@ package api.events.win.setCaption
 
 	public class SetCaptionEvent extends Event
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_TEXT:String = "missingText";
 		
 		public function SetCaptionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.win.lockWindow
 
 	public class LockWindowEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function LockWindowEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

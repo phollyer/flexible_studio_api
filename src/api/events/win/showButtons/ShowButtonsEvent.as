@@ -6,7 +6,6 @@ package api.events.win.showButtons
 
 	public class ShowButtonsEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowButtonsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

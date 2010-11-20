@@ -6,7 +6,6 @@ package api.events.win.flash
 
 	public class FlashEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function FlashEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

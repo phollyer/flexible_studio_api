@@ -1,15 +1,34 @@
 package api.win.minimize
 {
-	import flash.events.IEventDispatcher;
+	import api.events.win.minimize.MinimizeEvent;
+
 	import api.win.Win;
+
+	import flash.events.IEventDispatcher;
 	
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_minimize.html Northcode Help Documentation
+	*/
 	public class Minimize extends Win
 	{
+		/**
+		* Constructor for Win.Minimize()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_minimize.html Northcode Help Documentation
+		*/
 		public function Minimize(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_minimize.html Northcode Help Documentation
+		*/
 		public function minimize():void
 		{
 			ssCore.Win.minimize( {}

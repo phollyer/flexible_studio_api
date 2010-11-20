@@ -6,7 +6,6 @@ package api.events.win.show
 
 	public class ShowEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

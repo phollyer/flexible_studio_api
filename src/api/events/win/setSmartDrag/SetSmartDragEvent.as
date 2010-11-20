@@ -6,7 +6,6 @@ package api.events.win.setSmartDrag
 
 	public class SetSmartDragEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetSmartDragEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

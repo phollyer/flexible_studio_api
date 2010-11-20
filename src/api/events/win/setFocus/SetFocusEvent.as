@@ -6,7 +6,6 @@ package api.events.win.setFocus
 
 	public class SetFocusEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function SetFocusEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

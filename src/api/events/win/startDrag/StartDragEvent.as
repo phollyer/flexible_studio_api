@@ -6,7 +6,6 @@ package api.events.win.startDrag
 
 	public class StartDragEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function StartDragEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,7 +6,6 @@ package api.events.win.allowResize
 
 	public class AllowResizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function AllowResizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

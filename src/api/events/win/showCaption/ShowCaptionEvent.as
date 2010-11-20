@@ -6,7 +6,6 @@ package api.events.win.showCaption
 
 	public class ShowCaptionEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function ShowCaptionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,10 +1,23 @@
 package api.win.setAlpha
 {
-	import flash.events.IEventDispatcher;
+	import api.events.win.setAlpha.SetAlphaEvent;
+
 	import api.win.Win;
+
+	import flash.events.IEventDispatcher;
 	
+	/**
+	* Dispatched if the Property <code>percent</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_PERCENT
+	*/
 	[Event(name="missingPercent" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setAlpha.html Northcode Help Documentation
+	*/
 	public class SetAlpha extends Win
 	{		
 		// Optional
@@ -13,11 +26,24 @@ package api.win.setAlpha
 		// Required
 		public var percent:Number = -1;
 		
+		/**
+		* Constructor for Win.SetAlpha()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setAlpha.html Northcode Help Documentation
+		*/
 		public function SetAlpha(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
+		/**
+		*
+		*
+		*
+		* @param percentNUM
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setAlpha.html Northcode Help Documentation
+		*/
 		public function setAlpha( percentNUM:Number = -1 ):void
 		{			
 			percent = compareNumbers( percentNUM , percent );

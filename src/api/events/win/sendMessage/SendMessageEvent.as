@@ -6,8 +6,6 @@ package api.events.win.sendMessage
 
 	public class SendMessageEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_MESSAGE:String = "missingMessage";
 		
 		public function SendMessageEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

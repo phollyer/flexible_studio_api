@@ -6,7 +6,6 @@ package api.events.win.minimize
 
 	public class MinimizeEvent extends WinEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function MinimizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

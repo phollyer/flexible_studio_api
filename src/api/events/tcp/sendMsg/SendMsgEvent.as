@@ -6,8 +6,6 @@ package api.events.tcp.sendMsg
 
 	public class SendMsgEvent extends TcpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_DATA:String = "missingData";
 		
 		public function SendMsgEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

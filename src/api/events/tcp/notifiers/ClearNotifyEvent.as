@@ -6,8 +6,6 @@ package api.events.tcp.notifiers
 
 	public class ClearNotifyEvent extends TcpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_EVENT:String = "missingEvent";
 		
 		public function ClearNotifyEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

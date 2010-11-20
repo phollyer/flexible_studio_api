@@ -6,7 +6,6 @@ package api.events.tcp.close
 
 	public class CloseEvent extends TcpEvent
 	{
-		public static const COMPLETE:String = "complete";
 		
 		public function CloseEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

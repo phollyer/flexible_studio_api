@@ -6,8 +6,6 @@ package api.events.tcp.listen
 
 	public class ListenEvent extends TcpEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_PORT:String = "missingPort";
 		
 		public function ListenEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

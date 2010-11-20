@@ -43,7 +43,7 @@ class Build
       @event_class_file.gsub!("KernelEvent","SWFStudioEvent")
 
       @event_class_file = configure_static_consts @event_class_file
-      @event_class_file = add_event_const_comments @event_class_file if event_has_consts? @event_class_file
+      @event_class_file = add_event_class_comments @event_class_file if event_has_consts? @event_class_file
 
       write_file event_class_file_path, @event_class_file
     end

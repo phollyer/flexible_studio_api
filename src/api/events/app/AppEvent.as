@@ -7,7 +7,7 @@ package api.events.app
 	{
 		
     /**
-    * The .LOGGING_OFF constant defines the value of the
+    * The AppEvent.LOGGING_OFF constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>loggingOff</code> event.
     *
@@ -22,7 +22,7 @@ package api.events.app
 		public static const LOGGING_OFF:String = "loggingOff";
 		
     /**
-    * The .REBOOTING constant defines the value of the
+    * The AppEvent.REBOOTING constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>rebooting</code> event.
     *
@@ -37,7 +37,7 @@ package api.events.app
 		public static const REBOOTING:String = "rebooting";
 		
     /**
-    * The .SHUTTING_DOWN constant defines the value of the
+    * The AppEvent.SHUTTING_DOWN constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>shuttingDown</code> event.
     *

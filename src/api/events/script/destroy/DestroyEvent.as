@@ -6,8 +6,6 @@ package api.events.script.destroy
 
 	public class DestroyEvent extends ScriptEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_MODULE:String = "missingModule";
 		
 		public function DestroyEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

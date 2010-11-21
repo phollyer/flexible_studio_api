@@ -6,8 +6,7 @@ package api.events.sysInfo.getUserName
 
 	public class GetUserNameEvent extends SysInfoEvent
 	{
-		
-	/**
+		/**
 	* The GetUserNameEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

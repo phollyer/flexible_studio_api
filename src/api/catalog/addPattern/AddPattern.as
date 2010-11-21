@@ -9,7 +9,7 @@ package api.catalog.addPattern
 	/**
 	* Dispatched if the Property <code>fieldName</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_FIELDNAME
+	* @eventType api.events.SWFStudioEvent.MISSING_FIELD_NAME
 	*/
 	[Event(name="missingFieldName" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingPattern" , type="api.events.SWFStudioEvent")]

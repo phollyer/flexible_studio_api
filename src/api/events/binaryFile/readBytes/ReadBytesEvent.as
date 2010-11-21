@@ -6,8 +6,7 @@ package api.events.binaryFile.readBytes
 
 	public class ReadBytesEvent extends BinaryFileEvent
 	{
-		
-    /**
+		/**
     * The ReadBytesEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

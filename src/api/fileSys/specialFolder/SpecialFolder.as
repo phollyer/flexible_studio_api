@@ -9,7 +9,7 @@ package api.fileSys.specialFolder
 	/**
 	* Dispatched if the Property <code>folderID</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_FOLDER_ID
+	* @eventType api.events.SWFStudioEvent.MISSING_FOLDER_I_D
 	*/
 	[Event(name="missingFolderID" , type="api.events.SWFStudioEvent")]
 	/**

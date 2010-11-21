@@ -6,8 +6,7 @@ package api.events.joystick.notifiers
 
 	public class OnJoyPOVEvent extends JoystickEvent
 	{
-		
-	/**
+		/**
 	* The OnJoyPOVEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.
@@ -23,8 +22,7 @@ package api.events.joystick.notifiers
 	* @eventType change
 	*/
 		public static const CHANGE:String = "change";
-		
-	/**
+		/**
 	* The OnJoyPOVEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

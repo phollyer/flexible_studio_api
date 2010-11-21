@@ -9,73 +9,73 @@ package api.binaryFile.readBytes
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched if the Property <code>format</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_FORMAT
-	 */
+	* Dispatched if the Property <code>format</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_FORMAT
+	*/
 	[Event(name="missingFormat" , type="api.events.SWFStudioEvent")]
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.binaryFile.readBytes.ReadBytesEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.binaryFile.readBytes.ReadBytesEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.binaryFile.readBytes.ReadBytesEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
+	*/
 	public class ReadBytes extends BinaryFile
 	{
 		// Required
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var format:String = null;
 		public var size:Number = -1;
 		
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var bytesRead:Number = 0;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var systemError:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var text:String = null;
 		
 		/**
-		 * Constructor for BinaryFile.ReadBytes()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
-		 */
+		* Constructor for BinaryFile.ReadBytes()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
+		*/
 		public function ReadBytes(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param readFormat
-                 *
-		 * @param bytesToRead
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param readFormat
+		*
+		* @param bytesToRead
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
+		*/
 		public function readBytes( readFormat:String = null , bytesToRead:Number = -1 ):void
 		{
 			format = compareStrings( readFormat , format );

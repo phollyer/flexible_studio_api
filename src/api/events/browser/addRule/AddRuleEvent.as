@@ -6,8 +6,7 @@ package api.events.browser.addRule
 
 	public class AddRuleEvent extends BrowserEvent
 	{
-		
-	/**
+		/**
 	* The AddRuleEvent.INVALID_TYPE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidType</code> event.

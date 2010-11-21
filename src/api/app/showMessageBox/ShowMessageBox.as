@@ -9,58 +9,58 @@ package api.app.showMessageBox
 	import flash.events.IEventDispatcher;
 
 	/**
-	 * Dispatched if the Property <code>prompt</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_PROMPT
-	 */
+	* Dispatched if the Property <code>prompt</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_PROMPT
+	*/
 	[Event(name="missingPrompt" , type="api.events.SWFStudioEvent")]
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.showMessageBox.ShowMessageBoxEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.app.showMessageBox.ShowMessageBoxEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.app.showMessageBox.ShowMessageBoxEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
+	*/
 	public class ShowMessageBox extends App
 	{
 		// Required
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>new</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>new</code>
+		*/
 		public var messageBox:ShowMessageBoxVO = new ShowMessageBoxVO();
 		
 		// Result
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var selectedButton:String = null;
 		
 		/**
-		 * Constructor for App.ShowMessageBox()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
-		 */
+		* Constructor for App.ShowMessageBox()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
+		*/
 		public function ShowMessageBox(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param messageBoxOBJ
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param messageBoxOBJ
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showMsgBox.html Northcode Help Documentation
+		*/
 		public function showMessageBox( messageBoxOBJ:ShowMessageBoxVO = null ):void
 		{
 			messageBox = compare( messageBoxOBJ , messageBox );

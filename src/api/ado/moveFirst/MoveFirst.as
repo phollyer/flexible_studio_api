@@ -7,48 +7,48 @@ package api.ado.moveFirst
 	import flash.events.IEventDispatcher;
 
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.moveFirst.MoveFirstEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.ado.moveFirst.MoveFirstEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.ado.moveFirst.MoveFirstEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
+	*/
 	public class MoveFirst extends Ado
 	{
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var adoError:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var row:String = null;
 		
 		/**
-		 * Constructor for Ado.MoveFirst()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
-		 */
+		* Constructor for Ado.MoveFirst()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
+		*/
 		public function MoveFirst(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
+		*/
 		public function moveFirst():void
 		{
 			ssCore.Ado.moveFirst( {} , {callback:actionComplete, errorSTR:"moveFirstError", code:"16011"} );

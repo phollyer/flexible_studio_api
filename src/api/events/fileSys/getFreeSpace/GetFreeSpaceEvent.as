@@ -6,8 +6,7 @@ package api.events.fileSys.getFreeSpace
 
 	public class GetFreeSpaceEvent extends FileSysEvent
 	{
-		
-	/**
+		/**
 	* The GetFreeSpaceEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -6,8 +6,7 @@ package api.events.ftp.port
 
 	public class PortEvent extends FtpEvent
 	{
-		
-	/**
+		/**
 	* The PortEvent.INVALID_PORT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidPortNumber</code> event.

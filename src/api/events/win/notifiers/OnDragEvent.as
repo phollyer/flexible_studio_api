@@ -6,8 +6,7 @@ package api.events.win.notifiers
 
 	public class OnDragEvent extends WinEvent
 	{
-		
-	/**
+		/**
 	* The OnDragEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.
@@ -23,8 +22,7 @@ package api.events.win.notifiers
 	* @eventType public
 	*/
 		public static const RESULT:String = "result";
-		
-	/**
+		/**
 	* The OnDragEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

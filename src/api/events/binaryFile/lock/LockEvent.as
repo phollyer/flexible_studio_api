@@ -6,8 +6,7 @@ package api.events.binaryFile.lock
 
 	public class LockEvent extends BinaryFileEvent
 	{
-		
-    /**
+		/**
     * The LockEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

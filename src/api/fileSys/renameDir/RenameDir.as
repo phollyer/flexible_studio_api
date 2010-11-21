@@ -9,7 +9,7 @@ package api.fileSys.renameDir
 	/**
 	* Dispatched if the Property <code>newName</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_NEWNAME
+	* @eventType api.events.SWFStudioEvent.MISSING_NEW_NAME
 	*/
 	[Event(name="missingNewName" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]

@@ -6,8 +6,7 @@ package api.events.tray.notifiers
 
 	public class OnTrayHoverEvent extends TrayEvent
 	{
-		
-	/**
+		/**
 	* The OnTrayHoverEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>status</code> event.

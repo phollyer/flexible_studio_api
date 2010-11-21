@@ -6,8 +6,7 @@ package api.events.crypto.encryptString
 
 	public class EncryptStringEvent extends CryptoEvent
 	{
-		
-	/**
+		/**
 	* The EncryptStringEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

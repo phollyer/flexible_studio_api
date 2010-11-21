@@ -6,8 +6,7 @@ package api.events.win.getSize
 
 	public class GetSizeEvent extends WinEvent
 	{
-		
-	/**
+		/**
 	* The GetSizeEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

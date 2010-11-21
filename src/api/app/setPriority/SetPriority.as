@@ -8,17 +8,17 @@ package api.app.setPriority
 	import api.events.app.setPriority.SetPriorityEvent
 
 	/**
-	 * Dispatched if the Property <code>priority</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_PRIORITY
-	 */
+	* Dispatched if the Property <code>priority</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_PRIORITY
+	*/
 	[Event(name="missingPriority", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+	*/
 	public class SetPriority extends App
 	{
 		public static const HIGH:String = "high";
@@ -28,29 +28,29 @@ package api.app.setPriority
 		
 		// Required
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>NORMAL</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>NORMAL</code>
+		*/
 		public var priority:String = NORMAL;
 		
 		/**
-		 * Constructor for App.SetPriority()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
-		 */
+		* Constructor for App.SetPriority()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+		*/
 		public function SetPriority(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param appPriority
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param appPriority
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
+		*/
 		public function setPriority( appPriority:String ):void
 		{
 			priority = compareStrings( appPriority , priority );

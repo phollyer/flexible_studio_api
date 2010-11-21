@@ -6,8 +6,7 @@ package api.events.binaryFile.setFilePointer
 
 	public class SetFilePointerEvent extends BinaryFileEvent
 	{
-		
-    /**
+		/**
     * The SetFilePointerEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

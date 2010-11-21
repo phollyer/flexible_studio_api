@@ -7,50 +7,50 @@ package api.app.notifiers
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.notifiers.OnWindowEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.app.notifiers.OnWindowEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.app.onWindow.OnWindowEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onWindow.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onWindow.html Northcode Help Documentation
+	*/
 	public class OnWindow extends App
 	{
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var caption:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var hwnd:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var windowClassName:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var windowStyle:String = null;
 		
 		/**
-		 * Constructor for App.OnWindow()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onWindow.html Northcode Help Documentation
-		 */
+		* Constructor for App.OnWindow()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onWindow.html Northcode Help Documentation
+		*/
 		public function OnWindow(target:IEventDispatcher=null)
 		{
 			super(target);

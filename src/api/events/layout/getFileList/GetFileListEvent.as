@@ -6,8 +6,7 @@ package api.events.layout.getFileList
 
 	public class GetFileListEvent extends LayoutEvent
 	{
-		
-	/**
+		/**
 	* The GetFileListEvent.INVALID_FORMAT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidFormat</code> event.
@@ -21,8 +20,7 @@ package api.events.layout.getFileList
 	* @eventType invalidFormat
 	*/
 		public static const INVALID_FORMAT:String = "invalidFormat";
-		
-	/**
+		/**
 	* The GetFileListEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

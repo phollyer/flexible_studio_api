@@ -6,8 +6,7 @@ package api.events.plugin.getList
 
 	public class GetListEvent extends PluginEvent
 	{
-		
-	/**
+		/**
 	* The GetListEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

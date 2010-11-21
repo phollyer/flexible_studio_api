@@ -6,8 +6,7 @@ package api.events.shell.invoke
 
 	public class InvokeEvent extends ShellEvent
 	{
-		
-	/**
+		/**
 	* The InvokeEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

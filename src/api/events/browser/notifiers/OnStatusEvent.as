@@ -6,8 +6,7 @@ package api.events.browser.notifiers
 
 	public class OnStatusEvent extends BrowserEvent
 	{
-		
-	/**
+		/**
 	* The OnStatusEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.

@@ -6,8 +6,7 @@ package api.events.sysTools.extractIcons
 
 	public class ExtractIconsEvent extends SysToolsEvent
 	{
-		
-	/**
+		/**
 	* The ExtractIconsEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -6,8 +6,7 @@ package api.events.fileSys.findFiles
 
 	public class FindFilesEvent extends FileSysEvent
 	{
-		
-	/**
+		/**
 	* The FindFilesEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -5,8 +5,7 @@ package api.events.fileSys.fileExists
 
 	public class FileExistsEvent extends FileSysEvent
 	{
-		
-	/**
+		/**
 	* The FileExistsEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

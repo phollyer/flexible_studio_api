@@ -6,8 +6,7 @@ package api.events.registry.getValue
 
 	public class GetValueEvent extends RegistryEvent
 	{
-		
-	/**
+		/**
 	* The GetValueEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

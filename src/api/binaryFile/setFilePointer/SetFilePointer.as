@@ -7,17 +7,17 @@ package api.binaryFile.setFilePointer
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.binaryFile.setFilePointer.SetFilePointerEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.binaryFile.setFilePointer.SetFilePointerEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.binaryFile.setFilePointer.SetFilePointerEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
+	*/
 	public class SetFilePointer extends BinaryFile
 	{
 		// Required
@@ -25,29 +25,29 @@ package api.binaryFile.setFilePointer
 		
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var systemError:String = null;
 		
 		/**
-		 * Constructor for BinaryFile.SetFilePointer()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
-		 */
+		* Constructor for BinaryFile.SetFilePointer()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
+		*/
 		public function SetFilePointer(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param offset
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param offset
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
+		*/
 		public function setFilePointer( offset:Number = -1 ):void
 		{
 			pointerIndex = compareNumbers( offset , pointerIndex );

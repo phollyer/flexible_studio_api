@@ -4,8 +4,7 @@ package api.events.fileSys.getTimeStamp
 
 	public class GetTimeStampEvent extends Event
 	{
-		
-	/**
+		/**
 	* The GetTimeStampEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

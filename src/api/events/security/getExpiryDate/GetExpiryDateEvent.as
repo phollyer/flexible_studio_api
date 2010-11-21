@@ -6,8 +6,7 @@ package api.events.security.getExpiryDate
 
 	public class GetExpiryDateEvent extends SecurityEvent
 	{
-		
-	/**
+		/**
 	* The GetExpiryDateEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

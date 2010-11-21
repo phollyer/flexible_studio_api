@@ -497,6 +497,20 @@ package api
 		}
 
 		/**
+		* This method is called by sub classes when a Destination is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_DESTINATION event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingDestination():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_DESTINATION );
+		}
+
+		/**
 		* This method is called by sub classes when a Direction is
 		* not supplied as an argument or property when required.
 		*
@@ -508,6 +522,34 @@ package api
 		protected function missingDirection():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_DIRECTION);
+		}
+
+		/**
+		* This method is called by sub classes when Drive is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_DRIVE event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingDrive():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_DRIVE );
+		}
+
+		/**
+		* This method is called by sub classes when a DriveLetter is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_DRIVE_LETTER event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingDriveLetter():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_DRIVE_LETTER );
 		}
 		
 		/**
@@ -523,6 +565,48 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_EVENT);
 		}
+
+		/**
+		* This method is called by sub classes when ExistingFile is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_EXISTING_FILE event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingExistingFile():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_EXISTING_FILE );
+		}
+
+		/**
+		* This method is called by sub classes when FieldName is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FIELD_NAME event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFieldName():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FIELD_NAME );
+		}
+
+		/**
+		* This method is called by sub classes when File is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FILE event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFile():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FILE );
+		}
 		
 		/**
 		* This method is called by sub classes when a FileObj is
@@ -536,6 +620,48 @@ package api
 		protected function missingFileOBJ():void
 		{
 			sendMessage(SWFStudioEvent.MISSING_FILE_OBJ);
+		}
+
+		/**
+		* This method is called by sub classes when a Flag is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FLAG event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFlag():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FLAG );
+		}
+
+		/**
+		* This method is called by sub classes when a Folder is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FOLDER event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFolder():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FOLDER );
+		}
+
+		/**
+		* This method is called by sub classes when a FolderID is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FOLDER_I_D event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFolderID():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FOLDER_I_D );
 		}
 		
 		/**
@@ -551,6 +677,20 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_FORMAT);
 		}
+
+		/**
+		* This method is called by sub classes when a FromPath is
+		* not supplied as an argument or property when required.
+		*
+		* <p>The MISSING_FROM_PATH event type is then dispatched to any listeners so that
+		* you can handle the error</p>
+		*
+		* @private
+		*/
+		protected function missingFromPath():void
+		{
+			sendMessage(SWFStudioEvent.MISSING_FROM_PATH );
+		}
 		
 		/**
 		* This method is called by sub classes when a HWND is
@@ -565,204 +705,107 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_HWND);
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Method name is
+		* This method is called by sub classes when a Headers is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_METHOD event type is then dispatched to any listeners so that
+		* <p>The MISSING_HEADERS event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
-		protected function missingMethod():void
+		protected function missingHeaders():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_METHOD);
+			sendMessage(SWFStudioEvent.MISSING_HEADERS );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Number is
+		* This method is called by sub classes when a Height is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_NUMBER event type is then dispatched to any listeners so that
+		* <p>The MISSING_HEIGHT event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
-		protected function missingNumber():void
+		protected function missingHeight():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_NUMBER);
+			sendMessage(SWFStudioEvent.MISSING_HEIGHT );
 		}
-		
+
 		/**
-		* This method is called by sub classes when an Object reference is
+		* This method is called by sub classes when a Index is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_OBJECT event type is then dispatched to any listeners so that
+		* <p>The MISSING_INDEX event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
-		protected function missingObject():void
+		protected function missingIndex():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_OBJECT);
+			sendMessage(SWFStudioEvent.MISSING_INDEX );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Path is
+		* This method is called by sub classes when Resource is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_PATH event type is then dispatched to any listeners so that
+		* <p>The MISSING_RESOURCE event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
-		protected function missingPath():void
+		protected function missingResource():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_PATH);
+			sendMessage(SWFStudioEvent.MISSING_RESOURCE );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Priority is
+		* This method is called by sub classes when a Width is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_PRIORITY event type is then dispatched to any listeners so that
+		* <p>The MISSING_WIDTH event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
-		* @private
-		*/
-		protected function missingPriority():void
-		{
-			sendMessage(SWFStudioEvent.MISSING_PRIORITY);
-		}		
-		
-		/**
-		* This method is called by sub classes when a ProgID is
-		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_PROG_ID event type is then dispatched to any listeners so that
-		* you can handle the error</p>
-		* 
 		* @private
 		*/
-		protected function missingProgID():void
+		protected function missingWidth():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_PROG_ID);
+			sendMessage(SWFStudioEvent.MISSING_WIDTH );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Prompt is
+		* This method is called by sub classes when a Color is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_PROMPT event type is then dispatched to any listeners so that
+		* <p>The MISSING_COLOR event type is thtype is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
-		protected function missingPrompt():void
+		protected function missingWidth():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_PROMPT);
+			sendMessage(SWFStudioEvent.MISSING_WIDTH );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Property is
+		* This method is called by sub classes when a Text is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_PROPERTY event type is then dispatched to any listeners so that
+		* <p>The MISSING_TEXT event type is thentype is to any listeners so that
 		* you can handle the error</p>
-		* 
-		* @private
-		*/
-		protected function missingProperty():void
-		{
-			sendMessage(SWFStudioEvent.MISSING_PROPERTY);
-		}
-		
-		/**
-		* This method is called by sub classes when some SQL is
-		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_SQL event type is then dispatched to any listeners so that
-		* you can handle the error</p>
-		* 
-		* @private
-		*/
-		protected function missingSQL():void
-		{
-			sendMessage(SWFStudioEvent.MISSING_SQL);
-		}
-		
-		/**
-		* This method is called by sub classes when a String is
-		* not supplied as an argument or property when required.
-		*
-		* <p>The MISSING_STRING event type is then dispatched to any listeners so that
-		* you can handle the error</p>
-		* 
-		* @private
-		*/
-		protected function missingString():void
-		{
-			sendMessage(SWFStudioEvent.MISSING_STRING);
-		}
-		
-		/**
-		* This method is called by sub classes when Text is
-		* not supplied as an argument or property when required.
-		*
-		* <p>The MISSING_TEXT event type is then dispatched to any listeners so that
-		* you can handle the error</p>
-		* 
 		* @private
 		*/
 		protected function missingText():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_TEXT);
+			sendMessage(SWFStudioEvent.MISSING_TEXT );
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Value is
+		* This method is called by sub classes when a Text is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_VALUE event type is then dispatched to any listeners so that
-		* you can handle the error</p>
-		* 
-		* @private
-		*/
-		protected function missingValue():void
-		{
-			sendMessage(SWFStudioEvent.MISSING_VALUE);
-		}
-		
-
-		/**
-		* Send an event out to any listeners of type <code>eventType</code>
-		*
-		* @param eventType The type of SWFStudioEvent to dispatch.
-		*
-		* @private
-		*/
-		private function sendMessage( eventType:String ):void
-		{
-			var e : SWFStudioEvent = new SWFStudioEvent(eventType);
-			dispatchEvent(e);
-		}
-
-		/**
-		* This method should be called when a SWF Studio action
-		* has completed successfully.
-		*
-		* <p>This method should be overridden by sub classes in
-		* order to dispatch Class specific data</p>
-		*
-		* @param r The result Object returned by SWFStudio.
-		*
-		* @private
-		* 
-        * @private
-		*/
-		protected function sendResult(r:Object):void
-		{
-		}
-	}			
-}
+		* <p>The MISSING_TEXT event type is then

@@ -6,8 +6,7 @@ package api.events.http.getDefaultProxyPort
 
 	public class GetDefaultProxyPortEvent extends HttpEvent
 	{
-		
-	/**
+		/**
 	* The GetDefaultProxyPortEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

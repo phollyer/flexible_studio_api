@@ -6,8 +6,7 @@ package api.events.iniFile.enumKeys
 
 	public class EnumKeysEvent extends IniFileEvent
 	{
-		
-	/**
+		/**
 	* The EnumKeysEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

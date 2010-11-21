@@ -9,7 +9,7 @@ package api.sysInfo.getDriveLabel
 	/**
 	* Dispatched if the Property <code>driveLetter</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_DRIVELETTER
+	* @eventType api.events.SWFStudioEvent.MISSING_DRIVE_LETTER
 	*/
 	[Event(name="missingDriveLetter" , type="api.events.SWFStudioEvent")]
 	/**

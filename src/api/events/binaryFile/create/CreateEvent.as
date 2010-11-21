@@ -6,8 +6,7 @@ package api.events.binaryFile.create
 
 	public class CreateEvent extends BinaryFileEvent
 	{
-		
-    /**
+		/**
     * The CreateEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

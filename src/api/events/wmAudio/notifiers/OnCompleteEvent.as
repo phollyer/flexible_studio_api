@@ -6,8 +6,7 @@ package api.events.wmAudio.notifiers
 
 	public class OnCompleteEvent extends WmAudioEvent
 	{
-		
-	/**
+		/**
 	* The OnCompleteEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

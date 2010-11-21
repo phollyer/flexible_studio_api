@@ -7,50 +7,50 @@ package api.app.notifiers
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.app.notifiers.OnDragDropEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.app.notifiers.OnDragDropEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.app.onDragDrop.OnDragDropEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
+	*/
 	public class OnDragDrop extends App
 	{
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>new</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>new</code>
+		*/
 		public var fileList:Array = new Array();
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>new</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>new</code>
+		*/
 		public var folderList:Array = new Array();
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var x:Number = 0;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>0</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>0</code>
+		*/
 		public var y:Number = 0;
 		
 		/**
-		 * Constructor for App.OnDragDrop()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
-		 */
+		* Constructor for App.OnDragDrop()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDragDrop.html Northcode Help Documentation
+		*/
 		public function OnDragDrop(target:IEventDispatcher=null)
 		{
 			super(target);

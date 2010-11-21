@@ -5,8 +5,7 @@ package api.events.fileSys
 	
 	public class FileSysEvent extends SWFStudioEvent
 	{
-		
-	/**
+		/**
 	* The FileSysEvent.ALL_STOPPED constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>allStopped</code> event.

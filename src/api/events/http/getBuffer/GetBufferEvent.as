@@ -6,8 +6,7 @@ package api.events.http.getBuffer
 
 	public class GetBufferEvent extends HttpEvent
 	{
-		
-	/**
+		/**
 	* The GetBufferEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

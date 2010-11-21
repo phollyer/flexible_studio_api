@@ -6,8 +6,7 @@ package api.events.win.getStageAlign
 
 	public class GetStageAlignEvent extends WinEvent
 	{
-		
-	/**
+		/**
 	* The GetStageAlignEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

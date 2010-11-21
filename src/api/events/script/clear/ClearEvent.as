@@ -6,8 +6,6 @@ package api.events.script.clear
 
 	public class ClearEvent extends ScriptEvent
 	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_MODULE:String = "missingModule";
 		
 		public function ClearEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -6,8 +6,7 @@ package api.events.wmAudio.notifiers
 
 	public class OnErrorEvent extends WmAudioEvent
 	{
-		
-	/**
+		/**
 	* The OnErrorEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.
@@ -23,8 +22,7 @@ package api.events.wmAudio.notifiers
 	* @eventType result
 	*/
 		public static const RESULT:String = "result";
-		
-	/**
+		/**
 	* The OnErrorEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>status</code> event.

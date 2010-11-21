@@ -6,8 +6,7 @@ package api.events.keyboard.notifiers
 
 	public class OnKeyEvent extends KeyboardEvent
 	{
-		
-	/**
+		/**
 	* The OnKeyEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.
@@ -21,8 +20,7 @@ package api.events.keyboard.notifiers
 	* @eventType change
 	*/
 		public static const CHANGE:String = "change";
-		
-	/**
+		/**
 	* The OnKeyEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

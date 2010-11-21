@@ -6,8 +6,7 @@ package api.events.mouse.notifiers
 
 	public class OnMouseWheelEvent extends MouseEvent
 	{
-		
-	/**
+		/**
 	* The OnMouseWheelEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.
@@ -25,8 +24,7 @@ package api.events.mouse.notifiers
 	* @eventType change
 	*/
 		public static const CHANGE:String = "change";
-		
-	/**
+		/**
 	* The OnMouseWheelEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

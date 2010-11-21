@@ -6,8 +6,7 @@ package api.events.popup.setChecked
 
 	public class SetCheckedEvent extends PopupEvent
 	{
-		
-	/**
+		/**
 	* The SetCheckedEvent.INVALID_FLAG constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidFlag</code> event.

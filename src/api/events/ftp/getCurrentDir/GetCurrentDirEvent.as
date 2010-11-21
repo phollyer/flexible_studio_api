@@ -6,8 +6,7 @@ package api.events.ftp.getCurrentDir
 
 	public class GetCurrentDirEvent extends FtpEvent
 	{
-		
-	/**
+		/**
 	* The GetCurrentDirEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

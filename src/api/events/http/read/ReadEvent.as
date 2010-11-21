@@ -6,8 +6,7 @@ package api.events.http.read
 
 	public class ReadEvent extends HttpEvent
 	{
-		
-	/**
+		/**
 	* The ReadEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

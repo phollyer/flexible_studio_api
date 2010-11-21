@@ -6,8 +6,7 @@ package api.events.win.notifiers
 
 	public class OnFocusChangeEvent extends WinEvent
 	{
-		
-	/**
+		/**
 	* The OnFocusChangeEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.
@@ -23,8 +22,7 @@ package api.events.win.notifiers
 	* @eventType public
 	*/
 		public static const CHANGE:String = "change";
-		
-	/**
+		/**
 	* The OnFocusChangeEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

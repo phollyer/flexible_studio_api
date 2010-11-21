@@ -23,6 +23,11 @@ package api.email.send
 	*/
 	[Event(name="result", type="api.events.email.send.SendEvent")]
 	[Bindable]
+	/**
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Email_send.html Northcode Help Documentation
+	*/
 	public class Send extends Email
 	{
 		// Required

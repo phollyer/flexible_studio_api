@@ -7,10 +7,10 @@ package api.activeX.setProperty
 	import flash.events.IEventDispatcher;
 	
 	/**
-	 * Dispatched if the Property <code>object</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
-	 */
+	* Dispatched if the Property <code>object</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_OBJECT
+	*/
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
@@ -30,55 +30,55 @@ package api.activeX.setProperty
 	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+	*/
 	public class SetProperty extends ActiveX
 	{
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var object:String = null;
 		
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var property:String = null;
 		
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var value:String = null;
 		
 		/**
-		 * Constructor for ActiveX.SetProperty()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
-		 */
+		* Constructor for ActiveX.SetProperty()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+		*/
 		public function SetProperty(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		 *
-		 *
-                 *
-		 * @param activeXObject
-                 *
-		 * @param prop
-                 *
-		 * @param val
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param activeXObject
+		*
+		* @param prop
+		*
+		* @param val
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
+		*/
 		public function setProperty( activeXObject:String = null , prop:String = null , val:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

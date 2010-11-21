@@ -4,8 +4,7 @@ package api.events.win.notifiers
 
 	public class OnMoveEvent extends Event
 	{
-		
-	/**
+		/**
 	* The OnMoveEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.
@@ -19,8 +18,7 @@ package api.events.win.notifiers
 	* @eventType public
 	*/
 		public static const RESULT:String = "result";
-		
-	/**
+		/**
 	* The OnMoveEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

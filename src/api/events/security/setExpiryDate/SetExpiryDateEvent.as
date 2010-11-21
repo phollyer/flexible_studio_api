@@ -6,8 +6,7 @@ package api.events.security.setExpiryDate
 
 	public class SetExpiryDateEvent extends SecurityEvent
 	{
-		
-	/**
+		/**
 	* The SetExpiryDateEvent.INVALID_DATE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidDate</code> event.

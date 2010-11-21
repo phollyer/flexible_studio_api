@@ -6,8 +6,7 @@ package api.events.midi.notifiers
 
 	public class OnRawDataEvent extends MidiEvent
 	{
-		
-	/**
+		/**
 	* The OnRawDataEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.
@@ -21,8 +20,7 @@ package api.events.midi.notifiers
 	* @eventType change
 	*/
 		public static const CHANGE:String = "change";
-		
-	/**
+		/**
 	* The OnRawDataEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

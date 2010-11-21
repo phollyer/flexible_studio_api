@@ -6,8 +6,7 @@ package api.events.fileSys.clearAttrs
 
 	public class ClearAttrsEvent extends FileSysEvent
 	{
-		
-	/**
+		/**
 	* The ClearAttrsEvent.INVALID_ATTRS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidAttrs</code> event.

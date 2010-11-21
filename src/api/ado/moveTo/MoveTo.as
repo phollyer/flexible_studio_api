@@ -7,23 +7,23 @@ package api.ado.moveTo
 	import flash.events.IEventDispatcher;
 
 	/**
-	 * Dispatched if the Property <code>number</code> has not been supplied.
-	 *
-	 * @eventType api.events.SWFStudioEvent.MISSING_NUMBER
-	 */
+	* Dispatched if the Property <code>number</code> has not been supplied.
+	*
+	* @eventType api.events.SWFStudioEvent.MISSING_NUMBER
+	*/
 	[Event(name="missingNumber" , type="api.events.SWFStudioEvent")]
 	/**
-	 * Dispatched when the Results are ready.
-	 *
-	 * @eventType api.events.ado.moveTo.MoveToEvent.RESULT
-	 */
+	* Dispatched when the Results are ready.
+	*
+	* @eventType api.events.ado.moveTo.MoveToEvent.RESULT
+	*/
 	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
 	[Bindable]
 	/**
-	 *
-	 *
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
-	 */
+	*
+	*
+	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+	*/
 	public class MoveTo extends Ado
 	{
 		// Required
@@ -31,35 +31,35 @@ package api.ado.moveTo
 		
 		// Results
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var adoError:String = null;
 		/**
-		 * 
-		 *
-		 * @defaultValue <code>null</code>
-		 */
+		* 
+		*
+		* @defaultValue <code>null</code>
+		*/
 		public var row:String = null;
 		
 		/**
-		 * Constructor for Ado.MoveTo()
-		 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
-		 */
+		* Constructor for Ado.MoveTo()
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+		*/
 		public function MoveTo(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		 *
-		 *
-                 *
-		 * @param recordNumber
-                 *
-                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
-		 */
+		*
+		*
+		*
+		* @param recordNumber
+		*
+		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
+		*/
 		public function moveTo( recordNumber:Number = -1 ):void
 		{
 			number = compareNumbers( recordNumber , number );

@@ -18,19 +18,14 @@ module Builder
     end
 
     def clean_up file_content
-      puts "Begin Clean Up"
-      puts file_content
       match = file_content.match(unwanted_comments_reg_exp)
-      puts match
       if match
         matching = true
 
         while matching
-          puts "Cleaning Up"
           white_space = match[0].match(/\s*/)
           file_content.gsub!(match[0], "#{white_space}/**")
           match = unwanted_comments_reg_exp.match(file_content)
-          puts match
           matching = false unless match
         end
       end

@@ -80,6 +80,10 @@ module Builder
       end
     end
 
+    def missing_method_block_reg_exp method
+      /\s*protected function #{method}.*\s*\{\s*\w+.*\s*\}/
+    end
+
     def missing_method_reg_exp
       /\s+missing\w+\(\)/
     end

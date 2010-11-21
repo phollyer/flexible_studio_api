@@ -2,7 +2,10 @@ require 'erb'
 
 module Builder
   module Read
-    attr_accessor :class_file_content, :event_class_file_content, :event_file_content, :method_file_content
+    attr_accessor :class_file_content,
+                  :event_class_file_content, :event_file_content,
+                  :kernel_file_content,
+                  :method_file_content
 
     def read_file path
       puts "Reading:\t#{path}"
@@ -29,6 +32,10 @@ module Builder
 
     def read_event_file path
       @event_file_content = read_file path
+    end
+
+    def read_kernel_file path
+      @kernel_file_content = read_file path
     end
 
     def read_method_file path

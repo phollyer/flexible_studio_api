@@ -4,62 +4,40 @@ include Builder::RegExp
 
 module Builder
   module Utils
+
+    # => ============================
+    #
+    # => Convert a camel case string to a const
+    #
+    # => ============================
+
+    def convert_camel_to_const camel
+      const = ""
+      camel = camel.swap_initial(camel) if camel.match(/^[A-Z]/)
+      puts camel
+      camel.each_char do |char|
+        puts "Curr Char:\t#{char}"
+        if char.match(/[a-z]/)
+          const << char.upcase
+        else
+          const << "_" + char      
+        end
+        puts "Const:\t#{const}"
+      end
+
+      const
+    end
     # Swap an initial either upcase or downcase without affecting the rest of the String
 
     def swap_initial(str, direction=nil)
       vals = str.split("")
       if direction == "up" || direction == "down"
-        vals[0].call("#{direction}case!")
+        # vals[0].call("#{direction}case!")
       else
         vals[0] = vals[0].swapcase
       end
 
       vals.join
-    end
-
-    # Convert an ActionScript Property into a reference to an Event
-    # Example: myProperty => MY_PROPERTY
-    def convert_prop_to_event(prop)
-      event = ""
-      prev_char = ""
-      prop.each_char do |char|
-        if prev_char.match(/[A-Z]/)
-          event << char.upcase
-        elsif char.upcase!
-          event << char
-        elsif prev_char == ""
-          event << char
-        else
-          event << "_" + char
-        end
-
-        prev_char = char
-      end
-
-      event
-    end
-
-    def extract_parameters file_content, method_name
-      param_list = []
- 
-      method = file_content.match(public_function_reg_exp swap_initial method_name)
-
-      if method
-        params = method[0].scan(public_function_name_type_separator_reg_exp)
-        params.each {|param| param_list << param.split(":")[0]}
-      end
-
-      param_list
-    end
-
-    def extract_properties file_content
-      matches = file_content.scan(public_var_reg_exp)
-      props = []
-      matches.each do |match|
-        props << match.split(" ")[2]
-      end
-
-      props
     end
     
   end

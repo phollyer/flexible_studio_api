@@ -9,7 +9,10 @@ include Builder::Utils
 module Builder
   module Init
 
-    attr_accessor :class_dir, :class_file_path, :event_class_file_path, :event_class_name, :event_name, :event_const, :event_file_path, :method_dir, :method_file_path
+    attr_accessor :class_dir, :class_file_path,
+                  :event_class_file_path, :event_class_name, :event_name, :event_const, :event_file_path,
+                  :kernel_file_path,
+                  :method_dir, :method_file_path
 
     def init_class class_name
       @class_dir = swap_initial(class_name)
@@ -25,6 +28,10 @@ module Builder
       @event_name = method_name + "Event"
       @event_const = convert_prop_to_event @event_name
       @event_file_path = get_event_file_path @event_name
+    end
+
+    def init_kernel
+      @kernel_file_path = get_kernel_path
     end
 
     def init_method method_name

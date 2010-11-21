@@ -207,6 +207,23 @@ module Builder
       file_content.match(class_dispatches_a_result_reg_exp?)
     end
 
+    def extract_missing_methods file_content
+      file_content.scan(missing_method_reg_exp)
+    end
+
+    def extract_parameters file_content, method_name
+      param_list = []
+
+      method = file_content.match(public_function_reg_exp swap_initial method_name)
+
+      if method
+        params = method[0].scan(public_function_name_type_separator_reg_exp)
+        params.each {|param| param_list << param.split(":")[0]}
+      end
+
+      param_list
+    end
+
     def result_method_exists? file_content
       file_content.match(send_result_reg_exp)
     end
@@ -214,7 +231,21 @@ module Builder
   end
 
   module Properties
+    # Convert an ActionScript Property into a reference to an Event
+    # Example: myProperty => MY_PROPERTY
+    def convert_prop_to_event(prop)
+      convert_camel_to_const prop
+    end
     
+    def extract_properties file_content
+      matches = file_content.scan(public_var_reg_exp)
+      props = []
+      matches.each do |match|
+        props << match.split(" ")[2]
+      end
+
+      props
+    end
   end
   
   module ActionScript

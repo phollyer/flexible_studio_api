@@ -23,7 +23,10 @@ class Build
     @method_name = method_name
     @parameters = []
     @properties = []
-
+    
+    init_kernel
+    @kernel_file = read_kernel_file(kernel_file_path)
+    
     init_class @class_name
     init_event_class @class_name
     init_method @method_name if @method_name
@@ -91,7 +94,10 @@ class Build
         
         @method_file = clean_up_method_file @method_file
         
-        write_file(method_file_path,@method_file)
+        if write_file(method_file_path,@method_file)
+          update_kernel
+        end
+
       else
         puts "Failed:\t@file_path"
         exit
@@ -113,9 +119,8 @@ class Build
 
       @event_file = configure_static_consts @event_file
       @event_file = add_event_const_comments @event_file if event_has_consts? @event_file
-      puts "Start clean_up file"
       @event_file = clean_up_event_file @event_file
-      puts "End clean_up file"
+      
       write_file(event_file_path,@event_file)
     end
   end
@@ -137,5 +142,60 @@ class Build
       comment_class_method_event
     end
   end
+
+  private
   
+  def set_missing_methods file_content
+    missing_methods = extract_missing_methods file_content
+    missing_methods.uniq!
+    missing_methods.collect! { |m| m.strip! }
+    missing_methods.sort!
+
+    missing_methods
+  end
+
+  def update_kernel
+    @required_missing_methods = set_missing_methods @method_file
+
+    @new_missing_methods = []
+
+    @actual_missing_methods = set_missing_methods @kernel_file
+
+    @required_missing_methods.each do |required_method|
+      method_exists = false
+      @actual_missing_methods.each do |actual_method|
+        method_exists = true if required_method == actual_method
+      end
+      @new_missing_methods << required_method unless method_exists
+    end
+
+    @new_missing_methods.each do |new_method|
+      @actual_missing_methods << new_method
+      @actual_missing_methods.sort!
+      
+      new_method_index = @actual_missing_methods.find_index(new_method)
+      insert_after_method = @actual_missing_methods[new_method_index-1]
+      method = @kernel_file.match(missing_method_block_reg_exp(insert_after_method))[0]
+      
+      @missing_method = new_method
+      @prop = @missing_method.match(/[A-Z]\w*/)[0]
+      
+      if @prop.match(/\<[AEIOU]/)
+        @a_or_an = "an "
+      else
+        @a_or_an = @prop.match(/[aeiou]\Z/) ? "" : "a "
+      end
+      
+      @event_const = convert_camel_to_const(new_method.match(/\w+/)[0])
+
+      @missing_method_comments = read_template(comment_template_path("missing_method"))
+      @missing_method_block = read_template(action_script_template("missing_method_in_kernel"))
+
+      replace = method + "\r\n" + @missing_method_comments + "\r\n" + @missing_method_block
+      @kernel_file.sub!(method, replace)
+
+      write_file(kernel_file_path,@kernel_file)
+    end
+
+  end  
 end

@@ -9,8 +9,11 @@ module Builder
       if file.write(contents)
         puts "OK"
       else
-        puts "Error"
+        puts "Error writing:\t#{path}"
+        exit
       end
+
+      true
     end
     
   end

@@ -481,21 +481,21 @@ package api
 		{
 			sendMessage(SWFStudioEvent.MISSING_CRITERIA);
 		}
-		
+
 		/**
-		* This method is called by sub classes when a Direction is
+		* This method is called by sub classes when Data is
 		* not supplied as an argument or property when required.
 		*
 		* <p>The MISSING_DATA event type is then dispatched to any listeners so that
 		* you can handle the error</p>
-		* 
+		*
 		* @private
 		*/
 		protected function missingData():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_DATA);
+			sendMessage(SWFStudioEvent.MISSING_DATA );
 		}
-		
+
 		/**
 		* This method is called by sub classes when a Direction is
 		* not supplied as an argument or property when required.

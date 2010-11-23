@@ -27,11 +27,8 @@ module Builder
     def add_event_class_comments file_content
       consts = file_content.scan(every_event_const_reg_exp)
       consts.each do |const|
-        puts "const:\t#{const}"
         if file_content.match(event_const_with_comments_reg_exp const)
-          puts "\tHas Comments Already"
         else
-          puts "\tRequires Comment"
           @event_const = const.match(event_const_reg_exp)
           @event_string = const.match(event_string_reg_exp)
           @event_string = @event_string[0].match(/\w+/)
@@ -43,7 +40,6 @@ module Builder
                 }
             @event_properties << h
           end
-          puts "Name:\t#{@event_class_name}"
           comments = read_template(comment_template_path("event_class_constant"))
 
           file_content.sub!(const.strip!, "\r\n#{comments}\t\t#{const}")
@@ -56,11 +52,9 @@ module Builder
     def add_event_const_comments file_content
       consts = file_content.scan(every_event_const_reg_exp)
       consts.each do |const|
-        puts "const:\t#{const}"
         if file_content.match(event_const_with_comments_reg_exp const)
-          puts "\tHas Comments Already"
+          # Constant with comments exists - re-factor
         else
-          puts "\tRequires Comments"
           @event_const = const.match(event_const_reg_exp)
           @event_string = const.match(event_string_reg_exp)
           @event_string = @event_string[0].match(/\w+/)

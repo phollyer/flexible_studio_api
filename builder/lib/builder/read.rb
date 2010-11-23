@@ -17,6 +17,7 @@ module Builder
         puts "OK"
       else
         puts "Error reading file"
+        exit
       end
 
       file_content

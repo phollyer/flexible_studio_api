@@ -4,7 +4,7 @@ module Builder
     def write_file path,contents
       puts "Writing:\t#{path}"
       
-      file = File.new path,"w"
+      file = File.open path,"w"
       
       if file.write(contents)
         puts "OK"

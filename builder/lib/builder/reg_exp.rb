@@ -85,7 +85,7 @@ module Builder
     end
 
     def missing_method_reg_exp
-      /\s+missing\w+\(\)/
+      /missing\w+\(\)/
     end
 
     def new_class_reg_exp
@@ -142,6 +142,10 @@ module Builder
 
     def start_of_comments_reg_exp
       /\/\*\*/
+    end
+
+    def start_of_missing_methods_reg_exp
+      /\s*\/\/ Missing Methods/
     end
 
     def start_of_package_reg_exp

@@ -24,9 +24,7 @@ module Builder
       consts.each do |const|
         if const_is_unwanted? const
           file_content.sub!(const,"")
-          puts "const:\t#{const}\tNot wanted"
         else
-          puts "const:\t#{const}\tWanted"
           const.strip!
           match = file_content.match(event_const_with_comments_reg_exp(const))
           

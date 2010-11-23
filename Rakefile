@@ -7,27 +7,16 @@
 
 namespace "bd" do
   require 'builder/bin/build'
-  require 'builder/lib/builder/utils'
+
+  desc "Add missing methods to Kernel"
+  task :add_methods_to_kernel do |t|
+    b = Build.new.add_methods_to_kernel
+  end
 
   desc "Add ASDoc comments to the complete API"
   task :comment_api do |t|
-    dir_list = Dir['src/api/*']
-    dir_list.sort!
-    class_paths = []
-    dir_list.each do |item|
-      class_paths << item unless File.file?(item)
-    end
-
-    class_paths.each do |path|
-      class_dir = path.scan(/\w+/)[2]
-      class_name = swap_initial(class_dir)
-      if class_name != "Events" && class_name != "Errors" && class_name != "Vos"
-        b = Build.new class_name
-        b.comment_class_file
-        b.comment_class_event
-        b.comment_all_class_methods
-      end
-    end
+    b = Build.new
+    b.comment_api
   end
   
   desc "Add ASDoc comments to a Class and it's associated method Classes"

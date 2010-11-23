@@ -18,27 +18,65 @@ include Builder::Write
 
 class Build
 
-  def initialize class_name, method_name=nil
-    @class_name = class_name
-    @method_name = method_name
-    @parameters = []
-    @properties = []
-    
+  def initialize class_name=nil, method_name=nil
+    if class_name
+      @class_name = class_name
+      @method_name = method_name
+      @parameters = []
+      @properties = []
+
+      init_class @class_name
+      init_event_class @class_name
+      init_method @method_name if @method_name
+      init_event @method_name if @method_name
+      load_nc_alts
+
+      if @method_name
+        set_up_nc_alts @class_name,swap_initial(@method_name)
+      else
+        set_up_nc_alts @class_name if @class_name
+      end
+    end
+  end
+
+  def add_methods_to_kernel
+    @actual_missing_methods = []
+    @new_missing_methods = []
+    @required_missing_methods = []
+    class_paths = get_class_paths
+
+    class_paths.each do |path|
+      class_dir = path.scan(/\w+/)[2]
+      class_name = swap_initial(class_dir)
+      
+      if class_name != "Events" && class_name != "Errors" && class_name != "Vos"
+      
+        initialize class_name
+
+        set_method_list
+
+        @method_list.each do |method|
+          initialize class_name,method
+          @method_file = read_method_file method_file_path
+
+          set_required_missing_methods @method_file
+        end
+        
+      end
+    end
+
     init_kernel
     @kernel_file = read_kernel_file(kernel_file_path)
-    
-    init_class @class_name
-    init_event_class @class_name
-    init_method @method_name if @method_name
-    init_event @method_name if @method_name
-    
-    load_nc_alts
-    
-    if @method_name
-      set_up_nc_alts @class_name,swap_initial(@method_name)
+    @kernel_file = set_new_missing_methods @kernel_file
+
+    if @kernel_file.rindex("}") == @kernel_file.length - 1
+      write_file(kernel_file_path,@kernel_file)
     else
-      set_up_nc_alts @class_name
-    end
+      puts "Error in Kernel"
+      puts "================================"
+      puts @kernel_file
+      exit
+    end    
   end
 
   def comment_class_event
@@ -51,8 +89,28 @@ class Build
       @event_class_file = add_event_class_comments @event_class_file if event_has_consts? @event_class_file
 
       @event_class_file = clean_up_event_class_file @event_class_file
+      
+      if @event_class_file == event_class_file_content
+        puts "No Change"
+      else
+        puts "Changed"
+        write_file event_class_file_path, @event_class_file
+      end
+    end
+  end
 
-      write_file event_class_file_path, @event_class_file
+  def comment_api
+    class_paths = get_class_paths
+
+    class_paths.each do |path|
+      class_dir = path.scan(/\w+/)[2]
+      class_name = swap_initial(class_dir)
+      if class_name != "Events" && class_name != "Errors" && class_name != "Vos"
+        initialize class_name
+        comment_class_file
+        comment_class_event
+        comment_all_class_methods
+      end
     end
   end
   
@@ -68,7 +126,12 @@ class Build
 
       @class_file = clean_up_class_file @class_file
 
-      write_file class_file_path, @class_file
+      if @class_file == class_file_content
+          puts "No Change"
+        else
+          puts "Changed"
+          write_file class_file_path, @class_file
+      end
     end
   end
 
@@ -93,11 +156,13 @@ class Build
         @method_file = add_property_comments(@properties,@method_file)
         
         @method_file = clean_up_method_file @method_file
-        
-        if write_file(method_file_path,@method_file)
-          update_kernel
-        end
 
+        if @method_file == method_file_path
+          puts "No Change"
+        else
+          puts "Changed"
+          write_file(method_file_path,@method_file)
+        end
       else
         puts "Failed:\t@file_path"
         exit
@@ -121,11 +186,48 @@ class Build
       @event_file = add_event_const_comments @event_file if event_has_consts? @event_file
       @event_file = clean_up_event_file @event_file
       
-      write_file(event_file_path,@event_file)
+      if @event_file == event_file_path
+        puts "No Change"
+      else
+        puts "Changed"
+        write_file(event_file_path,@event_file)
+      end
     end
   end
 
   def comment_all_class_methods
+    set_method_list
+    
+    @method_list.each do |method|
+      initialize @class_name,method
+      comment_class_method
+      comment_class_method_event
+    end
+  end
+
+  def get_class_paths
+    dir_list = Dir['src/api/*']
+    dir_list.sort!
+    class_paths = []
+    dir_list.each do |item|
+      class_paths << item unless File.file?(item)
+    end
+
+    class_paths
+  end
+
+  def get_method_paths class_name
+    dir_list = Dir[File.join "src","api",class_name,"*"]
+    dir_list.sort!
+    method_class_paths = []
+    dir_list.each do |item|
+      method_class_paths << item unless File.file?(item)
+    end
+
+    method_class_paths
+  end
+
+  def set_method_list
     file_list = Dir[all_class_methods_path]
     file_list.sort!
     @method_list = []
@@ -135,67 +237,79 @@ class Build
       method_name = file_name.split(".")[0]
       @method_list << method_name if method_name != @class_name
     end
-
-    @method_list.each do |method|
-      initialize @class_name,method
-      comment_class_method
-      comment_class_method_event
-    end
   end
 
-  private
-  
-  def set_missing_methods file_content
-    missing_methods = extract_missing_methods file_content
-    missing_methods.uniq!
-    missing_methods.collect! { |m| m.strip! }
-    missing_methods.sort!
+    def set_actual_missing_methods file_content
+      missing_methods = set_missing_methods file_content
 
-    missing_methods
-  end
-
-  def update_kernel
-    @required_missing_methods = set_missing_methods @method_file
-
-    @new_missing_methods = []
-
-    @actual_missing_methods = set_missing_methods @kernel_file
-
-    @required_missing_methods.each do |required_method|
-      method_exists = false
-      @actual_missing_methods.each do |actual_method|
-        method_exists = true if required_method == actual_method
+      missing_methods.each do |method|
+        @actual_missing_methods << method
       end
-      @new_missing_methods << required_method unless method_exists
     end
 
-    @new_missing_methods.each do |new_method|
-      @actual_missing_methods << new_method
-      @actual_missing_methods.sort!
-      
-      new_method_index = @actual_missing_methods.find_index(new_method)
-      insert_after_method = @actual_missing_methods[new_method_index-1]
-      method = @kernel_file.match(missing_method_block_reg_exp(insert_after_method))[0]
-      
-      @missing_method = new_method
-      @prop = @missing_method.match(/[A-Z]\w*/)[0]
-      
-      if @prop.match(/\<[AEIOU]/)
-        @a_or_an = "an "
-      else
-        @a_or_an = @prop.match(/[aeiou]\Z/) ? "" : "a "
-      end
-      
-      @event_const = convert_camel_to_const(new_method.match(/\w+/)[0])
+    def set_missing_methods file_content
+      missing_methods = extract_missing_methods file_content
+      missing_methods.uniq!
+      missing_methods.sort!
 
-      @missing_method_comments = read_template(comment_template_path("missing_method"))
-      @missing_method_block = read_template(action_script_template("missing_method_in_kernel"))
-
-      replace = method + "\r\n" + @missing_method_comments + "\r\n" + @missing_method_block
-      @kernel_file.sub!(method, replace)
-
-      write_file(kernel_file_path,@kernel_file)
+      missing_methods
     end
 
-  end  
+    def set_required_missing_methods file_content
+      missing_methods = set_missing_methods file_content
+
+      missing_methods.each do |method|
+        @required_missing_methods << method
+      end
+    end
+
+    def set_new_missing_methods file_content
+      set_actual_missing_methods file_content
+
+      @new_missing_methods = []
+      @required_missing_methods.each do |required_method|
+        method_exists = false
+        @actual_missing_methods.each do |actual_method|
+          method_exists = true if required_method == actual_method
+        end
+        @new_missing_methods << required_method unless method_exists
+      end
+
+      @new_missing_methods.uniq!
+      @new_missing_methods.sort!
+
+      @new_missing_methods.each do |new_method|
+        # Comments
+        @missing_method = new_method
+        @prop = @missing_method.match(/[A-Z]\w*/)[0]
+
+        if @prop.match(/\<[AEIOU]/)
+          @a_or_an = "an "
+        else
+          @a_or_an = @prop.match(/[aeiou]\Z/) ? "" : "a "
+        end
+
+        @event_const = convert_camel_to_const(@missing_method.match(/\w+/)[0])
+
+        @missing_method_comments = read_template(comment_template_path("missing_method"))
+        @missing_method_block = read_template(action_script_template("missing_method_in_kernel"))
+        
+        @actual_missing_methods << new_method
+        @actual_missing_methods.sort!
+        
+        # Insert Method with Comments
+        new_method_index = @actual_missing_methods.find_index(new_method)
+        
+        if new_method_index > 0
+          method = @kernel_file.match(missing_method_block_reg_exp(@actual_missing_methods[new_method_index-1]))
+        else
+          method = @kernel_file.match(start_of_missing_methods_reg_exp)
+        end
+        
+        replace = method[0] + "\r\n" + @missing_method_comments + "\r\n" + @missing_method_block
+        @kernel_file.sub!(method[0], replace)
+      end
+
+      file_content
+    end
 end

@@ -14,15 +14,12 @@ module Builder
     def convert_camel_to_const camel
       const = ""
       camel = camel.swap_initial(camel) if camel.match(/^[A-Z]/)
-      puts camel
       camel.each_char do |char|
-        puts "Curr Char:\t#{char}"
         if char.match(/[a-z]/)
           const << char.upcase
         else
           const << "_" + char      
         end
-        puts "Const:\t#{const}"
       end
 
       const

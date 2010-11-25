@@ -277,26 +277,28 @@ class Build
 
     fixed_constants = []
     file_list.each do |file|
-      file_content = read_file file
+      if file.match(/\.vos\./)
+      else
+        file_content = read_file file
 
-      constants = file_content.scan(/[A-Z]+_[A-Z_]*/)
-      constants.each do |const|
-        puts const
-        if const.match(/_[A-Z]_|_[A-Z]$/)
-          puts "match"
-          fixed_const = {:original => const,
-                         :replace  => fix_const("#{const}")
-          }
-          puts fixed_const.inspect
+        constants = file_content.scan(event_const_reg_exp)
+        constants.each do |const|
+          if const.match(/_[A-Z]_/)
+            fixed_const = {:original => const,
+                           :replace  => fix_const("#{const}")
+            }
 
-          fixed_constants << fixed_const
+            fixed_constants << fixed_const
 
-          fixed_constants.each do |const|
-            file_content.gsub!(const[:original],const[:replace])
+            fixed_constants.each do |const|
+              file_content.gsub!(const[:original],const[:replace])
+            end
+
+            write_file file,file_content if
+                  fixed_constants.size > 0
+
+            exit
           end
-
-          write_file file,file_content if
-                fixed_constants.size > 0
         end
       end
     end

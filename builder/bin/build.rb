@@ -39,6 +39,62 @@ class Build
     end
   end
 
+  def add_constants
+    @actual_constants = []
+    @new_constants = []
+    @required_constants = []
+    @method_list = []
+
+    file_list = Dir['src/api/**/*.as']
+
+    file_list.each do |file|
+      file_content = read_file file
+      constants = file_content.scan(every_swf_studio_event_type_const_reg_exp)
+      constants.uniq!
+      constants.sort!
+
+      constants.collect {|x| @required_constants << x}
+    end
+
+    @required_constants.uniq!
+    @required_constants.sort!
+
+    @required_constants.collect! { |x| x = x.split(".")[1]  }
+
+    @event_file = read_file get_swf_studio_event_file_path
+
+    @actual_constants = @event_file.scan(every_event_const_reg_exp)
+
+    @actual_constants.sort!
+    @actual_constants.collect!{|x| x.strip!}
+    
+    @required_constants.each do |required|
+      match = false
+      @actual_constants.each do |actual|
+        match = true if actual.match(required)
+      end
+      @new_constants << required unless match
+    end
+
+    @new_constants.each do |constant|
+      insert_constant = "public static const #{constant} : String = \"#{convert_const_to_camel(constant)}\";"
+      @actual_constants << insert_constant
+      @actual_constants.sort!
+      new_constant_index = @actual_constants.find_index(insert_constant)
+      puts "#{new_constant_index}\t#{insert_constant}"
+      if new_constant_index > 0
+          @event_file.sub!(@actual_constants[new_constant_index-1],"#{@actual_constants[new_constant_index-1]}\r\n\t\t#{insert_constant}")
+        else
+          @event_file.sub!("\t{","\t{\r\n#{insert_constant}")
+      end
+    end
+
+    puts @event_file
+
+    puts @actual_constants.inspect
+    puts @new_constants.inspect
+  end
+
   def add_methods_to_kernel
     @actual_missing_methods = []
     @new_missing_methods = []
@@ -214,6 +270,21 @@ class Build
     end
 
     class_paths
+  end
+
+  def fix_constants
+    file_list = Dir['src/api/**/*.as']
+
+    file_list.each do |file|
+      file_content = read_file file
+      constants = file_content.scan(/[A-Z]+_[A-Z]_[A-Z_]*[A-Z]+/)
+      constants.each do |const|
+        fixed_const = fix_const const
+        puts fixed_const
+      end
+      puts constants.inspect
+    end
+
   end
 
   def get_method_paths class_name

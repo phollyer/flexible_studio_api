@@ -54,6 +54,10 @@ module Builder
     def every_event_const_with_comments_reg_exp
       /\s*\/\*\*(\s*\*.*)*\s*\*\/\s+public static const \w+[_]*\s*:\s*\w+\s*=\s*\"*\w+\"*;/
     end
+    
+    def every_swf_studio_event_type_const_reg_exp
+      /SWFStudioEvent.[A-Z]+[_*A-Z]*/
+    end
 
     def every_public_var_with_value_reg_exp
       /\t\tpublic var \w+\s*:\s*\w+\s*=\s*\"*\w+[\.\w+]*/

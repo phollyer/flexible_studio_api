@@ -40,6 +40,10 @@ module Builder
     def get_method_file_path method_name
       File.join get_class_path,@method_dir,"#{method_name}.as"
     end
+
+    def get_swf_studio_event_file_path
+      File.join( get_file_path,"events","SWFStudioEvent.as")
+    end
     
   end
 end

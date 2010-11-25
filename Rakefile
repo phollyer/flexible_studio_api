@@ -8,6 +8,11 @@
 namespace "bd" do
   require 'builder/bin/build'
 
+  desc "Add requried constants to SWFStudioEvent"
+  task :add_constants do |t|
+    b = Build.new.add_constants
+  end
+
   desc "Add missing methods to Kernel"
   task :add_methods_to_kernel do |t|
     b = Build.new.add_methods_to_kernel
@@ -44,6 +49,11 @@ namespace "bd" do
   task :comment_class_methods, [:class_name] do |t,args|
     b = Build.new args.class_name
     b.comment_all_class_methods
+  end
+
+  desc "Fix any Constants that have been written incorrectly"
+  task :fix_constants do |t|
+    b = Build.new.fix_constants
   end
 end
 

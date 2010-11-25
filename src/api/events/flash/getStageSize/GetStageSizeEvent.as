@@ -6,7 +6,8 @@ package api.events.flash.getStageSize
 
 	public class GetStageSizeEvent extends FlashEvent
 	{
-		/**
+		
+	/**
 	* The GetStageSizeEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

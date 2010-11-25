@@ -6,7 +6,8 @@ package api.events.shell.getShortPath
 
 	public class GetShortPathEvent extends ShellEvent
 	{
-		/**
+		
+	/**
 	* The GetShortPathEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -6,7 +6,8 @@ package api.events.popup.setDisabled
 
 	public class SetDisabledEvent extends PopupEvent
 	{
-		/**
+		
+	/**
 	* The SetDisabledEvent.INVALID_FLAG constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidFlag</code> event.

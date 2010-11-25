@@ -9,10 +9,10 @@ package api.activeX.createObject
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>object</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_OBJECT
-	*/
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
+	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
@@ -24,53 +24,53 @@ package api.activeX.createObject
 	
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+	 */
 	public class CreateObject extends ActiveX
 	{		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var progID:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>new</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>new</code>
+		 */
 		public var objectProperties:CreateObjectVO = new CreateObjectVO();
 		
 		/**
-		* Constructor for ActiveX.CreateObject()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.CreateObject()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+		 */
 		public function CreateObject(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		*
-		*
-		*
-		* @param activeXObject
-		*
-		* @param progIDString
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param progIDString
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
+		 */
 		public function createObject( activeXObject:String = null , progIDString:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

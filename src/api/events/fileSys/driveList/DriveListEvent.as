@@ -6,7 +6,8 @@ package api.events.fileSys.driveList
 
 	public class DriveListEvent extends FileSysEvent
 	{
-		/**
+		
+	/**
 	* The DriveListEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

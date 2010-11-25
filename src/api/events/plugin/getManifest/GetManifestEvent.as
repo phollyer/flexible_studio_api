@@ -6,7 +6,8 @@ package api.events.plugin.getManifest
 
 	public class GetManifestEvent extends PluginEvent
 	{
-		/**
+		
+	/**
 	* The GetManifestEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

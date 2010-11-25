@@ -7,59 +7,59 @@ package api.activeX.isRegistered
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>progID</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_PROG_ID
-	*/
+	 * Dispatched if the Property <code>progID</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_PROG_ID
+	 */
 	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.activeX.isRegistered.IsRegisteredEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.activeX.isRegistered.IsRegisteredEvent")]
 	
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
+	 */
 	public class IsRegistered extends ActiveX
 	{		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var progID:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>false</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>false</code>
+		 */
 		public var registered:Boolean = false;
 		
 		/**
-		* Constructor for ActiveX.IsRegistered()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.IsRegistered()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
+		 */
 		public function IsRegistered(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		*
-		*
-		*
-		* @param progIDString
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param progIDString
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
+		 */
 		public function isRegistered( progIDString:String = null ):void
 		{
 			progID = compareStrings( progIDString , progID );

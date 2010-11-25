@@ -7,48 +7,48 @@ package api.ado.moveNext
 	import flash.events.IEventDispatcher;
 
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.ado.moveNext.MoveNextEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.moveNext.MoveNextEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.moveNext.MoveNextEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
+	 */
 	public class MoveNext extends Ado
 	{
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var adoError:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var row:String = null;
 		
 		/**
-		* Constructor for Ado.MoveNext()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
-		*/
+		 * Constructor for Ado.MoveNext()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
+		 */
 		public function MoveNext(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
+		 */
 		public function moveNext():void
 		{
 			ssCore.Ado.moveNext( {} , {callback:actionComplete, errorSTR:"moveNextError", code:"16013"} );

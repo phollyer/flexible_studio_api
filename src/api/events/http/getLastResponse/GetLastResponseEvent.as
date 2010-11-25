@@ -6,7 +6,8 @@ package api.events.http.getLastResponse
 
 	public class GetLastResponseEvent extends HttpEvent
 	{
-		/**
+		
+	/**
 	* The GetLastResponseEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

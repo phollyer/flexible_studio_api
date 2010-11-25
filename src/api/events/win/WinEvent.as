@@ -6,7 +6,8 @@ package api.events.win
 
 	public class WinEvent extends SWFStudioEvent
 	{
-		/**
+		
+	/**
 	* The WinEvent.STATE_CHANGED constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

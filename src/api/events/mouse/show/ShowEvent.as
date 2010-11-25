@@ -6,7 +6,8 @@ package api.events.mouse.show
 
 	public class ShowEvent extends MouseEvent
 	{
-		/**
+		
+	/**
 	* The ShowEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

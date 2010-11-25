@@ -7,23 +7,23 @@ package api.ado.moveBy
 	import flash.events.IEventDispatcher;
 
 	/**
-	* Dispatched if the Property <code>number</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_NUMBER
-	*/
+	 * Dispatched if the Property <code>number</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_NUMBER
+	 */
 	[Event(name="missingNumber" , type="api.events.SWFStudioEvent")]
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.ado.moveBy.MoveByEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.ado.moveBy.MoveByEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.ado.moveBy.MoveByEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
+	 */
 	public class MoveBy extends Ado
 	{
 		// Required
@@ -31,35 +31,35 @@ package api.ado.moveBy
 		
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var adoError:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var row:String = null;
 		
 		/**
-		* Constructor for Ado.MoveBy()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-		*/
+		 * Constructor for Ado.MoveBy()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
+		 */
 		public function MoveBy(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @param rowCount
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param rowCount
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
+		 */
 		public function moveBy( rowCount:Number = -1 ):void
 		{
 			number = compareNumbers( rowCount , number );

@@ -11,78 +11,78 @@ package api.binaryFile.create
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>path</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_PATH
-	*/
+	 * Dispatched if the Property <code>path</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_PATH
+	 */
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.create.CreateEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.create.CreateEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.create.CreateEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
+	 */
 	public class Create extends BinaryFile
 	{		
 		// Required
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var path:String = null;
 		
 		// Optional
 		/**
-		* 
-		*
-		* @defaultValue <code>AccessModeVO.READ</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>AccessModeVO.READ</code>
+		 */
 		public var accessMode:String = AccessModeVO.READ;
 		/**
-		* 
-		*
-		* @defaultValue <code>ShareModeVO.NONE</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>ShareModeVO.NONE</code>
+		 */
 		public var shareMode:String = ShareModeVO.NONE;
 		/**
-		* 
-		*
-		* @defaultValue <code>false</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>false</code>
+		 */
 		public var failIfExists:Boolean = false;
 		
 		// Result
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.Create()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.Create()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
+		 */
 		public function Create(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @param filePath
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param filePath
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
+		 */
 		public function create( filePath:String = null ):void
 		{
 			path = compareStrings( filePath , path );

@@ -6,7 +6,8 @@ package api.events.fileSys.readFile
 
 	public class ReadFileEvent extends FileSysEvent
 	{
-		/**
+		
+	/**
 	* The ReadFileEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

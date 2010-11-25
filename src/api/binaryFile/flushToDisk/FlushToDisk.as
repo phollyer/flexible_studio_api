@@ -7,42 +7,42 @@ package api.binaryFile.flushToDisk
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.flushToDisk.FlushToDiskEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.flushToDisk.FlushToDiskEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.flushToDisk.FlushToDiskEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
+	 */
 	public class FlushToDisk extends BinaryFile
 	{
 		// Result
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.FlushToDisk()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.FlushToDisk()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
+		 */
 		public function FlushToDisk(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
+		 */
 		public function flushToDisk():void
 		{
 			ssCore.BinaryFile.flushToDisk( {} , {callback:actionComplete, errorSTR:"flushToDiskError", code:"11003"} );

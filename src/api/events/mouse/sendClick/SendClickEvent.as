@@ -6,7 +6,8 @@ package api.events.mouse.sendClick
 
 	public class SendClickEvent extends MouseEvent
 	{
-		/**
+		
+	/**
 	* The SendClickEvent.INVALID_BUTTON constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidButton</code> event.

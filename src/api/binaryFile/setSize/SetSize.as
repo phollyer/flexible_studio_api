@@ -7,17 +7,17 @@ package api.binaryFile.setSize
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.setSize.SetSizeEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.setSize.SetSizeEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.setSize.SetSizeEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+	 */
 	public class SetSize extends BinaryFile
 	{
 		// Required
@@ -25,29 +25,29 @@ package api.binaryFile.setSize
 		
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.SetSize()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.SetSize()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+		 */
 		public function SetSize(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @param bytesSize
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param bytesSize
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
+		 */
 		public function setSize( bytesSize:Number = -1 ):void
 		{
 			bytes = compareNumbers( bytesSize , bytes );

@@ -6,7 +6,8 @@ package api.events.udp.notifiers
 
 	public class OnReceiveEvent extends UdpEvent
 	{
-		/**
+		
+	/**
 	* The OnReceiveEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.
@@ -24,7 +25,8 @@ package api.events.udp.notifiers
 	* @eventType result
 	*/
 		public static const RESULT:String = "result";
-		/**
+		
+	/**
 	* The OnReceiveEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>status</code> event.

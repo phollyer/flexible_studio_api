@@ -6,7 +6,8 @@ package api.events.registry.enumKeys
 
 	public class EnumKeysEvent extends RegistryEvent
 	{
-		/**
+		
+	/**
 	* The EnumKeysEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

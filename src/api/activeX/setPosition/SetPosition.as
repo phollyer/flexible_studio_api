@@ -7,59 +7,59 @@ package api.activeX.setPosition
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>object</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_OBJECT
-	*/
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
+	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
+	 */
 	public class SetPosition extends ActiveX
 	{
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>0</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>0</code>
+		 */
 		public var x:Number = 0;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>0</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>0</code>
+		 */
 		public var y:Number = 0;
 		
 		/**
-		* Constructor for ActiveX.SetPosition()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.SetPosition()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
+		 */
 		public function SetPosition(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		*
-		*
-		*
-		* @param activeXObject
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
+		 */
 		public function setPosition( activeXObject:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

@@ -6,7 +6,8 @@ package api.events.fileSys.readFileUTF8
 
 	public class ReadFileUTF8Event extends FileSysEvent
 	{
-		/**
+		
+	/**
 	* The ReadFileUTF8Event.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

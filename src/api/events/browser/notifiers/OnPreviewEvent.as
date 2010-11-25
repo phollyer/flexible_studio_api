@@ -6,7 +6,8 @@ package api.events.browser.notifiers
 
 	public class OnPreviewEvent extends BrowserEvent
 	{
-		/**
+		
+	/**
 	* The OnPreviewEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.

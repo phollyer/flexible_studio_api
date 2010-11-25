@@ -6,7 +6,8 @@ package api.events.splash.screen
 
 	public class ScreenEvent extends SplashEvent
 	{
-		/**
+		
+	/**
 	* The ScreenEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>status</code> event.

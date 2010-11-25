@@ -6,7 +6,8 @@ package api.events.sysInfo.getProcessMemoryInfo
 
 	public class GetProcessMemoryInfoEvent extends SysInfoEvent
 	{
-		/**
+		
+	/**
 	* The GetProcessMemoryInfoEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

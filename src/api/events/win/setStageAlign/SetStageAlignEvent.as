@@ -6,7 +6,8 @@ package api.events.win.setStageAlign
 
 	public class SetStageAlignEvent extends WinEvent
 	{
-		/**
+		
+	/**
 	* The SetStageAlignEvent.INVAID_ALIGNMENT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>public</code> event.

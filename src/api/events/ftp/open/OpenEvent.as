@@ -6,7 +6,8 @@ package api.events.ftp.open
 
 	public class OpenEvent extends FtpEvent
 	{
-		/**
+		
+	/**
 	* The OpenEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

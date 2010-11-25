@@ -6,7 +6,8 @@ package api.events.wmAudio.getVersion
 
 	public class GetVersionEvent extends WmAudioEvent
 	{
-		/**
+		
+	/**
 	* The GetVersionEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

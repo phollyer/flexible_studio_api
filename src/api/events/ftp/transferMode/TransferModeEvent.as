@@ -6,7 +6,8 @@ package api.events.ftp.transferMode
 
 	public class TransferModeEvent extends FtpEvent
 	{
-		/**
+		
+	/**
 	* The TransferModeEvent.INVALID_TRANSFER constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidTransferMode</code> event.

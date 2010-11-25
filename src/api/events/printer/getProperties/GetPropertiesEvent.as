@@ -7,7 +7,8 @@ package api.events.printer.getProperties
 
 	public class GetPropertiesEvent extends PrinterEvent
 	{
-		/**
+		
+	/**
 	* The GetPropertiesEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -6,7 +6,8 @@ package api.events.guides.create
 
 	public class CreateEvent extends GuidesEvent
 	{
-		/**
+		
+	/**
 	* The CreateEvent.INVALID_ORIENTATION constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>invalidOrientation</code> event.

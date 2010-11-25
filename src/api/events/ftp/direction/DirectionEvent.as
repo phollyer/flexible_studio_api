@@ -6,7 +6,8 @@ package api.events.ftp.direction
 
 	public class DirectionEvent extends FtpEvent
 	{
-		/**
+		
+	/**
 	* The DirectionEvent.INCORRECT_VALUE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>incorrectValue</code> event.

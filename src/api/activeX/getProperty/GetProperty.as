@@ -7,10 +7,10 @@ package api.activeX.getProperty
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>object</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_OBJECT
-	*/
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
+	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
@@ -21,62 +21,62 @@ package api.activeX.getProperty
 	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.activeX.getProperty.GetPropertyEvent")]
 	
 	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
+	 */
 	public class GetProperty extends ActiveX
 	{
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var property:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var value:Object = null;
 		
 		/**
-		* Constructor for ActiveX.GetProperty()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.GetProperty()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
+		 */
 		public function GetProperty(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		*
-		*
-		*
-		* @param activeXObject
-		*
-		* @param prop
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param prop
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
+		 */
 		public function getProperty( activeXObject:String , prop:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

@@ -6,8 +6,8 @@ package api.vos.ado
 		public static const DLM:String = "DLM";
 		public static const URL:String = "URL";
 		public static const XML:String = "XML";
-		public static const XMLATTRIBS:String = "XMLAttribs";
-		public static const XMLNODES:String = "XMLNodes";
+		public static const XML_ATTRIBS:String = "XML_Attribs";
+		public static const XML_NODES:String = "XML_Nodes";
 		
 		public function SetRowFormatVO()
 		{
@@ -15,5 +15,4 @@ package api.vos.ado
 		}
 		
 	}
-}
 }

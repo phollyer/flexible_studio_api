@@ -6,7 +6,8 @@ package api.events.popup.showAt
 
 	public class ShowAtEvent extends PopupEvent
 	{
-		/**
+		
+	/**
 	* The ShowAtEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

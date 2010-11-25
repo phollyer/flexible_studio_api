@@ -7,42 +7,42 @@ package api.binaryFile.unlock
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.unlock.UnlockEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.unlock.UnlockEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.unlock.UnlockEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
+	 */
 	public class Unlock extends BinaryFile
 	{
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.Unlock()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.Unlock()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
+		 */
 		public function Unlock(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
+		 */
 		public function unlock():void
 		{
 			ssCore.BinaryFile.unlock( {} , {callback:actionComplete, errorSTR:"unlockError", code:"11011"} );

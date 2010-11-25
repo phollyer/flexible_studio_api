@@ -6,7 +6,8 @@ package api.events.popup.notifiers
 
 	public class OnTrayMenuEvent extends PopupEvent
 	{
-		/**
+		
+	/**
 	* The OnTrayMenuEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.
@@ -22,7 +23,8 @@ package api.events.popup.notifiers
 	* @eventType result
 	*/
 		public static const RESULT:String = "result";
-		/**
+		
+	/**
 	* The OnTrayMenuEvent.STATUS constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>status</code> event.

@@ -6,7 +6,8 @@ package api.events.catalog.fields
 
 	public class FieldsEvent extends CatalogEvent
 	{
-		/**
+		
+	/**
 	* The FieldsEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

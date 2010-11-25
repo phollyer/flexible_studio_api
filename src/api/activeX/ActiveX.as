@@ -9,21 +9,21 @@ package api.activeX
 	 * with the ActiveX control using the Properties, Methods and
 	 * Events of the ActiveX Control.
 	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveXOverview.html Help
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_Overview.html Help
 	 */
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX.html Northcode Help Documentation
+	 */
 	public class ActiveX extends Kernel
 	{
 		/**
-		* Constructor for ActiveX()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX.html Northcode Help Documentation
+		 */
 		public function ActiveX(target:IEventDispatcher=null)
 		{
 			super(target);

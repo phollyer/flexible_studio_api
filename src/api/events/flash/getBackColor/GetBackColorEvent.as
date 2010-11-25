@@ -6,7 +6,8 @@ package api.events.flash.getBackColor
 
 	public class GetBackColorEvent extends FlashEvent
 	{
-		/**
+		
+	/**
 	* The GetBackColorEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

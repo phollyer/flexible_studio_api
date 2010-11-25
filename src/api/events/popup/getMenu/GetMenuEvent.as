@@ -6,7 +6,8 @@ package api.events.popup.getMenu
 
 	public class GetMenuEvent extends PopupEvent
 	{
-		/**
+		
+	/**
 	* The GetMenuEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

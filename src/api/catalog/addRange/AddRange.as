@@ -9,7 +9,7 @@ package api.catalog.addRange
 	/**
 	* Dispatched if the Property <code>fieldName</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_FIELD_NAME
+	* @eventType api.events.SWFStudioEvent.MISSING_FIELDNAME
 	*/
 	[Event(name="missingFieldName" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingHighValue" , type="api.events.SWFStudioEvent")]

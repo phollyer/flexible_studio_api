@@ -7,44 +7,44 @@ package api.app.notifiers
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.app.notifiers.OnDeviceChangeEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnDeviceChangeEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.app.onDeviceChange.OnDeviceChangeEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDeviceChange.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDeviceChange.html Northcode Help Documentation
+	 */
 	public class OnDeviceChange extends App
 	{
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var action:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var device:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var drive:String = null;
 		
 		/**
-		* Constructor for App.OnDeviceChange()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDeviceChange.html Northcode Help Documentation
-		*/
+		 * Constructor for App.OnDeviceChange()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDeviceChange.html Northcode Help Documentation
+		 */
 		public function OnDeviceChange(target:IEventDispatcher=null)
 		{
 			super(target);

@@ -6,7 +6,8 @@ package api.events.email.send
 
 	public class SendEvent extends EmailEvent
 	{
-		/**
+		
+	/**
 	* The SendEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

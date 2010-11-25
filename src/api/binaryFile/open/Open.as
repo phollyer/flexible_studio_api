@@ -11,72 +11,72 @@ package api.binaryFile.open
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched if the Property <code>path</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_PATH
-	*/
+	 * Dispatched if the Property <code>path</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_PATH
+	 */
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.open.OpenEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.open.OpenEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.open.OpenEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
+	 */
 	public class Open extends BinaryFile
 	{
 		// Required
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var path:String = null;
 		
 		// Optional
 		/**
-		* 
-		*
-		* @defaultValue <code>AccessModeVO.READ</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>AccessModeVO.READ</code>
+		 */
 		public var accessMode:String = AccessModeVO.READ;
 		/**
-		* 
-		*
-		* @defaultValue <code>ShareModeVO.NONE</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>ShareModeVO.NONE</code>
+		 */
 		public var shareMode:String = ShareModeVO.NONE;
 		
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.Open()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.Open()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
+		 */
 		public function Open(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @param filePath
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param filePath
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
+		 */
 		public function open( filePath:String = null ):void
 		{
 			path = compareStrings( filePath , path );

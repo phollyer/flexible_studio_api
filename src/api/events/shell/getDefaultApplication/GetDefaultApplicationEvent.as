@@ -6,7 +6,8 @@ package api.events.shell.getDefaultApplication
 
 	public class GetDefaultApplicationEvent extends ShellEvent
 	{
-		/**
+		
+	/**
 	* The GetDefaultApplicationEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -9,7 +9,7 @@ package api.sysTools.killProcess
 	/**
 	* Dispatched if the Property <code>processId</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_PROCESS_ID
+	* @eventType api.events.SWFStudioEvent.MISSING_PROCESSID
 	*/
 	[Event(name="missingProcessId" , type="api.events.SWFStudioEvent")]
 	[Bindable]

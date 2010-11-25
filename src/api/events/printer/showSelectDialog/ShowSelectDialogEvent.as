@@ -6,7 +6,8 @@ package api.events.printer.showSelectDialog
 
 	public class ShowSelectDialogEvent extends PrinterEvent
 	{
-		/**
+		
+	/**
 	* The ShowSelectDialogEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

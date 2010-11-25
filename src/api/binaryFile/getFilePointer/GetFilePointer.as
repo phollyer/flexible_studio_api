@@ -7,48 +7,48 @@ package api.binaryFile.getFilePointer
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.binaryFile.getFilePointer.GetFilePointerEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.binaryFile.getFilePointer.GetFilePointerEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.binaryFile.getFilePointer.GetFilePointerEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
+	 */
 	public class GetFilePointer extends BinaryFile
 	{
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>0</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>0</code>
+		 */
 		public var pointerIndex:Number = 0;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var systemError:String = null;
 		
 		/**
-		* Constructor for BinaryFile.GetFilePointer()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
-		*/
+		 * Constructor for BinaryFile.GetFilePointer()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
+		 */
 		public function GetFilePointer(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
+		 */
 		public function getFilePointer():void
 		{
 			ssCore.BinaryFile.getFilePointer( {} , {callback:actionComplete, errorSTR:"getFilePointerError", code:"11004"} );

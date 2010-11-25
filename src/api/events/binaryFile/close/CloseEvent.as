@@ -6,7 +6,8 @@ package api.events.binaryFile.close
 
 	public class CloseEvent extends BinaryFileEvent
 	{
-		/**
+		
+    /**
     * The CloseEvent.RESULT constant defines the value of the
     * <code>type</code> property of the event object
     * for a <code>result</code> event.

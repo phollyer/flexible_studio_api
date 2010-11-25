@@ -7,50 +7,50 @@ package api.app.notifiers
 	import flash.events.IEventDispatcher;
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.app.notifiers.OnDialogEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.app.notifiers.OnDialogEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.app.onDialog.OnDialogEvent")]
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDialog.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDialog.html Northcode Help Documentation
+	 */
 	public class OnDialog extends App
 	{
 		// Results
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var captionDialog:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var captionParent:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var hwndDialog:String = null;
 		/**
-		* 
-		*
-		* @defaultValue <code>true</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>true</code>
+		 */
 		public var isChild:Boolean = true;
 		
 		/**
-		* Constructor for App.OnDialog()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDialog.html Northcode Help Documentation
-		*/
+		 * Constructor for App.OnDialog()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_onDialog.html Northcode Help Documentation
+		 */
 		public function OnDialog(target:IEventDispatcher=null)
 		{
 			super(target);

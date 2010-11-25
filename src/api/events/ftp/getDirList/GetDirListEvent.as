@@ -6,7 +6,8 @@ package api.events.ftp.getDirList
 
 	public class GetDirListEvent extends FtpEvent
 	{
-		/**
+		
+	/**
 	* The GetDirListEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

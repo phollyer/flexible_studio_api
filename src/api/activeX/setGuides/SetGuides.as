@@ -9,51 +9,51 @@ package api.activeX.setGuides
 	import flash.events.IEventDispatcher;	
 	
 	/**
-	* Dispatched if the Property <code>object</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_OBJECT
-	*/
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
+	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+	 */
 	public class SetGuides extends ActiveX
 	{
 		/**
-		* 
-		*
-		* @defaultValue <code>new</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>new</code>
+		 */
 		public var guides:GuideVO = new GuideVO();
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
-		* Constructor for ActiveX.SetGuides()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.SetGuides()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+		 */
 		public function SetGuides(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		/**
-		*
-		*
-		*
-		* @param activeXObject
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
+		 */
 		public function setGuides( activeXObject:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

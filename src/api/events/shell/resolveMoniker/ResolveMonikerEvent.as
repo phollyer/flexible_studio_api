@@ -6,7 +6,8 @@ package api.events.shell.resolveMoniker
 
 	public class ResolveMonikerEvent extends ShellEvent
 	{
-		/**
+		
+	/**
 	* The ResolveMonikerEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

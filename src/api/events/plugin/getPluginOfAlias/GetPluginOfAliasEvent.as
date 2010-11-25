@@ -6,7 +6,8 @@ package api.events.plugin.getPluginOfAlias
 
 	public class GetPluginOfAliasEvent extends PluginEvent
 	{
-		/**
+		
+	/**
 	* The GetPluginOfAliasEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

@@ -7,10 +7,10 @@ package api.activeX.callMethod
 	import flash.events.IEventDispatcher;	
 	
 	/**
-	* Dispatched if the Property <code>method</code> has not been supplied.
-	*
-	* @eventType api.events.SWFStudioEvent.MISSING_METHOD
-	*/
+	 * Dispatched if the Property <code>method</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_METHOD
+	 */
 	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	
 	/**
@@ -21,61 +21,61 @@ package api.activeX.callMethod
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	/**
-	* Dispatched when the Results are ready.
-	*
-	* @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
-	*/
+	 * Dispatched when the Results are ready.
+	 *
+	 * @eventType api.events.activeX.callMethod.CallMethodEvent.RESULT
+	 */
 	[Event(name="result", type="api.events.activeX.callMethod.CallMethodEvent")]
 	
 	[Bindable]
 	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
-	*/
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
+	 */
 	public class CallMethod extends ActiveX
 	{
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var method:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var object:String = null;
 		
 		/**
-		* 
-		*
-		* @defaultValue <code>null</code>
-		*/
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var returnData:Object = null;
 		
 		/**
-		* Constructor for ActiveX.CallMethod()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
-		*/
+		 * Constructor for ActiveX.CallMethod()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
+		 */
 		public function CallMethod(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		*
-		*
-		*
-		* @param methodName
-		*
-		* @param activeXObject
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
-		*/
+		 *
+		 *
+                 *
+		 * @param methodName
+                 *
+		 * @param activeXObject
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
+		 */
 		public function callMethod( methodName:String = null , activeXObject:String = null ):void
 		{
 			method = compareStrings( methodName , method );

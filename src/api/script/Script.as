@@ -3,18 +3,8 @@ package api.script
 	import api.Kernel;
 	import flash.events.IEventDispatcher;
 
-	/**
-	*
-	*
-	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Script.html Northcode Help Documentation
-	*/
 	public class Script extends Kernel
 	{
-		/**
-		* Constructor for Script()
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Script.html Northcode Help Documentation
-		*/
 		public function Script(target:IEventDispatcher=null)
 		{
 			super(target);

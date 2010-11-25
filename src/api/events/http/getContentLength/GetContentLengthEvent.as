@@ -6,7 +6,8 @@ package api.events.http.getContentLength
 
 	public class GetContentLengthEvent extends HttpEvent
 	{
-		/**
+		
+	/**
 	* The GetContentLengthEvent.RESULT constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>result</code> event.

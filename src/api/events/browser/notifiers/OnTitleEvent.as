@@ -6,7 +6,8 @@ package api.events.browser.notifiers
 
 	public class OnTitleEvent extends BrowserEvent
 	{
-		/**
+		
+	/**
 	* The OnTitleEvent.CHANGE constant defines the value of the
 	* <code>type</code> property of the event object
 	* for a <code>change</code> event.

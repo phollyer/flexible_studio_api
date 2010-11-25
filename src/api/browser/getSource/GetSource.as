@@ -55,7 +55,7 @@ package api.browser.getSource
 		*/
 		override protected function sendResult( r:Object ):void
 		{
-			source = result;
+			source = r.result;
 			var e : GetSourceEvent = new GetSourceEvent( GetSourceEvent.RESULT );
 			e.source = source;
 			dispatchEvent( e );

@@ -681,7 +681,7 @@ package api
 		}
 
 		/**
-		* This method is called by sub classes when File is
+		* This method is called by sub classes when a File is
 		* not supplied as an argument or property when required.
 		*
 		* <p>The MISSING_FILE event type is then dispatched to any listeners so that

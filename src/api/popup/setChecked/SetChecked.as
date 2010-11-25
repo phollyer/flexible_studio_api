@@ -104,7 +104,7 @@ package api.popup.setChecked
 		}
 		private function invalidFlag():void
 		{
-			var e : SetCheckedEvent = new SetCheckedEvent( SetCheckedEvent.RESULT_FLAG );
+			var e : SetCheckedEvent = new SetCheckedEvent( SetCheckedEvent.INVALID_FLAG );
 			dispatchEvent( e );
 		}
 

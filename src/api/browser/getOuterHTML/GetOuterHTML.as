@@ -55,7 +55,7 @@ package api.browser.getOuterHTML
 		*/
 		override protected function sendResult( r:Object ):void
 		{
-			html = result;
+			html = r.result;
 			var e : GetOuterHTMLEvent = new GetOuterHTMLEvent( GetOuterHTMLEvent.RESULT );
 			e.outerHTML = html;
 			dispatchEvent( e );

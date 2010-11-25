@@ -6,6 +6,7 @@ package api.events.win.setSize
 
 	public class SetSizeEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

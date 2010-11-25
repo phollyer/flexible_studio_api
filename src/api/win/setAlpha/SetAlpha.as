@@ -75,18 +75,5 @@ package api.win.setAlpha
 									   ,{callback:actionComplete, errorSTR:"setAlphaError", code:"6017"} );	
 			}
 		}
-		private function setAlphaComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetAlphaEvent = new SetAlphaEvent( SetAlphaEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6017";
-					dispatchError( WinError.SET_ALPHA_ERROR , e );
-			}
-		}
 	}
 }

@@ -6,6 +6,7 @@ package api.events.win.setIcon
 
 	public class SetIconEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetIconEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

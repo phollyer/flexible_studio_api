@@ -56,7 +56,7 @@ package api.ftp.port
 		}
 		private function invalidPortNumber():void
 		{
-			var e : PortEvent = new PortEvent( PortEvent.RESULT_PORT_NUMBER );
+			var e : PortEvent = new PortEvent( PortEvent.INVALID_PORT_NUMBER );
 			dispatchEvent( e );
 		}
 	}

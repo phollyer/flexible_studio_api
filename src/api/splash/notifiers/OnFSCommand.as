@@ -58,9 +58,9 @@ package api.splash.notifiers
 			args = data.split( "," )[ 1 ];
 			
 			var event : OnFSCommandEvent = new OnFSCommandEvent( OnFSCommandEvent.RESULT )
-			events.args = args;
-			events.command = command;
-			events.result = data;
+			event.args = args;
+			event.command = command;
+			event.result = data;
 			dispatchEvent( event );
 		}
 		/**

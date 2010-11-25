@@ -1,8 +1,8 @@
 package api.events.binaryFile.readBytes
 {
-	import flash.events.Event;
-	
 	import api.events.binaryFile.BinaryFileEvent;
+	
+	import flash.events.Event;
 
 	public class ReadBytesEvent extends BinaryFileEvent
 	{
@@ -26,6 +26,8 @@ package api.events.binaryFile.readBytes
     *
     * @eventType result
     */
+    	public static const INVALID_FORMAT:String = "invalidFormat";
+    	public static const INVALID_SIZE:String = "invalidSize";
 		public static const RESULT:String = "result";
 		
 		public var bytesRead:Number = 0;

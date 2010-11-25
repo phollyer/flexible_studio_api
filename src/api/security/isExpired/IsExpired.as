@@ -1,7 +1,5 @@
 package api.security.isExpired
 {
-	import api.errors.Security_Error;
-
 	import api.events.security.isExpired.IsExpiredEvent;
 
 	import api.security.Security;

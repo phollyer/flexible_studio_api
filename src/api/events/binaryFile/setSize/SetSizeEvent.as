@@ -1,8 +1,8 @@
 package api.events.binaryFile.setSize
 {
-	import flash.events.Event;
-	
 	import api.events.binaryFile.BinaryFileEvent;
+	
+	import flash.events.Event;
 
 	public class SetSizeEvent extends BinaryFileEvent
 	{
@@ -22,6 +22,7 @@ package api.events.binaryFile.setSize
     *
     * @eventType result
     */
+    	public static const INVALID_SIZE:String = "invalidSize";
 		public static const RESULT:String = "result";
 		
 		public var systemError:String = null;

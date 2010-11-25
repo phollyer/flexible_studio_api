@@ -49,7 +49,7 @@ package api.ftp.transferMode
 		}
 		private function invalidMode():void
 		{
-			var e : TransferModeEvent = new TransferModeEvent( TransferModeEvent.RESULT_TRANSFER_MODE );
+			var e : TransferModeEvent = new TransferModeEvent( TransferModeEvent.INVALID_TRANSFER_MODE );
 			dispatchEvent( e );
 		}
 	}

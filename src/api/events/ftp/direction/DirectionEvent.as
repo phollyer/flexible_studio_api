@@ -1,11 +1,12 @@
 package api.events.ftp.direction
 {
-	import flash.events.Event;
-	
 	import api.events.ftp.FtpEvent;
+	
+	import flash.events.Event;
 
 	public class DirectionEvent extends FtpEvent
 	{
+		public static const INVALID_VALUE:String = "invalidValue";
 		
 	/**
 	* The DirectionEvent.INCORRECT_VALUE constant defines the value of the

@@ -6,6 +6,7 @@ package api.events.win.setMaskColor
 
 	public class SetMaskColorEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetMaskColorEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

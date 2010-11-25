@@ -1,11 +1,12 @@
 package api.events.http.port
 {
-	import flash.events.Event;
-	
 	import api.events.http.HttpEvent;
+	
+	import flash.events.Event;
 
 	public class PortEvent extends HttpEvent
 	{
+		public static const INVALID_PORT_NUMBER:String = "invalidPortNumber";
 		
 		public function PortEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

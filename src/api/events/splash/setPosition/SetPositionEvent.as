@@ -4,6 +4,7 @@ package api.events.splash.setPosition
 	
 	public class SetPositionEvent extends Event
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetPositionEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

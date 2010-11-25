@@ -55,7 +55,7 @@ package api.browser.getHREF
 		*/
 		override protected function sendResult( r:Object ):void
 		{
-			href = result;
+			href = r.result;
 			var e : GetHREFEvent = new GetHREFEvent( GetHREFEvent.RESULT );
 			e.href = href;
 			dispatchEvent( e );

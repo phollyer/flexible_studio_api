@@ -1,7 +1,5 @@
 package api.security.loadMainMovie
 {
-	import api.errors.Security_Error;
-
 	import api.events.security.loadMainMovie.LoadMainMovieEvent;
 
 	import api.security.Security;

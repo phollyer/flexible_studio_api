@@ -44,24 +44,5 @@ package api.desktop.changeResolution
 			ssCore.Desktop.changeResolution( resolutionSettings
 											,{callback:actionComplete, errorSTR:"changeResolutionError", code:"19002"} );
 		}
-		/**
-		*
-		*
-		*
-		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_changeResolution.html Northcode Help Documentation
-		*/
-		public function changeResolutionComplete( r:Object , c:Object , e:Object ):void
-		{
-			switch( r.success )
-			{
-				case true:
-					var event : ChangeResolutionEvent = new ChangeResolutionEvent( ChangeResolutionEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "19002";
-					dispatchError( DesktopError.CHANGE_RESOLUTION_ERROR , e );
-			}
-		}
 	}
 }

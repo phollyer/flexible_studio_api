@@ -70,7 +70,7 @@ package api.mouse.sendDoubleClick
 		}
 		private function invalidButton():void
 		{
-			var e : SendDoubleClickEvent = new SendDoubleClickEvent( SendDoubleClickEvent.RESULT_BUTTON );
+			var e : SendDoubleClickEvent = new SendDoubleClickEvent( SendDoubleClickEvent.INVALID_BUTTON );
 			dispatchEvent( e );
 		}
 	}

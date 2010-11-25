@@ -56,21 +56,7 @@ package api.splash.setPosition
 					y												= yPos;
 			}
 			
-			ssCore.Splash.setPosition( {x:x, y:y}, {callback:setPositionComplete} );
-		}
-		
-		private function setPositionComplete( r:Object , c:Object , e:Object ):void
-		{
-			switch( r.success )
-			{
-				case true:
-					var event			:SetPositionEvent			= new SetPositionEvent(SetPositionEvent.RESULT);
-					dispatchEvent(event);					
-					break;
-				case false:
-					e.id											= "5006";
-					dispatchError(SplashError.SET_POSITION_ERROR, e);
-			}
+			ssCore.Splash.setPosition( {x:x, y:y}, {callback:actionComplete, errorSTR:"setPositionError", code:"5003"} );
 		}
 	}
 }

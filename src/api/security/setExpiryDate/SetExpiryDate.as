@@ -1,7 +1,5 @@
 package api.security.setExpiryDate
 {
-	import api.errors.Security_Error;
-
 	import api.events.security.setExpiryDate.SetExpiryDateEvent;
 
 	import api.security.Security;

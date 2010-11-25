@@ -48,7 +48,7 @@ package api.splash.show
 					missingPath();
 					break;
 				default:
-					ssCore.Splash.show( {resource:resource} , {callback:actionComplete, errorSTR:"showError", code:"5003"} );
+					ssCore.Splash.show( {resource:resource} , {callback:actionComplete, errorSTR:"showError", code:"5004"} );
 			}
 		}
 	}

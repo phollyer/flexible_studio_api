@@ -6,6 +6,7 @@ package api.events.win.setBackColor
 
 	public class SetBackColorEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetBackColorEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -33,7 +33,7 @@ package api.events.browser.print
 		override public function clone():Event
 		{
 			var e : PrintEvent = new PrintEvent( type );
-			e.errors = error;
+			e.error = error;
 			return e;
 		}
 	}

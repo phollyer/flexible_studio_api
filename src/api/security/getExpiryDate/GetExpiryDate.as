@@ -1,7 +1,5 @@
 package api.security.getExpiryDate
 {
-	import api.errors.Security_Error;
-
 	import api.events.security.getExpiryDate.GetExpiryDateEvent;
 
 	import api.security.Security;

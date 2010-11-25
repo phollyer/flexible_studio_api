@@ -33,7 +33,7 @@ package api.events.ftp.chmod
 		override public function clone():Event
 		{
 			var e : ChmodEvent = new ChmodEvent( type );
-			e.errorsDetails = errorDetails;
+			e.errorDetails = errorDetails;
 			return e;
 		}
 	}

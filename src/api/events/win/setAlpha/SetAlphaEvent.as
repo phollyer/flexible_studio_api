@@ -6,6 +6,7 @@ package api.events.win.setAlpha
 
 	public class SetAlphaEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetAlphaEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

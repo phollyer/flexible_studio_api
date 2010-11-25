@@ -70,7 +70,7 @@ package api.mouse.sendRelease
 		}
 		private function invalidButton():void
 		{
-			var e : SendReleaseEvent = new SendReleaseEvent( SendReleaseEvent.RESULT_BUTTON );
+			var e : SendReleaseEvent = new SendReleaseEvent( SendReleaseEvent.INVALID_BUTTON );
 			dispatchEvent( e );
 		}
 	}

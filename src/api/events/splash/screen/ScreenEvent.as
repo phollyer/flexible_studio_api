@@ -22,7 +22,7 @@ package api.events.splash.screen
 	*
 	* @eventType status
 	*/
-		public static const STATUS:String = "status";
+		public static const RESULT:String = "result";
 		
 		public var data:String = null;
 		

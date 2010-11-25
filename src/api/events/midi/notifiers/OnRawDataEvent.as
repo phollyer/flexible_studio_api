@@ -1,8 +1,8 @@
 package api.events.midi.notifiers
 {
-	import flash.events.Event;
-	
 	import api.events.midi.MidiEvent;
+	
+	import flash.events.Event;
 
 	public class OnRawDataEvent extends MidiEvent
 	{
@@ -36,6 +36,13 @@ package api.events.midi.notifiers
 	* @eventType result
 	*/
 		public static const RESULT:String = "result";
+		
+		public var cmd:String = null;
+		public var id:String = null;
+		public var msec:Number = -1;
+		public var RAW_DATA:Object = null;
+		public var value1:Object = null;
+		public var value2:Object = null;	
 		
 		public function OnRawDataEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

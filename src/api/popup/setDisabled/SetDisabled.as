@@ -104,7 +104,7 @@ package api.popup.setDisabled
 		}
 		private function invalidFlag():void
 		{
-			var e : SetDisabledEvent = new SetDisabledEvent( SetDisabledEvent.RESULT_FLAG );
+			var e : SetDisabledEvent = new SetDisabledEvent( SetDisabledEvent.INVALID_FLAG );
 			dispatchEvent( e );
 		}
 

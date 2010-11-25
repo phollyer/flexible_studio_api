@@ -1,7 +1,9 @@
 package api.script.create
 {
-	import flash.events.IEventDispatcher;
+	import api.events.script.create.CreateEvent;
 	import api.script.Script;
+	
+	import flash.events.IEventDispatcher;
 
 	[Event(name="missingLanguage" , type="api.events.SWFStudioEvent")]
 	[Event(name="missingModule" , type="api.events.SWFStudioEvent")]
@@ -47,7 +49,7 @@ package api.script.create
 		}
 		private function invalidLanguage():void
 		{
-			var e : CreateEvent = new CreateEvent( CreateEvent.RESULT_LANGUAGE );
+			var e : CreateEvent = new CreateEvent( CreateEvent.INVALID_LANGUAGE );
 			dispatchEvent( e );
 		}
 

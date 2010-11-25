@@ -16,12 +16,11 @@ package api.events
 		public static const MISSING_DESTINATION : String = "missingDestination";
 		public static const MISSING_DIRECTION :String = "missingDirection";
 		public static const MISSING_DRIVE : String = "missingDrive";
-		public static const MISSING_DRIVELETTER : String = "missingDriveletter";
 		public static const MISSING_DRIVE_LETTER : String = "missingDriveLetter";
 		public static const MISSING_EVENT : String = "missingEvent";
 		public static const MISSING_EXISTING_FILE : String = "missingExistingFile";
-		public static const MISSING_FIELDNAME : String = "missingFieldname";
 		public static const MISSING_FIELD_NAME : String = "missingFieldName";
+		public static const MISSING_FILE : String = "missingFile";
 		public static const MISSING_FILE_OBJ : String = "missingFileObj";
 		public static const MISSING_FLAG : String = "missingFlag";
 		public static const MISSING_FOLDER : String = "missingFolder";
@@ -44,7 +43,6 @@ package api.events
 		public static const MISSING_METHOD : String = "missingMethod";
 		public static const MISSING_MODULE : String = "missingModule";
 		public static const MISSING_NAME : String = "missingName";
-		public static const MISSING_NEWNAME : String = "missingNewname";
 		public static const MISSING_NEW_FILE : String = "missingNewFile";
 		public static const MISSING_NEW_NAME : String = "missingNewName";
 		public static const MISSING_NUMBER : String = "missingNumber";
@@ -58,7 +56,6 @@ package api.events
 		public static const MISSING_PLUGIN : String = "missingPlugin";
 		public static const MISSING_PORT : String = "missingPort";
 		public static const MISSING_PRIORITY : String = "missingPriority";
-		public static const MISSING_PROCESSID : String = "missingProcessid";
 		public static const MISSING_PROCESS_ID : String = "missingProcessId";
 		public static const MISSING_PROG_ID : String = "missingProgId";
 		public static const MISSING_PROMPT : String = "missingPrompt";

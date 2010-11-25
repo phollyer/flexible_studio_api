@@ -2,8 +2,6 @@ package api.email.send
 {
 	import api.email.Email;
 
-	import api.errors.EmailError;
-
 	import api.events.email.send.SendEvent;
 
 	import api.vos.email.SendVO;

@@ -94,7 +94,7 @@ package api.guides.create
 		}
 		private function invalidOrientation():void
 		{
-			var e : CreateEvent = new CreateEvent( CreateEvent.RESULT_ORIENTATION );
+			var e : CreateEvent = new CreateEvent( CreateEvent.INVALID_ORIENTATION );
 			dispatchEvent( e );
 		}
 

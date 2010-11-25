@@ -6,6 +6,7 @@ package api.events.win.setClientSize
 
 	public class SetClientSizeEvent extends WinEvent
 	{
+		public static const RESULT:String = "result";
 		
 		public function SetClientSizeEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -67,19 +67,6 @@ package api.win.setSize
 					}
 			}
 		}
-		private function setSizeComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetSizeEvent = new SetSizeEvent( SetSizeEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6027";
-					dispatchError( WinError.SET_SIZE_ERROR , e );
-			}
-		}
 
 	}
 }

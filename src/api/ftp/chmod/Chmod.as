@@ -104,7 +104,7 @@ package api.ftp.chmod
 			errorDetails = r.errorsDetails;
 			
 			var e : ChmodEvent = new ChmodEvent( ChmodEvent.RESULT )
-			e.errorsDetails = errorDetails;
+			e.errorDetails = errorDetails;
 			dispatchEvent( e );
 		}
 	}

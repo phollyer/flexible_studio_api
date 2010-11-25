@@ -68,18 +68,5 @@ package api.win.setIcon
 									   ,{callback:actionComplete, errorSTR:"setIconError", code:"6024"} );	
 			}
 		}
-		private function setIconComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetIconEvent = new SetIconEvent( SetIconEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6024";
-					dispatchError( WinError.SET_ICON_ERROR , e );
-			}
-		}
 	}
 }

@@ -61,7 +61,7 @@ package api.ftp.changeDir
 		}
 		private function pathMissing():void
 		{
-			var e : ChangeDirEvent = new ChangeDirEvent( ChangeDirEvent.RESULT_PATH );
+			var e : ChangeDirEvent = new ChangeDirEvent( ChangeDirEvent.INVALID_PATH );
 			dispatchEvent( e );
 		}
 	}

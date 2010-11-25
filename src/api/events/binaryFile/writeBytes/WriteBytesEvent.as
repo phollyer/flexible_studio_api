@@ -1,8 +1,8 @@
 package api.events.binaryFile.writeBytes
 {
-	import flash.events.Event;
-	
 	import api.events.binaryFile.BinaryFileEvent;
+	
+	import flash.events.Event;
 
 	public class WriteBytesEvent extends BinaryFileEvent
 	{
@@ -24,6 +24,7 @@ package api.events.binaryFile.writeBytes
     *
     * @eventType result
     */
+    	public static const INVALID_FORMAT:String = "invalidFormat";
 		public static const RESULT:String = "result";
 		
 		public var bytesWritten:Number = 0;

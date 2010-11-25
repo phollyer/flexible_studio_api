@@ -60,18 +60,5 @@ package api.win.setMaskColor
 											,{callback:actionComplete, errorSTR:"setMaskColorError", code:"6025"} );	
 			}
 		}
-		private function setMaskColorComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetMaskColorEvent = new SetMaskColorEvent( SetMaskColorEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6025";
-					dispatchError( WinError.SET_MASK_COLOR_ERROR , e );
-			}
-		}
 	}
 }

@@ -60,18 +60,5 @@ package api.win.setBackColor
 											,{callback:actionComplete, errorSTR:"setBackColorError", code:"6018"} );	
 			}
 		}
-		private function setBackColorComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetBackColorEvent = new SetBackColorEvent( SetBackColorEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6018";
-					dispatchError( WinError.SET_BACK_COLOR_ERROR , e );
-			}
-		}
 	}
 }

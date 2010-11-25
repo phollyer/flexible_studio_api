@@ -57,7 +57,7 @@ package api.browser.getBrowsers
 		*/
 		override protected function sendResult( r:Object ):void
 		{
-			browserList = result.split( DELIMITER );
+			browserList = r.split( DELIMITER );
 			var e : GetBrowsersEvent = new GetBrowsersEvent( GetBrowsersEvent.RESULT );
 			e.browserList = browserList;
 			dispatchEvent( e );

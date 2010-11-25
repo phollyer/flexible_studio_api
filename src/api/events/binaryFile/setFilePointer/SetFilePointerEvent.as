@@ -1,8 +1,8 @@
 package api.events.binaryFile.setFilePointer
 {
-	import flash.events.Event;
-	
 	import api.events.binaryFile.BinaryFileEvent;
+	
+	import flash.events.Event;
 
 	public class SetFilePointerEvent extends BinaryFileEvent
 	{
@@ -22,6 +22,7 @@ package api.events.binaryFile.setFilePointer
     *
     * @eventType result
     */
+    	public static const INVALID_POINTER:String = "invalidPointer";
 		public static const RESULT:String = "result";
 		
 		public var systemError:String = null;

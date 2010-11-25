@@ -67,19 +67,6 @@ package api.win.setClientSize
 					}
 			}
 		}
-		private function setClientSizeComplete( r:Object , c:Object , e:Object ):void
-		{			
-			switch( r.success )
-			{
-				case true:
-					var event : SetClientSizeEvent = new SetClientSizeEvent( SetClientSizeEvent.RESULT );
-					dispatchEvent( event );
-					break;
-				case false:
-					e.id = "6021";
-					dispatchError( WinError.SET_CLIENT_SIZE_ERROR , e );
-			}
-		}
 
 	}
 }

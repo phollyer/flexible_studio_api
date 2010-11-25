@@ -48,7 +48,7 @@ package api.ftp.direction
 		}
 		private function incorrectValue():void
 		{
-			var e : DirectionEvent = new DirectionEvent( DirectionEvent.RESULT_VALUE );
+			var e : DirectionEvent = new DirectionEvent( DirectionEvent.INVALID_VALUE );
 			dispatchEvent( e );
 		}
 	}

@@ -50,7 +50,7 @@ package api.events.tcp.notifiers
 		override public function clone():Event
 		{
 			var e : OnReceiveErrorEvent = new OnReceiveErrorEvent( type );
-			e.errorsMessage = errorMessage;
+			e.errorMessage = errorMessage;
 			return e;
 		}
 	}

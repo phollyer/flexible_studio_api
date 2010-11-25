@@ -51,7 +51,7 @@ package api.tcp.notifiers
 			errorMessage = r.result;
 			
 			var e : OnReceiveErrorEvent = new OnReceiveErrorEvent( OnReceiveErrorEvent.RESULT );
-			e.errorsMessage = errorMessage;
+			e.errorMessage = errorMessage;
 			dispatchEvent( e );
 		}
 	}

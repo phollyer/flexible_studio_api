@@ -55,7 +55,7 @@ package api.browser.getURL
 		*/
 		override protected function sendResult( r:Object ):void
 		{
-			url = result;
+			url = r.result;
 			var e : GetURLEvent = new GetURLEvent( GetURLEvent.RESULT );
 			e.url = url;
 			dispatchEvent( e );

@@ -1,7 +1,5 @@
 package api.security.getExpiredFlag
 {
-	import api.errors.Security_Error;
-
 	import api.events.security.getExpiredFlag.GetExpiredFlagEvent;
 
 	import api.security.Security;

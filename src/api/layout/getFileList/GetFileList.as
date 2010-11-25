@@ -81,7 +81,7 @@ package api.layout.getFileList
 		}
 		private function invalidFormat():void
 		{
-			var e : GetFileListEvent = new GetFileListEvent( GetFileListEvent.RESULT_FORMAT );
+			var e : GetFileListEvent = new GetFileListEvent( GetFileListEvent.INVALID_FORMAT );
 			dispatchEvent( e );
 		}
 		/**

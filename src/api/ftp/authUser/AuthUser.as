@@ -9,7 +9,7 @@ package api.ftp.authUser
 	/**
 	* Dispatched if the Property <code>userID</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_USER_I_D
+	* @eventType api.events.SWFStudioEvent.MISSING_USER_ID
 	*/
 	[Event(name="missingUserID" , type="api.events.SWFStudioEvent")]
 	[Bindable]

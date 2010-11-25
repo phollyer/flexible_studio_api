@@ -740,14 +740,14 @@ package api
 		* This method is called by sub classes when a FolderID is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_FOLDER_I_D event type is then dispatched to any listeners so that
+		* <p>The MISSING_FOLDER_ID event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingFolderID():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_FOLDER_I_D );
+			sendMessage(SWFStudioEvent.MISSING_FOLDER_ID );
 		}
 		
 		/**
@@ -782,126 +782,126 @@ package api
 		* This method is called by sub classes when a HWND is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HWND event type is then dispatched to any listeners so that
+		* <p>The MISSINGHWND event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		* 
 		* @private
 		*/
 		protected function missingHWND():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HWND);
+			sendMessage(SWFStudioEvent.MISSINGHWND);
 		}
 
 		/**
 		* This method is called by sub classes when a Headers is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HEADERS event type is then dispatched to any listeners so that
+		* <p>The MISSINGHEADERS event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingHeaders():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HEADERS );
+			sendMessage(SWFStudioEvent.MISSINGHEADERS );
 		}
 
 		/**
 		* This method is called by sub classes when a Height is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HEIGHT event type is then dispatched to any listeners so that
+		* <p>The MISSINGHEIGHT event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingHeight():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HEIGHT );
+			sendMessage(SWFStudioEvent.MISSINGHEIGHT );
 		}
 
 		/**
 		* This method is called by sub classes when HighValue is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HIGH_VALUE event type is then dispatched to any listeners so that
+		* <p>The MISSINGHIGH_VALUE event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingHighValue():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HIGH_VALUE );
+			sendMessage(SWFStudioEvent.MISSINGHIGH_VALUE );
 		}
 
 		/**
 		* This method is called by sub classes when a Host is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HOST event type is then dispatched to any listeners so that
+		* <p>The MISSINGHOST event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingHost():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HOST );
+			sendMessage(SWFStudioEvent.MISSINGHOST );
 		}
 
 		/**
 		* This method is called by sub classes when a Hwnd is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_HWND event type is then dispatched to any listeners so that
+		* <p>The MISSINGHWND event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingHwnd():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_HWND );
+			sendMessage(SWFStudioEvent.MISSINGHWND );
 		}
 
 		/**
 		* This method is called by sub classes when a ID is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_I_D event type is then dispatched to any listeners so that
+		* <p>The MISSINGID event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingID():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_I_D );
+			sendMessage(SWFStudioEvent.MISSINGID );
 		}
 
 		/**
 		* This method is called by sub classes when a Index is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_INDEX event type is then dispatched to any listeners so that
+		* <p>The MISSINGINDEX event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingIndex():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_INDEX );
+			sendMessage(SWFStudioEvent.MISSINGINDEX );
 		}
 
 		/**
 		* This method is called by sub classes when a Item is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_ITEM event type is then dispatched to any listeners so that
+		* <p>The MISSINGITEM event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingItem():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_ITEM );
+			sendMessage(SWFStudioEvent.MISSINGITEM );
 		}
 
 		/**
@@ -1034,14 +1034,14 @@ package api
 		* This method is called by sub classes when NewName is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_NEW_NAME event type is then dispatched to any listeners so that
+		* <p>The MISSING_NEWNAME event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingNewName():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_NEW_NAME );
+			sendMessage(SWFStudioEvent.MISSING_NEWNAME );
 		}
 		
 		/**
@@ -1493,7 +1493,7 @@ package api
 		}
 
 		/**
-		* This method is called by sub classes when a User is
+		* This method is called by ed by sub classes when a User is
 		* not supplied as an argument or property when required.
 		*
 		* <p>The MISSING_USER event type is then dispatched to any listeners so that
@@ -1524,14 +1524,14 @@ package api
 		* This method is called by sub classes when a UserID is
 		* not supplied as an argument or property when required.
 		*
-		* <p>The MISSING_USER_I_D event type is then dispatched to any listeners so that
+		* <p>The MISSING_USER_ID event type is then dispatched to any listeners so that
 		* you can handle the error</p>
 		*
 		* @private
 		*/
 		protected function missingUserID():void
 		{
-			sendMessage(SWFStudioEvent.MISSING_USER_I_D );
+			sendMessage(SWFStudioEvent.MISSING_USER_ID );
 		}
 		
 		/**

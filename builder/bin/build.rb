@@ -275,16 +275,31 @@ class Build
   def fix_constants
     file_list = Dir['src/api/**/*.as']
 
+    fixed_constants = []
     file_list.each do |file|
       file_content = read_file file
-      constants = file_content.scan(/[A-Z]+_[A-Z]_[A-Z_]*[A-Z]+/)
-      constants.each do |const|
-        fixed_const = fix_const const
-        puts fixed_const
-      end
-      puts constants.inspect
-    end
 
+      constants = file_content.scan(/[A-Z]+_[A-Z_]*/)
+      constants.each do |const|
+        puts const
+        if const.match(/_[A-Z]_|_[A-Z]$/)
+          puts "match"
+          fixed_const = {:original => const,
+                         :replace  => fix_const("#{const}")
+          }
+          puts fixed_const.inspect
+
+          fixed_constants << fixed_const
+
+          fixed_constants.each do |const|
+            file_content.gsub!(const[:original],const[:replace])
+          end
+
+          write_file file,file_content if
+                fixed_constants.size > 0
+        end
+      end
+    end
   end
 
   def get_method_paths class_name

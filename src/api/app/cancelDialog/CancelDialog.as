@@ -9,7 +9,7 @@ package api.app.cancelDialog
 	/**
 	* Dispatched if the Property <code>hWND</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_H_W_N_D
+	* @eventType api.events.SWFStudioEvent.MISSING_HWND
 	*/
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]

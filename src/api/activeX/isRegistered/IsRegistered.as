@@ -9,7 +9,7 @@ package api.activeX.isRegistered
 	/**
 	* Dispatched if the Property <code>progID</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_PROG_I_D
+	* @eventType api.events.SWFStudioEvent.MISSING_PROG_ID
 	*/
 	[Event(name="missingProgID" , type="api.events.SWFStudioEvent")]
 	

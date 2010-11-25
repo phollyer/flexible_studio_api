@@ -11,7 +11,7 @@ package api.app.showFileOpen
 	/**
 	* Dispatched if the Property <code>fileOBJ</code> has not been supplied.
 	*
-	* @eventType api.events.SWFStudioEvent.MISSING_FILE_O_B_J
+	* @eventType api.events.SWFStudioEvent.MISSING_FILE_OBJ
 	*/
 	[Event(name="missingFileOBJ" , type="api.events.SWFStudioEvent")]
 	/**

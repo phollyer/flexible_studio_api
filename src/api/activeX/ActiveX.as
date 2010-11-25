@@ -9,7 +9,7 @@ package api.activeX
 	 * with the ActiveX control using the Properties, Methods and
 	 * Events of the ActiveX Control.
 	 * 
-	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_Overview.html Help
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveXOverview.html Help
 	 */
 	[Bindable]
 	/**

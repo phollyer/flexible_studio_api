@@ -47,17 +47,36 @@ module Builder
     end
 
     def fix_const const
+      fixed = nil
       if const.match(/_[A-Z]$/)
         const.sub!(/_[A-Z]$/,const.match(/_[A-Z]$/)[0].split("")[1])
       end
       puts const
-      matches = const.scan(/_[A-Z]_/)
-      matches.reverse!
-      matches.each do |match|
-        puts match
-        const.sub!(match, "_#{match.split("")[1]}")
+      indexes_to_delete = []
+      if const.match(/_[A-Z]_/)
+        chars = const.split("")
+        chars.each_index do |index|
+          if chars[index] == "_" && chars[index - 2] == "_"
+            indexes_to_delete << index
+          end
+        end
+
+        indexes_to_delete.reverse!
+        puts indexes_to_delete
+
+        indexes_to_delete.collect { |index| chars[index] = ""  }
+
+        fixed = chars.join("")
+        puts fixed
       end
-      const
+
+      if fixed
+        new_const = fixed
+      else
+        new_const = const
+      end
+
+      new_const
     end
 
 

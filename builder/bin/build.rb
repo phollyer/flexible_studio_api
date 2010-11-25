@@ -89,10 +89,7 @@ class Build
       end
     end
 
-    puts @event_file
-
-    puts @actual_constants.inspect
-    puts @new_constants.inspect
+    write_file get_swf_studio_event_file_path,@event_file
   end
 
   def add_methods_to_kernel

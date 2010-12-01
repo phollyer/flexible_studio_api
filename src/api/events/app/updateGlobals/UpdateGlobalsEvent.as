@@ -5,9 +5,7 @@ package api.events.app.updateGlobals
 	import api.events.app.AppEvent;
 
 	public class UpdateGlobalsEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function UpdateGlobalsEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

@@ -5,9 +5,7 @@ package api.events.ado.setTable
 	import api.events.ado.AdoEvent;
 
 	public class SetTableEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function SetTableEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

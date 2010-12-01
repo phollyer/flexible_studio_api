@@ -5,9 +5,7 @@ package api.events.ado.setWhere
 	import api.events.ado.AdoEvent;
 
 	public class SetWhereEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function SetWhereEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

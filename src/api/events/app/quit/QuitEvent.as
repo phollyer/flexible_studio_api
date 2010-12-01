@@ -5,9 +5,7 @@ package api.events.app.quit
 	import api.events.app.AppEvent;
 
 	public class QuitEvent extends AppEvent 
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function QuitEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

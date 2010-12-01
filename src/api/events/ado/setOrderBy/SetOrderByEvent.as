@@ -5,9 +5,7 @@ package api.events.ado.setOrderBy
 	import api.events.ado.AdoEvent;
 
 	public class SetOrderByEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function SetOrderByEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

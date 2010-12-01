@@ -5,9 +5,7 @@ package api.events.app.updateTransparency
 	import api.events.app.AppEvent;
 
 	public class UpdateTransparencyEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function UpdateTransparencyEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

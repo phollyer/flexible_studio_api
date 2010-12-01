@@ -1,44 +1,50 @@
 package api.activeX.clearGuides
 {
+	import api.activeX.ActiveX;
+
+	import api.events.activeX.clearGuides.ClearGuidesEvent;
+
 	import flash.events.IEventDispatcher;
 	
-	import api.activeX.ActiveX;
-	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied.	 * 
-	 * 
-	 * @eventType api.events.activeX.clearGuides.ClearGuidesEvent.RESULT_OBJECT
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
 	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
 	[Bindable]
 	/**
-	 * Clears any Guides set up for automatic re-sizing.
-	 * 
+	 *
+	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_clearGuides.html Northcode Help Documentation
 	 */
 	public class ClearGuides extends ActiveX
 	{		
 		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
 		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
+		/**
+		 * Constructor for ActiveX.ClearGuides()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_clearGuides.html Northcode Help Documentation
+		 */
 		public function ClearGuides(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-	 	 * Clears any Guides set up for automatic re-sizing.
-	 	 * 
-	 	 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * 
-		 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_clearGuides.html Northcode Help Documentation
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_clearGuides.html Northcode Help Documentation
 		 */
 		public function clearGuides( activeXObject:String = null ):void
 		{

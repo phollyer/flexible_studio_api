@@ -5,9 +5,7 @@ package api.events.app.enableFlashMenu
 	import api.events.app.AppEvent;
 
 	public class EnableFlashMenuEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function EnableFlashMenuEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

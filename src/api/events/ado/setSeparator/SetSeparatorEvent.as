@@ -5,9 +5,7 @@ package api.events.ado.setSeparator
 	import api.events.ado.AdoEvent;
 
 	public class SetSeparatorEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function SetSeparatorEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

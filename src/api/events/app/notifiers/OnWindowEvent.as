@@ -6,8 +6,28 @@ package api.events.app.notifiers
 
 	public class OnWindowEvent extends AppEvent
 	{
-		public static const RESULT:String = "result";
-		
+		/**
+    * The OnWindowEvent.RESULT constant defines the value of the
+    * <code>type</code> property of the event object
+    * for a <code>result</code> event.
+    *
+    * <p>The properties of the event object have the following values:</p>
+    * <table class=innertable>
+    * <tr><th>Property</th><th>Value</th></tr>
+    * 
+    * <tr><td>caption</td><td>null</td></tr>
+    * 
+    * <tr><td>hwnd</td><td>null</td></tr>
+    * 
+    * <tr><td>windowClassName</td><td>null</td></tr>
+    * 
+    * <tr><td>windowStyle</td><td>null</td></tr>
+    * 
+    * </table>
+    *
+    * @eventType result
+    */
+		public static const RESULT:String = "result";		
 		public var caption:String = null;
 		public var hwnd:String = null;
 		public var windowClassName:String = null;

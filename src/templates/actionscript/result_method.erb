@@ -1,0 +1,5 @@
+		override protected function sendResult( r:Object ):void
+		{
+			var e : <%= @method_name %>Event = new <%= @method_name %>Event( <%= @method_name %>Event.RESULT );
+			dispatchEvent( e );
+		}

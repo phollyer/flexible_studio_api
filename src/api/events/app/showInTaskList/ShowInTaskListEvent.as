@@ -5,9 +5,7 @@ package api.events.app.showInTaskList
 	import api.events.app.AppEvent;
 
 	public class ShowInTaskListEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function ShowInTaskListEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

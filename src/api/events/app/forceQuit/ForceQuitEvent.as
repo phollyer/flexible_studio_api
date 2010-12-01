@@ -5,9 +5,7 @@ package api.events.app.forceQuit
 	import api.events.app.AppEvent;
 
 	public class ForceQuitEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function ForceQuitEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

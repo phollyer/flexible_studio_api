@@ -5,10 +5,7 @@ package api.events.ado.setConnectString
 	import api.events.ado.AdoEvent;
 
 	public class SetConnectStringEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_CONNECT_STRING:String = "missingConnectString";
-		
+	{		
 		public function SetConnectStringEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

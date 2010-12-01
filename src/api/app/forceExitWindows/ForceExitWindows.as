@@ -1,11 +1,23 @@
 package api.app.forceExitWindows
 {
-	import flash.events.IEventDispatcher;
-	
 	import api.app.App;
 
+	import api.events.app.forceExitWindows.ForceExitWindowsEvent;
+
+	import flash.events.IEventDispatcher;
+
+	/**
+	 * Dispatched if the Property <code>method</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_METHOD
+	 */
 	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	[Bindable]
+	/**
+	 *
+	 *
+	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+	 */
 	public class ForceExitWindows extends App
 	{
 		public static const LOG_OFF:String = "logoff";
@@ -16,12 +28,30 @@ package api.app.forceExitWindows
 														   ,SHUT_DOWN );
 		
 		// Required
+		/**
+		 * 
+		 *
+		 * @defaultValue <code>null</code>
+		 */
 		public var method:String = null;
 		
+		/**
+		 * Constructor for App.ForceExitWindows()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+		 */
 		public function ForceExitWindows(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
+		/**
+		 *
+		 *
+                 *
+		 * @param exitMethod
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
+		 */
 		public function forceExitWindows( exitMethod:String ):void
 		{
 			method = compareStrings( exitMethod , method );

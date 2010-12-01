@@ -5,9 +5,7 @@ package api.events.ado.setSQL
 	import api.events.ado.AdoEvent;
 
 	public class SetSQLEvent extends AdoEvent
-	{
-		public static const COMPLETE:String = "complete";
-		
+	{		
 		public function SetSQLEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

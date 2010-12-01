@@ -5,10 +5,7 @@ package api.events.app.cancelDialog
 	import api.events.app.AppEvent;
 
 	public class CancelDialogEvent extends AppEvent
-	{
-		public static const COMPLETE:String = "complete";
-		public static const MISSING_HWND:String = "missingHWND";
-		
+	{		
 		public function CancelDialogEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			super(type, bubbles, cancelable);

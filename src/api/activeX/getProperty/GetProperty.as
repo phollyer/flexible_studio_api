@@ -1,15 +1,15 @@
 package api.activeX.getProperty
 {
+	import api.activeX.ActiveX;
+
+	import api.events.activeX.getProperty.GetPropertyEvent;
+
 	import flash.events.IEventDispatcher;
 	
-	import api.activeX.ActiveX;
-	
-	import api.events.activeX.getProperty.GetPropertyEvent;
-	
 	/**
-	 * Dispatched when the Property <code>object</code> has not been supplied.
-	 * 
-	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT_OBJECT
+	 * Dispatched if the Property <code>object</code> has not been supplied.
+	 *
+	 * @eventType api.events.SWFStudioEvent.MISSING_OBJECT
 	 */
 	[Event(name="missingObject" , type="api.events.SWFStudioEvent")]
 	
@@ -22,57 +22,61 @@ package api.activeX.getProperty
 	
 	/**
 	 * Dispatched when the Results are ready.
-	 * 
+	 *
 	 * @eventType api.events.activeX.getProperty.GetPropertyEvent.RESULT
 	 */
 	[Event(name="result", type="api.events.activeX.getProperty.GetPropertyEvent")]
 	
+	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 * Get a value for a Property of an ActiveX Object that you have embedded 
-	 * into your Application.
-	 * 
+	 *
+	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
 	 */
 	public class GetProperty extends ActiveX
 	{
 		/**
-		 * The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
 		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
 		/**
-		 * The Property on the ActiveX Object that you are retrieving.
 		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var property:String = null;
 		
 		/**
-		 * The Value of the Property retrieved.
 		 * 
+		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var value:Object = null;
 		
+		/**
+		 * Constructor for ActiveX.GetProperty()
+		 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
+		 */
 		public function GetProperty(target:IEventDispatcher=null)
 		{
 			super(target);
 		}
 		
 		/**
-		 * Get a value for a Property of an ActiveX Object that you have embedded 
-	 	 * into your Application.
-	 	 * 
-	 	 * @param activeXObject The Object Identifier used in <code>createObject()</code> to identify
-		 * the ActiveX Object.
-		 * @param prop The Property on the ActiveX Object that you are retrieving.
-	 	 * 
-	 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
-	 	 */
+		 *
+		 *
+                 *
+		 * @param activeXObject
+                 *
+		 * @param prop
+                 *
+                 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
+		 */
 		public function getProperty( activeXObject:String , prop:String = null ):void
 		{
 			object = compareStrings( activeXObject , object );

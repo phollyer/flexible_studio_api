@@ -14,7 +14,7 @@ package api.wmAudio.setIndex
 	[Event(name="missingIndex" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set the position of the playhead for the current resource.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setIndex.html Northcode Help Documentation
 	*/
@@ -33,7 +33,7 @@ package api.wmAudio.setIndex
 			super(target);
 		}
 		/**
-		*
+		* Set the position of the playhead for the current resource.
 		*
 		*
 		* @param timeIndex

@@ -14,7 +14,7 @@ package api.tcp.listen
 	[Event(name="missingPort" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Listen for an incoming TCP connection on the specified port.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_TCP_listen.html Northcode Help Documentation
 	*/
@@ -41,7 +41,7 @@ package api.tcp.listen
 			super(target);
 		}
 		/**
-		*
+		* Listen for an incoming TCP connection on the specified port.
 		*
 		*
 		* @param portNumber

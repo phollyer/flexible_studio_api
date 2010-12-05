@@ -22,7 +22,7 @@ package api.binaryFile.readBytes
 	[Event(name="result", type="api.events.binaryFile.readBytes.ReadBytesEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Read a block of bytes from the file.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_readBytes.html Northcode Help Documentation
 	 */
@@ -30,7 +30,7 @@ package api.binaryFile.readBytes
 	{
 		// Required
 		/**
-		 * 
+		 * Desired data format. Valid values include: hex,byte,utf8.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -39,13 +39,13 @@ package api.binaryFile.readBytes
 		
 		// Results
 		/**
-		 * 
+		 * Number of bytes actually read from the file.
 		 *
 		 * @defaultValue <code>0</code>
 		 */
 		public var bytesRead:Number = 0;
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -67,7 +67,7 @@ package api.binaryFile.readBytes
 			super(target);
 		}
 		/**
-		 *
+		 * Read a block of bytes from the file.
 		 *
                  *
 		 * @param readFormat

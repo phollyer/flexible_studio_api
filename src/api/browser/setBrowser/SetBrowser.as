@@ -8,14 +8,14 @@ package api.browser.setBrowser
 
 	[Bindable]
 	/**
-	*
+	* Called before the Open method to tell SWF Studio which browser to use
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setBrowser.html Northcode Help Documentation
 	*/
 	public class SetBrowser extends Browser
 	{
 		/**
-		* 
+		* Name of the browser to embedd Valid values include: IE and MOZILLA.
 		*
 		* @defaultValue <code>IE</code>
 		*/
@@ -31,7 +31,7 @@ package api.browser.setBrowser
 			super(target);
 		}
 		/**
-		*
+		* Called before the Open method to tell SWF Studio which browser to use
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setBrowser.html Northcode Help Documentation

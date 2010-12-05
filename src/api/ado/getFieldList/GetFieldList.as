@@ -14,7 +14,7 @@ package api.ado.getFieldList
 	[Event(name="result", type="api.events.ado.getFieldList.GetFieldListEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Get a list of all fields in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getFieldList.html Northcode Help Documentation
 	 */
@@ -38,7 +38,7 @@ package api.ado.getFieldList
 			super(target);
 		}
 		/**
-		 *
+		 * Get a list of all fields in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getFieldList.html Northcode Help Documentation

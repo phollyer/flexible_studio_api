@@ -14,7 +14,7 @@ package api.keyboard.unblock
 	[Event(name="missingKey" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Remove the block on a key so Flash can see it again. The arguments must be exactly the same as those passed to Keyboard.block to remove a block.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_unblock.html Northcode Help Documentation
 	*/
@@ -42,7 +42,7 @@ package api.keyboard.unblock
 		
 		// Required
 		/**
-		* 
+		* A virtual key code.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -57,7 +57,7 @@ package api.keyboard.unblock
 			super(target);
 		}
 		/**
-		*
+		* Remove the block on a key so Flash can see it again. The arguments must be exactly the same as those passed to Keyboard.block to remove a block.
 		*
 		*
 		* @param keySTR

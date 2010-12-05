@@ -15,14 +15,14 @@ package api.activeX.destroyObject
 	
 	[Bindable]
 	/**
-	 *
+	 * Destroy a existing ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_destroyObject.html Northcode Help Documentation
 	 */
 	public class DestroyObject extends ActiveX
 	{		
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.activeX.destroyObject
 			super(target);
 		}
 		/**
-		 *
+		 * Destroy a existing ActiveX object.
 		 *
                  *
 		 * @param activeXObject

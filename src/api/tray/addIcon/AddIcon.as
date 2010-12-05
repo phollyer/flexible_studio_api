@@ -8,7 +8,7 @@ package api.tray.addIcon
 	
 	[Bindable]
 	/**
-	*
+	* Allow the application to add its icon to the system tray at runtime instead of at startup. If no system tray icon was defined in the UI, the project icon will be used instead.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_addIcon.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.tray.addIcon
 			super(target);
 		}
 		/**
-		*
+		* Allow the application to add its icon to the system tray at runtime instead of at startup. If no system tray icon was defined in the UI, the project icon will be used instead.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_addIcon.html Northcode Help Documentation

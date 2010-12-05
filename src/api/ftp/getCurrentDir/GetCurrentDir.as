@@ -14,7 +14,7 @@ package api.ftp.getCurrentDir
 	[Event(name="result", type="api.events.ftp.getCurrentDir.GetCurrentDirEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the path of the current directory on the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getCurrentDir.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.ftp.getCurrentDir
 			super(target);
 		}
 		/**
-		*
+		* Get the path of the current directory on the FTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getCurrentDir.html Northcode Help Documentation

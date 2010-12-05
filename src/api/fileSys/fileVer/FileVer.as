@@ -20,7 +20,7 @@ package api.fileSys.fileVer
 	[Event(name="result", type="api.events.fileSys.fileVer.FileVerEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the version number of the specified file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_fileVer.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.fileSys.fileVer
 	{
 		// Required
 		/**
-		* 
+		* Fully qualifed path to a file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.fileSys.fileVer
 			super(target);
 		}
 		/**
-		*
+		* Returns the version number of the specified file.
 		*
 		*
 		* @param filePath

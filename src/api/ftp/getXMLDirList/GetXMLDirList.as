@@ -14,7 +14,7 @@ package api.ftp.getXMLDirList
 	[Event(name="result", type="api.events.ftp.getXMLDirList.GetXMLDirListEvent")]
 	[Bindable]
 	/**
-	*
+	* Request a list of files and directories in the current directory on the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getXMLDirList.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.ftp.getXMLDirList
 			super(target);
 		}
 		/**
-		*
+		* Request a list of files and directories in the current directory on the FTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getXMLDirList.html Northcode Help Documentation

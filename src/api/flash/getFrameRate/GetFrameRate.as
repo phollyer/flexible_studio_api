@@ -14,7 +14,7 @@ package api.flash.getFrameRate
 	[Event(name="result", type="api.events.flash.getFrameRate.GetFrameRateEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the frame rate encoded in the header of an SWF file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_getFrameRate.html Northcode Help Documentation
 	*/
@@ -46,7 +46,7 @@ package api.flash.getFrameRate
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the frame rate encoded in the header of an SWF file.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_getFrameRate.html Northcode Help Documentation

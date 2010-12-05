@@ -14,7 +14,7 @@ package api.layout.getFileList
 	[Event(name="result", type="api.events.layout.getFileList.GetFileListEvent")]
 	[Bindable]
 	/**
-	*
+	* Get a list of files in the layout.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout_getFileList.html Northcode Help Documentation
 	*/
@@ -61,7 +61,7 @@ package api.layout.getFileList
 			super(target);
 		}
 		/**
-		*
+		* Get a list of files in the layout.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout_getFileList.html Northcode Help Documentation

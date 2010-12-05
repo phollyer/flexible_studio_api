@@ -14,7 +14,7 @@ package api.flash.getBackColor
 	[Event(name="result", type="api.events.flash.getBackColor.GetBackColorEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the background color encoded in the header of an SWF file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_getBackColor.html Northcode Help Documentation
 	*/
@@ -46,7 +46,7 @@ package api.flash.getBackColor
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the background color encoded in the header of an SWF file.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_getBackColor.html Northcode Help Documentation

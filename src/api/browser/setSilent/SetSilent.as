@@ -8,7 +8,7 @@ package api.browser.setSilent
 	
 	[Bindable]
 	/**
-	*
+	* Controls whether the browser should display dialog boxes (for script errors etc).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setSilent.html Northcode Help Documentation
 	*/
@@ -31,7 +31,7 @@ package api.browser.setSilent
 			super(target);
 		}
 		/**
-		*
+		* Controls whether the browser should display dialog boxes (for script errors etc).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setSilent.html Northcode Help Documentation

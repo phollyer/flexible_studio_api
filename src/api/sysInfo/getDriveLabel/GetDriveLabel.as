@@ -20,7 +20,7 @@ package api.sysInfo.getDriveLabel
 	[Event(name="result", type="api.events.sysInfo.getDriveLabel.GetDriveLabelEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the label of the specified drive.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getDriveLabel.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.sysInfo.getDriveLabel
 	{
 		// Required
 		/**
-		* 
+		* The drive letter ('A:' to 'Z:') to be described. The colon (':') following the drive letter is optional.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -36,7 +36,7 @@ package api.sysInfo.getDriveLabel
 		
 		// Result
 		/**
-		* 
+		* The drive letter ('A:' to 'Z:') to be described. The colon (':') following the drive letter is optional.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.sysInfo.getDriveLabel
 			super(target);
 		}
 		/**
-		*
+		* Get the label of the specified drive.
 		*
 		*
 		* @param driveLetter

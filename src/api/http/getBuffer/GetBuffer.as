@@ -14,7 +14,7 @@ package api.http.getBuffer
 	[Event(name="result", type="api.events.http.getBuffer.GetBufferEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the contents of the transfer buffer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getBuffer.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.getBuffer
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the contents of the transfer buffer.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getBuffer.html Northcode Help Documentation

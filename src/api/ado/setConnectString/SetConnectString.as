@@ -14,7 +14,7 @@ package api.ado.setConnectString
 	[Event(name="missingString" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Provide an ADO connection string that identifies the data provider and the data source you want to use.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setConnectString.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.setConnectString
 	{
 		// Required
 		/**
-		 * 
+		 * An ADO connection string.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.ado.setConnectString
 			super(target);
 		}
 		/**
-		 *
+		 * Provide an ADO connection string that identifies the data provider and the data source you want to use.
 		 *
                  *
 		 * @param adoConnectString

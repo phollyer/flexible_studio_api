@@ -17,7 +17,7 @@ package api.activeX.setGuides
 	
 	[Bindable]
 	/**
-	 *
+	 * Link the edges of the ActiveX object to guides for automatic resizing of the ActiveX window that matches the player window's client area.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setGuides.html Northcode Help Documentation
 	 */
@@ -47,7 +47,7 @@ package api.activeX.setGuides
 			super(target);
 		}
 		/**
-		 *
+		 * Link the edges of the ActiveX object to guides for automatic resizing of the ActiveX window that matches the player window's client area.
 		 *
                  *
 		 * @param activeXObject

@@ -14,7 +14,7 @@ package api.win.setMaskColor
 	[Event(name="missingColor" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Make all pixels of a given color transparent.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setMaskColor.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.win.setMaskColor
 	{		
 		// Required
 		/**
-		* 
+		* Hex representation of the color to use as the mask color in rrggbb or #rrggbb format. Use an empty string to disable color masking.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.win.setMaskColor
 		}
 		
 		/**
-		*
+		* Make all pixels of a given color transparent.
 		*
 		*
 		* @param maskColor

@@ -14,7 +14,7 @@ package api.transparent.isMaskedMode
 	[Event(name="result", type="api.events.transparent.isMaskedMode.IsMaskedModeEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine whether transparency is being rendered in masked mode or using layered windows.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Transparent_isMaskedMode.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.transparent.isMaskedMode
 			super(target);
 		}
 		/**
-		*
+		* Determine whether transparency is being rendered in masked mode or using layered windows.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Transparent_isMaskedMode.html Northcode Help Documentation

@@ -14,7 +14,7 @@ package api.binaryFile.setSize
 	[Event(name="result", type="api.events.binaryFile.setSize.SetSizeEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Set the size of the file.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setSize.html Northcode Help Documentation
 	 */
@@ -25,7 +25,7 @@ package api.binaryFile.setSize
 		
 		// Results
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -41,7 +41,7 @@ package api.binaryFile.setSize
 			super(target);
 		}
 		/**
-		 *
+		 * Set the size of the file.
 		 *
                  *
 		 * @param bytesSize

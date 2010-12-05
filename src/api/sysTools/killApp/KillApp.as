@@ -14,7 +14,7 @@ package api.sysTools.killApp
 	[Event(name="missingApplication" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Kill a running application by specifying the EXE file name.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_killApp.html Northcode Help Documentation
 	*/
@@ -36,7 +36,7 @@ package api.sysTools.killApp
 		
 		// Required
 		/**
-		* 
+		* The name of the application you want to kill without the path, but including the extension, e.g. 'notepad.exe'.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.sysTools.killApp
 			super(target);
 		}
 		/**
-		*
+		* Kill a running application by specifying the EXE file name.
 		*
 		*
 		* @param app

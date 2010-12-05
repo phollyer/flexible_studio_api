@@ -8,7 +8,7 @@ package api.win.lockWindow
 	
 	[Bindable]
 	/**
-	*
+	* Lock the window so it can't be moved or resized.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockWindow.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.lockWindow
 	{
 		// Optional
 		/**
-		* 
+		* A flag that controls whether the window should be locked at its current size and position or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.win.lockWindow
 			super(target);
 		}
 		/**
-		*
+		* Lock the window so it can't be moved or resized.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockWindow.html Northcode Help Documentation

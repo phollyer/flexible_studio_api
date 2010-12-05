@@ -8,7 +8,7 @@ package api.win.setFocus
 	
 	[Bindable]
 	/**
-	*
+	* Makes the specified window the active window and gives it the input focus. If the window is minimized to the taskbar or the system tray it will be restored. If the window is hidden it will be made visible.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setFocus.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.win.setFocus
 			super(target);
 		}
 		/**
-		*
+		* Makes the specified window the active window and gives it the input focus. If the window is minimized to the taskbar or the system tray it will be restored. If the window is hidden it will be made visible.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setFocus.html Northcode Help Documentation

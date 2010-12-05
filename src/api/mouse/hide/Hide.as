@@ -14,7 +14,7 @@ package api.mouse.hide
 	[Event(name="result", type="api.events.mouse.hide.HideEvent")]
 	[Bindable]
 	/**
-	*
+	* Hide the system mouse cursor.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_hide.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.mouse.hide
 			super(target);
 		}
 		/**
-		*
+		* Hide the system mouse cursor.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_hide.html Northcode Help Documentation

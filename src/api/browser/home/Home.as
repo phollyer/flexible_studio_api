@@ -8,7 +8,7 @@ package api.browser.home
 	
 	[Bindable]
 	/**
-	*
+	* Move to the home page defined by the browser. This is the same as pressing the Home button in Internet Explorer and will trigger an OnNavigate event.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_home.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.home
 			super(target);
 		}
 		/**
-		*
+		* Move to the home page defined by the browser. This is the same as pressing the Home button in Internet Explorer and will trigger an OnNavigate event.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_home.html Northcode Help Documentation

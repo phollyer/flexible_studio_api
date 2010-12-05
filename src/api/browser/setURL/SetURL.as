@@ -8,14 +8,14 @@ package api.browser.setURL
 	
 	[Bindable]
 	/**
-	*
+	* Change the page displayed in the browser.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setURL.html Northcode Help Documentation
 	*/
 	public class SetURL extends Browser
 	{
 		/**
-		* 
+		* Any valid URL. For files on the local file system use the 'file://' prefix. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -31,7 +31,7 @@ package api.browser.setURL
 			super(target);
 		}
 		/**
-		*
+		* Change the page displayed in the browser.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setURL.html Northcode Help Documentation

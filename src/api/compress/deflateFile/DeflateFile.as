@@ -15,7 +15,7 @@ package api.compress.deflateFile
 	[Event(name="missingSource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Deflate (compress) a file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Compress_deflateFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.compress.deflateFile
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the deflated file. If the file exists it will be overwritten. If the file does not exist it will be created. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var destination:String = null;
 		/**
-		* 
+		* A fully qualified path to the file to be deflated. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.compress.deflateFile
 			super(target);
 		}
 		/**
-		*
+		* Deflate (compress) a file.
 		*
 		*
 		* @param pathToSource

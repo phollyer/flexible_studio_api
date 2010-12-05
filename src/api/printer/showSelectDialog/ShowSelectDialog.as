@@ -14,7 +14,7 @@ package api.printer.showSelectDialog
 	[Event(name="result", type="api.events.printer.showSelectDialog.ShowSelectDialogEvent")]
 	[Bindable]
 	/**
-	*
+	* Display the Windows printer selection dialog to allow the user to select a printer for future printing operations.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_showSelectDialog.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.printer.showSelectDialog
 	{
 		// Result
 		/**
-		* 
+		* Indicates which button the user pressed to close the dialog. Valid return values are OK and CANCEL.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.printer.showSelectDialog
 			super(target);
 		}
 		/**
-		*
+		* Display the Windows printer selection dialog to allow the user to select a printer for future printing operations.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_showSelectDialog.html Northcode Help Documentation

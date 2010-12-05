@@ -14,7 +14,7 @@ package api.win.getStageAlign
 	[Event(name="result", type="api.events.win.getStageAlign.GetStageAlignEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the current stage alignment.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getStageAlign.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.win.getStageAlign
 			super(target);
 		}
 		/**
-		*
+		* Get the current stage alignment.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getStageAlign.html Northcode Help Documentation

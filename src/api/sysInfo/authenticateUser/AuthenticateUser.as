@@ -21,7 +21,7 @@ package api.sysInfo.authenticateUser
 	[Event(name="result", type="api.events.sysInfo.authenticateUser.AuthenticateUserEvent")]
 	[Bindable]
 	/**
-	*
+	* Return a true/false value that indicates whether the supplied user credentials are valid or not for the specified domain. If a domain is not supplied, the user will be authenticated against the local machine user database.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_authenticateUser.html Northcode Help Documentation
 	*/
@@ -62,7 +62,7 @@ package api.sysInfo.authenticateUser
 			super(target);
 		}
 		/**
-		*
+		* Return a true/false value that indicates whether the supplied user credentials are valid or not for the specified domain. If a domain is not supplied, the user will be authenticated against the local machine user database.
 		*
 		*
 		* @param username

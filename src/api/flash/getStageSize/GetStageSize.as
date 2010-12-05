@@ -20,7 +20,7 @@ package api.flash.getStageSize
 	[Event(name="result", type="api.events.flash.getStageSize.GetStageSizeEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the stage size (width and height) of a Flash movie by reading the SWF header.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_getStageSize.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.flash.getStageSize
 	{
 		// Required
 		/**
-		* 
+		* Path to the SWF file to be read. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -36,13 +36,13 @@ package api.flash.getStageSize
 		
 		// Result
 		/**
-		* 
+		* The height of the stage (in pixels).
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var height:Number = 0;
 		/**
-		* 
+		* The width of the stage (in pixels).
 		*
 		* @defaultValue <code>0</code>
 		*/
@@ -58,7 +58,7 @@ package api.flash.getStageSize
 			super(target);
 		}
 		/**
-		*
+		* Get the stage size (width and height) of a Flash movie by reading the SWF header.
 		*
 		*
 		* @param swfPath

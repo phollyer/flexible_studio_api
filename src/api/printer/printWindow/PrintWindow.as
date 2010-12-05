@@ -8,7 +8,7 @@ package api.printer.printWindow
 	
 	[Bindable]
 	/**
-	*
+	* Captures and prints any rectangular area of the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_printWindow.html Northcode Help Documentation
 	*/
@@ -74,7 +74,7 @@ package api.printer.printWindow
 			super(target);
 		}
 		/**
-		*
+		* Captures and prints any rectangular area of the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_printWindow.html Northcode Help Documentation

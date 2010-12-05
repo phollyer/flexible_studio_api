@@ -14,7 +14,7 @@ package api.catalog.fields
 	[Event(name="result", type="api.events.catalog.fields.FieldsEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the header row (field list) from the catalog file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_fields.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.catalog.fields
 			super(target);
 		}
 		/**
-		*
+		* Returns the header row (field list) from the catalog file.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_fields.html Northcode Help Documentation

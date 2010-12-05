@@ -8,7 +8,7 @@ package api.wmVideo.setFullscreen
 	
 	[Bindable]
 	/**
-	*
+	* Enable or disable fullscreen video playback.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setFullscreen.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.wmVideo.setFullscreen
 			super(target);
 		}
 		/**
-		*
+		* Enable or disable fullscreen video playback.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setFullscreen.html Northcode Help Documentation

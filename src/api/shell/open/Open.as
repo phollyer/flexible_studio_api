@@ -20,7 +20,7 @@ package api.shell.open
 	[Event(name="result", type="api.events.shell.open.OpenEvent")]
 	[Bindable]
 	/**
-	*
+	* Open a document or resource using the associated application (from the Windows registry). If the document or resource specified by the path argument has no registered association, the command will fail. Using Shell.open produces the same results as double clicking on a file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_open.html Northcode Help Documentation
 	*/
@@ -42,7 +42,7 @@ package api.shell.open
 		
 		// Required
 		/**
-		* 
+		* A fully qualified path to the document that will be the target of the shell verb. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -66,7 +66,7 @@ package api.shell.open
 			super(target);
 		}
 		/**
-		*
+		* Open a document or resource using the associated application (from the Windows registry). If the document or resource specified by the path argument has no registered association, the command will fail. Using Shell.open produces the same results as double clicking on a file.
 		*
 		*
 		* @param filePath

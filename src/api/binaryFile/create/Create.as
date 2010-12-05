@@ -24,7 +24,7 @@ package api.binaryFile.create
 	[Event(name="result", type="api.events.binaryFile.create.CreateEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Create a new file and open it for binary access.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_create.html Northcode Help Documentation
 	 */
@@ -60,7 +60,7 @@ package api.binaryFile.create
 		
 		// Result
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -76,7 +76,7 @@ package api.binaryFile.create
 			super(target);
 		}
 		/**
-		 *
+		 * Create a new file and open it for binary access.
 		 *
                  *
 		 * @param filePath

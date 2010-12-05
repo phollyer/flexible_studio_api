@@ -14,7 +14,7 @@ package api.app.setBasePath
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Specify the base path used to resolve relative paths in your Flash movie in commands like XML.load, loadMovie, loadMovieNum etc.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setBasePath.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.app.setBasePath
 	{
 		// Required
 		/**
-		 * 
+		 * New base path for resolving relative paths. You can pass in a path to any existing folder to use as the application base path. If you pass an empty string, the base path will be set to the application start directory (which is the default for SWF Studio). This parameter supports monikers.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.app.setBasePath
 			super(target);
 		}
 		/**
-		 *
+		 * Specify the base path used to resolve relative paths in your Flash movie in commands like XML.load, loadMovie, loadMovieNum etc.
 		 *
                  *
 		 * @param basePath

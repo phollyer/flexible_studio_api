@@ -15,7 +15,7 @@ package api.activeX.bringToFront
 	
 	[Bindable]
 	/**
-	 *
+	 * Move this ActiveX object to the front of the Z order.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_bringToFront.html Northcode Help Documentation
 	 */
@@ -23,7 +23,7 @@ package api.activeX.bringToFront
 	{
 		
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -40,7 +40,7 @@ package api.activeX.bringToFront
 		}
 		
 		/**
-		 *
+		 * Move this ActiveX object to the front of the Z order.
 		 *
                  *
 		 * @param activeXObject

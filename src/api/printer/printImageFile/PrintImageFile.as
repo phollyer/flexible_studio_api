@@ -14,7 +14,7 @@ package api.printer.printImageFile
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send an external image file to the selected printer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_printImageFile.html Northcode Help Documentation
 	*/
@@ -42,7 +42,7 @@ package api.printer.printImageFile
 		
 		// Required
 		/**
-		* 
+		* Fully qualified path to an image to be printed. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -58,7 +58,7 @@ package api.printer.printImageFile
 			super(target);
 		}
 		/**
-		*
+		* Send an external image file to the selected printer.
 		*
 		*
 		* @param filePath

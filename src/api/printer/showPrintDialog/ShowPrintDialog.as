@@ -14,7 +14,7 @@ package api.printer.showPrintDialog
 	[Event(name="result", type="api.events.printer.showPrintDialog.ShowPrintDialogEvent")]
 	[Bindable]
 	/**
-	*
+	* Display the Windows print dialog to allow users to make changes to the selected printer and printer settings before starting a print operation.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_showPrintDialog.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.printer.showPrintDialog
 	{
 		// Result
 		/**
-		* 
+		* Indicates which button the user pressed to close the dialog. Valid return values are PRINT and CANCEL.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.printer.showPrintDialog
 			super(target);
 		}
 		/**
-		*
+		* Display the Windows print dialog to allow users to make changes to the selected printer and printer settings before starting a print operation.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_showPrintDialog.html Northcode Help Documentation

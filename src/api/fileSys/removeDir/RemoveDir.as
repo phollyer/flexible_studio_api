@@ -14,7 +14,7 @@ package api.fileSys.removeDir
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Removes a directory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_removeDir.html Northcode Help Documentation
 	*/
@@ -30,7 +30,7 @@ package api.fileSys.removeDir
 		
 		// Required 
 		/**
-		* 
+		* A fully qualified path to a directory. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -46,7 +46,7 @@ package api.fileSys.removeDir
 			super(target);
 		}
 		/**
-		*
+		* Removes a directory.
 		*
 		*
 		* @param dirPath

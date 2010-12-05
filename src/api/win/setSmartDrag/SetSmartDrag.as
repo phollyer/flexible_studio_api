@@ -8,7 +8,7 @@ package api.win.setSmartDrag
 	
 	[Bindable]
 	/**
-	*
+	* Enable or disable smart drag mode.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setSmartDrag.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.setSmartDrag
 	{
 		// Optional
 		/**
-		* 
+		* If set to TRUE, the application will be draggable only when the cursor is a normal arrow cursor which helps preserve the interactivity of your movie. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.win.setSmartDrag
 			super(target);
 		}
 		/**
-		*
+		* Enable or disable smart drag mode.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setSmartDrag.html Northcode Help Documentation

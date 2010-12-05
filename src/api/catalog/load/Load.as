@@ -14,7 +14,7 @@ package api.catalog.load
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Load a catalog into memory in preparation for searching.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_load.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.catalog.load
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the catalog table. You can provide just the catalog file name if it's an internal file in the root of the layout. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.catalog.load
 			super(target);
 		}
 		/**
-		*
+		* Load a catalog into memory in preparation for searching.
 		*
 		*
 		* @param filePath

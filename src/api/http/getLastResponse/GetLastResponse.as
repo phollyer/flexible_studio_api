@@ -14,7 +14,7 @@ package api.http.getLastResponse
 	[Event(name="result", type="api.events.http.getLastResponse.GetLastResponseEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the last response code from the HTTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getLastResponse.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.http.getLastResponse
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the last response code from the HTTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getLastResponse.html Northcode Help Documentation

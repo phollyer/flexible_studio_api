@@ -15,27 +15,27 @@ package api.activeX.setSize
 	
 	[Bindable]
 	/**
-	 *
+	 * Set the size of the ActiveX control window.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setSize.html Northcode Help Documentation
 	 */
 	public class SetSize extends ActiveX
 	{
 		/**
-		 * 
+		 * Desired height of the object window in pixels.
 		 *
 		 * @defaultValue <code>200</code>
 		 */
 		public var height:Number = 200;
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
 		/**
-		 * 
+		 * Desired width of the object window in pixels.
 		 *
 		 * @defaultValue <code>200</code>
 		 */
@@ -51,7 +51,7 @@ package api.activeX.setSize
 			super(target);
 		}
 		/**
-		 *
+		 * Set the size of the ActiveX control window.
 		 *
                  *
 		 * @param activeXObject

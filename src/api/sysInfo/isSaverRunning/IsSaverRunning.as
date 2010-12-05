@@ -14,7 +14,7 @@ package api.sysInfo.isSaverRunning
 	[Event(name="result", type="api.events.sysInfo.isSaverRunning.IsSaverRunningEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine whether a screensaver is running or not.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_isSaverRunning.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.isSaverRunning
 			super(target);
 		}
 		/**
-		*
+		* Determine whether a screensaver is running or not.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_isSaverRunning.html Northcode Help Documentation

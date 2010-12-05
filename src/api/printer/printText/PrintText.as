@@ -14,7 +14,7 @@ package api.printer.printText
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Sends a string of text to the selected printer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_printText.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.printer.printText
 	{
 		// Required
 		/**
-		* 
+		* Text to be printed using the current settings for the selected printer.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.printer.printText
 			super(target);
 		}
 		/**
-		*
+		* Sends a string of text to the selected printer.
 		*
 		*
 		* @param textSTR

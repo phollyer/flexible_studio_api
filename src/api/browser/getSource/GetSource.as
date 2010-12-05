@@ -14,7 +14,7 @@ package api.browser.getSource
 	[Event(name="result", type="api.events.browser.getSource.GetSourceEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the HTML source of the currently displayed page.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getSource.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.browser.getSource
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the HTML source of the currently displayed page.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getSource.html Northcode Help Documentation

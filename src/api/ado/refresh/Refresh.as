@@ -8,7 +8,7 @@ package api.ado.refresh
 
 	[Bindable]
 	/**
-	 *
+	 * Refresh the contents of the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_refresh.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.ado.refresh
 			super(target);
 		}
 		/**
-		 *
+		 * Refresh the contents of the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_refresh.html Northcode Help Documentation

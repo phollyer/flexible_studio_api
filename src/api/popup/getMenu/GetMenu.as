@@ -20,7 +20,7 @@ package api.popup.getMenu
 	[Event(name="result", type="api.events.popup.getMenu.GetMenuEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns a string version of the menu definition that can be saved to a file and restored later using loadFile or setMenu.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_getMenu.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.popup.getMenu
 	{
 		// Required
 		/**
-		* 
+		* The name of the current menu to be saved.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.popup.getMenu
 			super(target);
 		}
 		/**
-		*
+		* Returns a string version of the menu definition that can be saved to a file and restored later using loadFile or setMenu.
 		*
 		*
 		* @param menuName

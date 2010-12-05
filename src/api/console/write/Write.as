@@ -14,14 +14,14 @@ package api.console.write
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send text to the console window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_write.html Northcode Help Documentation
 	*/
 	public class Write extends Console
 	{
 		/**
-		* 
+		* Text to be sent to the console window.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -37,7 +37,7 @@ package api.console.write
 			super(target);
 		}
 		/**
-		*
+		* Send text to the console window.
 		*
 		*
 		* @param textSTR

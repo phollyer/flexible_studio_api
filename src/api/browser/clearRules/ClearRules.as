@@ -8,7 +8,7 @@ package api.browser.clearRules
 
 	[Bindable]
 	/**
-	*
+	* Removes all existing rules, allowing the embedded browser to navigate to any domain without restriction.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_clearRules.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.clearRules
 			super(target);
 		}
 		/**
-		*
+		* Removes all existing rules, allowing the embedded browser to navigate to any domain without restriction.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_clearRules.html Northcode Help Documentation

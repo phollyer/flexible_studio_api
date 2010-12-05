@@ -14,7 +14,7 @@ package api.browser.getURL
 	[Event(name="result", type="api.events.browser.getURL.GetURLEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the current URL.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getURL.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.browser.getURL
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the current URL.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getURL.html Northcode Help Documentation

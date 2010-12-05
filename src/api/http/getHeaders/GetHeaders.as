@@ -14,7 +14,7 @@ package api.http.getHeaders
 	[Event(name="result", type="api.events.http.getHeaders.GetHeadersEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the raw HTTP headers returned from the server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getHeaders.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.getHeaders
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the raw HTTP headers returned from the server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getHeaders.html Northcode Help Documentation

@@ -24,7 +24,7 @@ package api.activeX.createObject
 	
 	[Bindable]
 	/**
-	 *
+	 * Create a new ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_createObject.html Northcode Help Documentation
 	 */
@@ -62,7 +62,7 @@ package api.activeX.createObject
 		}
 		
 		/**
-		 *
+		 * Create a new ActiveX object.
 		 *
                  *
 		 * @param activeXObject

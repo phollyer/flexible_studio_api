@@ -15,7 +15,7 @@ package api.http.inputFile
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Allows you to provide files that should be sent with a POST request.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_inputFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.http.inputFile
 	{
 		// Required
 		/**
-		* 
+		* Field name(s) to associate with the supplied file(s). You can use the same name for all files (just supply one name) or a unique name for each file, separate each name by newlines ('\n').
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The local path(s) to the files that are to be posted, separated by newlines ('\n').
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.http.inputFile
 			super(target);
 		}
 		/**
-		*
+		* Allows you to provide files that should be sent with a POST request.
 		*
 		*
 		* @param fieldName

@@ -8,7 +8,7 @@ package api.browser.forward
 	
 	[Bindable]
 	/**
-	*
+	* Move to the next  page in the browser history list. This is the same as pressing the Forward button in Internet Explorer and will trigger an OnNavigate event.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_forward.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.forward
 			super(target);
 		}
 		/**
-		*
+		* Move to the next  page in the browser history list. This is the same as pressing the Forward button in Internet Explorer and will trigger an OnNavigate event.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_forward.html Northcode Help Documentation

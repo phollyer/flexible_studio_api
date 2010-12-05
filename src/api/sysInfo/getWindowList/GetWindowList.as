@@ -14,7 +14,7 @@ package api.sysInfo.getWindowList
 	[Event(name="result", type="api.events.sysInfo.getWindowList.GetWindowListEvent")]
 	[Bindable]
 	/**
-	*
+	* Get a list of open application windows both hidden and visible.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getWindowList.html Northcode Help Documentation
 	*/
@@ -67,7 +67,7 @@ package api.sysInfo.getWindowList
 			super(target);
 		}
 		/**
-		*
+		* Get a list of open application windows both hidden and visible.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getWindowList.html Northcode Help Documentation

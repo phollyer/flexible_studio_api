@@ -16,7 +16,7 @@ package api.iniFile.deleteKey
 	[Event(name="missingSection" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Delete the specified key (and value) from the specified section.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_INIFile_deleteKey.html Northcode Help Documentation
 	*/
@@ -24,19 +24,19 @@ package api.iniFile.deleteKey
 	{
 		// Required
 		/**
-		* 
+		* Name of the key to be deleted.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var key:String = null;
 		/**
-		* 
+		* A fully qualified path to the INI file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var path:String = null;
 		/**
-		* 
+		* The name of the section containing the key to be deleted.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.iniFile.deleteKey
 			super(target);
 		}
 		/**
-		*
+		* Delete the specified key (and value) from the specified section.
 		*
 		*
 		* @param pathSTR

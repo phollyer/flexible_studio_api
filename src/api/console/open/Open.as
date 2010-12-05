@@ -10,7 +10,7 @@ package api.console.open
 	
 	[Bindable]
 	/**
-	*
+	* Open an output console to display trace information while an application is running.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_open.html Northcode Help Documentation
 	*/
@@ -33,7 +33,7 @@ package api.console.open
 			super(target);
 		}
 		/**
-		*
+		* Open an output console to display trace information while an application is running.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_open.html Northcode Help Documentation

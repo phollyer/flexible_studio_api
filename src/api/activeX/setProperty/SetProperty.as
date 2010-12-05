@@ -30,28 +30,28 @@ package api.activeX.setProperty
 	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Set the value of a named property of an ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setProperty.html Northcode Help Documentation
 	 */
 	public class SetProperty extends ActiveX
 	{
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
 		/**
-		 * 
+		 * The name of the propety to modify.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var property:String = null;
 		
 		/**
-		 * 
+		 * The new value of the named property.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -68,7 +68,7 @@ package api.activeX.setProperty
 		}
 		
 		/**
-		 *
+		 * Set the value of a named property of an ActiveX object.
 		 *
                  *
 		 * @param activeXObject

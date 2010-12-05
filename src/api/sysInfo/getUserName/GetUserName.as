@@ -14,7 +14,7 @@ package api.sysInfo.getUserName
 	[Event(name="result", type="api.events.sysInfo.getUserName.GetUserNameEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the name of the currently logged in user.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getUserName.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getUserName
 			super(target);
 		}
 		/**
-		*
+		* Get the name of the currently logged in user.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getUserName.html Northcode Help Documentation

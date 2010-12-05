@@ -8,7 +8,7 @@ package api.wmVideo.play
 	
 	[Bindable]
 	/**
-	*
+	* Play the currently selected resource.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_play.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmVideo.play
 			super(target);
 		}
 		/**
-		*
+		* Play the currently selected resource.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_play.html Northcode Help Documentation

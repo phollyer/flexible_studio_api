@@ -15,7 +15,7 @@ package api.http.resource
 	[Event(name="missingData", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Identifies the target of the HTTP request on the server identifed by HTTP.host. This could be a file you want to retrieve, a CGI script you want to execute, etc.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_resource.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.http.resource
 	{
 		// Required
 		/**
-		* 
+		* The target of the HTTP request, assumed to be a relative reference from ("/") the root of the host.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.http.resource
 			super(target);
 		}
 		/**
-		*
+		* Identifies the target of the HTTP request on the server identifed by HTTP.host. This could be a file you want to retrieve, a CGI script you want to execute, etc.
 		*
 		*
 		* @param resourceSTR

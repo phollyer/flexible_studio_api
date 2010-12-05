@@ -20,7 +20,7 @@ package api.fileSys.getAttrs
 	[Event(name="result", type="api.events.fileSys.getAttrs.GetAttrsEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the attributes of the specified file or directory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_getAttrs.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.fileSys.getAttrs
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to a file or directory. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.fileSys.getAttrs
 			super(target);
 		}
 		/**
-		*
+		* Returns the attributes of the specified file or directory.
 		*
 		*
 		* @param filePath

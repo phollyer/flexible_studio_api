@@ -8,7 +8,7 @@ package api.app.quit
 
 	[Bindable]
 	/**
-	 *
+	 * Performs the same job as calling the Flash Quit FSCommand, asks SWF Studio to shut down your application.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.app.quit
 			super(target);
 		}
 		/**
-		 *
+		 * Performs the same job as calling the Flash Quit FSCommand, asks SWF Studio to shut down your application.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_quit.html Northcode Help Documentation

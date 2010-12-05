@@ -15,7 +15,7 @@ package api.fileSys.clearAttrs
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Clear attributes of the specified file or directory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_clearAttrs.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.fileSys.clearAttrs
 	{
 		// Required
 		/**
-		* 
+		* Flags for file attributes to be cleared.  This parameter can be any combination of "A", "H", "R" and "S". Valid values include: A,H,R,S.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var attributes:String = null;
 		/**
-		* 
+		* A fully qualified path to a file or directory. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.clearAttrs
 			super(target);
 		}
 		/**
-		*
+		* Clear attributes of the specified file or directory.
 		*
 		*
 		* @param filePath

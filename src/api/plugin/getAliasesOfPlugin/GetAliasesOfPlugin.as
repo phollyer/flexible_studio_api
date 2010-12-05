@@ -24,7 +24,7 @@ package api.plugin.getAliasesOfPlugin
 	[Event(name="missingPlugin", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns a list of aliases that have been created for a particular plugin.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getAliasesOfPlugin.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.plugin.getAliasesOfPlugin
 	{
 		// Required
 		/**
-		* 
+		* The name of the plugin for which you want to see the array of aliases.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.plugin.getAliasesOfPlugin
 			super(target);
 		}
 		/**
-		*
+		* Returns a list of aliases that have been created for a particular plugin.
 		*
 		*
 		* @param pluginName

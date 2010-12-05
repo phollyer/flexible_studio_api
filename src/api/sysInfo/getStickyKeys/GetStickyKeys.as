@@ -14,7 +14,7 @@ package api.sysInfo.getStickyKeys
 	[Event(name="result", type="api.events.sysInfo.getStickyKeys.GetStickyKeysEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the state of the StickyKeys accessibility features.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getStickyKeys.html Northcode Help Documentation
 	*/
@@ -22,13 +22,13 @@ package api.sysInfo.getStickyKeys
 	{
 		// Result
 		/**
-		* 
+		* A boolean value that indicates whether the sticky keys hotkey (pressing the SHIFT key 5 times) is enabled (TRUE) or not (FALSE).
 		*
 		* @defaultValue <code>false</code>
 		*/
 		public var hotkey:Boolean = false;
 		/**
-		* 
+		* A boolean value that indicates whether the sticky keys feature is enabled (TRUE) or not (FALSE).
 		*
 		* @defaultValue <code>false</code>
 		*/
@@ -44,7 +44,7 @@ package api.sysInfo.getStickyKeys
 			super(target);
 		}
 		/**
-		*
+		* Returns the state of the StickyKeys accessibility features.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getStickyKeys.html Northcode Help Documentation

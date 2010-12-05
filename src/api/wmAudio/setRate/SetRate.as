@@ -8,7 +8,7 @@ package api.wmAudio.setRate
 	
 	[Bindable]
 	/**
-	*
+	* Set the media playback rate.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setRate.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.wmAudio.setRate
 	{
 		// Optional 
 		/**
-		* 
+		* The rate is a multiplier value that allows you to play the clip at a faster or slower rate. The default value of 1.0 indicates the authored speed. A playback rate of 0.5 is half the normal speed and 2.0 is twice the normal playback speed.
 		*
 		* @defaultValue <code>1</code>
 		*/
@@ -32,7 +32,7 @@ package api.wmAudio.setRate
 			super(target);
 		}
 		/**
-		*
+		* Set the media playback rate.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setRate.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.browser.addRule
 
 	[Bindable]
 	/**
-	*
+	* Add a rule that allows or denies URLs in the embedded browser.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_addRule.html Northcode Help Documentation
 	*/
@@ -19,7 +19,7 @@ package api.browser.addRule
 		
 		public var pattern:String = "*";
 		/**
-		* 
+		* The rule type that determines whether URLs matching the pattern argument will be allowed. Valid values include: allow and deny.
 		*
 		* @defaultValue <code>ALLOW</code>
 		*/
@@ -36,7 +36,7 @@ package api.browser.addRule
 		}
 		
 		/**
-		*
+		* Add a rule that allows or denies URLs in the embedded browser.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_addRule.html Northcode Help Documentation

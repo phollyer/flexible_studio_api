@@ -8,7 +8,7 @@ package api.http.bufferSize
 
 	[Bindable]
 	/**
-	*
+	* Allows you to set the size of the internal transfer buffer used to retreieve data in an HTTP session.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_bufferSize.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.http.bufferSize
 			super(target);
 		}
 		/**
-		*
+		* Allows you to set the size of the internal transfer buffer used to retreieve data in an HTTP session.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_bufferSize.html Northcode Help Documentation

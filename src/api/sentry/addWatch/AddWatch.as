@@ -14,7 +14,7 @@ package api.sentry.addWatch
 	[Event(name="missingApplication" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify an application that SWF Studio should watch for and prevent from running.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_addWatch.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.sentry.addWatch
 	{
 		// Required
 		/**
-		* 
+		* The name of the application you want to block without the path, but including the extension, e.g. 'notepad.exe'.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.sentry.addWatch
 			super(target);
 		}
 		/**
-		*
+		* Specify an application that SWF Studio should watch for and prevent from running.
 		*
 		*
 		* @param app

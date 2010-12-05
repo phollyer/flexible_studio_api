@@ -8,7 +8,7 @@ package api.sysTools.releaseMemory
 	
 	[Bindable]
 	/**
-	*
+	* Force the application to release uncommitted memory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_releaseMemory.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.sysTools.releaseMemory
 			super(target);
 		}
 		/**
-		*
+		* Force the application to release uncommitted memory.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_releaseMemory.html Northcode Help Documentation

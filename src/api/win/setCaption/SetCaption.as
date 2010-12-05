@@ -14,7 +14,7 @@ package api.win.setCaption
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the application's window caption (title) at runtime.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setCaption.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.win.setCaption
 	{
 		// Required
 		/**
-		* 
+		* A string containing the new window caption.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.win.setCaption
 			super(target);
 		}
 		/**
-		*
+		* Change the application's window caption (title) at runtime.
 		*
 		*
 		* @param captionText

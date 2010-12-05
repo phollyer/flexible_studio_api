@@ -8,7 +8,7 @@ package api.shell.stopWait
 	
 	[Bindable]
 	/**
-	*
+	* Stop all waiting Shell.execute and Shell.open commands and force them to return immediately whether the wait conditions have been satisfied or not. This is useful when you have used an infinte timeout and are waiting for an application to finish.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_stopWait.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.shell.stopWait
 			super(target);
 		}
 		/**
-		*
+		* Stop all waiting Shell.execute and Shell.open commands and force them to return immediately whether the wait conditions have been satisfied or not. This is useful when you have used an infinte timeout and are waiting for an application to finish.
 		*
 		*
 		* @param filePath

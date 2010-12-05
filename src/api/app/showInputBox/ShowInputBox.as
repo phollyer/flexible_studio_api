@@ -20,7 +20,7 @@ package api.app.showInputBox
 	[Event(name="result", type="api.events.app.showInputBox.ShowInputBoxEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Display an input dialog box to prompt the user for a simple string value and return the result.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showInputBox.html Northcode Help Documentation
 	 */
@@ -58,7 +58,7 @@ package api.app.showInputBox
 			super(target);
 		}
 		/**
-		 *
+		 * Display an input dialog box to prompt the user for a simple string value and return the result.
 		 *
                  *
 		 * @param boxPrompt

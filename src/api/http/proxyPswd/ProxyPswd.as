@@ -14,7 +14,7 @@ package api.http.proxyPswd
 	[Event(name="missingPswd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify a password for access to the proxy server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_proxyPswd.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.proxyPswd
 	{
 		// Required
 		/**
-		* 
+		* The password to authenticate HTTP.proxyUser to the proxy server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.proxyPswd
 			super(target);
 		}
 		/**
-		*
+		* Specify a password for access to the proxy server.
 		*
 		*
 		* @param pswd

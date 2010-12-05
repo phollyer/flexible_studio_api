@@ -20,7 +20,7 @@ package api.sysTools.resizeImage
 	[Event(name="missingWidth" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Resize an input image and save it as a JPEG image.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_resizeImage.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.sysTools.resizeImage
 			super(target);
 		}
 		/**
-		*
+		* Resize an input image and save it as a JPEG image.
 		*
 		*
 		* @param source

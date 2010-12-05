@@ -15,7 +15,7 @@ package api.flash.setFlashVars
 	[Event(name="missingVars", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set the FlashVars property for any movies loaded after this call.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Flash_setFlashVars.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.flash.setFlashVars
 	{
 		// Required
 		/**
-		* 
+		* A URL encoded string containing the variables to be set as the FlashVars.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.flash.setFlashVars
 			super(target);
 		}
 		/**
-		*
+		* Set the FlashVars property for any movies loaded after this call.
 		*
 		*
 		* @param flashVars

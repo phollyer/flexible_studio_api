@@ -15,7 +15,7 @@ package api.activeX.setPosition
 	
 	[Bindable]
 	/**
-	 *
+	 * Set the position of the ActiveX control window, relative to the upper left corner of your Flash movie.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setPosition.html Northcode Help Documentation
 	 */
@@ -53,7 +53,7 @@ package api.activeX.setPosition
 		}
 		
 		/**
-		 *
+		 * Set the position of the ActiveX control window, relative to the upper left corner of your Flash movie.
 		 *
                  *
 		 * @param activeXObject

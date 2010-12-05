@@ -8,7 +8,7 @@ package api.win.setBottom
 	
 	[Bindable]
 	/**
-	*
+	* Move your application window to the bottom of the window z-order.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setBottom.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.win.setBottom
 			super(target);
 		}
 		/**
-		*
+		* Move your application window to the bottom of the window z-order.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setBottom.html Northcode Help Documentation

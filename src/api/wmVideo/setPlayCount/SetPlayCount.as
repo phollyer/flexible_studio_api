@@ -8,7 +8,7 @@ package api.wmVideo.setPlayCount
 	
 	[Bindable]
 	/**
-	*
+	* Set the play count. If the play count is not set before you start playing the clip, a default of 1 will be used.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPlayCount.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.wmVideo.setPlayCount
 	{
 		// Optional 
 		/**
-		* 
+		* If the count is set to a value less than 1, the clip plays repeatedly, restarting as soon as it reaches the end.
 		*
 		* @defaultValue <code>1</code>
 		*/
@@ -32,7 +32,7 @@ package api.wmVideo.setPlayCount
 			super(target);
 		}
 		/**
-		*
+		* Set the play count. If the play count is not set before you start playing the clip, a default of 1 will be used.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPlayCount.html Northcode Help Documentation

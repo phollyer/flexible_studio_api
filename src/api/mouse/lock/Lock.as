@@ -8,7 +8,7 @@ package api.mouse.lock
 
 	[Bindable]
 	/**
-	*
+	* Restrict mouse movement to your application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_lock.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.mouse.lock
 			super(target);
 		}
 		/**
-		*
+		* Restrict mouse movement to your application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_lock.html Northcode Help Documentation

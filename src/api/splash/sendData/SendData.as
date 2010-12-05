@@ -14,14 +14,14 @@ package api.splash.sendData
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send data from your main application to the splash screen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_sendData.html Northcode Help Documentation
 	*/
 	public class SendData extends Splash
 	{
 		/**
-		* 
+		* Raw string data to be passed to the splash screen.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -37,7 +37,7 @@ package api.splash.sendData
 			super(target);
 		}
 		/**
-		*
+		* Send data from your main application to the splash screen.
 		*
 		*
 		* @param dataString

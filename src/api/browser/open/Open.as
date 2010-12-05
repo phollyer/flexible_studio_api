@@ -8,7 +8,7 @@ package api.browser.open
 
 	[Bindable]
 	/**
-	*
+	* Open a browser window inside your application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_open.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.open
 			super(target);
 		}
 		/**
-		*
+		* Open a browser window inside your application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_open.html Northcode Help Documentation

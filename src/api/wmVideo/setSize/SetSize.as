@@ -8,7 +8,7 @@ package api.wmVideo.setSize
 	
 	[Bindable]
 	/**
-	*
+	* Set the size of the video playback window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setSize.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.wmVideo.setSize
 			super(target);
 		}
 		/**
-		*
+		* Set the size of the video playback window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setSize.html Northcode Help Documentation

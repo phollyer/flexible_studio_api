@@ -8,7 +8,7 @@ package api.security.loadMainMovie
 
 	[Bindable]
 	/**
-	*
+	* Call this function to load the main movie from your expiry movie.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_loadMainMovie.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.security.loadMainMovie
 			super(target);
 		}
 		/**
-		*
+		* Call this function to load the main movie from your expiry movie.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_loadMainMovie.html Northcode Help Documentation

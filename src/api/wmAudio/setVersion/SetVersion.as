@@ -8,7 +8,7 @@ package api.wmAudio.setVersion
 	
 	[Bindable]
 	/**
-	*
+	* Set the version of the media player you want to use.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setVersion.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.wmAudio.setVersion
 	{
 		// Optional 
 		/**
-		* 
+		* Desired player version. Valid values include: 6 and 9.
 		*
 		* @defaultValue <code>9</code>
 		*/
@@ -32,7 +32,7 @@ package api.wmAudio.setVersion
 			super(target);
 		}
 		/**
-		*
+		* Set the version of the media player you want to use.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setVersion.html Northcode Help Documentation

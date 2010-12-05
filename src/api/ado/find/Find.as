@@ -20,7 +20,7 @@ package api.ado.find
 	[Event(name="result", type="api.events.ado.find.FindEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Find the first or next record matching some criteria in an open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_find.html Northcode Help Documentation
 	 */
@@ -31,7 +31,7 @@ package api.ado.find
 		
 		// Required
 		/**
-		 * 
+		 * String that specifies the field, comparison operator and value to search for. The criteria follows the basic form of the SQL WHERE clause, but only one field is supported in the criteria and any attempt to use OR or AND will result in an error.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -47,7 +47,7 @@ package api.ado.find
 		
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -69,7 +69,7 @@ package api.ado.find
 			super(target);
 		}
 		/**
-		 *
+		 * Find the first or next record matching some criteria in an open table.
 		 *
                  *
 		 * @param findCriteria

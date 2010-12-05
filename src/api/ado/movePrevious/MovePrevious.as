@@ -14,7 +14,7 @@ package api.ado.movePrevious
 	[Event(name="result", type="api.events.ado.movePrevious.MovePreviousEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the previous row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_movePrevious.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.movePrevious
 	{
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.ado.movePrevious
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the previous row in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_movePrevious.html Northcode Help Documentation

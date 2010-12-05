@@ -8,7 +8,7 @@ package api.browser.refresh
 	
 	[Bindable]
 	/**
-	*
+	* Refresh the contents of the current page.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_refresh.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.refresh
 			super(target);
 		}
 		/**
-		*
+		* Refresh the contents of the current page.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_refresh.html Northcode Help Documentation

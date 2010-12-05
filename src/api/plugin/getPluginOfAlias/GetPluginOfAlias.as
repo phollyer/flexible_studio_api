@@ -24,7 +24,7 @@ package api.plugin.getPluginOfAlias
 	[Event(name="missingPlugin", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the name of the plugin that the given alias was created for.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getPluginOfAlias.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.plugin.getPluginOfAlias
 	{
 		// Required
 		/**
-		* 
+		* The name of the alias for which you want to know its associated plugin name.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.plugin.getPluginOfAlias
 			super(target);
 		}
 		/**
-		*
+		* Returns the name of the plugin that the given alias was created for.
 		*
 		*
 		* @param aliasName

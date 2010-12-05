@@ -8,7 +8,7 @@ package api.win.show
 	
 	[Bindable]
 	/**
-	*
+	* Show or hide the window border at runtime. If the window has a caption (title) When the border is disabled, the caption will be disabled as well.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_show.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.win.show
 			super(target);
 		}
 		/**
-		*
+		* Show or hide the window border at runtime. If the window has a caption (title) When the border is disabled, the caption will be disabled as well.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_show.html Northcode Help Documentation

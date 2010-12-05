@@ -14,7 +14,7 @@ package api.sysInfo.getComputerName
 	[Event(name="result", type="api.events.sysInfo.getComputerName.GetComputerNameEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieves the NetBIOS name of the local computer that is established at system startup.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getComputerName.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getComputerName
 			super(target);
 		}
 		/**
-		*
+		* Retrieves the NetBIOS name of the local computer that is established at system startup.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getComputerName.html Northcode Help Documentation

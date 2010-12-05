@@ -14,7 +14,7 @@ package api.tcp.sendMsg
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send a message using the open socket.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_TCP_sendMsg.html Northcode Help Documentation
 	*/
@@ -30,7 +30,7 @@ package api.tcp.sendMsg
 		
 		// Required
 		/**
-		* 
+		* Data, in hex string format, to send to the destination machine.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -46,7 +46,7 @@ package api.tcp.sendMsg
 			super(target);
 		}
 		/**
-		*
+		* Send a message using the open socket.
 		*
 		*
 		* @param dataSTR

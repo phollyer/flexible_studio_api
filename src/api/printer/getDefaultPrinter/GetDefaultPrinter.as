@@ -14,7 +14,7 @@ package api.printer.getDefaultPrinter
 	[Event(name="result", type="api.events.printer.getDefaultPrinter.GetDefaultPrinterEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the name of the Windows default printer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getDefaultPrinter.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.printer.getDefaultPrinter
 			super(target);
 		}
 		/**
-		*
+		* Returns the name of the Windows default printer.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getDefaultPrinter.html Northcode Help Documentation

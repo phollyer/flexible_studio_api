@@ -20,7 +20,7 @@ package api.layout.loadFile
 	[Event(name="result", type="api.events.layout.loadFile.LoadFileEvent")]
 	[Bindable]
 	/**
-	*
+	* Load the contents of a file from the layout into Flash without extracting the file to disk.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout_loadFile.html Northcode Help Documentation
 	*/
@@ -28,7 +28,11 @@ package api.layout.loadFile
 	{		
 		// Required
 		/**
-		* 
+		* The path to the file in the Layout (a leading '
+		*
+		* @defaultValue <code>null</code>
+		*/
+		public var resource:String = null is required and means the path starts at the root of the layout).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +56,7 @@ package api.layout.loadFile
 			super(target);
 		}
 		/**
-		*
+		* Load the contents of a file from the layout into Flash without extracting the file to disk.
 		*
 		*
 		* @param resourceSTR

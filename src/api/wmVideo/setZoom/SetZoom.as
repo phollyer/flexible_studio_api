@@ -8,7 +8,7 @@ package api.wmVideo.setZoom
 	
 	[Bindable]
 	/**
-	*
+	* Set the size of the video playback window by specifying a zoom factor. Setting the zoom factor will automatically disable fullscreen mode.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setZoom.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.wmVideo.setZoom
 			super(target);
 		}
 		/**
-		*
+		* Set the size of the video playback window by specifying a zoom factor. Setting the zoom factor will automatically disable fullscreen mode.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setZoom.html Northcode Help Documentation

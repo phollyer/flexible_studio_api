@@ -20,7 +20,7 @@ package api.fileSys.getFreeSpace
 	[Event(name="result", type="api.events.fileSys.getFreeSpace.GetFreeSpaceEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the amount of free space (in kilobytes) on the target drive.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_getFreeSpace.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.fileSys.getFreeSpace
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified file path (drive letter or UNC path). This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.fileSys.getFreeSpace
 			super(target);
 		}
 		/**
-		*
+		* Returns the amount of free space (in kilobytes) on the target drive.
 		*
 		*
 		* @param driveLetterOrUNCPath

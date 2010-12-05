@@ -14,7 +14,7 @@ package api.sysInfo.getLanguageInfo
 	[Event(name="result", type="api.events.sysInfo.getLanguageInfo.GetLanguageInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine the current users language settings.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getLanguageInfo.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.sysInfo.getLanguageInfo
 			super(target);
 		}
 		/**
-		*
+		* Determine the current users language settings.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getLanguageInfo.html Northcode Help Documentation

@@ -15,7 +15,7 @@ package api.ftp.localFile
 	[Event(name="missingFile", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Setting FTP.localFile tells the plugin where to create the file being downloaded, or where to get the file to be uploaded.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_localFile.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.ftp.localFile
 	{
 		// Required
 		/**
-		* 
+		* Fully qualified path to a local file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.ftp.localFile
 			super(target);
 		}
 		/**
-		*
+		* Setting FTP.localFile tells the plugin where to create the file being downloaded, or where to get the file to be uploaded.
 		*
 		*
 		* @param pathToLocalFile

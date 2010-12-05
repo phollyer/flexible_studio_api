@@ -16,7 +16,7 @@ package api.desktop.saveImage
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Save a rectangular area of the desktop to disk as a bitmap or Jpeg image.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_saveImage.html Northcode Help Documentation
 	*/
@@ -39,7 +39,7 @@ package api.desktop.saveImage
 			super(target);
 		}
 		/**
-		*
+		* Save a rectangular area of the desktop to disk as a bitmap or Jpeg image.
 		*
 		*
 		* @param path

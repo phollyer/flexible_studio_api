@@ -22,7 +22,7 @@ package api.plugin.loadFromFolder
 	[Event(name="missingPath", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Same as Plugin.Load except the plugin is loaded from a specific folder.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_loadFromFolder.html Northcode Help Documentation
 	*/
@@ -30,19 +30,19 @@ package api.plugin.loadFromFolder
 	{
 		// Required
 		/**
-		* 
+		* The name that will be used to refer to this instance of the plugin.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var alias:String = null;
 		/**
-		* 
+		* Folder where the plugin should be loaded from. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var path:String = null;
 		/**
-		* 
+		* The name of the plugin to be loaded.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -58,7 +58,7 @@ package api.plugin.loadFromFolder
 			super(target);
 		}
 		/**
-		*
+		* Same as Plugin.Load except the plugin is loaded from a specific folder.
 		*
 		*
 		* @param pluginName

@@ -14,7 +14,7 @@ package api.security.isExpired
 	[Event(name="result", type="api.events.security.isExpired.IsExpiredEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the state of the application's internal expired flag which is set when the conditions on the Expiry tab in SWF Studio are met.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_isExpired.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.security.isExpired
 			super(target);
 		}
 		/**
-		*
+		* Returns the state of the application's internal expired flag which is set when the conditions on the Expiry tab in SWF Studio are met.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_isExpired.html Northcode Help Documentation

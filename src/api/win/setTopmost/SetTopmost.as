@@ -8,7 +8,7 @@ package api.win.setTopmost
 	
 	[Bindable]
 	/**
-	*
+	* Move your application window to the top of the z-order.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setTopmost.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.win.setTopmost
 		*/
 		public var aggressive:Boolean = false;
 		/**
-		* 
+		* A flag indicates whether the application window should be topmost or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -38,7 +38,7 @@ package api.win.setTopmost
 			super(target);
 		}
 		/**
-		*
+		* Move your application window to the top of the z-order.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setTopmost.html Northcode Help Documentation

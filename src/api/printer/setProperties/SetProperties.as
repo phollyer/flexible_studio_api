@@ -10,7 +10,7 @@ package api.printer.setProperties
 	
 	[Bindable]
 	/**
-	*
+	* Change the properties of the selected printer and/or change the selected printer at the same time. If a selected printer is specified the properties of that printer (not the currently selected printer) are changed.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_setProperties.html Northcode Help Documentation
 	*/
@@ -34,7 +34,7 @@ package api.printer.setProperties
 			super(target);
 		}
 		/**
-		*
+		* Change the properties of the selected printer and/or change the selected printer at the same time. If a selected printer is specified the properties of that printer (not the currently selected printer) are changed.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_setProperties.html Northcode Help Documentation

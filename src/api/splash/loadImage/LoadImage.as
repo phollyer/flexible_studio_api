@@ -14,14 +14,14 @@ package api.splash.loadImage
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Load a new image into the splash screen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_loadImage.html Northcode Help Documentation
 	*/
 	public class LoadImage extends Splash
 	{
 		/**
-		* 
+		* A fully qualified path to an image file or the path to a resource in the layout.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -37,7 +37,7 @@ package api.splash.loadImage
 			super(target);
 		}
 		/**
-		*
+		* Load a new image into the splash screen.
 		*
 		*
 		* @param pathToResource

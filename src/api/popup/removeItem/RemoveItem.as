@@ -15,7 +15,7 @@ package api.popup.removeItem
 	[Event(name="missingID" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Remove a menu item.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_removeItem.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.popup.removeItem
 	{
 		// Required
 		/**
-		* 
+		* The name of the menu that contains the item to be removed.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The ID of the menu item to be removed.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.popup.removeItem
 			super(target);
 		}
 		/**
-		*
+		* Remove a menu item.
 		*
 		*
 		* @param menuName

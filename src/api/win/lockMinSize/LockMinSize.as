@@ -8,7 +8,7 @@ package api.win.lockMinSize
 	
 	[Bindable]
 	/**
-	*
+	* Set the minimum window size.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockMinSize.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.lockMinSize
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value that indicates whether the minimum size should be locked or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -34,7 +34,7 @@ package api.win.lockMinSize
 			super(target);
 		}
 		/**
-		*
+		* Set the minimum window size.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockMinSize.html Northcode Help Documentation

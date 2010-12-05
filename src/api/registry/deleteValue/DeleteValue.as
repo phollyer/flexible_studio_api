@@ -16,7 +16,7 @@ package api.registry.deleteValue
 	[Event(name="missingValueName" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Delete the specified value from the registry.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_deleteValue.html Northcode Help Documentation
 	*/
@@ -24,19 +24,19 @@ package api.registry.deleteValue
 	{
 		// Required
 		/**
-		* 
+		* The name of one of the main branches of the registry. Valid values include: HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_USERS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var rootKey:String = null;
 		/**
-		* 
+		* The name of the key that contains the value to be deleted. This key must be a subkey of the rootKey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var subKey:String = null;
 		/**
-		* 
+		* The name of the value to be deleted from the specified subkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.registry.deleteValue
 			super(target);
 		}
 		/**
-		*
+		* Delete the specified value from the registry.
 		*
 		*
 		* @param rootKeySTR

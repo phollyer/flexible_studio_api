@@ -14,7 +14,7 @@ package api.http.proxyServer
 	[Event(name="missingServer" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Identify the proxy server that the HTTP plugin will use.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_proxyServer.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.proxyServer
 	{
 		// Required
 		/**
-		* 
+		* Name or IP address of the proxy server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.proxyServer
 			super(target);
 		}
 		/**
-		*
+		* Identify the proxy server that the HTTP plugin will use.
 		*
 		*
 		* @param serverSTR

@@ -14,7 +14,7 @@ package api.mouse.show
 	[Event(name="result", type="api.events.mouse.show.ShowEvent")]
 	[Bindable]
 	/**
-	*
+	* Make the system mouse cursor visible.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_show.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.mouse.show
 			super(target);
 		}
 		/**
-		*
+		* Make the system mouse cursor visible.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_show.html Northcode Help Documentation

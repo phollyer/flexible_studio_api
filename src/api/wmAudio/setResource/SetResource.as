@@ -14,7 +14,7 @@ package api.wmAudio.setResource
 	[Event(name="missingResource", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify the resource for playback. This must be done before calling WMAudio.play.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setResource.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.wmAudio.setResource
 	{
 		// Required
 		/**
-		* 
+		* Any valid URL or local file specification. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.wmAudio.setResource
 			super(target);
 		}
 		/**
-		*
+		* Specify the resource for playback. This must be done before calling WMAudio.play.
 		*
 		*
 		* @param videoResource

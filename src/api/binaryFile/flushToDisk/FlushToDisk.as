@@ -14,7 +14,7 @@ package api.binaryFile.flushToDisk
 	[Event(name="result", type="api.events.binaryFile.flushToDisk.FlushToDiskEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Flush any pending write operations to disk.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.binaryFile.flushToDisk
 	{
 		// Result
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.binaryFile.flushToDisk
 			super(target);
 		}
 		/**
-		 *
+		 * Flush any pending write operations to disk.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_flushToDisk.html Northcode Help Documentation

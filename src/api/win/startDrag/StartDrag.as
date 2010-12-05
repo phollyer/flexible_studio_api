@@ -8,7 +8,7 @@ package api.win.startDrag
 	
 	[Bindable]
 	/**
-	*
+	* Starts a window drag operation even for windows that are not draggable. This can be called from Flash in reponse to a rollover and neatly avoids the problems associated with making movies automatically draggable.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_startDrag.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.win.startDrag
 			super(target);
 		}
 		/**
-		*
+		* Starts a window drag operation even for windows that are not draggable. This can be called from Flash in reponse to a rollover and neatly avoids the problems associated with making movies automatically draggable.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_startDrag.html Northcode Help Documentation

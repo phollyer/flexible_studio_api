@@ -15,7 +15,7 @@ package api.keyboard.sendString
 	[Event(name="missingHwnd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send keyboard messages to another window to make it believe the string is actually being typed at the keyboard.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_sendString.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.keyboard.sendString
 	{
 		// Required
 		/**
-		* 
+		* Handle of window where the string should be sent. If the hwnd is 0, the string will be sent to the window that has the input focus. If the hwnd is not 0, the specified window will become the foreground window before the string is sent.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var hwnd:String = null;
 		/**
-		* 
+		* A string to be sent. SWF Studio will figure out which virtual key codes are required to send the correct string.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.keyboard.sendString
 			super(target);
 		}
 		/**
-		*
+		* Send keyboard messages to another window to make it believe the string is actually being typed at the keyboard.
 		*
 		*
 		* @param textSTR

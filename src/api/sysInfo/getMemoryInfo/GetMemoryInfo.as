@@ -14,7 +14,7 @@ package api.sysInfo.getMemoryInfo
 	[Event(name="result", type="api.events.sysInfo.getMemoryInfo.GetMemoryInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Get information about the amount of physical and virtual memory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getMemoryInfo.html Northcode Help Documentation
 	*/
@@ -22,25 +22,25 @@ package api.sysInfo.getMemoryInfo
 	{
 		// Result
 		/**
-		* 
+		* Amount of free physical memory in KB.
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var freePhysicalMemory:Number = 0;
 		/**
-		* 
+		* Amount of free virtual memory in KB.
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var freeVirtualMemory:Number = 0;
 		/**
-		* 
+		* Total amount of physical memory in KB.
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var totalPhysicalMemory:Number = 0;
 		/**
-		* 
+		* Total amount of virtual memory in KB.
 		*
 		* @defaultValue <code>0</code>
 		*/
@@ -56,7 +56,7 @@ package api.sysInfo.getMemoryInfo
 			super(target);
 		}
 		/**
-		*
+		* Get information about the amount of physical and virtual memory.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getMemoryInfo.html Northcode Help Documentation

@@ -15,7 +15,7 @@ package api.ftp.removeDir
 	[Event(name="missingPath", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Remove the specified directory from the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_removeDir.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.ftp.removeDir
 	{
 		// Required
 		/**
-		* 
+		* Path to the directory to be removed.  This can be an absolute path or relative to the current directory.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.ftp.removeDir
 			super(target);
 		}
 		/**
-		*
+		* Remove the specified directory from the FTP server.
 		*
 		*
 		* @param dirPath

@@ -14,7 +14,7 @@ package api.scratch.read
 	[Event(name="result", type="api.events.scratch.read.ReadEvent")]
 	[Bindable]
 	/**
-	*
+	* Read the file from the scratch area in your application and save it to disk.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation
 	*/
@@ -52,7 +52,7 @@ package api.scratch.read
 			super(target);
 		}
 		/**
-		*
+		* Read the file from the scratch area in your application and save it to disk.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_read.html Northcode Help Documentation

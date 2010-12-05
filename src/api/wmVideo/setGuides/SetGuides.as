@@ -10,7 +10,7 @@ package api.wmVideo.setGuides
 	
 	[Bindable]
 	/**
-	*
+	* Link the edges of the video object to guides for automatic resizing of the video window that matches the player window's client area.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setGuides.html Northcode Help Documentation
 	*/
@@ -34,7 +34,7 @@ package api.wmVideo.setGuides
 			super(target);
 		}
 		/**
-		*
+		* Link the edges of the video object to guides for automatic resizing of the video window that matches the player window's client area.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setGuides.html Northcode Help Documentation

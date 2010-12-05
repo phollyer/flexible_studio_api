@@ -14,7 +14,7 @@ package api.clipboard.setData
 	[Event(name="missingData", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Place plain text or RTF data on the Windows clipboard.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_setData.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.clipboard.setData
 			super(target);
 		}
 		/**
-		*
+		* Place plain text or RTF data on the Windows clipboard.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_setData.html Northcode Help Documentation

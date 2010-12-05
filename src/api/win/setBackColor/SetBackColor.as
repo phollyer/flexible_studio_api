@@ -14,7 +14,7 @@ package api.win.setBackColor
 	[Event(name="missingColor" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set the background color of your Flash movie, overriding the Flash background color.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setBackColor.html Northcode Help Documentation
 	*/
@@ -39,7 +39,7 @@ package api.win.setBackColor
 		}
 		
 		/**
-		*
+		* Set the background color of your Flash movie, overriding the Flash background color.
 		*
 		*
 		* @param maskColor

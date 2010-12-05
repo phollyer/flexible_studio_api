@@ -19,7 +19,7 @@ package api.sysTools.convertIconToJpeg
 	[Event(name="missingWidth" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Convert an icon resource from an ICO file to JPEG format
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_convertIconToJpeg.html Northcode Help Documentation
 	*/
@@ -43,7 +43,7 @@ package api.sysTools.convertIconToJpeg
 			super(target);
 		}
 		/**
-		*
+		* Convert an icon resource from an ICO file to JPEG format
 		*
 		*
 		* @param path

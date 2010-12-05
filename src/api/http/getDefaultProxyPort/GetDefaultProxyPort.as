@@ -14,7 +14,7 @@ package api.http.getDefaultProxyPort
 	[Event(name="result", type="api.events.http.getDefaultProxyPort.GetDefaultProxyPortEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the port number of the default proxy server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultProxyPort.html Northcode Help Documentation
 	*/
@@ -33,7 +33,7 @@ package api.http.getDefaultProxyPort
 			super(target);
 		}
 		/**
-		*
+		* Get the port number of the default proxy server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultProxyPort.html Northcode Help Documentation

@@ -15,7 +15,7 @@ package api.fileSys.writeToFileUTF8
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Writes data to a unicode text file in a single operation in UTF 8 format.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_writeToFileUTF8.html Northcode Help Documentation
 	*/
@@ -31,13 +31,13 @@ package api.fileSys.writeToFileUTF8
 		
 		// Required
 		/**
-		* 
+		* Data to be written.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var data:String = null
 		/**
-		* 
+		* A fully qualified path to the file you want to write. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -53,7 +53,7 @@ package api.fileSys.writeToFileUTF8
 			super(target);
 		}
 		/**
-		*
+		* Writes data to a unicode text file in a single operation in UTF 8 format.
 		*
 		*
 		* @param filePath

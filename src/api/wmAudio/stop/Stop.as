@@ -8,7 +8,7 @@ package api.wmAudio.stop
 	
 	[Bindable]
 	/**
-	*
+	* Stop playback of the current resource. You will have to call WMAudio.setResource again after using WMAudio.stop.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_stop.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmAudio.stop
 			super(target);
 		}
 		/**
-		*
+		* Stop playback of the current resource. You will have to call WMAudio.setResource again after using WMAudio.stop.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_stop.html Northcode Help Documentation

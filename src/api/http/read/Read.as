@@ -8,7 +8,7 @@ package api.http.read
 
 	[Bindable]
 	/**
-	*
+	* Retrieve a remote resource and append it to the internal buffer or local file (See HTTP.local).  Send notifications on progress.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_read.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.http.read
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a remote resource and append it to the internal buffer or local file (See HTTP.local).  Send notifications on progress.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_read.html Northcode Help Documentation

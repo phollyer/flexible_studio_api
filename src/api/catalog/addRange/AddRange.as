@@ -16,7 +16,7 @@ package api.catalog.addRange
 	[Event(name="missingLowValue" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Define search criteria for a given field.  This determines if the row should be included in the result set or not based on whether the field contents are between the specified low and high range values.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_addRange.html Northcode Help Documentation
 	*/
@@ -69,7 +69,7 @@ package api.catalog.addRange
 			super(target);
 		}
 		/**
-		*
+		* Define search criteria for a given field.  This determines if the row should be included in the result set or not based on whether the field contents are between the specified low and high range values.
 		*
 		*
 		* @param field

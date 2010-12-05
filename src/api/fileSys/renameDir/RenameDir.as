@@ -15,7 +15,7 @@ package api.fileSys.renameDir
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Renames an existing directory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_renameDir.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.fileSys.renameDir
 	{
 		// Required
 		/**
-		* 
+		* The new name for the directory.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var newName:String = null;
 		/**
-		* 
+		* A fully qualified path to a directory. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.renameDir
 			super(target);
 		}
 		/**
-		*
+		* Renames an existing directory.
 		*
 		*
 		* @param dirPath

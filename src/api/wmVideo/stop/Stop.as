@@ -8,7 +8,7 @@ package api.wmVideo.stop
 	
 	[Bindable]
 	/**
-	*
+	* Stop playback of the current resource. You will have to call WMVideo.setResource again after using WMVideo.stop.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_stop.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmVideo.stop
 			super(target);
 		}
 		/**
-		*
+		* Stop playback of the current resource. You will have to call WMVideo.setResource again after using WMVideo.stop.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_stop.html Northcode Help Documentation

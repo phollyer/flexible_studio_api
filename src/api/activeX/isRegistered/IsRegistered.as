@@ -22,7 +22,7 @@ package api.activeX.isRegistered
 	
 	[Bindable]
 	/**
-	 *
+	 * Determines whether a specified progId represents an installed ActiveX control.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_isRegistered.html Northcode Help Documentation
 	 */
@@ -53,7 +53,7 @@ package api.activeX.isRegistered
 		}
 		
 		/**
-		 *
+		 * Determines whether a specified progId represents an installed ActiveX control.
 		 *
                  *
 		 * @param progIDString

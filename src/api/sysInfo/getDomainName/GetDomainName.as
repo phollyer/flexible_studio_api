@@ -14,7 +14,7 @@ package api.sysInfo.getDomainName
 	[Event(name="result", type="api.events.sysInfo.getDomainName.GetDomainNameEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the domain name of the currently logged in user.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getDomainName.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getDomainName
 			super(target);
 		}
 		/**
-		*
+		* Get the domain name of the currently logged in user.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getDomainName.html Northcode Help Documentation

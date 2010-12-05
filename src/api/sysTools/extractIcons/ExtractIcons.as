@@ -21,7 +21,7 @@ package api.sysTools.extractIcons
 	[Event(name="result", type="api.events.sysTools.extractIcons.ExtractIconsEvent")]
 	[Bindable]
 	/**
-	*
+	* Extract all ICON resources from an executable file or DLL.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_extractIcons.html Northcode Help Documentation
 	*/
@@ -29,13 +29,13 @@ package api.sysTools.extractIcons
 	{
 		// Required
 		/**
-		* 
+		* Folder where the icons will be extracted. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var folder:String = null;
 		/**
-		* 
+		* Path to the EXE or DLL file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -59,7 +59,7 @@ package api.sysTools.extractIcons
 			super(target);
 		}
 		/**
-		*
+		* Extract all ICON resources from an executable file or DLL.
 		*
 		*
 		* @param filePath

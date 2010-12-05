@@ -8,7 +8,7 @@ package api.ftp.transfer
 
 	[Bindable]
 	/**
-	*
+	* Set the transfer mode for upload and download operations.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_transfer.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.ftp.transfer
 			super(target);
 		}
 		/**
-		*
+		* Set the transfer mode for upload and download operations.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_transfer.html Northcode Help Documentation

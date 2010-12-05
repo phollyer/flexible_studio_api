@@ -15,7 +15,7 @@ package api.keyboard.sendPress
 	[Event(name="missingHwnd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Simulate the pressing of a key (see also: Keyboard.sendRelease)
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_sendPress.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.keyboard.sendPress
 	{
 		// Required
 		/**
-		* 
+		* The Windows virutal key code to be sent.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var key:String = null;
 		/**
-		* 
+		* Handle of window where the key should be sent. If the hwnd is 0, the key will be sent to the window that has the input focus. If the hwnd is not 0, the specified window will become the foreground window before the key is sent.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.keyboard.sendPress
 			super(target);
 		}
 		/**
-		*
+		* Simulate the pressing of a key (see also: Keyboard.sendRelease)
 		*
 		*
 		* @param keySTR

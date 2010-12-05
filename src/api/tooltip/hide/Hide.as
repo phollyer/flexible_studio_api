@@ -8,7 +8,7 @@ package api.tooltip.hide
 
 	[Bindable]
 	/**
-	*
+	* Hides the tooltip.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tooltip_hide.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.tooltip.hide
 			super(target);
 		}
 		/**
-		*
+		* Hides the tooltip.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tooltip_hide.html Northcode Help Documentation

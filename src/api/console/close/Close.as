@@ -8,7 +8,7 @@ package api.console.close
 	
 	[Bindable]
 	/**
-	*
+	* Close the output console window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_close.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.console.close
 			super(target);
 		}
 		/**
-		*
+		* Close the output console window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_close.html Northcode Help Documentation

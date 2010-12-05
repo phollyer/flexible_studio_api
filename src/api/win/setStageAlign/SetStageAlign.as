@@ -8,7 +8,7 @@ package api.win.setStageAlign
 	
 	[Bindable]
 	/**
-	*
+	* Allows you to position the Flash window on the stage instead of using the default dead center alignment. Use this method instead of the Flash Stage.Align property to tell SWF Studio to adjust its own internal coordinate system to match the new alignment.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setStageAlign.html Northcode Help Documentation
 	*/
@@ -25,7 +25,7 @@ package api.win.setStageAlign
 		
 		// Optional
 		/**
-		* 
+		* Desired alignment setting. Valid values include: T, TL, TR, B, BL, BR, L, and R.
 		*
 		* @defaultValue <code>ALIGN_TOP_LEFT</code>
 		*/
@@ -41,7 +41,7 @@ package api.win.setStageAlign
 			super(target);
 		}
 		/**
-		*
+		* Allows you to position the Flash window on the stage instead of using the default dead center alignment. Use this method instead of the Flash Stage.Align property to tell SWF Studio to adjust its own internal coordinate system to match the new alignment.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setStageAlign.html Northcode Help Documentation

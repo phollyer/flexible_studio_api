@@ -14,7 +14,7 @@ package api.sysInfo.isUserAnAdmin
 	[Event(name="result", type="api.events.sysInfo.isUserAnAdmin.IsUserAnAdminEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine whether the user has admin privileges or not.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_isUserAnAdmin.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.isUserAnAdmin
 			super(target);
 		}
 		/**
-		*
+		* Determine whether the user has admin privileges or not.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_isUserAnAdmin.html Northcode Help Documentation

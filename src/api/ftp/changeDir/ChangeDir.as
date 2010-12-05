@@ -14,7 +14,7 @@ package api.ftp.changeDir
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* The current directory on the FTP server is changed to the directory specified by remotepath.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_changeDir.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.ftp.changeDir
 	{
 		// Required
 		/**
-		* 
+		* The path of the new current directory on the FTP server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.ftp.changeDir
 			super(target);
 		}
 		/**
-		*
+		* The current directory on the FTP server is changed to the directory specified by remotepath.
 		*
 		*
 		* @param remoteDirPath

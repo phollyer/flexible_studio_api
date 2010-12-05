@@ -20,7 +20,7 @@ package api.fileSys.getTimeStamp
 	[Event(name="result", type="api.events.fileSys.getTimeStamp.GetTimeStampEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the time of creation or last modification for the specified file or folder.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_getTimeStamp.html Northcode Help Documentation
 	*/
@@ -36,7 +36,7 @@ package api.fileSys.getTimeStamp
 		 
 		// Required
 		/**
-		* 
+		* A fully qualified file or folder path path (drive letter or UNC path). This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -60,7 +60,7 @@ package api.fileSys.getTimeStamp
 			super(target);
 		}
 		/**
-		*
+		* Returns the time of creation or last modification for the specified file or folder.
 		*
 		*
 		* @param filePath

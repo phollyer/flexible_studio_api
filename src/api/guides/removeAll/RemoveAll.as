@@ -8,7 +8,7 @@ package api.guides.removeAll
 
 	[Bindable]
 	/**
-	*
+	* Remove all existing guide objects. This will remove the guides from any objects (e.g. ActiveX objects) that may be using them.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_removeAll.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.guides.removeAll
 			super(target);
 		}
 		/**
-		*
+		* Remove all existing guide objects. This will remove the guides from any objects (e.g. ActiveX objects) that may be using them.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_removeAll.html Northcode Help Documentation

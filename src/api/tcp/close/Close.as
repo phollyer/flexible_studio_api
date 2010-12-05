@@ -8,7 +8,7 @@ package api.tcp.close
 	
 	[Bindable]
 	/**
-	*
+	* Closes the socket opened in TCP.open or TCP.listen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_TCP_close.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.tcp.close
 			super(target);
 		}
 		/**
-		*
+		* Closes the socket opened in TCP.open or TCP.listen.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_TCP_close.html Northcode Help Documentation

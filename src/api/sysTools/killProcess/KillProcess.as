@@ -14,7 +14,7 @@ package api.sysTools.killProcess
 	[Event(name="missingProcessId" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Kill a running process by providing its process id.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_killProcess.html Northcode Help Documentation
 	*/
@@ -30,7 +30,7 @@ package api.sysTools.killProcess
 		
 		// Required
 		/**
-		* 
+		* The id of the process you want to kill.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -46,7 +46,7 @@ package api.sysTools.killProcess
 			super(target);
 		}
 		/**
-		*
+		* Kill a running process by providing its process id.
 		*
 		*
 		* @param id

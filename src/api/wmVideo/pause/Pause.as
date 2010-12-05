@@ -8,7 +8,7 @@ package api.wmVideo.pause
 	
 	[Bindable]
 	/**
-	*
+	* Temporarily pause playback of the current resource (until WMVideo.resume is called).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_pause.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmVideo.pause
 			super(target);
 		}
 		/**
-		*
+		* Temporarily pause playback of the current resource (until WMVideo.resume is called).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_pause.html Northcode Help Documentation

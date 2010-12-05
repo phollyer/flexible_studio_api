@@ -8,7 +8,7 @@ package api.win.center
 	
 	[Bindable]
 	/**
-	*
+	* Center the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_center.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.win.center
 			super(target);
 		}
 		/**
-		*
+		* Center the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_center.html Northcode Help Documentation

@@ -14,7 +14,7 @@ package api.ftp.getLastResponse
 	[Event(name="result", type="api.events.ftp.getLastResponse.GetLastResponseEvent")]
 	[Bindable]
 	/**
-	*
+	* The last response from the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getLastResponse.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.ftp.getLastResponse
 			super(target);
 		}
 		/**
-		*
+		* The last response from the FTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getLastResponse.html Northcode Help Documentation

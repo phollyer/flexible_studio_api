@@ -8,7 +8,7 @@ package api.browser.stop
 	
 	[Bindable]
 	/**
-	*
+	* Stop the current page from loading and stop any other related downloads of images, frames, etc. that are part of that page.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_stop.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.stop
 			super(target);
 		}
 		/**
-		*
+		* Stop the current page from loading and stop any other related downloads of images, frames, etc. that are part of that page.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_stop.html Northcode Help Documentation

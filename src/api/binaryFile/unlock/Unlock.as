@@ -14,7 +14,7 @@ package api.binaryFile.unlock
 	[Event(name="result", type="api.events.binaryFile.unlock.UnlockEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Release a previously obtained exclusive lock.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.binaryFile.unlock
 	{
 		// Results
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.binaryFile.unlock
 			super(target);
 		}
 		/**
-		 *
+		 * Release a previously obtained exclusive lock.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_unlock.html Northcode Help Documentation

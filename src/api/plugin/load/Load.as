@@ -20,7 +20,7 @@ package api.plugin.load
 	[Event(name="missingAlias", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Load a new instance of the specified plugin and assign it an alias.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_load.html Northcode Help Documentation
 	*/
@@ -28,13 +28,13 @@ package api.plugin.load
 	{
 		// Required
 		/**
-		* 
+		* The name that will be used to refer to this instance of the plugin.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var alias:String = null;
 		/**
-		* 
+		* The name of the plugin to be loaded as it appears in the Plugins tab.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -50,7 +50,7 @@ package api.plugin.load
 			super(target);
 		}
 		/**
-		*
+		* Load a new instance of the specified plugin and assign it an alias.
 		*
 		*
 		* @param pluginName

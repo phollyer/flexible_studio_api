@@ -14,7 +14,7 @@ package api.binaryFile.getSize
 	[Event(name="result", type="api.events.binaryFile.getSize.GetSizeEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Get the size of the file in bytes.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getSize.html Northcode Help Documentation
 	 */
@@ -28,7 +28,7 @@ package api.binaryFile.getSize
 		 */
 		public var fileSize:Number = 0;
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.binaryFile.getSize
 			super(target);
 		}
 		/**
-		 *
+		 * Get the size of the file in bytes.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getSize.html Northcode Help Documentation

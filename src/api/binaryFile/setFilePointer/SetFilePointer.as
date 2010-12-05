@@ -14,7 +14,7 @@ package api.binaryFile.setFilePointer
 	[Event(name="result", type="api.events.binaryFile.setFilePointer.SetFilePointerEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Set the file pointer.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_setFilePointer.html Northcode Help Documentation
 	 */
@@ -25,7 +25,7 @@ package api.binaryFile.setFilePointer
 		
 		// Results
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -41,7 +41,7 @@ package api.binaryFile.setFilePointer
 			super(target);
 		}
 		/**
-		 *
+		 * Set the file pointer.
 		 *
                  *
 		 * @param offset

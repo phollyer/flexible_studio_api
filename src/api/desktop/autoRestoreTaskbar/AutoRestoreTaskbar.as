@@ -8,7 +8,7 @@ package api.desktop.autoRestoreTaskbar
 
 	[Bindable]
 	/**
-	*
+	* Enable the auto restore taskbar option to have SWF Studio show the taskbar when your application ends so you don't have to remember to do it.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_autoRestoreTaskbar.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.desktop.autoRestoreTaskbar
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value the controls the state of the auto restore taskbar feature.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.desktop.autoRestoreTaskbar
 			super(target);
 		}
 		/**
-		*
+		* Enable the auto restore taskbar option to have SWF Studio show the taskbar when your application ends so you don't have to remember to do it.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_autoRestoreTaskbar.html Northcode Help Documentation

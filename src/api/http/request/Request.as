@@ -14,7 +14,7 @@ package api.http.request
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Allows you to provide data that should be sent with a POST request.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_request.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.request
 	{
 		// Required
 		/**
-		* 
+		* Field/value pairs in URL encoded format.  Each field/value pair should be separated by a "&" character.  Do not include leading or trailing "&" characters in the request buffer.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.request
 			super(target);
 		}
 		/**
-		*
+		* Allows you to provide data that should be sent with a POST request.
 		*
 		*
 		* @param dataSTR

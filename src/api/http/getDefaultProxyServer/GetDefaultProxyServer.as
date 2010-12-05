@@ -14,7 +14,7 @@ package api.http.getDefaultProxyServer
 	[Event(name="result", type="api.events.http.getDefaultProxyServer.GetDefaultProxyServerEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the name/address of the default proxy server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultProxyServer.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.getDefaultProxyServer
 			super(target);
 		}
 		/**
-		*
+		* Get the name/address of the default proxy server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultProxyServer.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.catalog.maxRows
 
 	[Bindable]
 	/**
-	*
+	* Limit the number of search results returned to protect us against cases where the search returns too many rows for Flash to handle quickly.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_maxRows.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.catalog.maxRows
 			super(target);
 		}
 		/**
-		*
+		* Limit the number of search results returned to protect us against cases where the search returns too many rows for Flash to handle quickly.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_maxRows.html Northcode Help Documentation

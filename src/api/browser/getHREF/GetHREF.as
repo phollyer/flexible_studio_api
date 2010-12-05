@@ -14,7 +14,7 @@ package api.browser.getHREF
 	[Event(name="result", type="api.events.browser.getHREF.GetHREFEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the HREF of the active element.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getHREF.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.browser.getHREF
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the HREF of the active element.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getHREF.html Northcode Help Documentation

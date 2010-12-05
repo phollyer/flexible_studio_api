@@ -15,7 +15,7 @@ package api.win.setSize
 	[Event(name="missingWidth" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set the size of the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setSize.html Northcode Help Documentation
 	*/
@@ -36,7 +36,7 @@ package api.win.setSize
 		}
 		
 		/**
-		*
+		* Set the size of the application window.
 		*
 		*
 		* @param winHeight

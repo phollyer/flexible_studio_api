@@ -14,7 +14,7 @@ package api.tray.showBalloon
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Display a balloon tip above the system tray icon with custom text, title and icon.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_showBalloon.html Northcode Help Documentation
 	*/
@@ -46,7 +46,7 @@ package api.tray.showBalloon
 		
 		// Required
 		/**
-		* 
+		* Text to be displayed in the balloon tip.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -62,7 +62,7 @@ package api.tray.showBalloon
 			super(target);
 		}
 		/**
-		*
+		* Display a balloon tip above the system tray icon with custom text, title and icon.
 		*
 		*
 		* @param balloonText

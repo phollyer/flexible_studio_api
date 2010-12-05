@@ -14,7 +14,7 @@ package api.catalog.results
 	[Event(name="result", type="api.events.catalog.results.ResultsEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the results of a call to Catalog.Find.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_results.html Northcode Help Documentation
 	*/
@@ -58,7 +58,7 @@ package api.catalog.results
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the results of a call to Catalog.Find.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_results.html Northcode Help Documentation

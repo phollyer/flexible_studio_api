@@ -8,14 +8,14 @@ package api.console.setTopmost
 	
 	[Bindable]
 	/**
-	*
+	* Set (or clear) the topmost property of the console window so it can appear above (or below) your application.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_setTopmost.html Northcode Help Documentation
 	*/
 	public class SetTopmost extends Console
 	{
 		/**
-		* 
+		* A flag indicates whether the console window should be a topmost window or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -31,7 +31,7 @@ package api.console.setTopmost
 			super(target);
 		}
 		/**
-		*
+		* Set (or clear) the topmost property of the console window so it can appear above (or below) your application.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Console_setTopmost.html Northcode Help Documentation

@@ -14,7 +14,7 @@ package api.ftp.authUser
 	[Event(name="missingUserID" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* The account to be used to login to the FTP server
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_authUser.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.ftp.authUser
 	{
 		// Required
 		/**
-		* 
+		* Name of a user authorized to access the FTP site.  A password will normally be required as well (see FTP.authPswd).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.ftp.authUser
 		}
 		
 		/**
-		*
+		* The account to be used to login to the FTP server
 		*
 		*
 		* @param username

@@ -14,7 +14,7 @@ package api.ftp.getFileSize
 	[Event(name="result", type="api.events.ftp.getFileSize.GetFileSizeEvent")]
 	[Bindable]
 	/**
-	*
+	* Find out how much data will be transferred before starting the transfer (for accurate progress reporting).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getFileSize.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.ftp.getFileSize
 			super(target);
 		}
 		/**
-		*
+		* Find out how much data will be transferred before starting the transfer (for accurate progress reporting).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_getFileSize.html Northcode Help Documentation

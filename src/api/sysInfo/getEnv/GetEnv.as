@@ -20,7 +20,7 @@ package api.sysInfo.getEnv
 	[Event(name="result", type="api.events.sysInfo.getEnv.GetEnvEvent")]
 	[Bindable]
 	/**
-	*
+	* Provides access to operating system environment variables, like PATH.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getEnv.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.sysInfo.getEnv
 	{
 		// Required
 		/**
-		* 
+		* Name of the environment variable to retrieve.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.sysInfo.getEnv
 			super(target);
 		}
 		/**
-		*
+		* Provides access to operating system environment variables, like PATH.
 		*
 		*
 		* @param envVariable

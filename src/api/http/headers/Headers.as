@@ -14,7 +14,7 @@ package api.http.headers
 	[Event(name="missingHeaders" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Allows you to specify additional HTTP headers.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_headers.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.headers
 	{
 		// Required
 		/**
-		* 
+		* HTTP headers separated by newlines. The last header must also have a trailing newline.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.headers
 			super(target);
 		}
 		/**
-		*
+		* Allows you to specify additional HTTP headers.
 		*
 		*
 		* @param headersArray

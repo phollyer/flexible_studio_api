@@ -14,7 +14,7 @@ package api.catalog.rowCount
 	[Event(name="result", type="api.events.catalog.rowCount.RowCountEvent")]
 	[Bindable]
 	/**
-	*
+	* Find out how many rows are in the catalog.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_rowCount.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.catalog.rowCount
 			super(target);
 		}
 		/**
-		*
+		* Find out how many rows are in the catalog.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_rowCount.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.ftp.bufferSize
 	
 	[Bindable]
 	/**
-	*
+	* Allows you to set the size of the internal transfer buffer used to send and receive data in an FTP session.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_bufferSize.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.ftp.bufferSize
 			super(target);
 		}
 		/**
-		*
+		* Allows you to set the size of the internal transfer buffer used to send and receive data in an FTP session.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_bufferSize.html Northcode Help Documentation

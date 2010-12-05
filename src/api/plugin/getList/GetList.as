@@ -17,7 +17,7 @@ package api.plugin.getList
 	[Event(name="result", type="api.events.plugin.getList.GetListEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns a list of all currently loaded plugin instances in XML format
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getList.html Northcode Help Documentation
 	*/
@@ -41,7 +41,7 @@ package api.plugin.getList
 			super(target);
 		}
 		/**
-		*
+		* Returns a list of all currently loaded plugin instances in XML format
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getList.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.ftp.passiveMode
 
 	[Bindable]
 	/**
-	*
+	* Set the FTP connection to use passive mode.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_passiveMode.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.ftp.passiveMode
 			super(target);
 		}
 		/**
-		*
+		* Set the FTP connection to use passive mode.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_passiveMode.html Northcode Help Documentation

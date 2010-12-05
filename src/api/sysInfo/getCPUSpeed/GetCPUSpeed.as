@@ -14,7 +14,7 @@ package api.sysInfo.getCPUSpeed
 	[Event(name="result", type="api.events.sysInfo.getCPUSpeed.GetCPUSpeedEvent")]
 	[Bindable]
 	/**
-	*
+	* Return the CPU speed (of processor0).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getCPUSpeed.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getCPUSpeed
 			super(target);
 		}
 		/**
-		*
+		* Return the CPU speed (of processor0).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getCPUSpeed.html Northcode Help Documentation

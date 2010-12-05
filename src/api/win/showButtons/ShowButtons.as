@@ -8,7 +8,7 @@ package api.win.showButtons
 	
 	[Bindable]
 	/**
-	*
+	* Show or hide the minimize, maximize and close buttons on the title bar.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showButtons.html Northcode Help Documentation
 	*/
@@ -16,19 +16,19 @@ package api.win.showButtons
 	{
 		// Optional
 		/**
-		* 
+		* Enable or disable the close button. Windows doesn't actually hide this button while the window has an icon in the upper left corner. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
 		public var close:Boolean = true;
 		/**
-		* 
+		* Show or hide the maximize button on the title bar. If the minimize button is still enabled the maximize button will just be grayed out instead of hidden (Windows behavior). Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
 		public var maximize:Boolean = true;
 		/**
-		* 
+		* Show or hide the minimize button on the title bar. If the maximize button is still enabled the minimize button will just be grayed out instead of hidden (Windows behavior). Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -44,7 +44,7 @@ package api.win.showButtons
 			super(target);
 		}
 		/**
-		*
+		* Show or hide the minimize, maximize and close buttons on the title bar.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showButtons.html Northcode Help Documentation

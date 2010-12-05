@@ -8,20 +8,20 @@ package api.browser.setSize
 
 	[Bindable]
 	/**
-	*
+	* Set the size of the browser window in pixels.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setSize.html Northcode Help Documentation
 	*/
 	public class SetSize extends Browser
 	{
 		/**
-		* 
+		* Desired height of the browser window in pixels.
 		*
 		* @defaultValue <code>100</code>
 		*/
 		public var height:Number = 100;
 		/**
-		* 
+		* Desired width of the browser window in pixels.
 		*
 		* @defaultValue <code>100</code>
 		*/
@@ -37,7 +37,7 @@ package api.browser.setSize
 			super(target);
 		}
 		/**
-		*
+		* Set the size of the browser window in pixels.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setSize.html Northcode Help Documentation

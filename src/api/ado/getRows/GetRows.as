@@ -14,7 +14,7 @@ package api.ado.getRows
 	[Event(name="result", type="api.events.ado.getRows.GetRowsEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Retrieve any or all rows from the current result set.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation
 	 */
@@ -41,7 +41,7 @@ package api.ado.getRows
 			super(target);
 		}
 		/**
-		 *
+		 * Retrieve any or all rows from the current result set.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRows.html Northcode Help Documentation

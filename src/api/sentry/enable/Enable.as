@@ -8,7 +8,7 @@ package api.sentry.enable
 	
 	[Bindable]
 	/**
-	*
+	* Enable blocking of applications on the Sentry watch list.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_enable.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.sentry.enable
 			super(target);
 		}
 		/**
-		*
+		* Enable blocking of applications on the Sentry watch list.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_enable.html Northcode Help Documentation

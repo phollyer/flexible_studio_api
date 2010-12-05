@@ -8,7 +8,7 @@ package api.win.setPosition
 	
 	[Bindable]
 	/**
-	*
+	* Set the position of the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setPosition.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.win.setPosition
 			super(target);
 		}
 		/**
-		*
+		* Set the position of the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setPosition.html Northcode Help Documentation

@@ -15,7 +15,7 @@ package api.tcp.open
 	[Event(name="missingPort" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Opens a socket on the selected port, and prepares it for sending and receiving messages.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_TCP_open.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.tcp.open
 	{		
 		// Required
 		/**
-		* 
+		* IP name or address to connect to.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -40,7 +40,7 @@ package api.tcp.open
 			super(target);
 		}
 		/**
-		*
+		* Opens a socket on the selected port, and prepares it for sending and receiving messages.
 		*
 		*
 		* @param destinationSTR

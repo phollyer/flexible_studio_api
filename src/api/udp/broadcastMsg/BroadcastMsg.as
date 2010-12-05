@@ -14,7 +14,7 @@ package api.udp.broadcastMsg
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Broadcasts the specified data (message) to all machines on the attached network, using the port specified in UDP.open.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_UDP_broadcastMsg.html Northcode Help Documentation
 	*/
@@ -30,7 +30,7 @@ package api.udp.broadcastMsg
 		
 		// Required
 		/**
-		* 
+		* Contents of the message, in hex string format, to broadcast on the network.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -46,7 +46,7 @@ package api.udp.broadcastMsg
 			super(target);
 		}
 		/**
-		*
+		* Broadcasts the specified data (message) to all machines on the attached network, using the port specified in UDP.open.
 		*
 		*
 		* @param msgData

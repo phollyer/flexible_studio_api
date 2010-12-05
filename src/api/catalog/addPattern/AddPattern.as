@@ -15,7 +15,7 @@ package api.catalog.addPattern
 	[Event(name="missingPattern" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Define search criteria for a given field.  This determines if the row should be included in the result set or not based on whether the field contents match the specified pattern.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_addPattern.html Northcode Help Documentation
 	*/
@@ -62,7 +62,7 @@ package api.catalog.addPattern
 			super(target);
 		}
 		/**
-		*
+		* Define search criteria for a given field.  This determines if the row should be included in the result set or not based on whether the field contents match the specified pattern.
 		*
 		*
 		* @param field

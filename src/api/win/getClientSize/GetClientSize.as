@@ -14,7 +14,7 @@ package api.win.getClientSize
 	[Event(name="result", type="api.events.win.getClientSize.GetClientSizeEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the current size of the application window, excluding the size of the title bar and borders (this is the 'client' area).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getClientSize.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.win.getClientSize
 			super(target);
 		}
 		/**
-		*
+		* Get the current size of the application window, excluding the size of the title bar and borders (this is the 'client' area).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getClientSize.html Northcode Help Documentation

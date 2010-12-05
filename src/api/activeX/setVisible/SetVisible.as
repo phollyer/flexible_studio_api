@@ -15,21 +15,21 @@ package api.activeX.setVisible
 	
 	[Bindable]
 	/**
-	 *
+	 * Set the visibility of the ActiveX control window.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_setVisible.html Northcode Help Documentation
 	 */
 	public class SetVisible extends ActiveX
 	{
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
 		/**
-		 * 
+		 * Specifies whether the ActiveX control window should be visible or not. Valid values include: false and true.
 		 *
 		 * @defaultValue <code>true</code>
 		 */
@@ -46,7 +46,7 @@ package api.activeX.setVisible
 		}
 		
 		/**
-		 *
+		 * Set the visibility of the ActiveX control window.
 		 *
                  *
 		 * @param activeXObject

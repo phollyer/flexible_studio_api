@@ -10,7 +10,7 @@ package api.desktop.changeResolution
 
 	[Bindable]
 	/**
-	*
+	* Change the desktop resolution to provide better rendering performance or to avoid having your application resized (and possibly stretched) to fill the users desktop.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_changeResolution.html Northcode Help Documentation
 	*/
@@ -34,7 +34,7 @@ package api.desktop.changeResolution
 			super(target);
 		}
 		/**
-		*
+		* Change the desktop resolution to provide better rendering performance or to avoid having your application resized (and possibly stretched) to fill the users desktop.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_changeResolution.html Northcode Help Documentation

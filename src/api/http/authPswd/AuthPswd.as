@@ -14,7 +14,7 @@ package api.http.authPswd
 	[Event(name="missingPswd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Sets the password to be automatically supplied when trying to access protected sites.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_authPswd.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.authPswd
 			super(target);
 		}
 		/**
-		*
+		* Sets the password to be automatically supplied when trying to access protected sites.
 		*
 		*
 		* @param pswd

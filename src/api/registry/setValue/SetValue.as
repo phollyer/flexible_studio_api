@@ -10,7 +10,7 @@ package api.registry.setValue
 
 	[Bindable]
 	/**
-	*
+	* Write a value to a specified value name associated with a registry key.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_setValue.html Northcode Help Documentation
 	*/
@@ -34,7 +34,7 @@ package api.registry.setValue
 			super(target);
 		}
 		/**
-		*
+		* Write a value to a specified value name associated with a registry key.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_setValue.html Northcode Help Documentation

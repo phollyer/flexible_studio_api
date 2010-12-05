@@ -8,7 +8,7 @@ package api.win.showIcon
 	
 	[Bindable]
 	/**
-	*
+	* Show or hide the window icon.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showIcon.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.showIcon
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value that determines whether an icon should appear in title bar of the window. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.win.showIcon
 			super(target);
 		}
 		/**
-		*
+		* Show or hide the window icon.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showIcon.html Northcode Help Documentation

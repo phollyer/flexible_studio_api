@@ -14,7 +14,7 @@ package api.tray.setTooltip
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the tooltip text that will appear when you mouse over the icon in the system tray.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_setTooltip.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.tray.setTooltip
 	{
 		// Required
 		/**
-		* 
+		* The new tooltip text. If the text has newlines ('\n') in it, a multiline tooltip will be displayed.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.tray.setTooltip
 			super(target);
 		}
 		/**
-		*
+		* Change the tooltip text that will appear when you mouse over the icon in the system tray.
 		*
 		*
 		* @param tooltipText

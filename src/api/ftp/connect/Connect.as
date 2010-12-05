@@ -8,7 +8,7 @@ package api.ftp.connect
 
 	[Bindable]
 	/**
-	*
+	* Makes a connection to the host server using the supplied port, host, authentication, proxy (etc.) information.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_connect.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.ftp.connect
 			super(target);
 		}
 		/**
-		*
+		* Makes a connection to the host server using the supplied port, host, authentication, proxy (etc.) information.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_connect.html Northcode Help Documentation

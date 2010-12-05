@@ -14,7 +14,7 @@ package api.http.getDefaultBrowser
 	[Event(name="result", type="api.events.http.getDefaultBrowser.GetDefaultBrowserEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the name of the current default browser.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultBrowser.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.getDefaultBrowser
 			super(target);
 		}
 		/**
-		*
+		* Get the name of the current default browser.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getDefaultBrowser.html Northcode Help Documentation

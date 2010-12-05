@@ -6,7 +6,7 @@ package api.keyboard.unblockAll
 
 	[Bindable]
 	/**
-	*
+	* Clear the list of blocked keys.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_unblockAll.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.keyboard.unblockAll
 			super(target);
 		}
 		/**
-		*
+		* Clear the list of blocked keys.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_unblockAll.html Northcode Help Documentation

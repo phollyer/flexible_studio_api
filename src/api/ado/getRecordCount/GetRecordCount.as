@@ -14,7 +14,7 @@ package api.ado.getRecordCount
 	[Event(name="result", type="api.events.ado.getRecordCount.GetRecordCountEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Get the number of records in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRecordCount.html Northcode Help Documentation
 	 */
@@ -38,7 +38,7 @@ package api.ado.getRecordCount
 			super(target);
 		}
 		/**
-		 *
+		 * Get the number of records in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getRecordCount.html Northcode Help Documentation

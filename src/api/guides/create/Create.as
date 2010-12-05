@@ -19,7 +19,7 @@ package api.guides.create
 	[Event(name="missingName", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Add a new guide object.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Guides_create.html Northcode Help Documentation
 	*/
@@ -43,7 +43,7 @@ package api.guides.create
 			super(target);
 		}
 		/**
-		*
+		* Add a new guide object.
 		*
 		*
 		* @param name

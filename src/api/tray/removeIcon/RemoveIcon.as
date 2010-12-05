@@ -8,7 +8,7 @@ package api.tray.removeIcon
 	
 	[Bindable]
 	/**
-	*
+	* Remove the application icon from the system tray at runtime.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_removeIcon.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.tray.removeIcon
 			super(target);
 		}
 		/**
-		*
+		* Remove the application icon from the system tray at runtime.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_removeIcon.html Northcode Help Documentation

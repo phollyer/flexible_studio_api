@@ -16,7 +16,7 @@ package api.printer.getProperties
 	[Event(name="result", type="api.events.printer.getProperties.GetPropertiesEvent")]
 	[Bindable]
 	/**
-	*
+	* Return a collection of printer property settings: font name, font size, paper orientation, number of copies to print, margin settings and the selected printer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getProperties.html Northcode Help Documentation
 	*/
@@ -40,7 +40,7 @@ package api.printer.getProperties
 			super(target);
 		}
 		/**
-		*
+		* Return a collection of printer property settings: font name, font size, paper orientation, number of copies to print, margin settings and the selected printer.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getProperties.html Northcode Help Documentation

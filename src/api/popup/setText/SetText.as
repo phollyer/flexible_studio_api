@@ -16,7 +16,7 @@ package api.popup.setText
 	[Event(name="missingID" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the text of a menu item
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_setText.html Northcode Help Documentation
 	*/
@@ -24,13 +24,13 @@ package api.popup.setText
 	{
 		// Required
 		/**
-		* 
+		* The name of the menu that contains the item.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The ID of the menu item to be modified.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.popup.setText
 			super(target);
 		}
 		/**
-		*
+		* Change the text of a menu item
 		*
 		*
 		* @param menuName

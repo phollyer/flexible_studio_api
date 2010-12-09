@@ -15,7 +15,7 @@ package api.http.proxyUser
 	[Event(name="missingUser", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify a user name for access to the proxy server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_proxyUser.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.http.proxyUser
 	{
 		// Required
 		/**
-		* 
+		* Name of a user with permission to access the proxy server (normally requires a password as well).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.http.proxyUser
 			super(target);
 		}
 		/**
-		*
+		* Specify a user name for access to the proxy server.
 		*
 		*
 		* @param username

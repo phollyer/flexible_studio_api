@@ -14,7 +14,7 @@ package api.http.local
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Setting HTTP.local tells the plugin where to put any data that is returned from the server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_local.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.local
 	{
 		// Required
 		/**
-		* 
+		* Fully qualified path to a local file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.http.local
 		}
 		
 		/**
-		*
+		* Setting HTTP.local tells the plugin where to put any data that is returned from the server.
 		*
 		*
 		* @param filePath

@@ -14,7 +14,7 @@ package api.ftp.removeFile
 	[Event(name="missingFile" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Remove the specified file from the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_removeFile.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.ftp.removeFile
 	{
 		// Required
 		/**
-		* 
+		* Path to the remote file on the FTP server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.ftp.removeFile
 			super(target);
 		}
 		/**
-		*
+		* Remove the specified file from the FTP server.
 		*
 		*
 		* @param pathToFile

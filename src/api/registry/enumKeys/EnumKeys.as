@@ -21,7 +21,7 @@ package api.registry.enumKeys
 	[Event(name="result", type="api.events.registry.enumKeys.EnumKeysEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve a list of all the child keys of the specified subkey.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_enumKeys.html Northcode Help Documentation
 	*/
@@ -29,13 +29,13 @@ package api.registry.enumKeys
 	{
 		// Required
 		/**
-		* 
+		* The name of one of the main branches of the registry. Valid values include: HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_USERS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var rootKey:String = null;
 		/**
-		* 
+		* The name of the key whose children are to be enumerated. This key must be a subkey of the rootKey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -43,7 +43,7 @@ package api.registry.enumKeys
 		
 		// Result
 		/**
-		* 
+		* The name of the key whose children are to be enumerated. This key must be a subkey of the rootKey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -59,7 +59,7 @@ package api.registry.enumKeys
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a list of all the child keys of the specified subkey.
 		*
 		*
 		* @param rootKeySTR

@@ -15,14 +15,14 @@ package api.activeX.clearGuides
 	
 	[Bindable]
 	/**
-	 *
+	 * Stop using guides for automatic resizing of the ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_clearGuides.html Northcode Help Documentation
 	 */
 	public class ClearGuides extends ActiveX
 	{		
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -39,7 +39,7 @@ package api.activeX.clearGuides
 		}
 		
 		/**
-		 *
+		 * Stop using guides for automatic resizing of the ActiveX object.
 		 *
                  *
 		 * @param activeXObject

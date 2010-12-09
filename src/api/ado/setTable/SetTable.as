@@ -8,7 +8,7 @@ package api.ado.setTable
 
 	[Bindable]
 	/**
-	 *
+	 * Provide the name of the table that ADO.Open will use.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setTable.html Northcode Help Documentation
 	 */
@@ -32,7 +32,7 @@ package api.ado.setTable
 			super(target);
 		}
 		/**
-		 *
+		 * Provide the name of the table that ADO.Open will use.
 		 *
                  *
 		 * @param tableName

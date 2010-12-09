@@ -20,7 +20,7 @@ package api.fileSys.findFiles
 	[Event(name="result", type="api.events.fileSys.findFiles.FindFilesEvent")]
 	[Bindable]
 	/**
-	*
+	* Search the file system for files with names matching a pattern.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_findFiles.html Northcode Help Documentation
 	*/
@@ -48,7 +48,7 @@ package api.fileSys.findFiles
 		
 		// Required
 		/**
-		* 
+		* A fully qualified path to a directory to search. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -72,7 +72,7 @@ package api.fileSys.findFiles
 			super(target);
 		}
 		/**
-		*
+		* Search the file system for files with names matching a pattern.
 		*
 		*
 		* @param folderPath

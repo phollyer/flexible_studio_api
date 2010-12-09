@@ -18,7 +18,7 @@ package api.mask.loadBitmap
 	[Event(name="missingColor", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Load a bitmap (BMP) file that will be used as a mask to create shaped windows.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask_loadBitmap.html Northcode Help Documentation
 	*/
@@ -26,7 +26,7 @@ package api.mask.loadBitmap
 	{
 		// Optional
 		/**
-		* 
+		* All colors within the 'tolerance' range will be interpreted as transparent colors. Tolerance values can range from 0 (the color must be an exact match) to 441, which is the 'distance' between #000000 (black) and #ffffff (white).
 		*
 		* @defaultValue <code>0</code>
 		*/
@@ -34,19 +34,19 @@ package api.mask.loadBitmap
 		
 		// Required
 		/**
-		* 
+		* The color that should be removed to create the desired mask i.e. the color that should become transparent. The mask color is specified in '#rrggbb' format.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var maskColor:String = null;
 		/**
-		* 
+		* The name that should be assigned to the new mask, you will need this to enable the mask later.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The name of the bitmap file to be loaded. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -62,7 +62,7 @@ package api.mask.loadBitmap
 			super(target);
 		}
 		/**
-		*
+		* Load a bitmap (BMP) file that will be used as a mask to create shaped windows.
 		*
 		*
 		* @param maskName

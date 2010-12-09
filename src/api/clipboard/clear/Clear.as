@@ -8,7 +8,7 @@ package api.clipboard.clear
 	
 	[Bindable]
 	/**
-	*
+	* Clear the contents of the clipboard.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_clear.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.clipboard.clear
 			super(target);
 		}
 		/**
-		*
+		* Clear the contents of the clipboard.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_clear.html Northcode Help Documentation

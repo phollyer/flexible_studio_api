@@ -14,7 +14,7 @@ package api.wmVideo.setResource
 	[Event(name="missingResource", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify the resource for playback. This must be done before calling WMVideo.play.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setResource.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.wmVideo.setResource
 	{
 		// Required
 		/**
-		* 
+		* Any valid URL or local file specification. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.wmVideo.setResource
 			super(target);
 		}
 		/**
-		*
+		* Specify the resource for playback. This must be done before calling WMVideo.play.
 		*
 		*
 		* @param videoResource

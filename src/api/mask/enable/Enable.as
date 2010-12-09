@@ -15,7 +15,7 @@ package api.mask.enable
 	[Event(name="missingName", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Enable a mask from the Masks tab or a previously loaded bitmap to create a shaped window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask_enable.html Northcode Help Documentation
 	*/
@@ -23,7 +23,7 @@ package api.mask.enable
 	{
 		// Required
 		/**
-		* 
+		* The name of the mask or loaded bitmap mask that you want to enable.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -39,7 +39,7 @@ package api.mask.enable
 			super(target);
 		}
 		/**
-		*
+		* Enable a mask from the Masks tab or a previously loaded bitmap to create a shaped window.
 		*
 		*
 		* @param maskName

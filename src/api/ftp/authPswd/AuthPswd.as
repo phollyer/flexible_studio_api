@@ -14,7 +14,7 @@ package api.ftp.authPswd
 	[Event(name="missingPswd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set the password require to login to the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_authPswd.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.ftp.authPswd
 	{
 		// Required
 		/**
-		* 
+		* The password require to login to the FTP server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.ftp.authPswd
 			super(target);
 		}
 		/**
-		*
+		* Set the password require to login to the FTP server.
 		*
 		*
 		* @param pswd

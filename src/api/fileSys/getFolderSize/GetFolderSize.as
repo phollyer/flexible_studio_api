@@ -20,7 +20,7 @@ package api.fileSys.getFolderSize
 	[Event(name="result", type="api.events.fileSys.getFolderSize.GetFolderSizeEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the size of a folder and all subfolders. Hidden files and folders are included in the total.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_getFolderSize.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.fileSys.getFolderSize
 	{
 		// Required 
 		/**
-		* 
+		* A fully qualified path to a folder. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -70,7 +70,7 @@ package api.fileSys.getFolderSize
 			super(target);
 		}
 		/**
-		*
+		* Get the size of a folder and all subfolders. Hidden files and folders are included in the total.
 		*
 		*
 		* @param folderPath

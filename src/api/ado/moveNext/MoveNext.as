@@ -14,7 +14,7 @@ package api.ado.moveNext
 	[Event(name="result", type="api.events.ado.moveNext.MoveNextEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the next row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.moveNext
 	{
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.ado.moveNext
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the next row in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveNext.html Northcode Help Documentation

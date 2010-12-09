@@ -18,7 +18,7 @@ package api.plugin.unload
 	[Event(name="missingAlias", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Unload the specified instance of the plugin, when the last instance of the plugin has been unloaded the plugin will be removed from memory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_unload.html Northcode Help Documentation
 	*/
@@ -26,7 +26,7 @@ package api.plugin.unload
 	{
 		// Required
 		/**
-		* 
+		* The alias the plugin to be unloaded.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -42,7 +42,7 @@ package api.plugin.unload
 			super(target);
 		}
 		/**
-		*
+		* Unload the specified instance of the plugin, when the last instance of the plugin has been unloaded the plugin will be removed from memory.
 		*
 		*
 		* @param aliasName

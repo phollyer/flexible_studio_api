@@ -8,7 +8,7 @@ package api.win.showCaption
 	
 	[Bindable]
 	/**
-	*
+	* Show or hide the window caption (title) at runtime. When the caption is enabled, the window border is enabled as well. When the caption is disabled, only the caption is disabled, the border remains enabled.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showCaption.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.showCaption
 	{
 		// Optional
 		/**
-		* 
+		* A true/false flag that determines whether the caption will be visible or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.win.showCaption
 			super(target);
 		}
 		/**
-		*
+		* Show or hide the window caption (title) at runtime. When the caption is enabled, the window border is enabled as well. When the caption is disabled, only the caption is disabled, the border remains enabled.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_showCaption.html Northcode Help Documentation

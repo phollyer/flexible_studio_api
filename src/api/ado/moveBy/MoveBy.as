@@ -20,7 +20,7 @@ package api.ado.moveBy
 	[Event(name="result", type="api.events.ado.moveBy.MoveByEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer ahead by the specified number of rows.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveBy.html Northcode Help Documentation
 	 */
@@ -31,7 +31,7 @@ package api.ado.moveBy
 		
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -53,7 +53,7 @@ package api.ado.moveBy
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer ahead by the specified number of rows.
 		 *
                  *
 		 * @param rowCount

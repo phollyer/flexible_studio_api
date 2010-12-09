@@ -8,7 +8,7 @@ package api.midi.start
 
 	[Bindable]
 	/**
-	*
+	* Start listening to MIDI events
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_start.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.midi.start
 			super(target);
 		}
 		/**
-		*
+		* Start listening to MIDI events
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_start.html Northcode Help Documentation

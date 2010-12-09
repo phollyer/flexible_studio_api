@@ -8,7 +8,7 @@ package api.transparent.enable
 	
 	[Bindable]
 	/**
-	*
+	* Enable (or disable) transparent mode at runtime.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Transparent_enable.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.transparent.enable
 	{
 		// Required
 		/**
-		* 
+		* A boolean value that indicates whether transparency should be enabled or disabled. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.transparent.enable
 			super(target);
 		}
 		/**
-		*
+		* Enable (or disable) transparent mode at runtime.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Transparent_enable.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.ftp.disconnect
 
 	[Bindable]
 	/**
-	*
+	* Terminates any download in progress and closes the connection to the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_disconnect.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.ftp.disconnect
 			super(target);
 		}
 		/**
-		*
+		* Terminates any download in progress and closes the connection to the FTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_disconnect.html Northcode Help Documentation

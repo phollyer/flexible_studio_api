@@ -14,7 +14,7 @@ package api.scratch.write
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Write the specified file contents to the scratch area in your application.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Scratch_write.html Northcode Help Documentation
 	*/
@@ -36,7 +36,7 @@ package api.scratch.write
 		
 		// Required
 		/**
-		* 
+		* Data to be written to the scratch area.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.scratch.write
 			super(target);
 		}
 		/**
-		*
+		* Write the specified file contents to the scratch area in your application.
 		*
 		*
 		* @param dataSTR

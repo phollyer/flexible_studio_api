@@ -15,7 +15,7 @@ package api.fileSys.appendToFileUTF8
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Appends the data to the end of a unicode text file without overwriting existing data.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_appendToFileUTF8.html Northcode Help Documentation
 	*/
@@ -31,13 +31,13 @@ package api.fileSys.appendToFileUTF8
 		
 		// Required
 		/**
-		* 
+		* Data to be added to the end of the file.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var data:String = null;
 		/**
-		* 
+		* A fully qualified path to a file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -53,7 +53,7 @@ package api.fileSys.appendToFileUTF8
 			super(target);
 		}
 		/**
-		*
+		* Appends the data to the end of a unicode text file without overwriting existing data.
 		*
 		*
 		* @param filePath

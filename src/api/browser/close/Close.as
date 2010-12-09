@@ -8,7 +8,7 @@ package api.browser.close
 	
 	[Bindable]
 	/**
-	*
+	* Close the embedded browser window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_close.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.close
 			super(target);
 		}
 		/**
-		*
+		* Close the embedded browser window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_close.html Northcode Help Documentation

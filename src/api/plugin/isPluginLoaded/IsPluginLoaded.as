@@ -24,7 +24,7 @@ package api.plugin.isPluginLoaded
 	[Event(name="missingPlugin", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine if a plugin is currently loaded.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_isPluginLoaded.html Northcode Help Documentation
 	*/
@@ -76,7 +76,7 @@ package api.plugin.isPluginLoaded
 			}
 		}
 		/**
-		*
+		* Determine if a plugin is currently loaded.
 		*
 		*
 		* @param pluginName

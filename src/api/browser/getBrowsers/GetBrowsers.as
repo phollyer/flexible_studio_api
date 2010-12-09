@@ -14,7 +14,7 @@ package api.browser.getBrowsers
 	[Event(name="result", type="api.events.browser.getBrowsers.GetBrowsersEvent")]
 	[Bindable]
 	/**
-	*
+	* Get a list of browsers that can be used with SetBrowser.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getBrowsers.html Northcode Help Documentation
 	*/
@@ -39,7 +39,7 @@ package api.browser.getBrowsers
 			super(target);
 		}
 		/**
-		*
+		* Get a list of browsers that can be used with SetBrowser.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getBrowsers.html Northcode Help Documentation

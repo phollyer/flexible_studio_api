@@ -8,7 +8,7 @@ package api.browser.setPosition
 
 	[Bindable]
 	/**
-	*
+	* Set the position of the browser window relative to the upper left corner of the Flash movie.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setPosition.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.browser.setPosition
 			super(target);
 		}
 		/**
-		*
+		* Set the position of the browser window relative to the upper left corner of the Flash movie.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setPosition.html Northcode Help Documentation

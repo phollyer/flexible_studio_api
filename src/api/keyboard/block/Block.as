@@ -14,7 +14,7 @@ package api.keyboard.block
 	[Event(name="missingKey" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Prevent Flash from seeing the specified key code. If any of the optional shift states are specified, the key will only be blocked if that exact shift key pattern is matched. If any of the optional shift keys are specified, they must all be specified (or an error will be returned).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_block.html Northcode Help Documentation
 	*/
@@ -42,7 +42,7 @@ package api.keyboard.block
 		
 		// Required
 		/**
-		* 
+		* The virtual key code to block.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -58,7 +58,7 @@ package api.keyboard.block
 			super(target);
 		}
 		/**
-		*
+		* Prevent Flash from seeing the specified key code. If any of the optional shift states are specified, the key will only be blocked if that exact shift key pattern is matched. If any of the optional shift keys are specified, they must all be specified (or an error will be returned).
 		*
 		*
 		* @param keyCode

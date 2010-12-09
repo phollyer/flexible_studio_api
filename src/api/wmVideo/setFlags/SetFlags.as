@@ -8,7 +8,7 @@ package api.wmVideo.setFlags
 	
 	[Bindable]
 	/**
-	*
+	* Set flags that control behavior of the video playback object.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setFlags.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.wmVideo.setFlags
 			super(target);
 		}
 		/**
-		*
+		* Set flags that control behavior of the video playback object.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setFlags.html Northcode Help Documentation

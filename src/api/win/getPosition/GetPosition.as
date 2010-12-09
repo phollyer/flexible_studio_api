@@ -14,7 +14,7 @@ package api.win.getPosition
 	[Event(name="result", type="api.events.win.getPosition.GetPositionEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the current position of the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getPosition.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.win.getPosition
 			super(target);
 		}
 		/**
-		*
+		* Get the current position of the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getPosition.html Northcode Help Documentation

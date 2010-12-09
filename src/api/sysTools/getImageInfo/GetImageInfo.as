@@ -20,7 +20,7 @@ package api.sysTools.getImageInfo
 	[Event(name="result", type="api.events.sysTools.getImageInfo.GetImageInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Get information about an image file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_getImageInfo.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.sysTools.getImageInfo
 	{
 		// Required
 		/**
-		* 
+		* Path to the image file to read. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -36,13 +36,13 @@ package api.sysTools.getImageInfo
 		
 		// Result
 		/**
-		* 
+		* Height of the image in pixels.
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var height:Number = 0;
 		/**
-		* 
+		* Width of the image in pixels.
 		*
 		* @defaultValue <code>0</code>
 		*/
@@ -58,7 +58,7 @@ package api.sysTools.getImageInfo
 			super(target);
 		}
 		/**
-		*
+		* Get information about an image file.
 		*
 		*
 		* @param filePath

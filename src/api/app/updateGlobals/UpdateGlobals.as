@@ -8,7 +8,7 @@ package api.app.updateGlobals
 	
 	[Bindable]
 	/**
-	 *
+	 * Update the SWF Studio global variables after loading a new movie into level 0.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateGlobals.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.app.updateGlobals
 			super(target);
 		}
 		/**
-		 *
+		 * Update the SWF Studio global variables after loading a new movie into level 0.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateGlobals.html Northcode Help Documentation

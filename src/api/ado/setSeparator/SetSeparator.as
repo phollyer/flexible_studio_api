@@ -8,7 +8,7 @@ package api.ado.setSeparator
 
 	[Bindable]
 	/**
-	 *
+	 * Select the row delimiter used with ADO.GetRows.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSeparator.html Northcode Help Documentation
 	 */
@@ -27,7 +27,7 @@ package api.ado.setSeparator
 			super(target);
 		}
 		/**
-		 *
+		 * Select the row delimiter used with ADO.GetRows.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setSeparator.html Northcode Help Documentation

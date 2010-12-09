@@ -8,7 +8,7 @@ package api.http.start
 	
 	[Bindable]
 	/**
-	*
+	* Makes a connection to the host server using the supplied port, host, authentication, proxy (etc.) information.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_start.html Northcode Help Documentation
 	*/
@@ -25,7 +25,7 @@ package api.http.start
 		}
 		
 		/**
-		*
+		* Makes a connection to the host server using the supplied port, host, authentication, proxy (etc.) information.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_start.html Northcode Help Documentation

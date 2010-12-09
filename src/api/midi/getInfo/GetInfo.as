@@ -14,7 +14,7 @@ package api.midi.getInfo
 	[Event(name="result", type="api.events.midi.getInfo.GetInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve MIDI device capability information.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_getInfo.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.midi.getInfo
 			super(target);
 		}
 		/**
-		*
+		* Retrieve MIDI device capability information.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_getInfo.html Northcode Help Documentation

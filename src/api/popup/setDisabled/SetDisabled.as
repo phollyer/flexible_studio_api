@@ -16,7 +16,7 @@ package api.popup.setDisabled
 	[Event(name="missingID" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Enable, disable or toggle the 'disabled' state of a menu item.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_setDisabled.html Northcode Help Documentation
 	*/
@@ -28,19 +28,19 @@ package api.popup.setDisabled
 		
 		// Required
 		/**
-		* 
+		* The name of the menu that contains the item.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The ID of the menu item to be modified.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var id:String = null;
 		/**
-		* 
+		* Indicates the new 'disabled' state of the menu item. Valid values include: true, false, and toggle.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.popup.setDisabled
 			super(target);
 		}
 		/**
-		*
+		* Enable, disable or toggle the 'disabled' state of a menu item.
 		*
 		*
 		* @param menuName

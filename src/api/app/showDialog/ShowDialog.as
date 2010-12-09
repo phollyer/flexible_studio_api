@@ -15,7 +15,7 @@ package api.app.showDialog
 	[Event(name="missingHWND" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Displays the specified dialog. This command should only be called from an onDialog event handler (see App.setNotify).
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showDialog.html Northcode Help Documentation
 	 */
@@ -23,7 +23,7 @@ package api.app.showDialog
 	{
 		// Required
 		/**
-		 * 
+		 * Window handle of the dialog to be displayed. This dialog must be a child of your application i.e. it will fail on dialogs owned by other applications.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -39,7 +39,7 @@ package api.app.showDialog
 			super(target);
 		}
 		/**
-		 *
+		 * Displays the specified dialog. This command should only be called from an onDialog event handler (see App.setNotify).
 		 *
                  *
 		 * @param dialogHWND

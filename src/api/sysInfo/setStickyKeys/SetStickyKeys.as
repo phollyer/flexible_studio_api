@@ -8,7 +8,7 @@ package api.sysInfo.setStickyKeys
 	
 	[Bindable]
 	/**
-	*
+	* Sets the state of the StickyKeys accessibility feature. When the StickyKeys is enabled, the user can press a modifier key (SHIFT, CTRL, or ALT) and then another key in sequence rather than at the same time, to enter shifted (modified) characters and other key combinations. Pressing a modifier key once latches the key down until the user presses a non-modifier key or clicks a mouse button. Pressing a modifier key twice locks the key until the user presses the key a third time.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_setStickyKeys.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.setStickyKeys
 			super(target);
 		}
 		/**
-		*
+		* Sets the state of the StickyKeys accessibility feature. When the StickyKeys is enabled, the user can press a modifier key (SHIFT, CTRL, or ALT) and then another key in sequence rather than at the same time, to enter shifted (modified) characters and other key combinations. Pressing a modifier key once latches the key down until the user presses a non-modifier key or clicks a mouse button. Pressing a modifier key twice locks the key until the user presses the key a third time.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_setStickyKeys.html Northcode Help Documentation

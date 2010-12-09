@@ -20,7 +20,7 @@ package api.popup.showAt
 	[Event(name="result", type="api.events.popup.showAt.ShowAtEvent")]
 	[Bindable]
 	/**
-	*
+	* Display the named popup menu at the specified x,y location.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_showAt.html Northcode Help Documentation
 	*/
@@ -42,7 +42,7 @@ package api.popup.showAt
 		
 		// Required
 		/**
-		* 
+		* The name of the menu to display.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -66,7 +66,7 @@ package api.popup.showAt
 			super(target);
 		}
 		/**
-		*
+		* Display the named popup menu at the specified x,y location.
 		*
 		*
 		* @param menuName

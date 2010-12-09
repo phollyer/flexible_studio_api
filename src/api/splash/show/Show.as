@@ -14,7 +14,7 @@ package api.splash.show
 	[Event(name="missingPath", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Show the splash screen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_show.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.splash.show
 			super(target);
 		}
 		/**
-		*
+		* Show the splash screen.
 		*
 		*
 		* @param __resource

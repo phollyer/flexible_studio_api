@@ -21,7 +21,7 @@ package api.registry.enumValues
 	[Event(name="result", type="api.events.registry.enumValues.EnumValuesEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve a list of all the named values of the specified subkey.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_enumValues.html Northcode Help Documentation
 	*/
@@ -29,13 +29,13 @@ package api.registry.enumValues
 	{
 		// Required
 		/**
-		* 
+		* The name of one of the main branches of the registry. Valid values include: HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_USERS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var rootKey:String = null;
 		/**
-		* 
+		* The name of the key whose values are to be enumerated. This key must be a subkey of the rootKey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -59,7 +59,7 @@ package api.registry.enumValues
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a list of all the named values of the specified subkey.
 		*
 		*
 		* @param rootKeySTR

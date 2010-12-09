@@ -14,7 +14,7 @@ package api.mouse.getPosition
 	[Event(name="result", type="api.events.mouse.getPosition.GetPositionEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the position of the mouse cursor in screen coordinates or Flash coordinates.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_getPosition.html Northcode Help Documentation
 	*/
@@ -55,7 +55,7 @@ package api.mouse.getPosition
 			super(target);
 		}
 		/**
-		*
+		* Get the position of the mouse cursor in screen coordinates or Flash coordinates.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_getPosition.html Northcode Help Documentation

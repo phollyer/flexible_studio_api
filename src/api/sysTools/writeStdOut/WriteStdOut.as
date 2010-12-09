@@ -14,7 +14,7 @@ package api.sysTools.writeStdOut
 	[Event(name="missingData" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Write data to standard output.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_writeStdOut.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.sysTools.writeStdOut
 	{		
 		// Required
 		/**
-		* 
+		* Data to be written to standard output.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.sysTools.writeStdOut
 			super(target);
 		}
 		/**
-		*
+		* Write data to standard output.
 		*
 		*
 		* @param stdOutData

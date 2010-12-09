@@ -14,7 +14,7 @@ package api.sysInfo.getProcessMemoryInfo
 	[Event(name="result", type="api.events.sysInfo.getProcessMemoryInfo.GetProcessMemoryInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Get information about the amount of memory used by the current process (i.e. this application).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getProcessMemoryInfo.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getProcessMemoryInfo
 			super(target);
 		}
 		/**
-		*
+		* Get information about the amount of memory used by the current process (i.e. this application).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getProcessMemoryInfo.html Northcode Help Documentation

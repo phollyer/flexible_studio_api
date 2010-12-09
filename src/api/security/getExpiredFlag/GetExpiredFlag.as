@@ -14,7 +14,7 @@ package api.security.getExpiredFlag
 	[Event(name="result", type="api.events.security.getExpiredFlag.GetExpiredFlagEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the status of the flag that indicates whether the expiry conditions (from the Expiry tab) have been met or not. The expired flag can also be set manually using Security.setExpiredFlag.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_getExpiredFlag.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.security.getExpiredFlag
 			super(target);
 		}
 		/**
-		*
+		* Get the status of the flag that indicates whether the expiry conditions (from the Expiry tab) have been met or not. The expired flag can also be set manually using Security.setExpiredFlag.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_getExpiredFlag.html Northcode Help Documentation

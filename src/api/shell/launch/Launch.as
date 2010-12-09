@@ -8,7 +8,7 @@ package api.shell.launch
 	
 	[Bindable]
 	/**
-	*
+	* Allows you to launch applications, open documents or URLs from screensavers. This command will only work from screensavers and requires the NCLaunch utility to be installed and running.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_launch.html Northcode Help Documentation
 	*/
@@ -39,7 +39,7 @@ package api.shell.launch
 		}
 		
 		/**
-		*
+		* Allows you to launch applications, open documents or URLs from screensavers. This command will only work from screensavers and requires the NCLaunch utility to be installed and running.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_launch.html Northcode Help Documentation

@@ -8,7 +8,7 @@ package api.catalog.find
 
 	[Bindable]
 	/**
-	*
+	* Find the rows that match the search criteria specified using Catalog.Criteria.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_find.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.catalog.find
 			super(target);
 		}
 		/**
-		*
+		* Find the rows that match the search criteria specified using Catalog.Criteria.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_find.html Northcode Help Documentation

@@ -15,7 +15,7 @@ package api.ftp.renameFile
 	[Event(name="missingNewFile" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Rename and/or move a file on the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_renameFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.ftp.renameFile
 	{
 		// Required
 		/**
-		* 
+		* The name of an existing file on the FTP server to be renamed.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var existingFile:String = null;
 		/**
-		* 
+		* The new name of the file.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.ftp.renameFile
 			super(target);
 		}
 		/**
-		*
+		* Rename and/or move a file on the FTP server.
 		*
 		*
 		* @param existingName

@@ -20,7 +20,7 @@ package api.fileSys.readFile
 	[Event(name="result", type="api.events.fileSys.readFile.ReadFileEvent")]
 	[Bindable]
 	/**
-	*
+	* Read the contents of a unicode file in a single operation.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_readFile.html Northcode Help Documentation
 	*/
@@ -52,7 +52,7 @@ package api.fileSys.readFile
 			super(target);
 		}
 		/**
-		*
+		* Read the contents of a unicode file in a single operation.
 		*
 		*
 		* @param filePath

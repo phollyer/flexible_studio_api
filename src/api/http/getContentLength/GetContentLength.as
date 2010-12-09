@@ -14,7 +14,7 @@ package api.http.getContentLength
 	[Event(name="result", type="api.events.http.getContentLength.GetContentLengthEvent")]
 	[Bindable]
 	/**
-	*
+	* Find out how much data will be returned before starting the actual download.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getContentLength.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.getContentLength
 			super(target);
 		}
 		/**
-		*
+		* Find out how much data will be returned before starting the actual download.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_getContentLength.html Northcode Help Documentation

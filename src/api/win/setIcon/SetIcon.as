@@ -14,7 +14,7 @@ package api.win.setIcon
 	[Event(name="missingResource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the icon display on the title bar while the application is running.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setIcon.html Northcode Help Documentation
 	*/
@@ -30,7 +30,7 @@ package api.win.setIcon
 		
 		// Required
 		/**
-		* 
+		* A fully qualified path to an ICO file or the path to a resource in the layout.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -47,7 +47,7 @@ package api.win.setIcon
 		}
 		
 		/**
-		*
+		* Change the icon display on the title bar while the application is running.
 		*
 		*
 		* @param iconResource

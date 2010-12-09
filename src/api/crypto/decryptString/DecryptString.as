@@ -21,7 +21,7 @@ package api.crypto.decryptString
 	[Event(name="result", type="api.events.crypto.decryptString.DecryptStringEvent")]
 	[Bindable]
 	/**
-	*
+	* Decrypt a string.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto_decryptString.html Northcode Help Documentation
 	*/
@@ -29,13 +29,13 @@ package api.crypto.decryptString
 	{
 		// Required
 		/**
-		* 
+		* The encrypted data (in hex string format).
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var dataIn:String = null;
 		/**
-		* 
+		* The same key that was used to encrypt the string.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -43,7 +43,7 @@ package api.crypto.decryptString
 		
 		// Result
 		/**
-		* 
+		* The encrypted data (in hex string format).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -59,7 +59,7 @@ package api.crypto.decryptString
 			super(target);
 		}
 		/**
-		*
+		* Decrypt a string.
 		*
 		*
 		* @param privateKey

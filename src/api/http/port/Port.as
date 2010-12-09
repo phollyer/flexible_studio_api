@@ -10,7 +10,7 @@ package api.http.port
 	[Event(name="PortError" , type="HttpError")];
 	[Bindable]
 	/**
-	*
+	* Select the port to be used for communications with the host server. 
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_port.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.http.port
 			super(target);
 		}
 		/**
-		*
+		* Select the port to be used for communications with the host server. 
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_port.html Northcode Help Documentation

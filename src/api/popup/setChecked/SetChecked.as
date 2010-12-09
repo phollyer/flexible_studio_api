@@ -16,7 +16,7 @@ package api.popup.setChecked
 	[Event(name="missingID" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Enable, disable or toggle the 'checked' state of a menu item.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_setChecked.html Northcode Help Documentation
 	*/
@@ -28,19 +28,19 @@ package api.popup.setChecked
 		
 		// Required
 		/**
-		* 
+		* The name of the menu that contains the item.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The ID of the menu item to be modified.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var id:String = null;
 		/**
-		* 
+		* Indicates the new 'checked' state of the menu item. Valid values include: true, false, and toggle.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.popup.setChecked
 			super(target);
 		}
 		/**
-		*
+		* Enable, disable or toggle the 'checked' state of a menu item.
 		*
 		*
 		* @param menuName

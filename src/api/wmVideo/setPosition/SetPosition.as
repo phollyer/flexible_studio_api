@@ -8,7 +8,7 @@ package api.wmVideo.setPosition
 	
 	[Bindable]
 	/**
-	*
+	* Set the position of the video playback window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPosition.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.wmVideo.setPosition
 			super(target);
 		}
 		/**
-		*
+		* Set the position of the video playback window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setPosition.html Northcode Help Documentation

@@ -22,7 +22,7 @@ package api.registry.getValue
 	[Event(name="result", type="api.events.registry.getValue.GetValueEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve a string or numeric value (in string format) for a specified value name associated with a registry key.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Registry_getValue.html Northcode Help Documentation
 	*/
@@ -30,19 +30,19 @@ package api.registry.getValue
 	{
 		// Required
 		/**
-		* 
+		* The name of one of the main branches of the registry. Valid values include: HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_USERS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var rootKey:String = null;
 		/**
-		* 
+		* The name of the key to be accessed. This key must be a subkey of the rootKey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var subKey:String = null;
 		/**
-		* 
+		* The name of the value to be retrieved from the specified subkey. Leave the valuename blank to retrieve the {Default} value for the specified subkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -72,7 +72,7 @@ package api.registry.getValue
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a string or numeric value (in string format) for a specified value name associated with a registry key.
 		*
 		*
 		* @param rootKeySTR

@@ -15,7 +15,7 @@ package api.fileSys.writeToFileBinary
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Writes binary data to a text file in a single operation.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_writeToFileBinary.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.fileSys.writeToFileBinary
 	{
 		// Required
 		/**
-		* 
+		* Data to be written in hex string format.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var data:String = null
 		/**
-		* 
+		* A fully qualified path to the file you want to write. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.writeToFileBinary
 			super(target);
 		}
 		/**
-		*
+		* Writes binary data to a text file in a single operation.
 		*
 		*
 		* @param filePath

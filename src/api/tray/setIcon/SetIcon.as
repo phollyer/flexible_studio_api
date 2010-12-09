@@ -14,7 +14,7 @@ package api.tray.setIcon
 	[Event(name="missingResource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the icon displayed in the system tray.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_setIcon.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.tray.setIcon
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to an ICO file or the path to a resource in the layout.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.tray.setIcon
 			super(target);
 		}
 		/**
-		*
+		* Change the icon displayed in the system tray.
 		*
 		*
 		* @param iconResource

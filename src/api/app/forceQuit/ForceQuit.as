@@ -8,7 +8,7 @@ package api.app.forceQuit
 
 	[Bindable]
 	/**
-	 *
+	 * Ends your Flash application.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.app.forceQuit
 			super(target);
 		}
 		/**
-		 *
+		 * Ends your Flash application.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceQuit.html Northcode Help Documentation

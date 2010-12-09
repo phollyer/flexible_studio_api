@@ -8,7 +8,7 @@ package api.ado.setFieldList
 	
 	[Bindable]
 	/**
-	 *
+	 * Set the field list that will be used to define the columns in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation
 	 */
@@ -32,7 +32,7 @@ package api.ado.setFieldList
 			super(target);
 		}
 		/**
-		 *
+		 * Set the field list that will be used to define the columns in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setFieldList.html Northcode Help Documentation

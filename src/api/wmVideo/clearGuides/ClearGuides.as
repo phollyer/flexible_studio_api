@@ -8,7 +8,7 @@ package api.wmVideo.clearGuides
 	
 	[Bindable]
 	/**
-	*
+	* Stop using guides for automatic resizing of the video window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_clearGuides.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmVideo.clearGuides
 			super(target);
 		}
 		/**
-		*
+		* Stop using guides for automatic resizing of the video window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_clearGuides.html Northcode Help Documentation

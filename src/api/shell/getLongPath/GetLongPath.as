@@ -20,7 +20,7 @@ package api.shell.getLongPath
 	[Event(name="result", type="api.events.shell.getLongPath.GetLongPathEvent")]
 	[Bindable]
 	/**
-	*
+	* Convert a short (8.3 compatible) path to a long path name.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_getLongPath.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.shell.getLongPath
 	{				
 		// Required
 		/**
-		* 
+		* A fully qualified short path to a file or folder.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.shell.getLongPath
 			super(target);
 		}
 		/**
-		*
+		* Convert a short (8.3 compatible) path to a long path name.
 		*
 		*
 		* @param filePath

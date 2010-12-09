@@ -14,7 +14,7 @@ package api.sysInfo.getIPAddress
 	[Event(name="result", type="api.events.sysInfo.getIPAddress.GetIPAddressEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieves the IP address of the local machine.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getIPAddress.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getIPAddress
 			super(target);
 		}
 		/**
-		*
+		* Retrieves the IP address of the local machine.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getIPAddress.html Northcode Help Documentation

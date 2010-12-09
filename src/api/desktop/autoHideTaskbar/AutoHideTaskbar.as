@@ -8,7 +8,7 @@ package api.desktop.autoHideTaskbar
 	
 	[Bindable]
 	/**
-	*
+	* When the auto hide feature is enabled SWF Studio hides the taskbar when your application is running as a normal window and shows the taskbar when your application is minimized (since minimized applications live in the taskbar).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_autoHideTaskbar.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.desktop.autoHideTaskbar
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value that controls the state of the auto hide taskbar feature.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.desktop.autoHideTaskbar
 			super(target);
 		}
 		/**
-		*
+		* When the auto hide feature is enabled SWF Studio hides the taskbar when your application is running as a normal window and shows the taskbar when your application is minimized (since minimized applications live in the taskbar).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_autoHideTaskbar.html Northcode Help Documentation

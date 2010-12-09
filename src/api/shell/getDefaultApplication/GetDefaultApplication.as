@@ -14,7 +14,7 @@ package api.shell.getDefaultApplication
 	[Event(name="result", type="api.events.shell.getDefaultApplication.GetDefaultApplicationEvent")]
 	[Bindable]
 	/**
-	*
+	* Return the associated application (from the Windows registry) for the selected document or extension.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_getDefaultApplication.html Northcode Help Documentation
 	*/
@@ -58,7 +58,7 @@ package api.shell.getDefaultApplication
 			super(target);
 		}
 		/**
-		*
+		* Return the associated application (from the Windows registry) for the selected document or extension.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_getDefaultApplication.html Northcode Help Documentation

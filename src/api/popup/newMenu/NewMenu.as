@@ -14,7 +14,7 @@ package api.popup.newMenu
 	[Event(name="missingName" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Create a new (empty) popup menu.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_newMenu.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.popup.newMenu
 	{
 		// Required
 		/**
-		* 
+		* A name that you will use to refer to the new menu in all future menu commands.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.popup.newMenu
 			super(target);
 		}
 		/**
-		*
+		* Create a new (empty) popup menu.
 		*
 		*
 		* @param menuName

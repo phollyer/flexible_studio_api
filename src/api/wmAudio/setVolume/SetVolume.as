@@ -8,7 +8,7 @@ package api.wmAudio.setVolume
 	
 	[Bindable]
 	/**
-	*
+	* Set the playback volume.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setVolume.html Northcode Help Documentation
 	*/
@@ -27,7 +27,7 @@ package api.wmAudio.setVolume
 			super(target);
 		}
 		/**
-		*
+		* Set the playback volume.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setVolume.html Northcode Help Documentation

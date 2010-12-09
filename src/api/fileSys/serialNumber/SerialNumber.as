@@ -20,7 +20,7 @@ package api.fileSys.serialNumber
 	[Event(name="result", type="api.events.fileSys.serialNumber.SerialNumberEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the serial number of any local drive.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_serialNumber.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.fileSys.serialNumber
 	{
 		// Required
 		/**
-		* 
+		* Drive to be identified.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.fileSys.serialNumber
 			super(target);
 		}
 		/**
-		*
+		* Returns the serial number of any local drive.
 		*
 		*
 		* @param driveSTR

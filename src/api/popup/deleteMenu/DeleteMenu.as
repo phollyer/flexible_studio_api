@@ -14,7 +14,7 @@ package api.popup.deleteMenu
 	[Event(name="missingName" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Remove a menu and any items and submenus it contains.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_deleteMenu.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.popup.deleteMenu
 	{
 		// Required
 		/**
-		* 
+		* The name of the menu to be deleted. This must be the same name you originally passed to newMenu.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.popup.deleteMenu
 			super(target);
 		}
 		/**
-		*
+		* Remove a menu and any items and submenus it contains.
 		*
 		*
 		* @param menuName

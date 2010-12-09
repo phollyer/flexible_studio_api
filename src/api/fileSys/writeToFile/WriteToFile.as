@@ -15,7 +15,7 @@ package api.fileSys.writeToFile
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Writes data to a text file in a single operation.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_writeToFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.fileSys.writeToFile
 	{
 		// Required
 		/**
-		* 
+		* Data to be written.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var data:String = null
 		/**
-		* 
+		* A fully qualified path to the file you want to write. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.writeToFile
 			super(target);
 		}
 		/**
-		*
+		* Writes data to a text file in a single operation.
 		*
 		*
 		* @param filePath

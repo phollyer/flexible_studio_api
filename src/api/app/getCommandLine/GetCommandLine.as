@@ -14,7 +14,7 @@ package api.app.getCommandLine
 	[Event(name="result", type="api.events.app.getCommandLine.GetCommandLineEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Retrieve the command line passed to the application at startup.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_getCommandLine.html Northcode Help Documentation
 	 */
@@ -38,7 +38,7 @@ package api.app.getCommandLine
 			super(target);
 		}
 		/**
-		 *
+		 * Retrieve the command line passed to the application at startup.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_getCommandLine.html Northcode Help Documentation

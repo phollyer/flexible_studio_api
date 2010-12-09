@@ -8,7 +8,7 @@ package api.http.protocol
 	
 	[Bindable]
 	/**
-	*
+	* Set the protocol for communication with the host server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_protocol.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.http.protocol
 			super(target);
 		}
 		/**
-		*
+		* Set the protocol for communication with the host server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_protocol.html Northcode Help Documentation

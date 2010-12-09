@@ -8,7 +8,7 @@ package api.mouse.unlock
 
 	[Bindable]
 	/**
-	*
+	* Cancels the effect of calling Mouse.lock and allows the mouse to move beyond the borders of your application.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_unlock.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.mouse.unlock
 			super(target);
 		}
 		/**
-		*
+		* Cancels the effect of calling Mouse.lock and allows the mouse to move beyond the borders of your application.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_unlock.html Northcode Help Documentation

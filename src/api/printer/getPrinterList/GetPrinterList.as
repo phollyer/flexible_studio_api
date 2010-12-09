@@ -14,7 +14,7 @@ package api.printer.getPrinterList
 	[Event(name="result", type="api.events.printer.getPrinterList.GetPrinterListEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve a list of installed printers.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getPrinterList.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.printer.getPrinterList
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a list of installed printers.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_getPrinterList.html Northcode Help Documentation

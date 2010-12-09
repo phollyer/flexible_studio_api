@@ -14,7 +14,7 @@ package api.ado.getProvider
 	[Event(name="result", type="api.events.ado.getProvider.GetProviderEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Return the name of the ADO provider.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getProvider.html Northcode Help Documentation
 	 */
@@ -38,7 +38,7 @@ package api.ado.getProvider
 			super(target);
 		}
 		/**
-		 *
+		 * Return the name of the ADO provider.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getProvider.html Northcode Help Documentation

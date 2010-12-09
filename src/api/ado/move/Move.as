@@ -20,7 +20,7 @@ package api.ado.move
 	[Event(name="result", type="api.events.ado.move.MoveEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the specified row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_move.html Northcode Help Documentation
 	 */
@@ -28,7 +28,7 @@ package api.ado.move
 	{				
 		// Required
 		/**
-		 * 
+		 * Type of move to perform. Valid values include: First,Last,Next,Previous,To,By.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -36,7 +36,7 @@ package api.ado.move
 		
 		// Optional
 		/**
-		 * 
+		 * The number of the record to move to.  Records start at 0.
 		 *
 		 * @defaultValue <code>0</code>
 		 */
@@ -44,7 +44,7 @@ package api.ado.move
 		
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -66,7 +66,7 @@ package api.ado.move
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the specified row in the open table.
 		 *
                  *
 		 * @param moveDirection

@@ -14,7 +14,7 @@ package api.catalog.found
 	[Event(name="result", type="api.events.catalog.found.FoundEvent")]
 	[Bindable]
 	/**
-	*
+	* Find out how many rows matched the search criteria (size of the result set).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_found.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.catalog.found
 			super(target);
 		}
 		/**
-		*
+		* Find out how many rows matched the search criteria (size of the result set).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_found.html Northcode Help Documentation

@@ -14,7 +14,7 @@ package api.binaryFile.getFilePointer
 	[Event(name="result", type="api.events.binaryFile.getFilePointer.GetFilePointerEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Determine the current position of the file pointer.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation
 	 */
@@ -28,7 +28,7 @@ package api.binaryFile.getFilePointer
 		 */
 		public var pointerIndex:Number = 0;
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.binaryFile.getFilePointer
 			super(target);
 		}
 		/**
-		 *
+		 * Determine the current position of the file pointer.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_getFilePointer.html Northcode Help Documentation

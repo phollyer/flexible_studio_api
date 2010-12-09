@@ -14,7 +14,7 @@ package api.ftp.open
 	[Event(name="result", type="api.events.ftp.open.OpenEvent")]
 	[Bindable]
 	/**
-	*
+	* Begin an FTP transfer.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_open.html Northcode Help Documentation
 	*/
@@ -47,7 +47,7 @@ package api.ftp.open
 			super(target);
 		}
 		/**
-		*
+		* Begin an FTP transfer.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_open.html Northcode Help Documentation

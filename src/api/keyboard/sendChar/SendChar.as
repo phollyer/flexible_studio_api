@@ -15,7 +15,7 @@ package api.keyboard.sendChar
 	[Event(name="missingHwnd" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Simulate press and release of keys necessary to 'type' the specified character.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_sendChar.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.keyboard.sendChar
 	{
 		// Required
 		/**
-		* 
+		* A single character to be sent. Note that 'A' is different from 'a', SWF Studio will figure out which virtual key codes are required to send the correct character.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var char:String = null;
 		/**
-		* 
+		* Handle of window where the character should be sent. If the hwnd is 0, the character will be sent to the window that has the input focus. If the hwnd is not 0, the specified window will become the foreground window before the character is sent.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.keyboard.sendChar
 			super(target);
 		}
 		/**
-		*
+		* Simulate press and release of keys necessary to 'type' the specified character.
 		*
 		*
 		* @param charSTR

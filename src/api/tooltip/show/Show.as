@@ -16,7 +16,7 @@ package api.tooltip.show
 	[Event(name="missingText" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Displays a tooltip.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tooltip_show.html Northcode Help Documentation
 	*/
@@ -40,7 +40,7 @@ package api.tooltip.show
 			super(target);
 		}
 		/**
-		*
+		* Displays a tooltip.
 		*
 		*
 		* @param text

@@ -23,7 +23,7 @@ package api.crypto.encryptString
 	[Event(name="result", type="api.events.crypto.encryptString.EncryptStringEvent")]
 	[Bindable]
 	/**
-	*
+	* Encrypt a string.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto_encryptString.html Northcode Help Documentation
 	*/
@@ -31,13 +31,13 @@ package api.crypto.encryptString
 	{
 		// Required
 		/**
-		* 
+		* The data to be encrypted. If the length is not a multiple of 8 spaces will be added to the end of the data buffer and removed when the data is decrypted.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var dataIn:String = null;
 		/**
-		* 
+		* The string that will be used to encode the data. You will also need this key to decrypt your data later.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.crypto.encryptString
 		
 		// Result
 		/**
-		* 
+		* The data to be encrypted. If the length is not a multiple of 8 spaces will be added to the end of the data buffer and removed when the data is decrypted.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -61,7 +61,7 @@ package api.crypto.encryptString
 			super(target);
 		}
 		/**
-		*
+		* Encrypt a string.
 		*
 		*
 		* @param privateKey

@@ -14,7 +14,7 @@ package api.sentry.removeWatch
 	[Event(name="missingApplication" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Specify an application to be removed from the Sentry watch list.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_removeWatch.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.sentry.removeWatch
 	{
 		// Required
 		/**
-		* 
+		* The name of the application to remove from the watch list. The name must have been previously passed to Sentry.addWatch.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.sentry.removeWatch
 			super(target);
 		}
 		/**
-		*
+		* Specify an application to be removed from the Sentry watch list.
 		*
 		*
 		* @param app

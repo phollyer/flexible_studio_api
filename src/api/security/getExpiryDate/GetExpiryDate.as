@@ -14,7 +14,7 @@ package api.security.getExpiryDate
 	[Event(name="result", type="api.events.security.getExpiryDate.GetExpiryDateEvent")]
 	[Bindable]
 	/**
-	*
+	* Determine when this application will expire using the settings from the Expiry tab, or just retrieve the value set by a previous call to Security.setExpiryDate. All returned date and time information is in local time.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_getExpiryDate.html Northcode Help Documentation
 	*/
@@ -28,37 +28,37 @@ package api.security.getExpiryDate
 		*/
 		public var dateString:String = null;
 		/**
-		* 
+		* Expiry day in month (1..31).
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var day:int = 0;
 		/**
-		* 
+		* Expiry hour (0.. 23).
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var hour:int = 0;
 		/**
-		* 
+		* Expiry minute (0..59).
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var minute:int = 0;
 		/**
-		* 
+		* Expiry month (Jan=1, Feb=2, ...
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var month:int = 0;
 		/**
-		* 
+		* Expiry second (0..59).
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var second:int = 0;
 		/**
-		* 
+		* Expiry year (2004..2099).
 		*
 		* @defaultValue <code>0</code>
 		*/
@@ -74,7 +74,7 @@ package api.security.getExpiryDate
 			super(target);
 		}
 		/**
-		*
+		* Determine when this application will expire using the settings from the Expiry tab, or just retrieve the value set by a previous call to Security.setExpiryDate. All returned date and time information is in local time.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_getExpiryDate.html Northcode Help Documentation

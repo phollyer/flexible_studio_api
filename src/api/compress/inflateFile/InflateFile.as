@@ -15,7 +15,7 @@ package api.compress.inflateFile
 	[Event(name="missingSource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Inflate (decompress) a file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Compress_inflateFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.compress.inflateFile
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the inflated file. If the file exists it will be overwritten. If the file does not exist it will be created. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var destination:String = null;
 		/**
-		* 
+		* A fully qualified path to the deflated file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.compress.inflateFile
 			super(target);
 		}
 		/**
-		*
+		* Inflate (decompress) a file.
 		*
 		*
 		* @param pathToSource

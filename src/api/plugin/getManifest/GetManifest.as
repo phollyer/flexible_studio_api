@@ -24,7 +24,7 @@ package api.plugin.getManifest
 	[Event(name="missingPlugin", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns the plugin manifest which describes all public methods of the plugin.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getManifest.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.plugin.getManifest
 	{
 		// Required
 		/**
-		* 
+		* The alias that identifies an instance of a plugin.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.plugin.getManifest
 			super(target);
 		}
 		/**
-		*
+		* Returns the plugin manifest which describes all public methods of the plugin.
 		*
 		*
 		* @param aliasName

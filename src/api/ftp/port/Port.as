@@ -10,7 +10,7 @@ package api.ftp.port
 	[Event(name="PortError" , type="FtpError")];
 	[Bindable]
 	/**
-	*
+	* Select the port to be used for communications with the FTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_port.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.ftp.port
 			super(target);
 		}
 		/**
-		*
+		* Select the port to be used for communications with the FTP server.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_port.html Northcode Help Documentation

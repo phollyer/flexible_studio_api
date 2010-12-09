@@ -8,7 +8,7 @@ package api.midi.stop
 
 	[Bindable]
 	/**
-	*
+	* Stop listening to MIDI events
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_stop.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.midi.stop
 			super(target);
 		}
 		/**
-		*
+		* Stop listening to MIDI events
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_MIDI_stop.html Northcode Help Documentation

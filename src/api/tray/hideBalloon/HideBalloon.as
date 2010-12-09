@@ -8,7 +8,7 @@ package api.tray.hideBalloon
 	
 	[Bindable]
 	/**
-	*
+	* Hide the currently displayed system tray balloon tip.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_hideBalloon.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.tray.hideBalloon
 			super(target);
 		}
 		/**
-		*
+		* Hide the currently displayed system tray balloon tip.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Tray_hideBalloon.html Northcode Help Documentation

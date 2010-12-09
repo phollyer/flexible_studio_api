@@ -16,7 +16,7 @@ package api.crypto.decryptFile
 	[Event(name="missingSource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Decrypt a file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto_decryptFile.html Northcode Help Documentation
 	*/
@@ -24,19 +24,19 @@ package api.crypto.decryptFile
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the decrypted file. If the file exists it will be overwritten. If the file does not exist it will be created. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var destination:String = null;
 		/**
-		* 
+		* This same key you used to encrypt the file.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var key:String = null;
 		/**
-		* 
+		* A fully qualified path to the encrypted file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.crypto.decryptFile
 			super(target);
 		}
 		/**
-		*
+		* Decrypt a file.
 		*
 		*
 		* @param privateKey

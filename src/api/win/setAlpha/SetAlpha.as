@@ -14,7 +14,7 @@ package api.win.setAlpha
 	[Event(name="missingPercent" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Change the alpha value of the player window to make it more or less transparent.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_setAlpha.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.win.setAlpha
 		}
 		
 		/**
-		*
+		* Change the alpha value of the player window to make it more or less transparent.
 		*
 		*
 		* @param percentNUM

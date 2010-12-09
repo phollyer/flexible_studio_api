@@ -8,7 +8,7 @@ package api.app.updateTransparency
 	
 	[Bindable]
 	/**
-	 *
+	 * Update the desktop snapshot behind the application that makes the 'simulated' transparency feature work.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.app.updateTransparency
 			super(target);
 		}
 		/**
-		 *
+		 * Update the desktop snapshot behind the application that makes the 'simulated' transparency feature work.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_updateTransparency.html Northcode Help Documentation

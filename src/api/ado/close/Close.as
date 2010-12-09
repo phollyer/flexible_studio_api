@@ -8,7 +8,7 @@ package api.ado.close
 	
 	[Bindable]
 	/**
-	 *
+	 * Close the table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_close.html Northcode Help Documentation
 	 */
@@ -24,7 +24,7 @@ package api.ado.close
 			super(target);
 		}
 		/**
-		 *
+		 * Close the table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_close.html Northcode Help Documentation

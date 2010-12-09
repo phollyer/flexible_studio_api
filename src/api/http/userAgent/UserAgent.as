@@ -14,7 +14,7 @@ package api.http.userAgent
 	[Event(name="missingUserAgent" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Sets the value for the user agent header that is sent with each request.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_userAgent.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.http.userAgent
 			super(target);
 		}
 		/**
-		*
+		* Sets the value for the user agent header that is sent with each request.
 		*
 		*
 		* @param userAgentSTR

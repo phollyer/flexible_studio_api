@@ -15,7 +15,7 @@ package api.fileSys.copyFile
 	[Event(name="missingToPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Copies an existing file to a new location and sends progress notifications at the specified intervals.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_copyFile.html Northcode Help Documentation
 	*/
@@ -53,7 +53,7 @@ package api.fileSys.copyFile
 			super(target);
 		}
 		/**
-		*
+		* Copies an existing file to a new location and sends progress notifications at the specified intervals.
 		*
 		*
 		* @param fromSTR

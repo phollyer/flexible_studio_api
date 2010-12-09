@@ -8,7 +8,7 @@ package api.browser.setGuides
 	
 	[Bindable]
 	/**
-	*
+	* Link the edges of the Browser object to guides for automatic resizing of the Browser window that matches the player window's client area.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setGuides.html Northcode Help Documentation
 	*/
@@ -76,7 +76,7 @@ package api.browser.setGuides
 			super(target);
 		}
 		/**
-		*
+		* Link the edges of the Browser object to guides for automatic resizing of the Browser window that matches the player window's client area.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_setGuides.html Northcode Help Documentation

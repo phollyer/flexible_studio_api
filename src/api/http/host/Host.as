@@ -14,7 +14,7 @@ package api.http.host
 	[Event(name="missingHost" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Identifies the host server that the plugin will connect to.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_host.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.host
 	{
 		// Required
 		/**
-		* 
+		* Name (or IP address) of the server that the plugin will connect to.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.host
 			super(target);
 		}
 		/**
-		*
+		* Identifies the host server that the plugin will connect to.
 		*
 		*
 		* @param hostSTR

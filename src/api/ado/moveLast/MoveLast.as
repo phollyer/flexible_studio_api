@@ -14,7 +14,7 @@ package api.ado.moveLast
 	[Event(name="result", type="api.events.ado.moveLast.MoveLastEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the last row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.moveLast
 	{
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.ado.moveLast
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the last row in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveLast.html Northcode Help Documentation

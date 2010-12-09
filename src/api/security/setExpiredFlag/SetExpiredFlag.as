@@ -8,7 +8,7 @@ package api.security.setExpiredFlag
 
 	[Bindable]
 	/**
-	*
+	* Set the expired flag for this application. This overrides the conditions on the Expiry tab and forces the application to the expired state immediately. Clearing the expiry flag reverse this operation but if the application is already expired then clearing the expired flag will appear to have no effect.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_setExpiredFlag.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.security.setExpiredFlag
 			super(target);
 		}
 		/**
-		*
+		* Set the expired flag for this application. This overrides the conditions on the Expiry tab and forces the application to the expired state immediately. Clearing the expiry flag reverse this operation but if the application is already expired then clearing the expired flag will appear to have no effect.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Security_setExpiredFlag.html Northcode Help Documentation

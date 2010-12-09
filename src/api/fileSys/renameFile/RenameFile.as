@@ -15,7 +15,7 @@ package api.fileSys.renameFile
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Renames an existing file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_renameFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.fileSys.renameFile
 	{
 		// Required
 		/**
-		* 
+		* The new name for the file.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var newName:String = null;
 		/**
-		* 
+		* A fully qualified path to a file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.renameFile
 			super(target);
 		}
 		/**
-		*
+		* Renames an existing file.
 		*
 		*
 		* @param dirPath

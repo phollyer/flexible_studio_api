@@ -8,7 +8,7 @@ package api.printer.setDefaultPrinter
 	
 	[Bindable]
 	/**
-	*
+	* Set the Windows default printer
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_setDefaultPrinter.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.printer.setDefaultPrinter
 			super(target);
 		}
 		/**
-		*
+		* Set the Windows default printer
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Printer_setDefaultPrinter.html Northcode Help Documentation

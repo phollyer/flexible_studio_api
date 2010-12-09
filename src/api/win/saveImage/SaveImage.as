@@ -16,7 +16,7 @@ package api.win.saveImage
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Save a rectangular area of the application window to disk as a bitmap or Jpeg image.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_saveImage.html Northcode Help Documentation
 	*/
@@ -40,7 +40,7 @@ package api.win.saveImage
 			super(target);
 		}
 		/**
-		*
+		* Save a rectangular area of the application window to disk as a bitmap or Jpeg image.
 		*
 		*
 		* @param filePath

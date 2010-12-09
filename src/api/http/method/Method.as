@@ -14,7 +14,7 @@ package api.http.method
 	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Tells the plugin which method to use when submitting your request to the HTTP server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_method.html Northcode Help Documentation
 	*/
@@ -39,7 +39,7 @@ package api.http.method
 		}
 		
 		/**
-		*
+		* Tells the plugin which method to use when submitting your request to the HTTP server.
 		*
 		*
 		* @param methodSTR

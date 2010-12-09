@@ -14,7 +14,7 @@ package api.app.showFolderBrowser
 	[Event(name="result", type="api.events.app.showFolderBrowser.ShowFolderBrowserEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Display the standard Windows Browse For Folders dialog to select a folder.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFolderBrowser.html Northcode Help Documentation
 	 */
@@ -44,7 +44,7 @@ package api.app.showFolderBrowser
 			super(target);
 		}
 		/**
-		 *
+		 * Display the standard Windows Browse For Folders dialog to select a folder.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFolderBrowser.html Northcode Help Documentation

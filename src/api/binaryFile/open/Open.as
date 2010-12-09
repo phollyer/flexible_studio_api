@@ -24,7 +24,7 @@ package api.binaryFile.open
 	[Event(name="result", type="api.events.binaryFile.open.OpenEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Open an existing file for binary access.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_open.html Northcode Help Documentation
 	 */
@@ -54,7 +54,7 @@ package api.binaryFile.open
 		
 		// Results
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -70,7 +70,7 @@ package api.binaryFile.open
 			super(target);
 		}
 		/**
-		 *
+		 * Open an existing file for binary access.
 		 *
                  *
 		 * @param filePath

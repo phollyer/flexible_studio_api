@@ -14,7 +14,7 @@ package api.win.getSize
 	[Event(name="result", type="api.events.win.getSize.GetSizeEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the current size of the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getSize.html Northcode Help Documentation
 	*/
@@ -44,7 +44,7 @@ package api.win.getSize
 			super(target);
 		}
 		/**
-		*
+		* Get the current size of the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_getSize.html Northcode Help Documentation

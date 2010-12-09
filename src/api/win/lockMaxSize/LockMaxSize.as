@@ -8,7 +8,7 @@ package api.win.lockMaxSize
 	
 	[Bindable]
 	/**
-	*
+	* Set the maximum window size.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockMaxSize.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.lockMaxSize
 	{
 		// Optional
 		/**
-		* 
+		* A flag that controls whether the max size should be enabled or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -34,7 +34,7 @@ package api.win.lockMaxSize
 			super(target);
 		}
 		/**
-		*
+		* Set the maximum window size.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockMaxSize.html Northcode Help Documentation

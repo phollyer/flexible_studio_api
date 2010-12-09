@@ -15,7 +15,7 @@ package api.fileSys.setAttrs
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Set attributes of the specified file or directory.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FileSys_setAttrs.html Northcode Help Documentation
 	*/
@@ -29,7 +29,7 @@ package api.fileSys.setAttrs
 		*/
 		public var attrs:String = null;
 		/**
-		* 
+		* A fully qualified path to a file or directory. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.fileSys.setAttrs
 			super(target);
 		}
 		/**
-		*
+		* Set attributes of the specified file or directory.
 		*
 		*
 		* @param fileOrFolderPath

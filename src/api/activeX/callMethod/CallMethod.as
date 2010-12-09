@@ -29,21 +29,21 @@ package api.activeX.callMethod
 	
 	[Bindable]
 	/**
-	 *
+	 * Call a method on an ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_callMethod.html Northcode Help Documentation
 	 */
 	public class CallMethod extends ActiveX
 	{
 		/**
-		 * 
+		 * The name of the method to call.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var method:String = null;
 		
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -67,7 +67,7 @@ package api.activeX.callMethod
 		}
 		
 		/**
-		 *
+		 * Call a method on an ActiveX object.
 		 *
                  *
 		 * @param methodName

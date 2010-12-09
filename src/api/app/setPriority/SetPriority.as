@@ -15,7 +15,7 @@ package api.app.setPriority
 	[Event(name="missingPriority", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Set the priority of our application to tell the Windows scheduler to give us a higher or lower priority (more or less CPU time).
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_setPriority.html Northcode Help Documentation
 	 */
@@ -28,7 +28,7 @@ package api.app.setPriority
 		
 		// Required
 		/**
-		 * 
+		 * The new priority for this application. Valid values include: normal, idle, high, and realtime.
 		 *
 		 * @defaultValue <code>NORMAL</code>
 		 */
@@ -44,7 +44,7 @@ package api.app.setPriority
 			super(target);
 		}
 		/**
-		 *
+		 * Set the priority of our application to tell the Windows scheduler to give us a higher or lower priority (more or less CPU time).
 		 *
                  *
 		 * @param appPriority

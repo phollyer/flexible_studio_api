@@ -8,7 +8,7 @@ package api.win.lockAspectRatio
 	
 	[Bindable]
 	/**
-	*
+	* Lock the window aspect ratio so the contents are scaled uniformly.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockAspectRatio.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.win.lockAspectRatio
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value that controls whether the aspect ratio of the window is locked or not. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.win.lockAspectRatio
 			super(target);
 		}
 		/**
-		*
+		* Lock the window aspect ratio so the contents are scaled uniformly.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_lockAspectRatio.html Northcode Help Documentation

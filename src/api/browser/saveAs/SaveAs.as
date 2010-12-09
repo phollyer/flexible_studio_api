@@ -8,7 +8,7 @@ package api.browser.saveAs
 
 	[Bindable]
 	/**
-	*
+	* Display the Browser 'Save Web Page' dialog (the same effect you get after selecting Save As from the File menu in Internet Explorer).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_saveAs.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.saveAs
 			super(target);
 		}
 		/**
-		*
+		* Display the Browser 'Save Web Page' dialog (the same effect you get after selecting Save As from the File menu in Internet Explorer).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_saveAs.html Northcode Help Documentation

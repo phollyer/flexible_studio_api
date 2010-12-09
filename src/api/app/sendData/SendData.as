@@ -8,7 +8,7 @@ package api.app.sendData
 
 	[Bindable]
 	/**
-	 *
+	 * Send data to one or more running SWF Studio applications.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation
 	 */
@@ -44,7 +44,7 @@ package api.app.sendData
 			super(target);
 		}
 		/**
-		 *
+		 * Send data to one or more running SWF Studio applications.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_sendData.html Northcode Help Documentation

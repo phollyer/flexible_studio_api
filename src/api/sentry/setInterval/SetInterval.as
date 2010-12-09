@@ -8,7 +8,7 @@ package api.sentry.setInterval
 	
 	[Bindable]
 	/**
-	*
+	* Specify how often SWF Studio should check for blocked applications.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_setInterval.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.sentry.setInterval
 			super(target);
 		}
 		/**
-		*
+		* Specify how often SWF Studio should check for blocked applications.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_setInterval.html Northcode Help Documentation

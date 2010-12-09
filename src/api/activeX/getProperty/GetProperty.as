@@ -30,21 +30,21 @@ package api.activeX.getProperty
 	[Event(name="missingProperty", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Retrieve the value of a named property of an ActiveX object.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ActiveX_getProperty.html Northcode Help Documentation
 	 */
 	public class GetProperty extends ActiveX
 	{
 		/**
-		 * 
+		 * The name of the ActiveX object used in the call to createObject.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var object:String = null;
 		
 		/**
-		 * 
+		 * The name of the propety to retrieve.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -68,7 +68,7 @@ package api.activeX.getProperty
 		}
 		
 		/**
-		 *
+		 * Retrieve the value of a named property of an ActiveX object.
 		 *
                  *
 		 * @param activeXObject

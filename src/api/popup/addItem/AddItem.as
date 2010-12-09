@@ -16,7 +16,7 @@ package api.popup.addItem
 	[Event(name="missingItem" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Add a new item to an existing popup menu.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_addItem.html Northcode Help Documentation
 	*/
@@ -40,7 +40,7 @@ package api.popup.addItem
 			super(target);
 		}
 		/**
-		*
+		* Add a new item to an existing popup menu.
 		*
 		*
 		* @param itemVO

@@ -14,7 +14,7 @@ package api.win.sendMessage
 	[Event(name="missingMessage" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send an action message to a target window identified by a window handle (hwnd) or group of windows identified by a partial caption.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_sendMessage.html Northcode Help Documentation
 	*/
@@ -52,7 +52,7 @@ package api.win.sendMessage
 			super(target);
 		}
 		/**
-		*
+		* Send an action message to a target window identified by a window handle (hwnd) or group of windows identified by a partial caption.
 		*
 		*
 		* @param winMessage

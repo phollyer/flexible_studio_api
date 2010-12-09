@@ -8,7 +8,7 @@ package api.sysTools.lockWorkStation
 	
 	[Bindable]
 	/**
-	*
+	* Locks the workstation's display, protecting it from unauthorized use.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_lockWorkStation.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.sysTools.lockWorkStation
 			super(target);
 		}
 		/**
-		*
+		* Locks the workstation's display, protecting it from unauthorized use.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysTools_lockWorkStation.html Northcode Help Documentation

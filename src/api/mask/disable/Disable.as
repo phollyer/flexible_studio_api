@@ -8,7 +8,7 @@ package api.mask.disable
 	
 	[Bindable]
 	/**
-	*
+	* Disable the active mask.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask_disable.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.mask.disable
 			super(target);
 		}
 		/**
-		*
+		* Disable the active mask.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mask_disable.html Northcode Help Documentation

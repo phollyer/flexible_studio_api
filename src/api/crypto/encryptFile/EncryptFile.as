@@ -16,7 +16,7 @@ package api.crypto.encryptFile
 	[Event(name="missingSource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Encrypt a file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Crypto_encryptFile.html Northcode Help Documentation
 	*/
@@ -24,19 +24,19 @@ package api.crypto.encryptFile
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the encrypted file. If the file exists it will be overwritten. If the file does not exist it will be created. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var destination:String = null;
 		/**
-		* 
+		* The string that will be used to encrypt the file. You will also need this key to decrypt the file later.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var key:String = null;
 		/**
-		* 
+		* A fully qualified path to the file to be encrypted. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.crypto.encryptFile
 			super(target);
 		}
 		/**
-		*
+		* Encrypt a file.
 		*
 		*
 		* @param privateKey

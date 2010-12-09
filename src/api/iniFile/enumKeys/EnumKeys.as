@@ -21,7 +21,7 @@ package api.iniFile.enumKeys
 	[Event(name="result", type="api.events.iniFile.enumKeys.EnumKeysEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve a list all the key names in a single section of the specified INI file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_INIFile_enumKeys.html Northcode Help Documentation
 	*/
@@ -37,13 +37,13 @@ package api.iniFile.enumKeys
 		
 		// Required
 		/**
-		* 
+		* A fully qualified path to the INI file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var path:String = null;
 		/**
-		* 
+		* Name of the section that contains the desired key names.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -67,7 +67,7 @@ package api.iniFile.enumKeys
 			super(target);
 		}
 		/**
-		*
+		* Retrieve a list all the key names in a single section of the specified INI file.
 		*
 		*
 		* @param pathSTR

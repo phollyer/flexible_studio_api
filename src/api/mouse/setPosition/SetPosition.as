@@ -8,7 +8,7 @@ package api.mouse.setPosition
 	
 	[Bindable]
 	/**
-	*
+	* Set the position of the mouse cursor on the screen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_setPosition.html Northcode Help Documentation
 	*/
@@ -47,7 +47,7 @@ package api.mouse.setPosition
 			super(target);
 		}
 		/**
-		*
+		* Set the position of the mouse cursor on the screen.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_setPosition.html Northcode Help Documentation

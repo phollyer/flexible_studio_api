@@ -14,7 +14,7 @@ package api.ado.getCurrentRow
 	[Event(name="result", type="api.events.ado.getCurrentRow.GetCurrentRowEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Get the contents of the current row in one of several available formats.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getCurrentRow.html Northcode Help Documentation
 	 */
@@ -38,7 +38,7 @@ package api.ado.getCurrentRow
 			super(target);
 		}
 		/**
-		 *
+		 * Get the contents of the current row in one of several available formats.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_getCurrentRow.html Northcode Help Documentation

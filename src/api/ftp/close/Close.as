@@ -8,7 +8,7 @@ package api.ftp.close
 
 	[Bindable]
 	/**
-	*
+	* Close the file specified in FTP.open and/or end the FTP transfer in progress.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_close.html Northcode Help Documentation
 	*/
@@ -25,7 +25,7 @@ package api.ftp.close
 		}
 		
 		/**
-		*
+		* Close the file specified in FTP.open and/or end the FTP transfer in progress.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_close.html Northcode Help Documentation

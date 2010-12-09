@@ -8,7 +8,7 @@ package api.catalog.unload
 
 	[Bindable]
 	/**
-	*
+	* Free the space used by the currently loaded catalog.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_unload.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.catalog.unload
 			super(target);
 		}
 		/**
-		*
+		* Free the space used by the currently loaded catalog.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_unload.html Northcode Help Documentation

@@ -14,7 +14,7 @@ package api.wmAudio.getVersion
 	[Event(name="result", type="api.events.wmAudio.getVersion.GetVersionEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the version of the media player in use.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_getVersion.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.wmAudio.getVersion
 			super(target);
 		}
 		/**
-		*
+		* Get the version of the media player in use.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_getVersion.html Northcode Help Documentation

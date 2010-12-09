@@ -15,7 +15,7 @@ package api.layout.extractFile
 	[Event(name="missingResource" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Extract a file from the layout.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Layout_extractFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,17 @@ package api.layout.extractFile
 	{
 		// Required
 		/**
-		* 
+		* A fully qualified path to the destination file. If the file exists it will be overwritten. If the file does not exist it will be created. If the destination directory does not exist it will be created. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var destination:String = null;
 		/**
-		* 
+		* The path to the file in the Layout (a leading '
+		*
+		* @defaultValue <code>null</code>
+		*/
+		public var resource:String = null is required and means the path starts at the root of the layout).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +49,7 @@ package api.layout.extractFile
 			super(target);
 		}
 		/**
-		*
+		* Extract a file from the layout.
 		*
 		*
 		* @param resourceSTR

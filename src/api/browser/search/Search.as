@@ -8,7 +8,7 @@ package api.browser.search
 	
 	[Bindable]
 	/**
-	*
+	* Open the URL defined as the browser search window. This is the same as pressing the Search button in Internet Explorer and will trigger an OnNavigate event.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_search.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.browser.search
 			super(target);
 		}
 		/**
-		*
+		* Open the URL defined as the browser search window. This is the same as pressing the Search button in Internet Explorer and will trigger an OnNavigate event.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_search.html Northcode Help Documentation

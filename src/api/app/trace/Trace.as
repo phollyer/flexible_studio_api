@@ -14,7 +14,7 @@ package api.app.trace
 	[Event(name="missingText", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Send information to the SWF Studio trace window.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_trace.html Northcode Help Documentation
 	 */
@@ -43,7 +43,7 @@ package api.app.trace
 			super(target);
 		}
 		/**
-		 *
+		 * Send information to the SWF Studio trace window.
 		 *
                  *
 		 * @param val

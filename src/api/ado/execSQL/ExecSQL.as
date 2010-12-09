@@ -21,7 +21,7 @@ package api.ado.execSQL
 	[Event(name="missingSQL", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Allows you to execute a SQL statement.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_execSQL.html Northcode Help Documentation
 	 */
@@ -29,7 +29,7 @@ package api.ado.execSQL
 	{
 		// Required
 		/**
-		 * 
+		 * Any SQL statement valid for the selected provider.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -37,7 +37,7 @@ package api.ado.execSQL
 		
 		// Result
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -53,7 +53,7 @@ package api.ado.execSQL
 			super(target);
 		}
 		/**
-		 *
+		 * Allows you to execute a SQL statement.
 		 *
                  *
 		 * @param sqlQuery

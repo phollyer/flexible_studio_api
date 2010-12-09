@@ -8,7 +8,7 @@ package api.wmAudio.setMute
 	
 	[Bindable]
 	/**
-	*
+	* Temporarily enable or disable sound.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setMute.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.wmAudio.setMute
 	{
 		// Optional 
 		/**
-		* 
+		* Set the mute flag to TRUE to disable sound and set the flag to false to enable sound again. Muting the sound does not affect the volume setting. Valid values include: true and false.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.wmAudio.setMute
 			super(target);
 		}
 		/**
-		*
+		* Temporarily enable or disable sound.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_setMute.html Northcode Help Documentation

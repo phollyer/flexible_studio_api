@@ -14,7 +14,7 @@ package api.wmVideo.getVersion
 	[Event(name="result", type="api.events.wmVideo.getVersion.GetVersionEvent")]
 	[Bindable]
 	/**
-	*
+	* Get the version of the media player in use.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_getVersion.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.wmVideo.getVersion
 			super(target);
 		}
 		/**
-		*
+		* Get the version of the media player in use.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_getVersion.html Northcode Help Documentation

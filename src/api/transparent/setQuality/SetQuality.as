@@ -14,7 +14,7 @@ package api.transparent.setQuality
 	[Event(name="missingQuality" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Allows you to lower the quality of the transparent output to reduce the amount of CPU required.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Transparent_setQuality.html Northcode Help Documentation
 	*/
@@ -33,7 +33,7 @@ package api.transparent.setQuality
 			super(target);
 		}
 		/**
-		*
+		* Allows you to lower the quality of the transparent output to reduce the amount of CPU required.
 		*
 		*
 		* @param qualityNUM

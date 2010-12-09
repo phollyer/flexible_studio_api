@@ -24,7 +24,7 @@ package api.plugin.getCommands
 	[Event(name="missingAlias", type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Returns a comma delimited list of all the available plugin commands.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Plugin_getCommands.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.plugin.getCommands
 	{
 		// Required
 		/**
-		* 
+		* The alias that identifies an instance of a plugin.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -56,7 +56,7 @@ package api.plugin.getCommands
 			super(target);
 		}
 		/**
-		*
+		* Returns a comma delimited list of all the available plugin commands.
 		*
 		*
 		* @param aliasName

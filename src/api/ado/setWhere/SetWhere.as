@@ -8,7 +8,7 @@ package api.ado.setWhere
 
 	[Bindable]
 	/**
-	 *
+	 * Provide the SQL WHERE clause that will limit your view of the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setWhere.html Northcode Help Documentation
 	 */
@@ -32,7 +32,7 @@ package api.ado.setWhere
 			super(target);
 		}
 		/**
-		 *
+		 * Provide the SQL WHERE clause that will limit your view of the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setWhere.html Northcode Help Documentation

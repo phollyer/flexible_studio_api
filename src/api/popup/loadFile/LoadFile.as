@@ -15,7 +15,7 @@ package api.popup.loadFile
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Create a new menu from previously saved menu definition file rather than adding all the menu items individually in code.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_loadFile.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.popup.loadFile
 	{
 		// Required
 		/**
-		* 
+		* A name that you will use to refer to the new menu in all future menu commands.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The fully qualified path to the file that contains the menu definition. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.popup.loadFile
 			super(target);
 		}
 		/**
-		*
+		* Create a new menu from previously saved menu definition file rather than adding all the menu items individually in code.
 		*
 		*
 		* @param menuName

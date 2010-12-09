@@ -22,7 +22,7 @@ package api.app.showFileOpen
 	[Event(name="result", type="api.events.app.showFileOpen.ShowFileOpenEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Display the Windows File Open dialog to allow the user to select a file (or files) to open. This does not actually open a file, it just returns the selected file name(s) and path(s).
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileOpen.html Northcode Help Documentation
 	 */
@@ -46,7 +46,7 @@ package api.app.showFileOpen
 			super(target);
 		}
 		/**
-		 *
+		 * Display the Windows File Open dialog to allow the user to select a file (or files) to open. This does not actually open a file, it just returns the selected file name(s) and path(s).
 		 *
                  *
 		 * @param showFileOpenVO

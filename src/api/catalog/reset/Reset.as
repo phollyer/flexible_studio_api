@@ -8,7 +8,7 @@ package api.catalog.reset
 
 	[Bindable]
 	/**
-	*
+	* Call this before each new search to make sure all rows are included in the result set.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_reset.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.catalog.reset
 			super(target);
 		}
 		/**
-		*
+		* Call this before each new search to make sure all rows are included in the result set.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Catalog_reset.html Northcode Help Documentation

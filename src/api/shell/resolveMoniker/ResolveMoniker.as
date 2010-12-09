@@ -20,7 +20,7 @@ package api.shell.resolveMoniker
 	[Event(name="result", type="api.events.shell.resolveMoniker.ResolveMonikerEvent")]
 	[Bindable]
 	/**
-	*
+	* Resolve any monikers in the input path to file system references.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_resolveMoniker.html Northcode Help Documentation
 	*/
@@ -28,7 +28,7 @@ package api.shell.resolveMoniker
 	{						
 		// Required
 		/**
-		* 
+		* A fully qualified long or short path to a file or folder that may contain a moniker. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -52,7 +52,7 @@ package api.shell.resolveMoniker
 			super(target);
 		}
 		/**
-		*
+		* Resolve any monikers in the input path to file system references.
 		*
 		*
 		* @param filePath

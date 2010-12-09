@@ -8,7 +8,7 @@ package api.http.autoEncodeResource
 
 	[Bindable]
 	/**
-	*
+	* Canonicalizes the resource, which includes converting unsafe characters in the resource into escape sequences.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_autoEncodeResource.html Northcode Help Documentation
 	*/
@@ -32,7 +32,7 @@ package api.http.autoEncodeResource
 			super(target);
 		}
 		/**
-		*
+		* Canonicalizes the resource, which includes converting unsafe characters in the resource into escape sequences.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_autoEncodeResource.html Northcode Help Documentation

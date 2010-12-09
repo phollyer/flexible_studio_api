@@ -20,7 +20,7 @@ package api.ado.moveTo
 	[Event(name="result", type="api.events.ado.moveTo.MoveToEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the specified row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveTo.html Northcode Help Documentation
 	 */
@@ -31,7 +31,7 @@ package api.ado.moveTo
 		
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -53,7 +53,7 @@ package api.ado.moveTo
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the specified row in the open table.
 		 *
                  *
 		 * @param recordNumber

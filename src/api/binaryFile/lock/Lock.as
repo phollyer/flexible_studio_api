@@ -14,7 +14,7 @@ package api.binaryFile.lock
 	[Event(name="result", type="api.events.binaryFile.lock.LockEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Obtain an exclusive lock on the file.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_lock.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.binaryFile.lock
 	{
 		// Results
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.binaryFile.lock
 			super(target);
 		}
 		/**
-		 *
+		 * Obtain an exclusive lock on the file.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_lock.html Northcode Help Documentation

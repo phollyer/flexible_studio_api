@@ -14,7 +14,7 @@ package api.http.proxyPort
 	[Event(name="missingPort" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Select the port to be used for communications with the proxy server.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_HTTP_proxyPort.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.http.proxyPort
 	{
 		// Required
 		/**
-		* 
+		* The port number of the proxy server to use for requests (depends on your proxy server configuration).
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.http.proxyPort
 			super(target);
 		}
 		/**
-		*
+		* Select the port to be used for communications with the proxy server.
 		*
 		*
 		* @param portSTR

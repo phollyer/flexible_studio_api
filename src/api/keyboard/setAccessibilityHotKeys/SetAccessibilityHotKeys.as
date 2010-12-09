@@ -8,7 +8,7 @@ package api.keyboard.setAccessibilityHotKeys
 	
 	[Bindable]
 	/**
-	*
+	* Enable or disable the accessibility hotkeys.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_setAccessibilityHotKeys.html Northcode Help Documentation
 	*/
@@ -56,7 +56,7 @@ package api.keyboard.setAccessibilityHotKeys
 			super(target);
 		}
 		/**
-		*
+		* Enable or disable the accessibility hotkeys.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_setAccessibilityHotKeys.html Northcode Help Documentation

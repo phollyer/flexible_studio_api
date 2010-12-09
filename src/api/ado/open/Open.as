@@ -14,7 +14,7 @@ package api.ado.open
 	[Event(name="result", type="api.events.ado.open.OpenEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Open a table in the currently selected database.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_open.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.open
 	{
 		// Result
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.ado.open
 			super(target);
 		}
 		/**
-		 *
+		 * Open a table in the currently selected database.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_open.html Northcode Help Documentation

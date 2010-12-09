@@ -10,7 +10,7 @@ package api.splash.close
 
 	[Bindable]
 	/**
-	*
+	* Close the splash screen.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_close.html Northcode Help Documentation
 	*/
@@ -26,7 +26,7 @@ package api.splash.close
 			super(target);
 		}
 		/**
-		*
+		* Close the splash screen.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Splash_close.html Northcode Help Documentation

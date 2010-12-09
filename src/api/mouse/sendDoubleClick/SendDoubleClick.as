@@ -14,7 +14,7 @@ package api.mouse.sendDoubleClick
 	[Event(name="missingButton" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Simulate a mouse button double click event at the current cursor position.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Mouse_sendDoubleClick.html Northcode Help Documentation
 	*/
@@ -26,7 +26,7 @@ package api.mouse.sendDoubleClick
 		
 		// Required
 		/**
-		* 
+		* The mouse button to be simulated. Valid values include: left, middle, and right.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -42,7 +42,7 @@ package api.mouse.sendDoubleClick
 			super(target);
 		}
 		/**
-		*
+		* Simulate a mouse button double click event at the current cursor position.
 		*
 		*
 		* @param mouseButton

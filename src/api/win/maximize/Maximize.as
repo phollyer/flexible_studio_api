@@ -8,7 +8,7 @@ package api.win.maximize
 	
 	[Bindable]
 	/**
-	*
+	* Maximize the application window.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_maximize.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.win.maximize
 			super(target);
 		}
 		/**
-		*
+		* Maximize the application window.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_maximize.html Northcode Help Documentation

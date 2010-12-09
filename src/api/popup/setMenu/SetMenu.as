@@ -15,7 +15,7 @@ package api.popup.setMenu
 	[Event(name="missingName" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Create a new menu using a menu definition string obtained by a call to Popup.getMenu.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_setMenu.html Northcode Help Documentation
 	*/
@@ -23,13 +23,13 @@ package api.popup.setMenu
 	{
 		// Required
 		/**
-		* 
+		* A name that you will use to refer to the new menu in all future menu commands.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var name:String = null;
 		/**
-		* 
+		* The menu definition string.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -45,7 +45,7 @@ package api.popup.setMenu
 			super(target);
 		}
 		/**
-		*
+		* Create a new menu using a menu definition string obtained by a call to Popup.getMenu.
 		*
 		*
 		* @param menuName

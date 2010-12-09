@@ -14,7 +14,7 @@ package api.ftp.createDir
 	[Event(name="missingPath" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* A directory with path specified by remotepath is created on the FTP server. 
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_FTP_createDir.html Northcode Help Documentation
 	*/
@@ -22,7 +22,7 @@ package api.ftp.createDir
 	{
 		// Required
 		/**
-		* 
+		* The path to a directory to be created on the FTP server.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -38,7 +38,7 @@ package api.ftp.createDir
 			super(target);
 		}
 		/**
-		*
+		* A directory with path specified by remotepath is created on the FTP server. 
 		*
 		*
 		* @param dirPath

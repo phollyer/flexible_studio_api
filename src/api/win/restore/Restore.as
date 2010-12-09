@@ -8,7 +8,7 @@ package api.win.restore
 	
 	[Bindable]
 	/**
-	*
+	* Restore the application window to its size and position before it was minimized or maximized.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_restore.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.win.restore
 			super(target);
 		}
 		/**
-		*
+		* Restore the application window to its size and position before it was minimized or maximized.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Win_restore.html Northcode Help Documentation

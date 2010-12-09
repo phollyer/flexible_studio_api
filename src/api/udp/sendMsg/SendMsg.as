@@ -15,7 +15,7 @@ package api.udp.sendMsg
 	[Event(name="missingDestination" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Send a message using the open socket to a specific IP name or address, using the port specified in UDP.open.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_UDP_sendMsg.html Northcode Help Documentation
 	*/
@@ -31,13 +31,13 @@ package api.udp.sendMsg
 		
 		// Required
 		/**
-		* 
+		* Data, in hex string format, to send.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var data:String = null;
 		/**
-		* 
+		* IP address or network name to send to.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -53,7 +53,7 @@ package api.udp.sendMsg
 			super(target);
 		}
 		/**
-		*
+		* Send a message using the open socket to a specific IP name or address, using the port specified in UDP.open.
 		*
 		*
 		* @param msgData

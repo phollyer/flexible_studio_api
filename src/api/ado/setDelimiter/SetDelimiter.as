@@ -8,7 +8,7 @@ package api.ado.setDelimiter
 	
 	[Bindable]
 	/**
-	 *
+	 * Select the field delimiter used with the DLM row format.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation
 	 */
@@ -27,7 +27,7 @@ package api.ado.setDelimiter
 			super(target);
 		}
 		/**
-		 *
+		 * Select the field delimiter used with the DLM row format.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setDelimiter.html Northcode Help Documentation

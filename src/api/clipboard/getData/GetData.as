@@ -14,7 +14,7 @@ package api.clipboard.getData
 	[Event(name="result", type="api.events.clipboard.getData.GetDataEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve data from the clipboard. Recognized formats are 'TEXT', 'RTF'. Unknown data formats are assigned a type of 'UNKNOWN'.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_getData.html Northcode Help Documentation
 	*/
@@ -52,7 +52,7 @@ package api.clipboard.getData
 			super(target);
 		}
 		/**
-		*
+		* Retrieve data from the clipboard. Recognized formats are 'TEXT', 'RTF'. Unknown data formats are assigned a type of 'UNKNOWN'.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Clipboard_getData.html Northcode Help Documentation

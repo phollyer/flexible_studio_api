@@ -14,7 +14,7 @@ package api.ado.moveFirst
 	[Event(name="result", type="api.events.ado.moveFirst.MoveFirstEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Move the current row pointer to the first row in the open table.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.ado.moveFirst
 	{
 		// Results
 		/**
-		 * 
+		 * An ADO specific error message.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -44,7 +44,7 @@ package api.ado.moveFirst
 			super(target);
 		}
 		/**
-		 *
+		 * Move the current row pointer to the first row in the open table.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_moveFirst.html Northcode Help Documentation

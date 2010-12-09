@@ -14,7 +14,7 @@ package api.binaryFile.close
 	[Event(name="result", type="api.events.binaryFile.close.CloseEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Close the open file.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_close.html Northcode Help Documentation
 	 */
@@ -22,7 +22,7 @@ package api.binaryFile.close
 	{
 		// Result
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -38,7 +38,7 @@ package api.binaryFile.close
 			super(target);
 		}
 		/**
-		 *
+		 * Close the open file.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_close.html Northcode Help Documentation

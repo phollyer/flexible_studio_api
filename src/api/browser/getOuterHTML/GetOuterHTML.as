@@ -14,7 +14,7 @@ package api.browser.getOuterHTML
 	[Event(name="result", type="api.events.browser.getOuterHTML.GetOuterHTMLEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the outer HTML source of the active element.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getOuterHTML.html Northcode Help Documentation
 	*/
@@ -37,7 +37,7 @@ package api.browser.getOuterHTML
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the outer HTML source of the active element.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Browser_getOuterHTML.html Northcode Help Documentation

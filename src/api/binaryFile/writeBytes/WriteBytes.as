@@ -28,7 +28,7 @@ package api.binaryFile.writeBytes
 	[Event(name="result", type="api.events.binaryFile.writeBytes.WriteBytesEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Write a block of bytes to the file.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_BinaryFile_writeBytes.html Northcode Help Documentation
 	 */
@@ -36,13 +36,13 @@ package api.binaryFile.writeBytes
 	{
 		// Required
 		/**
-		 * 
+		 * Data to be written, the format of the data is specified by the 'format' parameter.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
 		public var data:String = null;
 		/**
-		 * 
+		 * Identify the format of 'data' parameter. Valid values include: hex,byte,utf8.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -50,13 +50,13 @@ package api.binaryFile.writeBytes
 		
 		// Results
 		/**
-		 * 
+		 * Number of bytes actually written to the file.
 		 *
 		 * @defaultValue <code>0</code>
 		 */
 		public var bytesWritten:Number = 0;
 		/**
-		 * 
+		 * A system specific error code from the GetLastError function.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -72,7 +72,7 @@ package api.binaryFile.writeBytes
 			super(target);
 		}
 		/**
-		 *
+		 * Write a block of bytes to the file.
 		 *
                  *
 		 * @param dataSTR

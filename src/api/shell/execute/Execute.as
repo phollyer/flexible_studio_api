@@ -22,7 +22,7 @@ package api.shell.execute
 	[Event(name="result", type="api.events.shell.execute.ExecuteEvent")]
 	[Bindable]
 	/**
-	*
+	* Use Shell.execute to run other applications. The only required parameter is the path to the application you want to launch, all of the other parameters are optional and allow you to control the behavior of the launched application and to retrieve information about it.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Shell_execute.html Northcode Help Documentation
 	*/
@@ -78,7 +78,7 @@ package api.shell.execute
 			super(target);
 		}
 		/**
-		*
+		* Use Shell.execute to run other applications. The only required parameter is the path to the application you want to launch, all of the other parameters are optional and allow you to control the behavior of the launched application and to retrieve information about it.
 		*
 		*
 		* @param filePath

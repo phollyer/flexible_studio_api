@@ -8,7 +8,7 @@ package api.desktop.showTaskbar
 	
 	[Bindable]
 	/**
-	*
+	* Show (or hide) the taskbar on the desktop.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_showTaskbar.html Northcode Help Documentation
 	*/
@@ -16,7 +16,7 @@ package api.desktop.showTaskbar
 	{
 		// Optional
 		/**
-		* 
+		* A boolean value that indicates the desired state of the taskbar, TRUE=visible and FALSE=hidden.
 		*
 		* @defaultValue <code>true</code>
 		*/
@@ -32,7 +32,7 @@ package api.desktop.showTaskbar
 			super(target);
 		}
 		/**
-		*
+		* Show (or hide) the taskbar on the desktop.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Desktop_showTaskbar.html Northcode Help Documentation

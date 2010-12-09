@@ -8,7 +8,7 @@ package api.wmAudio.pause
 	
 	[Bindable]
 	/**
-	*
+	* Temporarily pause playback of the current resource (until WMAudio.resume is called).
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_pause.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.wmAudio.pause
 			super(target);
 		}
 		/**
-		*
+		* Temporarily pause playback of the current resource (until WMAudio.resume is called).
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMAudio_pause.html Northcode Help Documentation

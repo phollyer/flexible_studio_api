@@ -14,7 +14,7 @@ package api.sysInfo.getMACAddressList
 	[Event(name="result", type="api.events.sysInfo.getMACAddressList.GetMACAddressListEvent")]
 	[Bindable]
 	/**
-	*
+	* Obtain a list of available MAC addresses.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getMACAddressList.html Northcode Help Documentation
 	*/
@@ -38,7 +38,7 @@ package api.sysInfo.getMACAddressList
 			super(target);
 		}
 		/**
-		*
+		* Obtain a list of available MAC addresses.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getMACAddressList.html Northcode Help Documentation

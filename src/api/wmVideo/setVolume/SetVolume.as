@@ -8,7 +8,7 @@ package api.wmVideo.setVolume
 	
 	[Bindable]
 	/**
-	*
+	* Set the playback volume.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setVolume.html Northcode Help Documentation
 	*/
@@ -27,7 +27,7 @@ package api.wmVideo.setVolume
 			super(target);
 		}
 		/**
-		*
+		* Set the playback volume.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_WMVideo_setVolume.html Northcode Help Documentation

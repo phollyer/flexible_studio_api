@@ -8,7 +8,7 @@ package api.sentry.clearWatch
 	
 	[Bindable]
 	/**
-	*
+	* Remove all applications from the Sentry watch list.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_clearWatch.html Northcode Help Documentation
 	*/
@@ -24,7 +24,7 @@ package api.sentry.clearWatch
 			super(target);
 		}
 		/**
-		*
+		* Remove all applications from the Sentry watch list.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Sentry_clearWatch.html Northcode Help Documentation

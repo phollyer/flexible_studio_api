@@ -14,7 +14,7 @@ package api.app.forceExitWindows
 	[Event(name="missingMethod" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Force Windows shutdown, reboot or logoff.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_forceExitWindows.html Northcode Help Documentation
 	 */
@@ -29,7 +29,7 @@ package api.app.forceExitWindows
 		
 		// Required
 		/**
-		 * 
+		 * Valid values include: shutdown, reboot, and logoff.
 		 *
 		 * @defaultValue <code>null</code>
 		 */
@@ -45,7 +45,7 @@ package api.app.forceExitWindows
 			super(target);
 		}
 		/**
-		 *
+		 * Force Windows shutdown, reboot or logoff.
 		 *
                  *
 		 * @param exitMethod

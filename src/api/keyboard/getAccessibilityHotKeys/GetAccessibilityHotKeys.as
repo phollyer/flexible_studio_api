@@ -14,7 +14,7 @@ package api.keyboard.getAccessibilityHotKeys
 	[Event(name="result", type="api.events.keyboard.getAccessibilityHotKeys.GetAccessibilityHotKeysEvent")]
 	[Bindable]
 	/**
-	*
+	* Retrieve the state of the accessibility hotkeys.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_getAccessibilityHotKeys.html Northcode Help Documentation
 	*/
@@ -22,31 +22,31 @@ package api.keyboard.getAccessibilityHotKeys
 	{
 		// Results
 		/**
-		* 
+		* State of the FilterKeys accessibility hotkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var filter:String = null;
 		/**
-		* 
+		* State of the HighContrcastKeys accessibility hotkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var highContrast:String = null;
 		/**
-		* 
+		* State of the MouseKeys accessibility hotkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var mouse:String = null;
 		/**
-		* 
+		* State of the StickyKeys accessibility hotkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var sticky:String = null;
 		/**
-		* 
+		* State of the ToggleKeys accessibility hotkey.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -62,7 +62,7 @@ package api.keyboard.getAccessibilityHotKeys
 			super(target);
 		}
 		/**
-		*
+		* Retrieve the state of the accessibility hotkeys.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Keyboard_getAccessibilityHotKeys.html Northcode Help Documentation

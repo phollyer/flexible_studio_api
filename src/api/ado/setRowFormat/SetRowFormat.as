@@ -10,7 +10,7 @@ package api.ado.setRowFormat
 
 	[Bindable]
 	/**
-	 *
+	 * Select the format of returned row data.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation
 	 */
@@ -34,7 +34,7 @@ package api.ado.setRowFormat
 			super(target);
 		}
 		/**
-		 *
+		 * Select the format of returned row data.
 		 *
                  *
                  * @see http://www.northcode.com/v3/help/index.html?page=ssCore_ADO_setRowFormat.html Northcode Help Documentation

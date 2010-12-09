@@ -17,7 +17,7 @@ package api.iniFile.setVal
 	[Event(name="missingValue" , type="api.events.SWFStudioEvent")]
 	[Bindable]
 	/**
-	*
+	* Writes a value into the specified section and key of the INI file.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_INIFile_setVal.html Northcode Help Documentation
 	*/
@@ -25,25 +25,25 @@ package api.iniFile.setVal
 	{
 		// Required
 		/**
-		* 
+		* Name of the key to be updated.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var key:String = null;
 		/**
-		* 
+		* A fully qualified path to the INI file. This parameter supports monikers.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var path:String = null;
 		/**
-		* 
+		* The name of the section containing the key to be updated.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var section:String = null;
 		/**
-		* 
+		* String that will be written to the specified section and key of the INI file.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -59,7 +59,7 @@ package api.iniFile.setVal
 			super(target);
 		}
 		/**
-		*
+		* Writes a value into the specified section and key of the INI file.
 		*
 		*
 		* @param pathSTR

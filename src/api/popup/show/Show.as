@@ -23,7 +23,7 @@ package api.popup.show
 	[Event(name="result", type="api.events.popup.show.ShowEvent")]
 	[Bindable]
 	/**
-	*
+	* Display the named popup menu at the current mouse position.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_Popup_show.html Northcode Help Documentation
 	*/
@@ -31,7 +31,7 @@ package api.popup.show
 	{
 		// Required
 		/**
-		* 
+		* The name of the menu to display.
 		*
 		* @defaultValue <code>null</code>
 		*/
@@ -55,7 +55,7 @@ package api.popup.show
 			super(target);
 		}
 		/**
-		*
+		* Display the named popup menu at the current mouse position.
 		*
 		*
 		* @param menuName

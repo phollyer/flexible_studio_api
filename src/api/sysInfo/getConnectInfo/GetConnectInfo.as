@@ -14,7 +14,7 @@ package api.sysInfo.getConnectInfo
 	[Event(name="result", type="api.events.sysInfo.getConnectInfo.GetConnectInfoEvent")]
 	[Bindable]
 	/**
-	*
+	* Return internet connection state information.
 	*
 	* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getConnectInfo.html Northcode Help Documentation
 	*/
@@ -22,43 +22,43 @@ package api.sysInfo.getConnectInfo
 	{
 		// Result
 		/**
-		* 
+		* The number of active dialup connections. This value should be 1 (or higher) when usingModem returns TRUE.
 		*
 		* @defaultValue <code>0</code>
 		*/
 		public var activeDialupConnections:Number = 0;
 		/**
-		* 
+		* The display name of the internet connection.
 		*
 		* @defaultValue <code>null</code>
 		*/
 		public var connectionName:String = null;
 		/**
-		* 
+		* TRUE if any kind of internet connection is available.
 		*
 		* @defaultValue <code>false</code>
 		*/
 		public var isConnected:Boolean = false;
 		/**
-		* 
+		* A boolean value that indicates whether the system is running in OFFLINE mode or not.
 		*
 		* @defaultValue <code>false</code>
 		*/
 		public var isOffline:Boolean = false;
 		/**
-		* 
+		* A boolean value that indicates whether the system is using the LAN for its internet connection.
 		*
 		* @defaultValue <code>false</code>
 		*/
 		public var usingLAN:Boolean = false;
 		/**
-		* 
+		* A boolean value that indicates whether the system is using a MODEM for its internet connection.
 		*
 		* @defaultValue <code>false</code>
 		*/
 		public var usingMODEM:Boolean = false;
 		/**
-		* 
+		* A boolean value that indicates whether the system is using a proxy server for its internet connection.
 		*
 		* @defaultValue <code>false</code>
 		*/
@@ -74,7 +74,7 @@ package api.sysInfo.getConnectInfo
 			super(target);
 		}
 		/**
-		*
+		* Return internet connection state information.
 		*
 		*
 		* @see http://www.northcode.com/v3/help/index.html?page=ssCore_SysInfo_getConnectInfo.html Northcode Help Documentation

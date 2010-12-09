@@ -22,7 +22,7 @@ package api.app.showFileSave
 	[Event(name="result", type="api.events.app.showFileSave.ShowFileSaveEvent")]
 	[Bindable]
 	/**
-	 *
+	 * Display the Windows File Save dialog to allow the user to select a target file name and path. This does not actually create or save a file, it just returns the selected file name and path which you can use in future file operations.
 	 *
 	 * @see http://www.northcode.com/v3/help/index.html?page=ssCore_App_showFileSave.html Northcode Help Documentation
 	 */
@@ -46,7 +46,7 @@ package api.app.showFileSave
 			super(target);
 		}
 		/**
-		 *
+		 * Display the Windows File Save dialog to allow the user to select a target file name and path. This does not actually create or save a file, it just returns the selected file name and path which you can use in future file operations.
 		 *
                  *
 		 * @param showFileSaveVO
